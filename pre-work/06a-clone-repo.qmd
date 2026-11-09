@@ -20,7 +20,7 @@ You can only complete this step once you have received the invitation email to t
 
 ## Step 2: Create a bookmark
 
-1. Open the landing page for the GitHub organization '{{< var course.code >}}': <{{< var course.github-org >}}>
+1. Open the landing page for the GitHub organization '{{< var course.code >}}': [{{< var course.github-org >}}]({{< var course.github-org >}})
 
 ![](images/06a-clone/02-github-landing-page.png){width=100%}
 
@@ -38,7 +38,7 @@ You can only complete this step once you have received the invitation email to t
 
 ## Step 3: Clone the setup repository
 
-1. Open the landing page for the GitHub organization '{{< var course.code >}}': <{{< var course.github-org >}}> (try to use your bookmark)
+1. Open the landing page for the GitHub organization '{{< var course.code >}}': [{{< var course.github-org >}}]({{< var course.github-org >}}) (try to use your bookmark)
 
 2. Navigate down the page to the section "Repositories" and use the search field to find the repository called `setup-USERNAME` where USERNAME is your GitHub username.
 

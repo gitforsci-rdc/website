@@ -10,7 +10,7 @@ editor_options:
 
 Thank you for joining this workshop at the Research Data Conference 2026. Your instructor [{{< var author >}}]({{< var author-url >}}), {{< var department >}}, {{< var institute >}}, is looking forward to meeting you.
 
-We meet on {{< var session.datetime >}} ({{< var session.timezone-label >}}) in {{< var session.event-location >}}. Conference programme and venue: <{{< var session.event-location-directions >}}>. Registration runs through the conference.
+We meet on {{< var session.datetime >}} ({{< var session.timezone-label >}}) in {{< var session.event-location >}}. Conference programme and venue: [{{< var session.event-location-directions >}}]({{< var session.event-location-directions >}}). Registration runs through the conference.
 
 ## {{< fa circle-info >}} Background
 
