@@ -1,0 +1,9 @@
+## {{< fa clipboard-list >}} Step 1: Complete the pre-course survey
+
+The survey is the first step, and it decides the rest: your answers tell me which software the hands-on part can use (RStudio with Git, GitHub Desktop or Positron), and they shape the day. It takes 10 to 15 minutes.
+
+- Complete the survey by [**{{< var session.survey-deadline >}}**]{.highlight-yellow}: [{{< var resources.survey-url >}}]({{< var resources.survey-url >}})
+
+The survey asks for your GitHub username, so that I can invite you to the course organisation `{{< var course.code >}}` on GitHub before the workshop. If you do not have an account yet, the survey walks you through creating one, or you create it in [Step 2](02-github-acc.qmd) and come back.
+
+The setup instructions (install and a short setup check) appear on this website on **{{< var session.steps-date >}}**. I also send them to the email address you give in the survey.

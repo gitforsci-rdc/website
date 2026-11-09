@@ -24,7 +24,7 @@ Copy the full error message and email it to me. Getting this resolved before the
 
 ## Step 2: Open an issue on GitHub
 
-1. Open the landing page for the GitHub organization '{{< var course.code >}}': <{{< var course.github-org >}}> (try to use your bookmark)
+1. Open the landing page for the GitHub organization '{{< var course.code >}}': [{{< var course.github-org >}}]({{< var course.github-org >}}) (try to use your bookmark)
 
 2. Navigate down the page to the section "Repositories" and use the search field to find the repository called `setup-USERNAME` where USERNAME is your GitHub username.
 

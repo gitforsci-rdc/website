@@ -1,0 +1,126 @@
+[
+  {
+    "objectID": "pre-work/02-github-acc.html",
+    "href": "pre-work/02-github-acc.html",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub account, enter the username in the pre-course survey if you have not done so yet, or send it to me by email: lschoebitz@ethz.ch. I then invite you to the GitHub organisation for the course.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 2: GitHub account"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
+    "href": "pre-work/02-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub account, enter the username in the pre-course survey if you have not done so yet, or send it to me by email: lschoebitz@ethz.ch. I then invite you to the GitHub organisation for the course.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 2: GitHub account"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Pre-course work: Git for Scientists at RDC 2026",
+    "section": "",
+    "text": "Thank you for joining this workshop at the Research Data Conference 2026. Your instructor Lars Schöbitz, Global Health Engineering, ETH Zurich, is looking forward to meeting you.\nWe meet on Friday, 20 November 2026, 09:30 to 11:30 (Europe/Zurich) in Room Wytsicht, Gurten, Bern, at the Research Data Conference 2026. Conference programme and venue: https://researchdatasupport.ch/srdsn-conference. Registration runs through the conference.",
+    "crumbs": [
+      "Pre-course work"
+    ]
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
+    "title": "Pre-course work: Git for Scientists at RDC 2026",
+    "section": " Background",
+    "text": "Background\nGit and GitHub are the connective tissue of reproducible, collaborative research, yet many researchers learn them through fragmented tutorials that stop short of the collaboration patterns that matter: branching, pull requests, review and merging. This workshop is delivered as if every participant were a learner, and the real audience is educators: data stewards, research software engineers and instructors who teach, or want to teach, similar material. You first experience a condensed version of the full course from the learner’s seat, then switch to an educator lens to judge whether you could teach it in your own context. The course is published as an open educational resource.",
+    "crumbs": [
+      "Pre-course work"
+    ]
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
+    "title": "Pre-course work: Git for Scientists at RDC 2026",
+    "section": " Prior knowledge",
+    "text": "Prior knowledge\nNo experience with Git or GitHub is assumed. Some experience with R and RStudio helps for the hands-on part, but the software we use on the day is decided from the pre-course survey, so that it fits the laptops people bring.",
+    "crumbs": [
+      "Pre-course work"
+    ]
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop",
+    "title": "Pre-course work: Git for Scientists at RDC 2026",
+    "section": " What do I need to bring to the workshop?",
+    "text": "What do I need to bring to the workshop?\n\na laptop on which you can install software yourself, with its charger, connected to the conference wifi\na web browser (preferably Chrome or Firefox)\na pen and paper (we will be doing some drawings)\nthe pre-work below completed\n\nPrior to the workshop, there is some pre-work for you to do. It keeps our two hours for the collaboration skills instead of setting up infrastructure.",
+    "crumbs": [
+      "Pre-course work"
+    ]
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
+    "title": "Pre-course work: Git for Scientists at RDC 2026",
+    "section": " What do I need to prepare before the workshop?",
+    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Friday, 13 November 2026.\nStep 2: Get an account for GitHub, if you have none.\n\n\n\n\n\n\n\nNoteSteps 3 onwards appear here on Monday, 16 November 2026\n\n\n\nThe survey answers decide which software we use for the hands-on part: RStudio with Git, GitHub Desktop or Positron. On Monday, 16 November 2026 this page gets the install steps and a short setup check for that choice, due by Wednesday, 18 November 2026. I also send the steps to the email address you give in the survey. Anyone who arrives without the setup still follows the whole educator part of the workshop.",
+    "crumbs": [
+      "Pre-course work"
+    ]
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
+    "title": "Pre-course work: Git for Scientists at RDC 2026",
+    "section": " Schedule",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 09:40\nWelcome and the two seats: learner and educator\n\n\n09:40 - 10:55\nCondensed course from the learner’s seat: create and clone, commit cycle, branch, pull request and review, merge\n\n\n10:55 - 11:00\nBreak\n\n\n11:00 - 11:30\nEducator lens: how the course is built and run (open educational resource) and the feedback round",
+    "crumbs": [
+      "Pre-course work"
+    ]
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
+    "title": "Pre-course work: Git for Scientists at RDC 2026",
+    "section": " Learning objectives",
+    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCollaboration patterns: apply the core Git and GitHub patterns, branching, pull requests, review and merging, to a small project.\nInstructional design: evaluate the workshop’s design (sequencing, scaffolding, exercises) from an educator’s perspective.\nReuse: assess whether they could reuse and adapt the material to teach Git and GitHub in their own setting.",
+    "crumbs": [
+      "Pre-course work"
+    ]
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
+    "title": "Pre-course work: Git for Scientists at RDC 2026",
+    "section": " Thanks!",
+    "text": "Thanks!\nThank you for working through these steps. I am looking forward to meeting you in Bern.",
+    "crumbs": [
+      "Pre-course work"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-survey.html",
+    "href": "pre-work/01-survey.html",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "The survey is the first step, and it decides the rest: your answers tell me which software the hands-on part can use (RStudio with Git, GitHub Desktop or Positron), and they shape the day. It takes 10 to 15 minutes.\n\nComplete the survey by Friday, 13 November 2026: https://larnsce-gitforsci-rdc-survey.share.connect.posit.cloud/\n\nThe survey asks for your GitHub username, so that I can invite you to the course organisation gitforsci-rdc on GitHub before the workshop. If you do not have an account yet, the survey walks you through creating one, or you create it in Step 2 and come back.\nThe setup instructions (install and a short setup check) appear on this website on Monday, 16 November 2026. I also send them to the email address you give in the survey.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 1: Pre-course survey"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-step-1-complete-the-pre-course-survey",
+    "href": "pre-work/01-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-step-1-complete-the-pre-course-survey",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "The survey is the first step, and it decides the rest: your answers tell me which software the hands-on part can use (RStudio with Git, GitHub Desktop or Positron), and they shape the day. It takes 10 to 15 minutes.\n\nComplete the survey by Friday, 13 November 2026: https://larnsce-gitforsci-rdc-survey.share.connect.posit.cloud/\n\nThe survey asks for your GitHub username, so that I can invite you to the course organisation gitforsci-rdc on GitHub before the workshop. If you do not have an account yet, the survey walks you through creating one, or you create it in Step 2 and come back.\nThe setup instructions (install and a short setup check) appear on this website on Monday, 16 November 2026. I also send them to the email address you give in the survey.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 1: Pre-course survey"
+    ]
+  }
+]

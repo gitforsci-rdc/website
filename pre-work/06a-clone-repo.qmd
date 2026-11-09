@@ -7,7 +7,7 @@ This is the first of three short steps that test whether your setup is complete 
 ::: {.callout-warning}
 # This step only works after you have received an email from GitHub
 
-You can only complete this step once you have received the invitation email to the `{{< var course.code >}}` organization, which I send after you complete the pre-course survey. No email yet? Confirm that you have [completed the pre-course survey](03-survey.qmd), check your spam folder, and then contact me by email: [{{< var email >}}](mailto:{{< var email >}})
+You can only complete this step once you have received the invitation email to the `{{< var course.code >}}` organization, which I send after you complete the pre-course survey. No email yet? Confirm that you have [completed the pre-course survey](01-survey.qmd), check your spam folder, and then contact me by email: [{{< var email >}}](mailto:{{< var email >}})
 :::
 
 ## Step 1: Accept invitation from GitHub
@@ -20,7 +20,7 @@ You can only complete this step once you have received the invitation email to t
 
 ## Step 2: Create a bookmark
 
-1. Open the landing page for the GitHub organization '{{< var course.code >}}': <{{< var course.github-org >}}>
+1. Open the landing page for the GitHub organization '{{< var course.code >}}': [{{< var course.github-org >}}]({{< var course.github-org >}})
 
 ![](images/06a-clone/02-github-landing-page.png){width=100%}
 
@@ -38,7 +38,7 @@ You can only complete this step once you have received the invitation email to t
 
 ## Step 3: Clone the setup repository
 
-1. Open the landing page for the GitHub organization '{{< var course.code >}}': <{{< var course.github-org >}}> (try to use your bookmark)
+1. Open the landing page for the GitHub organization '{{< var course.code >}}': [{{< var course.github-org >}}]({{< var course.github-org >}}) (try to use your bookmark)
 
 2. Navigate down the page to the section "Repositories" and use the search field to find the repository called `setup-USERNAME` where USERNAME is your GitHub username.
 

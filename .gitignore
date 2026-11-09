@@ -6,7 +6,7 @@
 /.quarto/
 .DS_Store
 
-/docs/
+# docs/ is committed: GitHub Pages serves main /docs (as the July 2026 site)
 /_freeze/
 **/*.quarto_ipynb
 

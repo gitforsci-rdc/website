@@ -2,55 +2,55 @@
 # Body content reads these via {{< var key >}}. Values that Quarto's
 # shortcode cannot reach (_quarto.yml, code chunks, front matter) are
 # written in by setup-template.R, which reads this same file.
-# The defaults below are generic and valid, so the template renders
-# with zero edits. See TEMPLATING.md and the README.
+# Iteration gitforsci-rdc: Research Data Conference 2026, Bern.
 
-author: "Course Instructor"
-author-url: "https://example.org/"
-institute: "Your Institution"
-department: "Your Department"
-orcid: "0000-0000-0000-0000"
-github-handle: "OWNER"
-email: "instructor@example.org"
+author: "Lars Schöbitz"
+author-url: "https://ghe.ethz.ch/"
+institute: "ETH Zurich"
+department: "Global Health Engineering"
+orcid: "0000-0003-2196-5015"
+github-handle: "larnsce"
+email: "lschoebitz@ethz.ch"
 
 course:
-  code: "gitforsci-00x"
-  short-title: "gitforsci-00x"
+  code: "gitforsci-rdc"
+  short-title: "gitforsci-rdc"
   long-title: "Git for Scientists"
-  cohort-label: "Cohort YYYY"
-  start-date: "2026-01-01"
-  end-date: "2026-01-01"
+  cohort-label: "RDC 2026, Bern"
+  start-date: "2026-11-20"
+  end-date: "2026-11-20"
   timezone: "Europe/Zurich"
-  site: "https://OWNER.github.io/website/"
-  site-short: "OWNER.github.io/website"
-  github-org: "https://github.com/OWNER/"
+  site: "https://gitforsci-rdc.github.io/website/"
+  site-short: "gitforsci-rdc.github.io/website"
+  github-org: "https://github.com/gitforsci-rdc/"
 
 # Read by setup-template.R to patch _quarto.yml (site-url, repo-url,
 # sidebar GitHub href, Plausible analytics). {{< var >}} cannot reach it.
 github:
-  owner: "OWNER"
+  owner: "gitforsci-rdc"
   repo: "website"
-  site-url: "https://OWNER.github.io/website/"
-  repo-url: "https://github.com/OWNER/website"
-  # Leave plausible-domain empty ("") to disable analytics in the build.
+  site-url: "https://gitforsci-rdc.github.io/website/"
+  repo-url: "https://github.com/gitforsci-rdc/website"
+  # Empty: no analytics on this iteration.
   plausible-domain: ""
 
 # Logistics shown on the landing page (index.qmd) via {{< var >}}.
 session:
-  event-location: "TBD"
-  event-location-directions: "https://example.org/how-to-find-us"
-  datetime: "DD Month YYYY - HH:MM to HH:MM"
+  event-location: "Room Wytsicht, Gurten, Bern, at the Research Data Conference 2026"
+  event-location-directions: "https://researchdatasupport.ch/srdsn-conference"
+  datetime: "Friday, 20 November 2026, 09:30 to 11:30"
   timezone-label: "Europe/Zurich"
-  survey-deadline: "TBD"
-  setup-check-deadline: "TBD"
-  registration-closed: false
-  registration-interest-form: "https://example.org/interest"
+  survey-deadline: "Friday, 13 November 2026"
+  setup-check-deadline: "Wednesday, 18 November 2026"
+  steps-date: "Monday, 16 November 2026"
+  registration-closed: true
+  registration-interest-form: "https://www.conftool.pro/rdc2026"
 
 # External links and data sources. The schedule is a hand-editable CSV
 # committed in the repo (data/course-schedule.csv); edit it directly per
 # cohort. No external fetch or auth is needed.
 resources:
-  survey-url: "https://example.org/survey"
+  survey-url: "https://larnsce-gitforsci-rdc-survey.share.connect.posit.cloud/"
   schedule-data: "data/course-schedule.csv"
 
 md-01:

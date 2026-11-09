@@ -1,5 +1,5 @@
 ---
-title: "Pre-course work: Git for Scientists"
+title: "Pre-course work: Git for Scientists at RDC 2026"
 editor: source
 execute:
   echo: false
@@ -8,51 +8,37 @@ editor_options:
   chunk_output_type: console
 ---
 
-Thank you for your interest in this course. Your course instructor [{{< var author >}}]({{< var author-url >}}) is looking forward to meet you.
+Thank you for joining this workshop at the Research Data Conference 2026. Your instructor [{{< var author >}}]({{< var author-url >}}), {{< var department >}}, {{< var institute >}}, is looking forward to meeting you.
 
-We will meet on {{< var session.datetime >}} ({{< var session.timezone-label >}}) at {{< var session.event-location >}}. Instructions to find us: <{{< var session.event-location-directions >}}>
-
-Registration for this workshop is closed. You can still share your interest in a future iteration through this form: <{{< var session.registration-interest-form >}}>
+We meet on {{< var session.datetime >}} ({{< var session.timezone-label >}}) in {{< var session.event-location >}}. Conference programme and venue: [{{< var session.event-location-directions >}}]({{< var session.event-location-directions >}}). Registration runs through the conference.
 
 ## {{< fa circle-info >}} Background
 
-AI coding agents are rapidly entering scientific work, and using them with confidence starts with the same collaboration skills that make any research project reproducible and reviewable. This workshop gives you those foundations. You will learn to use Git and GitHub for collaboration in scientific work, so that later you can treat an AI agent as a collaborator whose every change is versioned, documented, and open to review. It is the first step in getting ready for AI-assisted scientific work.
+Git and GitHub are the connective tissue of reproducible, collaborative research, yet many researchers learn them through fragmented tutorials that stop short of the collaboration patterns that matter: branching, pull requests, review and merging. This workshop is delivered as if every participant were a learner, and the real audience is educators: data stewards, research software engineers and instructors who teach, or want to teach, similar material. You first experience a condensed version of the full course from the learner's seat, then switch to an educator lens to judge whether you could teach it in your own context. The course is published as an open educational resource.
 
 ## {{< fa graduation-cap >}} Prior knowledge
 
-For this course, we assume that you have some prior knowledge of R and RStudio. You should be able to:
-
-- install and load R packages
-- read and run short R scripts
-- edit and run R Markdown / Quarto documents
-- navigate the RStudio IDE
-- identify the four panes of the RStudio IDE (Script, Environment, Files, Console)
+No experience with Git or GitHub is assumed. Some experience with R and RStudio helps for the hands-on part, but the software we use on the day is decided from the pre-course survey, so that it fits the laptops people bring.
 
 ## {{< fa suitcase >}} What do I need to bring to the workshop?
 
-Please ensure you have the following available:
-
--   a laptop, connected to wifi
+-   a laptop on which you can install software yourself, with its charger, connected to the conference wifi
 -   a web browser (preferably Chrome or Firefox)
 -   a pen and paper (we will be doing some drawings)
--   a completed list of pre-work tasks with intermediate due dates
+-   the pre-work below completed
 
-[Prior to the workshop, there is some pre-work for you to do]{.highlight-yellow}. This pre-work will ensure that we can focus our time together on building collaboration skills instead of setting up infrastructure.
+[Prior to the workshop, there is some pre-work for you to do]{.highlight-yellow}. It keeps our two hours for the collaboration skills instead of setting up infrastructure.
 
 ## {{< fa circle-question >}} What do I need to prepare before the workshop?
 
-Prior to the workshop, complete the following seven steps:
+-   [Step 1](pre-work/01-survey.html): Complete the pre-course survey by [**{{< var session.survey-deadline >}}**]{.highlight-yellow}.
+-   [Step 2](pre-work/02-github-acc.html): Get an account for GitHub, if you have none.
 
--   [Step 1](pre-work/01-install-r.html): Download and install R and RStudio
--   [Step 2](pre-work/02-github-acc.html): Get an account for GitHub
--   [Step 3](pre-work/03-survey.html): Complete the pre-course survey by [**{{< var session.survey-deadline >}}**]{.highlight-yellow}.
--   [Step 4](pre-work/04-github-pat.html): Create a personal access token for GitHub
--   [Step 5](pre-work/05-install-git.html): Install Git
--   Step 6: Check your complete setup by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}, in three short parts (unlocked after the pre-course survey is completed):
-    -   [Step 6a](pre-work/06a-clone-repo.html): Clone the setup repository
-    -   [Step 6b](pre-work/06b-configure-git.html): Configure Git and push
-    -   [Step 6c](pre-work/06c-install-verify.html): Install packages and report done
--   [Step 7](pre-work/07-big-picture.html): Read "Why Git? Why GitHub?" from "Happy Git and GitHub for the useR"!
+::: {.callout-note}
+## Steps 3 onwards appear here on {{< var session.steps-date >}}
+
+The survey answers decide which software we use for the hands-on part: RStudio with Git, GitHub Desktop or Positron. On {{< var session.steps-date >}} this page gets the install steps and a short setup check for that choice, due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}. I also send the steps to the email address you give in the survey. Anyone who arrives without the setup still follows the whole educator part of the workshop.
+:::
 
 ```{r}
 library(dplyr)
@@ -76,12 +62,12 @@ read_csv(here::here("data/course-schedule.csv"), show_col_types = FALSE) |>
 
 By the end of this workshop, participants will be able to:
 
-1. **Commit cycle**: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.
+1. **Collaboration patterns**: apply the core Git and GitHub patterns, branching, pull requests, review and merging, to a small project.
 
-2. **Collaboration**: create a branch and open a pull request, review a colleague's pull request, and merge it after review.
+2. **Instructional design**: evaluate the workshop's design (sequencing, scaffolding, exercises) from an educator's perspective.
 
-3. **Concept map**: draw how Git and GitHub fit together.
+3. **Reuse**: assess whether they could reuse and adapt the material to teach Git and GitHub in their own setting.
 
 ## {{< fa sun >}} Thanks!
 
-Thank you for working through these steps. We are looking forward to meeting you at the workshop.
+Thank you for working through these steps. I am looking forward to meeting you in Bern.
