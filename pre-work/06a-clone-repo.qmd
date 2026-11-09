@@ -1,0 +1,123 @@
+---
+title: "{{< fa list-check >}} Test your setup (1 of 3): Clone the setup repository"
+---
+
+This is the first of three short steps that test whether your setup is complete and working. In this step, you accept your invitation to the GitHub organization and clone your personal setup repository into RStudio.
+
+::: {.callout-warning}
+# This step only works after you have received an email from GitHub
+
+You can only complete this step once you have received the invitation email to the `{{< var course.code >}}` organization, which I send after you complete the pre-course survey. No email yet? Confirm that you have [completed the pre-course survey](03-survey.qmd), check your spam folder, and then contact me by email: [{{< var email >}}](mailto:{{< var email >}})
+:::
+
+## Step 1: Accept invitation from GitHub
+
+1. Open your email that you used to register for your GitHub account.
+2. Find the email from GitHub with the subject "[GitHub] @{{< var github-handle >}} invited you to join the '{{< var course.code >}}' organization".
+3. Click on "Join @{{< var course.code >}}" link in the email to accept the invitation and work through the steps that follow in your browser to accept the invitation.
+
+![](images/06a-clone/01-github-invitation.png){width=100%}
+
+## Step 2: Create a bookmark
+
+1. Open the landing page for the GitHub organization '{{< var course.code >}}': <{{< var course.github-org >}}>
+
+![](images/06a-clone/02-github-landing-page.png){width=100%}
+
+2. Bookmark this page in your browser.
+
+![](images/06a-clone/03-bookmark-added.png){width=100%}
+
+3. Organize the bookmark into a folder called "{{< var course.code >}}" or similar.
+
+![](images/06a-clone/04-bookmark-folder.png){width=100%}
+
+4. Use this folder to add other bookmarks that are relevant for this workshop (e.g. the workshop website)
+
+![](images/06a-clone/05-bookmark-folder-bar.png){width=100%}
+
+## Step 3: Clone the setup repository
+
+1. Open the landing page for the GitHub organization '{{< var course.code >}}': <{{< var course.github-org >}}> (try to use your bookmark)
+
+2. Navigate down the page to the section "Repositories" and use the search field to find the repository called `setup-USERNAME` where USERNAME is your GitHub username.
+
+![](images/06a-clone/06-github-repo-find.png){width=100%}
+
+3. Click on the repository name to open it.
+
+::: {.callout-important}
+# No repository with your username?
+
+Contact me by email if your repository is not there. I will create it for you.
+:::
+
+![](images/06a-clone/07-github-repo-open.png){width=100%}
+
+4. Click on the green "Code" button.
+
+![](images/06a-clone/08-github-code-button.png){width=100%}
+
+5. Copy the HTTPS URL to your clipboard by clicking on the clipboard sign.
+
+![](images/06a-clone/09-github-code-copy.png){width=100%}
+
+6. Open the RStudio IDE on your laptop.
+
+::: callout-note
+I am working on MacOS, but the steps should be similar on Windows.
+:::
+
+![](images/06a-clone/10-rstudio.png){width=100%}
+
+7. Click on [File > New Project]{.highlight-yellow} in the top menu bar
+
+![](images/06a-clone/11-rstudio-new-project.png){width=100%}
+
+8. Click on Version Control.
+
+![](images/06a-clone/12-rstudio-version-control.png){width=100%}
+
+9. Click on Git.
+
+![](images/06a-clone/13-rstudio-git.png){width=100%}
+
+10. Click on [Browse...]{.highlight-yellow} button.
+
+![](images/06a-clone/14-rstudio-git-browse.png){width=100%}
+
+11. Create a folder structure for Git repositories (e.g. `~/Documents/gitrepos/gh-org-{{< var course.code >}}`)
+
+::: {.callout-note}
+# Folder structure for Git repositories and naming conventions
+
+I highly recommend storing folders that are Git repositories separate from other folders. This will help you to keep track of your Git repositories and avoid confusion with other folders.
+
+Create this directory structure locally on your laptop and not in folders that are synced with cloud storage (e.g. Google Drive, Dropbox, OneDrive, etc.).
+
+In your directory structure, you can create a folder called `gitrepos`. Inside this folder, you can create subfolders for each GitHub organization you are working with (e.g. `gh-org-{{< var course.code >}}`). A subfolder for your personal profile would be `gh-rainbow-train`. If you also work with GitLab or other Git hosting platforms, use the abbreviation for the platform in the folder name  (e.g. `gitrepos/gh-rainbow-train`, `gitrepos/gl-rainbow-train`, etc.).
+
+This strategy will help you to keep track of your Git repositories and the respective platforms and organisations they belong to.
+:::
+
+12. Paste the HTTPS URL from GitHub into the "Repository URL" field.
+
+::: {.callout-note}
+# The "Project directory name" field
+
+After you paste the URL, RStudio usually fills in the "Project directory name" field for you. If it stays empty, leave it empty and do not type anything. Creating the project works with an empty field.
+:::
+
+![](images/06a-clone/15-rstudio-git-url.png){width=100%}
+
+13. Click on the "Create Project" button.
+
+![](images/06a-clone/16-rstudio-git-create.png){width=100%}
+
+14. Find the Files tab in the bottom right pane of RStudio. You will see three numbered R scripts: `01-github-token.R`, `02-git-configuration.R`, and `03-workshop-packages.R`. You will work through them in the next two steps.
+
+![](images/06a-clone/17-rstudio-files-tab.png){width=100%}
+
+## Next step
+
+Your repository is cloned and open in RStudio. Continue with [Step 6b: Configure Git and push your first change](06b-configure-git.qmd).

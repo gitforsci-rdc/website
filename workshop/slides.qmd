@@ -1,0 +1,1142 @@
+---
+title:  "{{< var course.long-title >}}"
+author:
+  - name: "{{< var author >}}"
+    affiliations:
+        - name: Your Department - Your Institution
+          url: https://ghe.ethz.ch/
+date: today
+date-format: long
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
+format:
+  revealjs:
+    theme: ../style/slides.scss
+    transition: fade
+    slide-number: true
+    chalkboard: true
+editor: source
+execute:
+  freeze: auto
+  echo: true
+bibliography: ../references.bib
+---
+
+```{r}
+#| echo: false
+library(knitr)
+library(tidyverse)
+library(countdown)
+library(ggthemes)
+```
+
+# Part 1: Welcome {{< fa hand >}} {background-color="{{< var brand.section-bg >}}"}
+
+## Meet the lecturer {.smaller}
+
+**{{< var author >}}**
+
+![](images/lars_schoebitz_profile_photo.jpg){fig-alt="Headshot of Lars Schöbitz" fig-align="left" width="50%"}
+
+-   Environmental Engineer {{< fa hammer >}}
+-   Retired researcher {{< fa bed >}}
+-   [RStudio certified instructor](https://education.rstudio.com/trainers/)
+-   [Data steward at ETHZ](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
+
+## Your turn {.smaller}
+
+::: task
+Think about the last time you published a written document:
+
+-   Which tasks gave you joy?
+-   Which tasks were challenging or frustrating?
+
+::: hand
+Take some written notes.
+:::
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 2)
+```
+
+## What this day is, and is not
+
+::: incremental
+-   Today [is]{.highlight-yellow} the Git and GitHub foundation for collaboration: create, clone, commit, push, branch, pull request, review, merge.
+-   Today is [not]{.highlight-yellow} an AI workshop. Working with AI coding agents builds on exactly these skills; that is the follow-up workshop.
+-   It is [safe to fail]{.highlight-yellow} here. Everything we do today is reversible, and breaking things is part of the plan.
+:::
+
+::: {.notes}
+Defuse the AI-agent expectation gap now, in minute 5, not in minute 90. Say the safe-to-fail promise out loud; it comes back in B3 with the revert demo.
+:::
+
+
+## {{< fa toolbox >}} {.center-align auto-animate="true"}
+
+::: {style="margin-top: 50px; font-size: 1.3em"}
+-   **Git** and **GitHub** -> what we learn today
+-   **Quarto** and **R** -> you will see them, not learn them
+-   **RStudio IDE** -> our interface, could also be VS Code, Positron IDE, GitHub Desktop, and others
+:::
+
+## Meeting you where you are
+
+```{r}
+#| label: setup-survey
+#| echo: false
+
+# Committed sample so the template renders offline. For a real cohort,
+# point this at your own survey export (e.g. data/private/participants-raw.csv,
+# gitignored) with the same columns: experience_git,
+# experience_programming_general, experience_programming_r, primary_data_format.
+survey <- read_csv(here::here("data/participants-sample.csv"),
+                   show_col_types = FALSE)
+n_survey <- nrow(survey)
+
+exp_levels_prog <- c(
+  "I have none."                                                              = "None",
+  "I have written a few lines now and again."                                 = "A few lines",
+  "I have written programs for my own use that are a couple of pages long."   = "Own programs",
+  "I have written and maintained larger pieces of software."                  = "Larger software"
+)
+
+exp_levels_git <- c(
+  "I have never used Git."                                                                      = "Never",
+  "I have used Git occasionally for basic tasks (e.g., cloning a repository, making commits)."  = "Occasionally",
+  "I have used Git regularly for my own projects, including branching and resolving conflicts." = "Regularly",
+  "I have used Git extensively for collaborative development, including advanced workflows (e.g., pull requests, rebasing, resolving complex merge conflicts)." = "Extensively"
+)
+
+# count one experience column, keeping an in-domain novice->expert rank (1..4)
+count_domain <- function(col, levels, domain) {
+  tibble(raw = survey[[col]]) |>
+    mutate(
+      label  = factor(recode(raw, !!!levels), levels = unname(levels)),
+      rank   = as.integer(label),
+      domain = domain
+    ) |>
+    count(domain, rank, .drop = FALSE)
+}
+
+exp_counts <- bind_rows(
+  count_domain("experience_git",                 exp_levels_git,  "Git experience"),
+  count_domain("experience_programming_general", exp_levels_prog, "Programming experience"),
+  count_domain("experience_programming_r",       exp_levels_prog, "R experience")
+) |>
+  filter(!is.na(rank)) |>
+  mutate(domain = factor(domain,
+    levels = c("Git experience", "Programming experience", "R experience")))
+```
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 5
+
+ggplot(exp_counts, aes(x = domain, y = n, fill = factor(rank), group = rank)) +
+  geom_col(position = position_stack(reverse = TRUE), width = 0.7) +
+  geom_text(aes(label = ifelse(n > 0, n, "")),
+            position = position_stack(vjust = 0.5, reverse = TRUE),
+            size = 5.5, colour = "white", fontface = "bold") +
+  facet_wrap(~ domain, ncol = 1, scales = "free_y", strip.position = "left") +
+  scale_fill_viridis_d(name = NULL, option = "cividis",
+                       labels = c("none / never", "a little", "regular", "advanced")) +
+  coord_flip() +
+  labs(title = paste0("How much experience do you bring?  (n = ", n_survey, ")"),
+       x = NULL, y = NULL) +
+  theme_minimal(base_size = 17) +
+  theme(
+    plot.title        = element_text(face = "bold", size = 17, hjust = 0),
+    axis.text.y       = element_blank(),
+    axis.ticks.y      = element_blank(),
+    axis.text.x       = element_blank(),
+    strip.placement   = "outside",
+    strip.text.y.left = element_text(angle = 0, hjust = 1, face = "bold", size = 15),
+    legend.position   = "bottom",
+    legend.text       = element_text(size = 13),
+    panel.grid        = element_blank(),
+    plot.background   = element_rect(fill = NA, colour = NA),
+    panel.background  = element_rect(fill = NA, colour = NA)
+  )
+```
+
+## How you store your data today
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 4.2
+
+fmt_levels <- c(
+  "In a spreadsheet-based format (e.g MS Excel xlsx or Google Sheets)" = "Spreadsheets (Excel, Sheets)",
+  "In machine readible files (e.g. CSV, JSON)"                          = "Machine-readable (CSV, JSON)",
+  "Mixed: spreadsheet, machine readible, relational db"                 = "Mixed",
+  "dta"                                                                 = "Other (Stata .dta)"
+)
+
+fmt <- tibble(raw = survey$primary_data_format) |>
+  mutate(label = factor(recode(raw, !!!fmt_levels), levels = unname(fmt_levels))) |>
+  count(label, .drop = FALSE) |>
+  mutate(is_csv = label == "Machine-readable (CSV, JSON)")
+
+ggplot(fmt, aes(x = fct_rev(label), y = n, fill = is_csv)) +
+  geom_col(width = 0.68) +
+  geom_text(aes(label = n), hjust = -0.4, size = 5.5, fontface = "bold", colour = "#1e1e1e") +
+  scale_fill_manual(values = c("TRUE" = "#0F4C81", "FALSE" = "#b9b3a9"), guide = "none") +
+  coord_flip(clip = "off") +
+  expand_limits(y = max(fmt$n) + 1) +
+  labs(title = paste0("How do you store your data today?  (n = ", n_survey, ")"),
+       x = NULL, y = NULL) +
+  theme_minimal(base_size = 17) +
+  theme(
+    plot.title       = element_text(face = "bold", size = 17, hjust = 0),
+    axis.text.x      = element_blank(),
+    axis.text.y      = element_text(size = 14),
+    panel.grid       = element_blank(),
+    plot.background  = element_rect(fill = NA, colour = NA),
+    panel.background = element_rect(fill = NA, colour = NA),
+    plot.margin      = margin(6, 30, 6, 6)
+  )
+```
+
+::: {.notes}
+Most of you already store data in machine-readable formats, which is exactly what Git and Quarto reward. The spreadsheet users are Arti's group; the day nudges toward CSV without making a fuss about it.
+:::
+
+## What you want to learn {.smaller}
+
+From your pre-course survey (n = 18), three groups:
+
+::: incremental
+-   [Covered directly today (10)]{.highlight-yellow}: use Git without fear, the full commit cycle, branching, documenting a reproducible workflow, and collaborating and reviewing through pull requests.
+-   [Partially covered (1)]{.highlight-yellow}: rebasing and staging in a systematic way. We build the foundation; the advanced moves are a natural next step.
+-   [The follow-up workshop (7)]{.highlight-yellow}: Git together with AI coding agents. Today is the Git foundation that makes it possible.
+:::
+
+::: {.notes}
+Counts are editorial (n = 18); refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Around seven of you asked for agentic-coding topics; name that and tie it back to the "not an AI workshop today" framing from the opening. One off-topic answer (analysing data) folds into the R-you-will-see-not-learn framing.
+:::
+
+## Meet Arti {.smaller}
+
+:::: columns
+
+::: {.column width="60%"}
+Three personas describe this room (Arti, Bianca, Cem). My [focus learner is Arti]{.highlight-yellow}.
+
+-   **Background**: post-doc, in a group of mixed Git fluency.
+-   **Knows**: some R; lives in Word, Docs, and email; versions files by hand. Tried Git once, an error stopped them cold.
+-   **Wants**: to collaborate without fear.
+-   **Needs**: a safe-to-fail room.
+:::
+
+::: {.column width="40%"}
+<!-- Image spec for Arti: wears a hat with a rainbow on it and a shirt
+     with a train on it. images/arti-persona.png generated via the Hugging
+     Face MCP (FLUX.1 schnell). Regenerate there to update. -->
+![](images/arti-persona.png){fig-align="center" fig-alt="Illustration of Arti, the focus learner persona."}
+:::
+
+::::
+
+::: {.notes}
+Learner personas in the Greg Wilson / Teaching Tech Together sense, synthesised from this cohort's survey (see learner-persona.md). Say the focus-learner idea out loud: I teach to Arti, which also serves Bianca (early finisher, curious about the command behind each click) and Cem (wants AI provenance; today is the foundation, agentic coding is the follow-up).
+:::
+
+## Course structure
+
+-   [My turn]{.highlight-yellow}: Lecture segments + live coding
+-   [Your turn]{.highlight-yellow}: Individual or 2-people team exercises (in break-out rooms on Zoom)
+
+## Course icons
+
+Two icons tell you [where]{.highlight-yellow} a step happens:
+
+-   {{< fa laptop-code >}} &nbsp; in the **RStudio IDE**, on your own machine
+-   {{< fa brands github >}} &nbsp; on **GitHub**, in the browser
+
+Watch for these on every "Your turn" slide.
+
+## Learning objectives
+
+By the end of this workshop, you will be able to:
+
+::: incremental 
+1.  **Commit cycle**: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.
+
+2.  **Collaboration**: create a branch and open a pull request, review a colleague's pull request, and merge it after review.
+
+3.  **Concept map**: draw how Git and GitHub fit together.
+:::
+
+::: {.notes}
+Bloom check: objective 1 is Apply (create, clone, run, revert are observable procedures you can check in the room); objective 2 is Apply plus Evaluate (reviewing a pull request is a judgement); objective 3 is Understand/Create (drawing the concept map externalises the mental model, and it is the measurement bookend for the day). Publish was removed as a core objective; publishing and a one-page personal website are offered as a follow-up on the website repository (profile links and bio), not dropped silently.
+:::
+
+
+## Schedule {.smaller .scrollable}
+
+```{r}
+#| tbl-colwidths: [25,75]
+#| echo: false
+
+read_csv(here::here("data/course-schedule.csv"),
+         show_col_types = FALSE) |>
+  filter(day == 1) |>
+  select(Time = time, Module = title) |>
+  kable()
+
+```
+
+# Concept maps
+
+## Concept maps {.smaller}
+
+A concept map is [things]{.highlight-yellow} (nodes) joined by [labelled arrows]{.highlight-yellow}, where every label is a verb.
+
+![](images/concept-map-exemplar.png){width="70%" fig-alt="A concept map about making tea. Five oval nodes labelled kettle, water, tea leaves, cup, and tea are joined by arrows labelled with capitalised verbs: HEATS, STEEPS, BECOME, MAKES, and HOLDS."}
+
+::: {.notes}
+Per Greg Wilson, Teaching Tech Together: concepts as nodes, labelled relationships as edges. Not a flowchart, not a timeline, not a list; no start, no end.
+
+One sentence on why: experts use concept maps to make their mental models visible. Yours today will show how you currently think documents travel, and this evening the second map will show what changed.
+
+8-10 minutes for this intro including the exemplar walk-through.
+:::
+
+## Your turn: your baseline map {.smaller}
+
+:::: task
+[How does a document you write reach your co-author and come back? Draw it as a concept map.]{.highlight-yellow}
+
+-   Things as nodes, arrows with verb labels.
+-   There is no wrong map; this one is yours.
+-   Keep the map. You will need it again at the end of the day.
+
+::: hand
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when your map is done.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 8)
+```
+
+::: {.notes}
+One single prompt, not a fused double question. Expected content: email attachments, Dropbox, Google Docs, file naming (final_v2, final_final). That is the point; the day connects Git to these habits. Do not correct anything here.
+
+Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
+:::
+
+# Part 2: Create and clone {background-color="{{< var brand.section-bg >}}"}
+
+## Create and clone: Arti's project {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+### Arti (before)
+
+-   [starts a new folder on her laptop]{.fragment fragment-index="1"}
+-   [adds data as `.xlsx`]{.fragment fragment-index="2"}
+-   [adds a `.docx` report]{.fragment fragment-index="3"}
+-   [adds an R script]{.fragment fragment-index="4"}
+:::
+
+::: {.column width="50%"}
+### Arti (after)
+
+-   [[creates a repository on GitHub]{.highlight-yellow}]{.fragment fragment-index="1"}
+-   [[clones it]{.highlight-yellow} and opens an RStudio project]{.fragment fragment-index="2"}
+-   [adds data as `.csv`]{.fragment fragment-index="3"}
+-   [adds a Quarto document and an R script]{.fragment fragment-index="4"}
+:::
+
+::::
+
+::: {.notes}
+Same project, two ways. Read the columns as pairs: each line on the left has a Git/GitHub answer on the right. This is the whole block in one slide; the highlighted lines are what we do together next.
+:::
+
+## My turn {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+Note down any questions as they come up. We pick them up right after.
+:::
+:::
+
+::::
+
+::: {.notes}
+Demo script:
+
+- Create the repo on GitHub with a README so the clone is never empty.
+- RStudio settings: Tools > Global Options > General: Save workspace to .RData on exit: Never. Tools > Global Options > Code: check use native pipe operator.
+- Clone into the pre-work folder structure (~/Documents/gitrepos/gh-org-COURSECODE is the example from the setup test; for their own repos, gh-USERNAME).
+- The .Rproj and .gitignore explanation lives here, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees the files but nobody has told it what to do with them yet. This answers the recorded learner question "why do .Rproj session files show up?". Mention that hidden files (starting with a dot) are hidden by the operating system.
+:::
+
+## Your turn {.smaller}
+
+:::: task
+{{< fa brands github >}} &nbsp; On **github.com**
+
+1.  Create a repository called `website`, public, [with a README]{.highlight-yellow} (so the clone is never empty).
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+2.  Set two options once (Tools \> Global Options): General \> never save `.RData` on exit; Code \> use the native pipe `|>`.
+
+3.  Clone: File \> New Project \> Version Control \> Git, paste the HTTPS URL, create the project inside your `gitrepos/gh-USERNAME` folder.
+
+4.  Find `.gitignore` and `website.Rproj` in the Git tab with their yellow ? icons.
+
+::: hand
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when you see the two yellow ? icons.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 10)
+```
+
+::: {.notes}
+Screenshots of the Code button, the New Project dialog, and the Git tab go here once available. `.Rproj` holds RStudio project settings; `.gitignore` lists what Git should not track; the yellow ? icons mean Git sees the files but has no instruction for them yet. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
+:::
+
+## {.unlisted}
+
+::: {.hand-purple style="text-align: center;"}
+{{< fa note-sticky >}} &nbsp; Everyone with the two yellow ? icons? Take your sticky note back down.
+
+We move on together.
+:::
+
+## Local and remote
+
+::: {.r-stack}
+![](images/drawing-1-local-remote-00.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A local repository on your laptop."}
+
+![](images/drawing-1-local-remote-01.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A local repository and a remote repository on GitHub, side by side."}
+
+![](images/drawing-1-local-remote-02.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A clone arrow copying the remote repository down to the local one."}
+
+![](images/drawing-1-local-remote-03.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="Local and remote repositories connected by clone, push, and pull."}
+:::
+
+::: {.notes}
+The summary of what we just did. Advance one element per press: the remote on GitHub (a cloud), then your local repository, then clone down, then push up and pull down.
+:::
+
+## {.unlisted}
+
+::: {.hand-purple style="text-align: center;"}
+Anything from [creating and cloning]{.highlight-yellow} you'd like clarified before the break?
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 2)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow}
+
+![](images/pixel-art-tree.png){width="50%" fig-alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky."}
+
+```{r}
+#| echo: false
+countdown(minutes = 15)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+# Part 3: The commit cycle {background-color="{{< var brand.section-bg >}}"}
+
+## A button is a command {.smaller}
+
+-   RStudio is a [GUI]{.highlight-yellow}, a graphical user interface.
+-   When you click **Pull** in the Git tab, RStudio runs `git pull` for you.
+-   Every button we use today [is]{.highlight-yellow} a Git command underneath. Clicking it is not a lesser path.
+
+::: {.notes}
+This is the slide for Arti: the point-and-click interface is not cheating. The push button runs git push. Say it plainly and come back to it whenever someone worries they are "not really doing Git".
+:::
+
+## The commit cycle: Arti's commit {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+### Arti (before)
+
+-   [opens a `.docx`]{.fragment fragment-index="1"}
+-   [edits the text, it autosaves]{.fragment fragment-index="2"}
+-   [automated version history]{.fragment fragment-index="3"}
+-   [sends an email to say what changed and why]{.fragment fragment-index="4"}
+:::
+
+::: {.column width="50%"}
+### Arti (after)
+
+-   [opens a Quarto file]{.fragment fragment-index="1"}
+-   [edits the text, it autosaves]{.fragment fragment-index="2"}
+-   [after meaningful changes: [pull, stage, commit, push]{.highlight-yellow}]{.fragment fragment-index="3"}
+-   [the commit message says what changed [and why]{.highlight-yellow}]{.fragment fragment-index="4"}
+:::
+
+::::
+
+## My turn {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+Note down any questions as they come up. We pick them up right after.
+:::
+:::
+
+::::
+
+::: {.notes}
+Demo script:
+
+- Edit README, save, point out the blue M next to the file in the Git tab.
+- Sync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: "describe the repo content"), Push. Then open the repo on GitHub and show the commit message and the file change there.
+- Revert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded learner question "how do I take a commit back?".
+- Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.
+:::
+
+## Your turn {.smaller}
+
+:::: task
+The cycle, always in this order: [Pull, Stage, Commit, Push]{.highlight-yellow} (PSCP).
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+1.  Edit your `README.md`: describe your website in one sentence. Save, and spot the blue M in the Git tab.
+2.  Run the full cycle: [P]{.highlight-yellow}ull, [S]{.highlight-yellow}tage, [C]{.highlight-yellow}ommit (a message that says what changed), [P]{.highlight-yellow}ush.
+
+{{< fa brands github >}} &nbsp; On **github.com**
+
+3.  Open your repository and find your commit message and your change.
+
+::: hand
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when you can see your commit on GitHub.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 10)
+```
+
+::: {.notes}
+Goal: every learner has at least 2 commits pushed to their own repo by the break. The revert stays instructor-only in this block; learners do not revert here. PSCP is the mantra; say it every time. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
+:::
+
+## Our turn {.smaller}
+
+:::: task
+Now the same cycle, but starting on GitHub. In your `website` repository:
+
+{{< fa brands github >}} &nbsp; On **github.com**
+
+1.  Edit `README.md` and commit the change (the pencil icon, then "Commit changes").
+
+2.  Add a file inside a new folder (Add file \> Create new file, type `data/notes.md`).
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+3.  [Pull]{.highlight-yellow} to bring both commits down to your laptop.
+
+::: hand
+{{< fa note-sticky >}} &nbsp; Place the yellow sticky note on your laptop when the two new commits show up in RStudio.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 5)
+```
+
+::: {.notes}
+This closes the loop: a commit can start on GitHub, not just in RStudio, and Pull is how it reaches the laptop. It sets up why Pull leads the PSCP mantra.
+:::
+
+## The commit cycle
+
+::: {.r-stack}
+![](images/drawing-2-commit-cycle-00.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="Working files in your project."}
+
+![](images/drawing-2-commit-cycle-01.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="Working files moved to the staging area."}
+
+![](images/drawing-2-commit-cycle-02.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A commit as a labelled snapshot on the history line."}
+
+![](images/drawing-2-commit-cycle-03.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A second commit growing the history line."}
+
+![](images/drawing-2-commit-cycle-04.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The commits pushed from the local history line to the remote."}
+:::
+
+::: {.notes}
+The summary of what we just did. Advance one element per press: working files, stage, commit as a labelled snapshot, the history line growing, then push.
+:::
+
+## {.unlisted}
+
+::: {.hand-purple style="text-align: center;"}
+Anything from the [commit cycle]{.highlight-yellow} you'd like clarified before we move on?
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 2)
+```
+
+# Part 4: Team work {background-color="{{< var brand.section-bg >}}"}
+
+## Team work {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+### Arti (before)
+
+-   [opens SharePoint]{.fragment fragment-index="1"}
+-   [finds Cem's docx file]{.fragment fragment-index="2"}
+-   [edits it in track changes]{.fragment fragment-index="3"}
+-   [autosaves]{.fragment fragment-index="4"}
+-   [emails Cem to say it is done]{.fragment fragment-index="5"}
+:::
+
+::: {.column width="50%"}
+### Arti (after)
+
+-   [opens the project in RStudio]{.fragment fragment-index="1"}
+-   [finds Cem's Quarto file]{.fragment fragment-index="2"}
+-   [edits]{.fragment fragment-index="3"}
+-   [runs the [PSCP mantra]{.highlight-yellow}]{.fragment fragment-index="4"}
+-   [comments / closes open issue to say it's done]{.fragment fragment-index="5"}
+:::
+
+::::
+
+::: {.notes}
+This slide sets up the cliffhanger. Arti does everything right and still cannot push to a teammate's repository. That is the safe-to-fail moment: nothing is broken, and the afternoon answers why.
+:::
+
+## Find your partner {.smaller}
+
+::: task
+-   You are in a pair with the partner you were told about before today.
+-   Write [each other's GitHub username]{.highlight-yellow} on your sticky notes.
+-   Keep that sticky note. Your partner returns after lunch.
+:::
+
+::: {.notes}
+The sticky notes with usernames are the pairing record and carry into the pull-request block as reviewer assignments. If someone has no partner, they pair with the helper or the instructor.
+:::
+
+## Your turn {.smaller}
+
+:::: task
+{{< fa brands github >}} &nbsp; On **github.com**
+
+1.  Browse to `github.com/USERNAME`, where USERNAME is [your partner's]{.highlight-yellow} username.
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+2.  Clone their `website` repository (Code button, HTTPS URL, File \> New Project \> Version Control \> Git) into a new folder `gitrepos/gh-USERNAME` that reflects [your partner's]{.highlight-yellow} username.
+
+3.  Edit the README: add "This repo contains a personal website for USERNAME."
+
+4.  Run the mantra: [Pull, Stage, Commit, Push]{.highlight-yellow}.
+
+[What happens?]{.highlight-yellow}
+
+::: hand
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when something unexpected happens.
+
+{{< fa comment >}} &nbsp; On Zoom: write "blocked" in the chat.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 10)
+```
+
+::: {.notes}
+Everyone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody's work is harmed, nothing to clean up. Screenshot of the 403 error goes here once available. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
+:::
+
+## What just happened? {.smaller}
+
+-   Your push [failed]{.highlight-yellow}: you can read their repository, but you have no write access.
+-   Giving everyone write access ("collaborator") exists, but it does not scale, and it means anyone can change anything at any time.
+-   So how do teams actually propose and review changes? [That is exactly what we solve after lunch: branches and pull requests.]{.highlight-yellow}
+-   But before that, one last exercise to tie the morning together.
+
+::: {.notes}
+The cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now. The fork route (contributing to someone else's repo without write access) is the follow-up offer for building a personal website; mention it exists, do not teach it here.
+:::
+
+## Exercise: Match the Git command to the button {.smaller}
+
+::: task
+A one-page handout: draw a line from each Git command to the button that runs it in RStudio or on GitHub.
+
+-   [3 minutes]{.highlight-yellow} on your own.
+-   [5 minutes]{.highlight-yellow} comparing with your partner.
+-   The point: clicking a button runs the same command a terminal user types.
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 3)
+```
+
+::: {.notes}
+Timer is set to 3 minutes for the solo pass; restart it for 5 minutes when pairs start comparing.
+
+Handout from gitforsci-dev/exercises (command-gui-matching). Print one learner sheet per person; remote participants receive it by email. Review as a group with the answer key afterwards. This is the "a button is a command" idea from B3, made concrete.
+:::
+
+## Lunch
+
+::: {.hand-purple style="text-align: center;"}
+The afternoon starts hands-on, and your partner is waiting for you.
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 45)
+```
+
+::: {.notes}
+Return time is set on the day (timing to be finalised with a fresh schedule). The afternoon starts hands-on as the re-energizer; anyone who arrives late can join mid-exercise without missing slides.
+:::
+
+# Part 5: Work on a branch {background-color="{{< var brand.section-bg >}}"}
+
+## Work on a branch: Arti's branch {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+### Arti (before)
+
+-   [one shared file]{.fragment fragment-index="1"}
+-   [everyone edits the same copy]{.fragment fragment-index="2"}
+-   [edits clash: two people change the same line and one overwrites the other]{.fragment fragment-index="3"}
+:::
+
+::: {.column width="50%"}
+### Arti (after)
+
+-   [[creates a branch]{.highlight-yellow} for their work]{.fragment fragment-index="1"}
+-   [edits safely, away from `main`]{.fragment fragment-index="2"}
+-   [their changes wait until the team is ready to bring them in]{.fragment fragment-index="3"}
+:::
+
+::::
+
+## My turn {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+Note down any questions as they come up. We pick them up right after.
+:::
+:::
+
+::::
+
+::: {.notes}
+Demo script:
+
+- New repo, new move. Clone the team manuscript repo (same moves as this morning).
+- Git pane: New Branch, name it dev. Read the message about origin out loud.
+- Open manuscript.qmd, edit the author details, Render.
+- Switch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.
+- Commit "update author details", push.
+
+Packages are already installed from the pre-work setup test, so the render takes seconds. If a render fails on a missing package, the commented install chunk sits at the top of manuscript.qmd; do not run installs for the room, park that learner and pair them. The branch created here feeds the pull request in the next block, so keep momentum.
+:::
+
+## Your turn {.smaller}
+
+:::: task
+Your team shares one manuscript repository, `washinvestments-<team>` (for example `washinvestments-red`).
+
+{{< fa brands github >}} &nbsp; On **github.com**
+
+1.  Find and clone [your team's]{.highlight-yellow} `washinvestments-<team>` repository (org page, search your team name).
+
+{{< fa laptop-code >}} &nbsp; In **RStudio** (one person drives)
+
+2.  Git pane: New Branch, name it `dev`.
+3.  In `manuscript.qmd`: put in [your own]{.highlight-yellow} author details in one of the two author slots. Render.
+4.  Run the mantra: [Pull, Stage, Commit, Push]{.highlight-yellow} with the message "update author details".
+
+::: hand
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when your push has finished.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 10)
+```
+
+::: {.notes}
+Team repos are `washinvestments-<team>`, created from the reworked manuscript template (two author slots, no publishing). Team names are set on the day; use the placeholder until then. Screenshots of the New Branch, Render, and Git-tab buttons go here once available. One person drives so the branch and commit are shared; the partner reviews in the next block.
+:::
+
+## Branching
+
+::: {.r-stack}
+![](images/drawing-3-branching-00.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The main line with a couple of commits."}
+
+![](images/drawing-3-branching-01.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A dev branch splitting off from main."}
+
+![](images/drawing-3-branching-02.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="Commits landing on the dev branch."}
+
+![](images/drawing-3-branching-03.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The branch and main lines with the merge point left empty for now."}
+:::
+
+::: {.notes}
+The summary of what we just did. Advance one element per press: the main line, the dev branch splitting off, commits landing on the branch, and the merge point left empty until the pull request in the next block.
+:::
+
+# Part 6: Pull request, review, merge {background-color="{{< var brand.section-bg >}}"}
+
+## Review {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+### Arti (before)
+
+-   emails file / SharePoint 
+-   uses comment function
+-   poor record of who changed what, when
+:::
+
+::: {.column width="50%"}
+### Arti (after)
+
+-   opens a [pull request]{.highlight-yellow}
+-   her partner leaves [line comments]{.highlight-yellow}
+-   the change is [merged]{.highlight-yellow} after review, with a full record
+:::
+
+::::
+
+::: {.notes}
+Same review habit Arti already has (comments in tracked changes), now on GitHub with a record. This is the moment the day was built for.
+:::
+
+## My turn {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+Note down any questions as they come up. We pick them up right after.
+:::
+:::
+
+::::
+
+::: {.notes}
+Demo script:
+
+- On GitHub: switch to dev, click Compare & pull request. Title: "Add author details to manuscript".
+- Request a reviewer. Walk the tabs: Commits, Files changed.
+- As the reviewer: start a review, leave line comments, submit. Review comment examples to reuse verbatim: "That's not a good title for a manuscript. Please suggest 2 alternatives." and "This list is not complete."
+- Open an issue with a task list next to the PR. Merge, confirm, tick off the task.
+- Back in RStudio: switch to main, read the "behind origin/main, can be fast-forwarded" message out loud, Pull. Then the gotcha: switch back to dev. Name it as a habit: merged? Then pull main, and go back to your working branch.
+:::
+
+## Your turn {.smaller}
+
+You each take a role: [Author]{.highlight-yellow} owns the pull request; [Reviewer]{.highlight-yellow} reviews it.
+
+:::: columns
+
+::: {.column width="47.5%"}
+### Author (goes first)
+
+{{< fa brands github >}} &nbsp; On **github.com**
+
+1.  Open a pull request from your `dev` branch. Title it so your reviewer knows what changed.
+2.  Request a review [from your partner]{.highlight-yellow}.
+3.  Read the review. Then either [make the proposed changes]{.highlight-yellow} and push again, or [merge as is]{.highlight-yellow}. Confirm the merge.
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+4.  Switch to `main`, [Pull]{.highlight-yellow}, and [switch back to `dev`]{.highlight-yellow}.
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47.5%"}
+### Reviewer (goes second)
+
+{{< fa brands github >}} &nbsp; On **github.com**
+
+1.  Open your partner's pull request.
+2.  Start a review: leave at least [one line comment]{.highlight-yellow}.
+3.  Add an [overall comment]{.highlight-yellow}, then submit the review.
+:::
+
+::::
+
+::: hand
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop after the switch back to `dev`. Then swap roles.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 15)
+```
+
+::: {.notes}
+Two roles, then swap, so everyone both opens a PR and reviews one. Everyone has read access to their partner's repo, so no seed PR is needed. Screenshots go in the placeholder above once captured.
+
+Target: every learner opens a PR, writes at least one line comment, merges, and pulls. This block is protected: if the day is behind, cut elsewhere, never this. Bounded regroup: 2 minutes, then park-and-pair.
+:::
+
+## The pull request
+
+::: {.r-stack}
+![](images/drawing-4-pull-request-00.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The dev branch and main line with an open merge point."}
+
+![](images/drawing-4-pull-request-01.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A pull request opened at the join between the branch and main."}
+
+![](images/drawing-4-pull-request-02.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A human review pausing at the join before the lines meet."}
+
+![](images/drawing-4-pull-request-03.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The branch merged into main, the lines meeting."}
+:::
+
+::: {.notes}
+The summary of what we just did. Advance one element per press: the open merge point from the branching drawing, the pull request, the human review at the join, then the merge.
+:::
+
+# Part 7: Merge conflict {background-color="{{< var brand.section-bg >}}"}
+
+## When two edits meet: Arti's conflict {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+### Arti (before)
+
+-   two people edit the same line
+-   last save wins
+-   the other edit is silently lost
+:::
+
+::: {.column width="50%"}
+### Arti (after)
+
+-   Git spots the clash and [stops]{.highlight-yellow}
+-   it marks [both versions]{.highlight-yellow} in the file
+-   Arti [chooses]{.highlight-yellow}, nothing is lost
+:::
+
+::::
+
+::: {.notes}
+The reassuring frame: a merge conflict is not a failure, it is Git refusing to guess. Nothing is lost; the human decides. This is the payoff of the "safe to fail" promise from the morning.
+:::
+
+## My turn {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+A conflict is coming. Watch how Git asks me to choose.
+:::
+:::
+
+::::
+
+::: {.notes}
+Demo script (instructor only, no learner exercise in this block):
+
+- Set up the clash on purpose. On GitHub, edit one line of `manuscript.qmd` on `main` directly (for example the manuscript title) and commit.
+- In RStudio, on `dev`, edit the same line differently. Commit.
+- Pull. Git stops and reports a conflict in `manuscript.qmd`.
+- Open the file. Walk the conflict markers out loud: `<<<<<<< HEAD` is your version, `=======` is the divider, `>>>>>>>` is the incoming version.
+- Choose: delete the markers and keep the line you want (or combine both). Save.
+- Stage, Commit ("resolve conflict in title"), Push.
+- Say the safety message: Git never threw away either edit; it handed you both and waited. Almost everything in Git is reversible, and a conflict is Git protecting your work, not breaking it.
+
+Keep this instructor-only; a learner conflict exercise is a natural follow-up but risks eating the protected pull-request time.
+:::
+
+## Resolving a conflict {.smaller}
+
+When Git stops, it writes both versions into the file:
+
+```
+<<<<<<< HEAD
+Investments in WASH: a five-year review
+=======
+WASH investments: evidence from five years
+>>>>>>> main
+```
+
+-   [`<<<<<<< HEAD`]{.highlight-yellow}: your version
+-   [`=======`]{.highlight-yellow}: the divider
+-   [`>>>>>>> main`]{.highlight-yellow}: the incoming version
+
+Delete the markers, keep the text you want, then [Stage, Commit, Push]{.highlight-yellow}.
+
+::: {.notes}
+The reference slide learners can look back at. Keep it plain: a conflict is a normal part of collaboration, resolved by choosing.
+:::
+
+# Part 8: Concept map revisit and wrap-up {background-color="{{< var brand.section-bg >}}"}
+
+## Your turn: your map, revisited {.smaller}
+
+:::: task
+[Draw a concept map of Git and GitHub as you understand them now.]{.highlight-yellow}
+
+-   5 minutes: Use the words from today: repository, clone, commit, push, pull, branch, pull request, merge, review.
+-   5 minutes: Pin it on the wall [next to your morning map]{.highlight-yellow}, so both maps sit side by side.
+-   5 minutes: Walk to your team member's two maps and talk through what changed between morning and now.
+
+::: hand
+With your consent, I would like to photograph both maps (anonymously) to improve this workshop.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 15)
+```
+
+::: {.notes}
+This block is protected and runs even on the worst day.
+
+The comparison is the measurement instrument for the whole redesign. Consent is asked on the slide; photograph only the maps of learners who agree, no names on the photos. Send the written consent request by email ahead of the workshop, so the on-slide ask is a reminder, not the first time they hear it.
+
+Fallback if the morning baseline went badly: draw the Git concept map yourself on the board as the closing recap and have the room call out the verb for each arrow (see the handbook, concept maps as bookends).
+:::
+
+# Wrap-up
+
+## What you learned today
+
+Matched to the three objectives from this morning:
+
+::: incremental
+-   **Commit cycle**: you created and cloned a repository and ran the full pull, stage, commit, push cycle.
+-   **Collaboration**: you opened a pull request, reviewed a partner's, and merged after review.
+-   **Concept map**: you drew how Git and GitHub fit together, twice, and saw what changed.
+:::
+
+## Why this matters {.smaller}
+
+::: incremental
+-   Issues, commit messages, and pull-request reviews are [visible to other people]{.highlight-yellow}. They show how you work and communicate.
+-   That signal only grows as more content is AI-generated: a clear issue with a [good task description]{.highlight-yellow} guides your collaborators, and guides any AI agent you run on the repository.
+-   The issue tracker is a TODO list [attached to the work]{.highlight-yellow}. Tasks live on the repository, and once closed they stay there, next to the commits and messages that resolved them.
+:::
+
+## What you also learned today
+
+-   RStudio IDE, now with muscle memory
+-   Quarto: one document; reproducibility; many use cases
+-   Reversibility as a habit: commit early, revert when needed
+
+## What comes next {.smaller}
+
+::: incremental
+-   [GitHub Project and Task Management]{.highlight-yellow} is the next workshop (tentatively 26 August, 09:30–14:30). It builds on exactly what you did today: branches, pull requests, review.
+-   Want to keep practising? [Work with me on a small, free personal website]{.highlight-yellow} to rehearse branching, pull requests, and reviews on something that is yours.
+-   Interested in either? Email me and you will hear from me when dates are set.
+-   Start your first own project with Git and GitHub this week (already have a project? [Read here](https://happygitwithr.com/existing-github-first#existing-github-first)).
+-   Keep learning by doing: open pull requests to yourself, review your own diffs.
+:::
+
+::: {.notes}
+The next workshop date (26 August) is tentative; confirm before the slide goes live. The AI-agent workshop framing from the opening still holds as the longer horizon; this slide names the concrete, dated next steps.
+:::
+
+## Feedback, and thanks!
+
+-   Please fill in the post-course survey (link shared by email, 5 (max 10 minutes), anonymous).
+-   Share your open questions: Google Doc or Issue tracker; I will answer all of them next week
+
+::: {.notes}
+Survey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks.
+:::
+
+## Thanks!
+
+Slides created via revealjs and Quarto: <https://quarto.org/docs/presentations/revealjs/>
+
+Access slides as [PDF on GitHub]({{< var course.github-org >}}website/raw/main/workshop/slides.pdf)
+
+All material is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
+

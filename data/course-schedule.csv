@@ -1,0 +1,13 @@
+day,time,title
+1,09:30 - 10:00,Arrival
+1,10:00 - 10:30,"Part 1: Welcome, concept-map intro, baseline map"
+1,10:30 - 10:50,Part 2: Create & Clone
+1,10:50 - 11:00,Break
+1,11:00 - 11:30,Part 3: The commit cycle
+1,11:30 - 11:50,Part 4: Team work
+1,11:50 - 12:45,Lunch Break
+1,12:45 - 13:05,Part 5: Work on a branch
+1,13:05 - 13:45,"Part 6: Pull Request, Review, Merge"
+1,13:45 - 13:50,Movement Break
+1,13:50 - 14:00,Part 7: Merge conflict
+1,14:00 - 14:30,Part 8: Concept map revisit and wrap-up

@@ -1,0 +1,27 @@
+# Canonical citation, copied down from gitforsci/website (the single source
+# of truth). Do not edit here as the source; overwrite from the canonical
+# file when it changes.
+cff-version: 1.2.0
+message: "If you use these materials, please cite them as below."
+type: software
+title: "Git for Scientists"
+abstract: "Git for Scientists is an Open Educational Resource: an instructor handbook for a hands-on, four-hour workshop that teaches researchers the foundations of Git and GitHub for collaboration in scientific work. It documents the pedagogy, setup, and run of show so that an educator who was not in the room can teach the workshop from checklists rather than reverse-engineering someone else's setup."
+authors:
+  - family-names: "Schöbitz"
+    given-names: "Lars"
+    orcid: "https://orcid.org/0000-0003-2196-5015"
+    affiliation: "Global Health Engineering, ETH Zurich"
+version: "1.0.0"
+date-released: "2026-07-30"
+doi: "10.5281/zenodo.21703566"
+url: "https://gitforsci.github.io/website/"
+repository-code: "https://github.com/gitforsci/website/"
+license: "CC-BY-4.0"
+keywords:
+  - open-educational-resources
+  - git
+  - github
+  - science
+  - data-stewardship
+  - research-data-management
+  - workshop

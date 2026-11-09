@@ -1,0 +1,18 @@
+---
+title: "{{< var course.long-title >}}"
+bibliography: ../references.bib
+---
+
+## {{< fa display >}} Slides
+
+[View slides in full screen](slides.html) | [Download slides as PDF]({{< var course.github-org >}}website/raw/main/workshop/slides.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## {{< fa book >}} Readings
+
+1. Openscapes Champions Lesson Series. @julia_stewart_lowndes_2024_14428503: <https://openscapes.github.io/series/core-lessons/github/>
+
+2. Excuse Me, Do You Have a Moment to Talk About Version Control? <https://peerj.com/preprints/3159/>

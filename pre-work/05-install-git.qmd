@@ -1,0 +1,44 @@
+# {{< fa code-branch >}} Download and install Git
+
+::: {.callout-tip}
+
+If you run into problems with this task, contact me by email: [{{< var email >}}](mailto:{{< var email >}})
+
+:::
+
+## Windows  {#install-git-windows}
+
+Install [Git for Windows](https://git-for-windows.github.io/) after download from this direct download link: <https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe>
+
+Git for Windows is also known as `msysgit` or "Git Bash", to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.
+
+We like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g. RStudio, find it and use it. This also supports a transition to more expert use, because the "Git Bash" shell will be useful as you venture outside of R/RStudio.
+
+- **NOTE:** When asked about "Adjusting your PATH environment", make sure to select "Git from the command line and also from 3rd-party software". Otherwise, we believe it is good to accept the defaults.
+- Note that RStudio for Windows prefers for Git to be installed below `C:/Program Files` and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at `C:/Program Files/Git/bin/git.exe`. Unless you have specific reasons to otherwise, follow this convention.
+
+## macOS
+
+It's slightly more complicated. Contact me if you have questions.
+
+**Option 1** (*highly recommended*): Install the Xcode command line tools (**not all of Xcode**), which includes Git.
+
+- Open the Terminal application on Mac and type `xcode-select --install`. If you don't have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.
+
+**Option 2** (*recommended*): If you anticipate getting heavily into scientific computing, you're going to be installing and updating lots of software. You should check out [Homebrew](http://brew.sh), "the missing package manager for OS X". Among many other things, it can install Git for you. 
+
+
+- Open the Terminal application on Mac, copy and run the following line:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+This will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won't see anything appear on the screen as you type, but it is working.
+
+Once you have Homebrew installed, type and run this in the terminal.
+
+```bash
+brew install git
+```
+We will confirm in [Test your setup](06a-clone-repo.qmd) that you have Git installed and working.

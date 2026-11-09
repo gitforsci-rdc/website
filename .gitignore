@@ -1,0 +1,18 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+/.quarto/
+.DS_Store
+
+/docs/
+/_freeze/
+**/*.quarto_ipynb
+
+# Project docs (kept local, integrated into the book, not shipped in the template)
+/TEMPLATING.md
+/SETUP-CHECKLIST.md
+
+# Per-cohort private survey data; the template renders from data/participants-sample.csv
+/data/private/

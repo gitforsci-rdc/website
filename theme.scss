@@ -1,0 +1,55 @@
+/*-- scss:defaults --*/
+
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap';
+
+$font-family: "Atkinson Hyperlegible", sans-serif;
+$font-family-serif: "Atkinson Hyperlegible", sans-serif;
+$font-family-monospace: "Source Code Pro", monospace;
+
+// GHE colour identity, sourced from Global-Health-Engineering/website
+$ghe-blue: #0F4C81;
+$ghe-orange: #ED6D37;
+$ghe-gray: #5c5751;
+$ghe-light: #F5F5F5;
+
+$body-color: #1e1e1e;
+$body-bg: #f4f4f4;
+$link-color: $ghe-blue;
+
+$code-bg: $ghe-light;
+$code-color: $ghe-orange;
+
+/*-- scss:rules --*/
+
+// sidebar: logo sized and centered, title text hidden (the logo carries it)
+.sidebar-logo {
+  max-height: 6rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-title {
+  display: none;
+}
+
+h1, h2, h3 {
+  color: $ghe-blue;
+}
+
+// highlight classes
+.highlight-yellow {
+  background-color: #FAE3B4;
+  padding: 0.0em 0.1em;
+}
+
+.highlight-peach {
+  background-color: #FEBC94;
+  padding: 0.0em 0.1em;
+}
+
+.highlight-pink {
+  // derived as a light tint of the GHE orange
+  background-color: lighten(#ED6D37, 30%);
+  padding: 0.0em 0.1em;
+}

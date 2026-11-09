@@ -1,0 +1,57 @@
+---
+title: "{{< fa list-check >}} Test your setup (3 of 3): Install packages and report done"
+---
+
+This is the last of three short steps. Your setup repository is open in RStudio and Git is configured (from [Step 6b](06b-configure-git.qmd)). Here you install the workshop packages and open an issue so I can verify your setup.
+
+## Step 1: Install the workshop packages
+
+In the workshop, you will work on a small manuscript that uses the `washinvestments` R data package. Installing the packages now means the manuscript renders in under a minute on the day, and we can spend our time together on Git and GitHub instead of watching progress bars.
+
+1. In the Files tab (bottom-right pane), click on `03-workshop-packages.R` to open it in the editor. There is nothing to edit in this script.
+
+2. Click the **Source** button in the top-right corner of the script window. Installing takes a few minutes.
+
+3. Wait for the installation to finish. If the Console asks a question about updating packages, press Enter.
+
+4. Check the Console for the line `All workshop packages installed`.
+
+::: {.callout-important}
+# Error message instead?
+
+Copy the full error message and email it to me. Getting this resolved before the workshop keeps your afternoon free for the interesting parts.
+:::
+
+## Step 2: Open an issue on GitHub
+
+1. Open the landing page for the GitHub organization '{{< var course.code >}}': <{{< var course.github-org >}}> (try to use your bookmark)
+
+2. Navigate down the page to the section "Repositories" and use the search field to find the repository called `setup-USERNAME` where USERNAME is your GitHub username.
+
+3. Click on the repository name to open it.
+
+4. Click on the "Issues" tab.
+
+![](images/06c-verify/01-issues-tab.png){width=100%}
+
+5. Click on the green "New issue" button.
+
+![](images/06c-verify/02-new-issue.png){width=100%}
+
+6. In the "Add a title" field, write: "Completed setup tasks". You can add a short description too, for example a question you would like me to look at.
+
+![](images/06c-verify/03-issue-title.png){width=100%}
+
+7. On the right, click the gear next to "Assignees" and select the course instructor `{{< var github-handle >}}`.
+
+![](images/06c-verify/04-assignees-open.png){width=100%}
+
+8. Confirm that `{{< var github-handle >}}` now appears in the Assignees field, then click the green "Create" button. Assigning me the issue notifies me the same way a mention does; treat an assigned issue as a task you hand to me.
+
+![](images/06c-verify/05-assignee-create.png){width=100%}
+
+9. Your issue is created. It is now open and assigned to `{{< var github-handle >}}`.
+
+![](images/06c-verify/06-issue-created.png){width=100%}
+
+Congratulations! Your setup is complete and you have mastered the key steps of using Git and GitHub. Now onto some [important reading](07-big-picture.qmd) and I will see you in class.

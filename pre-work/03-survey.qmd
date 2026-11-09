@@ -1,0 +1,6 @@
+## {{< fa clipboard-list >}} Complete pre-course survey
+
+At this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.
+
+- Complete the survey by [**{{< var session.survey-deadline >}}**]{.highlight-yellow}: <{{< var resources.survey-url >}}>
+

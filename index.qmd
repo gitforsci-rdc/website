@@ -1,0 +1,87 @@
+---
+title: "Pre-course work: Git for Scientists"
+editor: source
+execute:
+  echo: false
+  warning: false
+editor_options:
+  chunk_output_type: console
+---
+
+Thank you for your interest in this course. Your course instructor [{{< var author >}}]({{< var author-url >}}) is looking forward to meet you.
+
+We will meet on {{< var session.datetime >}} ({{< var session.timezone-label >}}) at {{< var session.event-location >}}. Instructions to find us: <{{< var session.event-location-directions >}}>
+
+Registration for this workshop is closed. You can still share your interest in a future iteration through this form: <{{< var session.registration-interest-form >}}>
+
+## {{< fa circle-info >}} Background
+
+AI coding agents are rapidly entering scientific work, and using them with confidence starts with the same collaboration skills that make any research project reproducible and reviewable. This workshop gives you those foundations. You will learn to use Git and GitHub for collaboration in scientific work, so that later you can treat an AI agent as a collaborator whose every change is versioned, documented, and open to review. It is the first step in getting ready for AI-assisted scientific work.
+
+## {{< fa graduation-cap >}} Prior knowledge
+
+For this course, we assume that you have some prior knowledge of R and RStudio. You should be able to:
+
+- install and load R packages
+- read and run short R scripts
+- edit and run R Markdown / Quarto documents
+- navigate the RStudio IDE
+- identify the four panes of the RStudio IDE (Script, Environment, Files, Console)
+
+## {{< fa suitcase >}} What do I need to bring to the workshop?
+
+Please ensure you have the following available:
+
+-   a laptop, connected to wifi
+-   a web browser (preferably Chrome or Firefox)
+-   a pen and paper (we will be doing some drawings)
+-   a completed list of pre-work tasks with intermediate due dates
+
+[Prior to the workshop, there is some pre-work for you to do]{.highlight-yellow}. This pre-work will ensure that we can focus our time together on building collaboration skills instead of setting up infrastructure.
+
+## {{< fa circle-question >}} What do I need to prepare before the workshop?
+
+Prior to the workshop, complete the following seven steps:
+
+-   [Step 1](pre-work/01-install-r.html): Download and install R and RStudio
+-   [Step 2](pre-work/02-github-acc.html): Get an account for GitHub
+-   [Step 3](pre-work/03-survey.html): Complete the pre-course survey by [**{{< var session.survey-deadline >}}**]{.highlight-yellow}.
+-   [Step 4](pre-work/04-github-pat.html): Create a personal access token for GitHub
+-   [Step 5](pre-work/05-install-git.html): Install Git
+-   Step 6: Check your complete setup by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}, in three short parts (unlocked after the pre-course survey is completed):
+    -   [Step 6a](pre-work/06a-clone-repo.html): Clone the setup repository
+    -   [Step 6b](pre-work/06b-configure-git.html): Configure Git and push
+    -   [Step 6c](pre-work/06c-install-verify.html): Install packages and report done
+-   [Step 7](pre-work/07-big-picture.html): Read "Why Git? Why GitHub?" from "Happy Git and GitHub for the useR"!
+
+```{r}
+library(dplyr)
+library(knitr)
+library(readr)
+```
+
+## {{< fa calendar >}} Schedule
+
+```{r}
+#| tbl-colwidths: [25,75]
+
+read_csv(here::here("data/course-schedule.csv"), show_col_types = FALSE) |>
+  filter(day == 1) |>
+  select(Time = time, Module = title) |>
+  kable()
+
+```
+
+## {{< fa bullseye >}} Learning objectives
+
+By the end of this workshop, participants will be able to:
+
+1. **Commit cycle**: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.
+
+2. **Collaboration**: create a branch and open a pull request, review a colleague's pull request, and merge it after review.
+
+3. **Concept map**: draw how Git and GitHub fit together.
+
+## {{< fa sun >}} Thanks!
+
+Thank you for working through these steps. We are looking forward to meeting you at the workshop.

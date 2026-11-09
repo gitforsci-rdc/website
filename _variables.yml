@@ -1,0 +1,62 @@
+# Single source of truth for every iteration-specific value.
+# Body content reads these via {{< var key >}}. Values that Quarto's
+# shortcode cannot reach (_quarto.yml, code chunks, front matter) are
+# written in by setup-template.R, which reads this same file.
+# The defaults below are generic and valid, so the template renders
+# with zero edits. See TEMPLATING.md and the README.
+
+author: "Course Instructor"
+author-url: "https://example.org/"
+institute: "Your Institution"
+department: "Your Department"
+orcid: "0000-0000-0000-0000"
+github-handle: "OWNER"
+email: "instructor@example.org"
+
+course:
+  code: "gitforsci-00x"
+  short-title: "gitforsci-00x"
+  long-title: "Git for Scientists"
+  cohort-label: "Cohort YYYY"
+  start-date: "2026-01-01"
+  end-date: "2026-01-01"
+  timezone: "Europe/Zurich"
+  site: "https://OWNER.github.io/website/"
+  site-short: "OWNER.github.io/website"
+  github-org: "https://github.com/OWNER/"
+
+# Read by setup-template.R to patch _quarto.yml (site-url, repo-url,
+# sidebar GitHub href, Plausible analytics). {{< var >}} cannot reach it.
+github:
+  owner: "OWNER"
+  repo: "website"
+  site-url: "https://OWNER.github.io/website/"
+  repo-url: "https://github.com/OWNER/website"
+  # Leave plausible-domain empty ("") to disable analytics in the build.
+  plausible-domain: ""
+
+# Logistics shown on the landing page (index.qmd) via {{< var >}}.
+session:
+  event-location: "TBD"
+  event-location-directions: "https://example.org/how-to-find-us"
+  datetime: "DD Month YYYY - HH:MM to HH:MM"
+  timezone-label: "Europe/Zurich"
+  survey-deadline: "TBD"
+  setup-check-deadline: "TBD"
+  registration-closed: false
+  registration-interest-form: "https://example.org/interest"
+
+# External links and data sources. The schedule is a hand-editable CSV
+# committed in the repo (data/course-schedule.csv); edit it directly per
+# cohort. No external fetch or auth is needed.
+resources:
+  survey-url: "https://example.org/survey"
+  schedule-data: "data/course-schedule.csv"
+
+md-01:
+  title: "GitHub for Collaboration"
+
+# Brand colour mirrored from _brand.yml so slide section headers stay in
+# sync with the website palette. Update both if the brand changes.
+brand:
+  section-bg: "#5c5751"

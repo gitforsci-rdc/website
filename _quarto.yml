@@ -1,0 +1,95 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    # Render site content only; keep project docs (TEMPLATING.md,
+    # SETUP-CHECKLIST.md, workshop/lesson-plan.md) out of the rendered site.
+    - "*.qmd"
+    - "**/*.qmd"
+
+# NOTE: title, site-url, repo-url, the sidebar GitHub href, and the Plausible
+# analytics domain below are iteration-specific. They are written in by
+# setup-template.R from _variables.yml (Quarto's {{< var >}} cannot reach
+# _quarto.yml). The generic OWNER/website defaults render cleanly as-is.
+website:
+  page-navigation: true
+  title: "Git for Scientists"
+  description: "A hands-on foundation workshop on using Git and GitHub for
+      collaboration in scientific work. As research teams begin to work
+      alongside AI agents, a shared and confident command of Git and GitHub
+      becomes the basis for safe and effective collaboration. This course
+      teaches the core Git and GitHub workflows (clone, commit, push, pull,
+      branches, pull requests, and issues) that let a team collaborate
+      clearly."
+  site-url: "https://OWNER.github.io/website/"
+
+  repo-url: https://github.com/OWNER/website
+  repo-actions: [edit, issue]
+
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    background: "#F5F5F5"
+
+  sidebar:
+    background: "#F5F5F5"
+    logo: "images/ghe-square-logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/OWNER/website
+        text: "GitHub organization"
+    style: "docked"
+    search: false
+    collapse-level: 1
+    contents:
+      - text: "---"
+      - section: "Pre-course work"
+        href: index.qmd
+        contents:
+          - href: pre-work/01-install-r.qmd
+            text: "Step 1: Install R & RStudio"
+          - href: pre-work/02-github-acc.qmd
+            text: "Step 2: GitHub account"
+          - href: pre-work/03-survey.qmd
+            text: "Step 3: Pre-course survey"
+          - href: pre-work/04-github-pat.qmd
+            text: "Step 4: GitHub PAT"
+          - href: pre-work/05-install-git.qmd
+            text: "Step 5: Install Git"
+          - href: pre-work/06a-clone-repo.qmd
+            text: "Step 6a: Test setup - clone repository"
+          - href: pre-work/06b-configure-git.qmd
+            text: "Step 6b: Test setup - configure Git"
+          - href: pre-work/06c-install-verify.qmd
+            text: "Step 6c: Test setup - install & report"
+          - href: pre-work/07-big-picture.qmd
+            text: "Step 7: Why Git? Why GitHub?"
+      - section: "Workshop"
+        contents:
+          - href: workshop/index.qmd
+            text: "Git for Scientists"
+
+format:
+  html:
+    theme:
+      light: [litera, theme.scss]
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 250px
+    link-external-icon: true
+    link-external-newwindow: true
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    mainfont: "Atkinson Hyperlegible"
+    include-in-header:
+        # Privacy-friendly analytics by Plausible. setup-template.R fills the
+        # data-domain from _variables.yml github.plausible-domain, or removes
+        # this block entirely when that value is empty.
+        - text: |
+            <script defer data-domain="OWNER.github.io/website" src="https://plausible.io/js/script.js"></script>
+
+freeze: auto
+editor: source

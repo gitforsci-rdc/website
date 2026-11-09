@@ -1,0 +1,130 @@
+/*-- scss:defaults --*/
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+
+$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+$font-family-monospace: "Source Code Pro", monospace;
+$presentation-heading-color: #5c5751;
+$link-color: #0F4C81;
+$hover-color: lighten($link-color, 10%);
+$code-color: #ED6D37;
+$code-bg: #F5F5F5;
+$code-block-bg: #F5F5F5;
+$code-block-font-size: 0.8em;
+$presentation-h2-font-size: 1.4em !default;
+$presentation-font-size-root: 36px !default;
+
+
+// #714B8F, #9F74C6, #B88EDB, #F4D5B7, #F59E02, #ED7A00
+// #4C326A, #886295, #B098BC, #FEBC94, #FF8935, #FF6100
+// #5536A7, #C8CEF3, #EDCED8, #E94A25, #BD470A
+
+/*-- scss:rules --*/
+
+// section-divider slides carry a dark (#5c5751) background, the same colour as
+// the ## headings. Render the # section title (and its icons) in the light
+// paper colour so it stays readable against that background.
+.reveal .slide.has-dark-background h1,
+.reveal .slide.has-dark-background h1 i,
+.reveal section.has-dark-background h1,
+.reveal section.has-dark-background h1 i {
+  color: #f4f4f4;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.reveal .slide .task {
+  font-size: 0.80em;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  border-left: solid 5px #0F4C81;
+  background-color: #F5F5F5;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.smallest {
+  font-size: 0.5em;
+}
+
+.large {
+  font-size: 1.5em;
+}
+
+.medium {
+  font-size: 0.9em;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.reveal .hand {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.2em
+}
+
+.reveal .hand-purple {
+  font-family: 'Gochi Hand', cursive;
+  color: #0F4C81;
+  font-size: 1.2em
+}
+
+.reveal .hand-purple-large {
+  font-family: 'Gochi Hand', cursive;
+  color: #0F4C81;
+  font-size: 3em
+}
+
+.reveal a{
+  color: $link-color;
+  text-decoration: underline;
+
+  &:hover{
+    color: $hover-color;
+  }
+
+}
+
+.reveal .footer a{
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover{
+    color: $hover-color;
+  }
+
+}
+
+.highlight-yellow {
+  background-color: #FAE3B4;
+  padding: 0.0em 0.1em;
+}
+
+.highlight-peach {
+  background-color: #FEBC94;
+  padding: 0.0em 0.1em;
+}
+
+.highlight-pink {
+  background-color: lighten(#ED6D37, 30%);
+  padding: 0.0em 0.1em;
+}
+
+.reveal .slide .learn-more {
+  text-align: center;
+  font-family: $font-family-monospace;
+  padding-bottom: 10px;
+}

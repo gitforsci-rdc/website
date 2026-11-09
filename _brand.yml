@@ -1,0 +1,38 @@
+meta:
+  name: "Git for Scientists"
+  link: "https://OWNER.github.io/website/"
+
+# Palette sourced from the Global Health Engineering group's own website
+# (Global-Health-Engineering/website: theme.scss and slides/slides.scss),
+# not from the rstatszh course identity.
+color:
+  palette:
+    ghe-blue: "#0F4C81"
+    ghe-orange: "#ED6D37"
+    ghe-peach: "#FEBC94"
+    ghe-yellow: "#FAE3B4"
+    ghe-gray: "#5c5751"
+    ghe-light: "#F5F5F5"
+    ink: "#1e1e1e"
+    paper: "#f4f4f4"
+  foreground: ink
+  background: paper
+  primary: ghe-blue
+  secondary: ghe-gray
+  link: ghe-blue
+
+typography:
+  fonts:
+    - family: Atkinson Hyperlegible
+      source: google
+    - family: Source Code Pro
+      source: google
+  base: Atkinson Hyperlegible
+  headings:
+    family: Atkinson Hyperlegible
+    color: primary
+  monospace:
+    family: Source Code Pro
+
+logo:
+  small: images/ghe-square-logo.png
