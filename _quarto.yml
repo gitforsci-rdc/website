@@ -91,6 +91,10 @@ format:
     code-overflow: wrap
     toc: true
     mainfont: "Atkinson Hyperlegible"
+    include-in-header:
+      # Plausible analytics, no cookies
+      - text: |
+          <script defer data-domain="gitforsci-rdc.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 freeze: auto
 editor: source

@@ -31,8 +31,7 @@ github:
   repo: "website"
   site-url: "https://gitforsci-rdc.github.io/website/"
   repo-url: "https://github.com/gitforsci-rdc/website"
-  # Empty: no analytics on this iteration.
-  plausible-domain: ""
+  plausible-domain: "gitforsci-rdc.github.io/website"
 
 # Logistics shown on the landing page (index.qmd) via {{< var >}}.
 session:
