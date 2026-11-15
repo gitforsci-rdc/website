@@ -23,6 +23,7 @@ course:
   site: "https://gitforsci-rdc.github.io/website/"
   site-short: "gitforsci-rdc.github.io/website"
   github-org: "https://github.com/gitforsci-rdc/"
+  workshop-repo: "workshop"
 
 # Read by setup-template.R to patch _quarto.yml (site-url, repo-url,
 # sidebar GitHub href, Plausible analytics). {{< var >}} cannot reach it.
@@ -39,9 +40,9 @@ session:
   event-location-directions: "https://researchdatasupport.ch/srdsn-conference"
   datetime: "Friday, 20 November 2026, 09:30 to 11:30"
   timezone-label: "Europe/Zurich"
-  survey-deadline: "Friday, 13 November 2026"
+  survey-deadline: "Monday, 16 November 2026, 18:00"
   setup-check-deadline: "Wednesday, 18 November 2026"
-  steps-date: "Monday, 16 November 2026"
+  steps-date: "Tuesday, 17 November 2026"
   registration-closed: true
   registration-interest-form: "https://www.conftool.pro/rdc2026"
 

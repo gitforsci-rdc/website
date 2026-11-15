@@ -1,24 +1,123 @@
 [
   {
-    "objectID": "pre-work/02-github-acc.html",
-    "href": "pre-work/02-github-acc.html",
+    "objectID": "pre-work/05-setup-check.html",
+    "href": "pre-work/05-setup-check.html",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub account, enter the username in the pre-course survey if you have not done so yet, or send it to me by email: lschoebitz@ethz.ch. I then invite you to the GitHub organisation for the course.",
+    "text": "About 10 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. After you accept the invitation you find an issue with your name on it in the workshop repository. It lists these steps with a box to tick for each.",
     "crumbs": [
       "Pre-course work",
-      "Step 2: GitHub account"
+      "Step 5: Setup check"
     ]
   },
   {
-    "objectID": "pre-work/02-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
-    "href": "pre-work/02-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
+    "objectID": "pre-work/05-setup-check.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d636865636b203e7d7d-step-5-setup-check",
+    "href": "pre-work/05-setup-check.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d636865636b203e7d7d-step-5-setup-check",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub account, enter the username in the pre-course survey if you have not done so yet, or send it to me by email: lschoebitz@ethz.ch. I then invite you to the GitHub organisation for the course.",
+    "text": "About 10 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. After you accept the invitation you find an issue with your name on it in the workshop repository. It lists these steps with a box to tick for each.",
     "crumbs": [
       "Pre-course work",
-      "Step 2: GitHub account"
+      "Step 5: Setup check"
+    ]
+  },
+  {
+    "objectID": "pre-work/05-setup-check.html#before-you-start-one-folder-for-all-repositories",
+    "href": "pre-work/05-setup-check.html#before-you-start-one-folder-for-all-repositories",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "Before you start: one folder for all repositories",
+    "text": "Before you start: one folder for all repositories\nCreate a folder named gitrepos in your Documents folder. Do not put it into a folder that syncs with iCloud, OneDrive or Dropbox. Git and the sync get in each other’s way, and changes are lost.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 5: Setup check"
+    ]
+  },
+  {
+    "objectID": "pre-work/05-setup-check.html#steps",
+    "href": "pre-work/05-setup-check.html#steps",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "Steps",
+    "text": "Steps\n\nAccept the invitation. After you have given your GitHub username in the survey, GitHub sends you an email with the button Join @b58fc729-690b-4000-b19f-365a4093b2ff;7B7B3C2076617220636F757273652E636F6465203E7D7D;. Or open https://github.com/orgs/gitforsci-rdc/invitation while signed in.\nOpen GitHub Desktop. Choose the menu File, Clone Repository…, then the tab URL.\nType gitforsci-rdc/../workshop into the first field.\nLook at Local Path before you click anything else. Click Choose…, go to Documents, select gitrepos and confirm. The path must end in gitrepos/../workshop.\nClick Clone. GitHub Desktop shows Current Repository: ../workshop at the top left.\nOpen your issue at https://github.com/gitforsci-rdc/../workshop/issues/assigned/@me, tick the boxes and write the comment setup complete.\n\nYou are done when your comment stands in your issue.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 5: Setup check"
+    ]
+  },
+  {
+    "objectID": "pre-work/05-setup-check.html#stuck",
+    "href": "pre-work/05-setup-check.html#stuck",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "Stuck?",
+    "text": "Stuck?\n\nNo invitation. I can only invite you once I have your username. Complete the survey and look again an hour later.\nGitHub Desktop says the repository was not found. The invitation is not accepted yet, or GitHub Desktop is signed in with a different account. Check Settings or Options, tab Accounts.\nThe path ends in a folder named Untitled (macOS). Click Choose… again and select gitrepos without typing a name.\nAnything else: write what you see as a comment in your issue, with a screenshot.\n\nIf the setup is not finished by Friday, come anyway. You follow every step on the screen, you can do the same steps in the browser, and the educator part of the workshop needs no setup.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 5: Setup check"
+    ]
+  },
+  {
+    "objectID": "pre-work/03-github-desktop.html",
+    "href": "pre-work/03-github-desktop.html",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "About 10 minutes. Due by Wednesday, 18 November 2026.\nGitHub Desktop is a program with buttons for the things Git does in a terminal. Git is included, so this is the only program you install. The workshop demo runs in GitHub Desktop because it works for files of any kind and needs no access token.\n\n\n\n\n\n\nNoteYou already use Git with another tool\n\n\n\nBring the tool you know (command line, VS Code, RStudio). The steps of the workshop are the same in every tool. GitHub Desktop has no official version for Linux, so on Linux this is the route.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 3: Install GitHub Desktop"
+    ]
+  },
+  {
+    "objectID": "pre-work/03-github-desktop.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206465736b746f70203e7d7d-step-3-install-github-desktop-and-sign-in",
+    "href": "pre-work/03-github-desktop.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206465736b746f70203e7d7d-step-3-install-github-desktop-and-sign-in",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "About 10 minutes. Due by Wednesday, 18 November 2026.\nGitHub Desktop is a program with buttons for the things Git does in a terminal. Git is included, so this is the only program you install. The workshop demo runs in GitHub Desktop because it works for files of any kind and needs no access token.\n\n\n\n\n\n\nNoteYou already use Git with another tool\n\n\n\nBring the tool you know (command line, VS Code, RStudio). The steps of the workshop are the same in every tool. GitHub Desktop has no official version for Linux, so on Linux this is the route.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 3: Install GitHub Desktop"
+    ]
+  },
+  {
+    "objectID": "pre-work/03-github-desktop.html#steps",
+    "href": "pre-work/03-github-desktop.html#steps",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "Steps",
+    "text": "Steps\n\nmacOSWindows\n\n\n\nOpen https://desktop.github.com/ and click Download for macOS.\nOpen the downloaded ZIP file in your Downloads folder. Drag the program GitHub Desktop onto the Applications folder in the sidebar of the Finder.\nStart GitHub Desktop. If macOS asks whether you want to open a program from the internet, click Open.\nClick Sign in to GitHub.com. Your browser opens. Sign in with your GitHub account and click Authorize desktop. Allow the browser to open GitHub Desktop.\nBack in GitHub Desktop you see Configure Git. Your name and email address go into every commit you make on the laptop. Under Email, choose the address that ends in @users.noreply.github.com if you do not want to show one. GitHub still links your commits to your account. Click Finish.\n\nYou are done when the menu GitHub Desktop, Settings, tab Accounts shows your GitHub username.\n\n\nGitHub Desktop installs into your user folder and as a rule needs no administrator rights. If your laptop is managed and blocks the installation, ask your IT for “GitHub Desktop” and write to me so that I know.\n\nOpen https://desktop.github.com/ and click Download for Windows (64bit).\nStart the downloaded file GitHubDesktopSetup-x64.exe. The installation runs without questions and opens the program at the end.\nClick Sign in to GitHub.com. Your browser opens. Sign in with your GitHub account and click Authorize desktop. Allow the browser to open GitHub Desktop.\nBack in GitHub Desktop you see Configure Git. Your name and email address go into every commit you make on the laptop. Under Email, choose the address that ends in @users.noreply.github.com if you do not want to show one. GitHub still links your commits to your account. Click Finish.\n\nYou are done when the menu File, Options, tab Accounts shows your GitHub username.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 3: Install GitHub Desktop"
+    ]
+  },
+  {
+    "objectID": "pre-work/03-github-desktop.html#stuck",
+    "href": "pre-work/03-github-desktop.html#stuck",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "Stuck?",
+    "text": "Stuck?\n\nThe browser does not return to the program. Close GitHub Desktop, start it again and repeat the sign-in.\nYou chose the wrong address under Configure Git. Open Settings (macOS) or Options (Windows), tab Git, and change it there.\nWindows warns about an unknown app. Click More info, then Run anyway. The file comes from GitHub.\nAnything else: write to lschoebitz@ethz.ch with a screenshot.\n\nNext: Step 4.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 3: Install GitHub Desktop"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-survey.html",
+    "href": "pre-work/01-survey.html",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "The survey is the first step. Your answers shape the day, and they give me your GitHub username. It takes 10 to 15 minutes.\n\nComplete the survey by Monday, 16 November 2026, 18:00: https://larnsce-gitforsci-rdc-survey.share.connect.posit.cloud/\n\nThe survey asks for your GitHub username, so that I can invite you to the course organisation gitforsci-rdc on GitHub before the workshop. If you do not have an account yet, the survey walks you through creating one, or you create it in Step 2 and come back.\nAfter the survey, continue with Step 3.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 1: Pre-course survey"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-step-1-complete-the-pre-course-survey",
+    "href": "pre-work/01-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-step-1-complete-the-pre-course-survey",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "The survey is the first step. Your answers shape the day, and they give me your GitHub username. It takes 10 to 15 minutes.\n\nComplete the survey by Monday, 16 November 2026, 18:00: https://larnsce-gitforsci-rdc-survey.share.connect.posit.cloud/\n\nThe survey asks for your GitHub username, so that I can invite you to the course organisation gitforsci-rdc on GitHub before the workshop. If you do not have an account yet, the survey walks you through creating one, or you create it in Step 2 and come back.\nAfter the survey, continue with Step 3.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 1: Pre-course survey"
     ]
   },
   {
@@ -46,7 +145,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " Prior knowledge",
-    "text": "Prior knowledge\nNo experience with Git or GitHub is assumed. Some experience with R and RStudio helps for the hands-on part, but the software we use on the day is decided from the pre-course survey, so that it fits the laptops people bring.",
+    "text": "Prior knowledge\nNo experience with Git or GitHub is assumed, and no programming. The hands-on part runs in GitHub Desktop, which works for files of any kind. The choice follows from the pre-course survey: half of the people who answered do not programme in R. If you already use Git with another tool, bring that tool.",
     "crumbs": [
       "Pre-course work"
     ]
@@ -56,7 +155,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " What do I need to bring to the workshop?",
-    "text": "What do I need to bring to the workshop?\n\na laptop on which you can install software yourself, with its charger, connected to the conference wifi\na web browser (preferably Chrome or Firefox)\na pen and paper (we will be doing some drawings)\nthe pre-work below completed\n\nPrior to the workshop, there is some pre-work for you to do. It keeps our two hours for the collaboration skills instead of setting up infrastructure.",
+    "text": "What do I need to bring to the workshop?\n\na laptop with GitHub Desktop installed and its charger, connected to the conference wifi\na web browser (preferably Chrome or Firefox)\na pen and paper (we will be doing some drawings)\nthe pre-work below completed\n\nPrior to the workshop, there is some pre-work for you to do. It keeps our two hours for the collaboration skills instead of setting up infrastructure.",
     "crumbs": [
       "Pre-course work"
     ]
@@ -66,7 +165,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " What do I need to prepare before the workshop?",
-    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Friday, 13 November 2026.\nStep 2: Get an account for GitHub, if you have none.\n\n\n\n\n\n\n\nNoteSteps 3 onwards appear here on Monday, 16 November 2026\n\n\n\nThe survey answers decide which software we use for the hands-on part: RStudio with Git, GitHub Desktop or Positron. On Monday, 16 November 2026 this page gets the install steps and a short setup check for that choice, due by Wednesday, 18 November 2026. I also send the steps to the email address you give in the survey. Anyone who arrives without the setup still follows the whole educator part of the workshop.",
+    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Monday, 16 November 2026, 18:00.\nStep 2: Get an account for GitHub, if you have none.\nStep 3: Install GitHub Desktop and sign in.\nStep 4: Decide where your email address shows.\nStep 5: Do the setup check.\n\nSteps 3 to 5 take about 25 minutes and are due by Wednesday, 18 November 2026. Anyone who arrives without the setup follows the steps on the screen, can do them in the browser, and takes full part in the educator part of the workshop.",
     "crumbs": [
       "Pre-course work"
     ]
@@ -102,25 +201,58 @@
     ]
   },
   {
-    "objectID": "pre-work/01-survey.html",
-    "href": "pre-work/01-survey.html",
+    "objectID": "pre-work/02-github-acc.html",
+    "href": "pre-work/02-github-acc.html",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "The survey is the first step, and it decides the rest: your answers tell me which software the hands-on part can use (RStudio with Git, GitHub Desktop or Positron), and they shape the day. It takes 10 to 15 minutes.\n\nComplete the survey by Friday, 13 November 2026: https://larnsce-gitforsci-rdc-survey.share.connect.posit.cloud/\n\nThe survey asks for your GitHub username, so that I can invite you to the course organisation gitforsci-rdc on GitHub before the workshop. If you do not have an account yet, the survey walks you through creating one, or you create it in Step 2 and come back.\nThe setup instructions (install and a short setup check) appear on this website on Monday, 16 November 2026. I also send them to the email address you give in the survey.",
+    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub account, enter the username in the pre-course survey if you have not done so yet, or send it to me by email: lschoebitz@ethz.ch. I then invite you to the GitHub organisation for the course.",
     "crumbs": [
       "Pre-course work",
-      "Step 1: Pre-course survey"
+      "Step 2: GitHub account"
     ]
   },
   {
-    "objectID": "pre-work/01-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-step-1-complete-the-pre-course-survey",
-    "href": "pre-work/01-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-step-1-complete-the-pre-course-survey",
+    "objectID": "pre-work/02-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
+    "href": "pre-work/02-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "The survey is the first step, and it decides the rest: your answers tell me which software the hands-on part can use (RStudio with Git, GitHub Desktop or Positron), and they shape the day. It takes 10 to 15 minutes.\n\nComplete the survey by Friday, 13 November 2026: https://larnsce-gitforsci-rdc-survey.share.connect.posit.cloud/\n\nThe survey asks for your GitHub username, so that I can invite you to the course organisation gitforsci-rdc on GitHub before the workshop. If you do not have an account yet, the survey walks you through creating one, or you create it in Step 2 and come back.\nThe setup instructions (install and a short setup check) appear on this website on Monday, 16 November 2026. I also send them to the email address you give in the survey.",
+    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub account, enter the username in the pre-course survey if you have not done so yet, or send it to me by email: lschoebitz@ethz.ch. I then invite you to the GitHub organisation for the course.",
     "crumbs": [
       "Pre-course work",
-      "Step 1: Pre-course survey"
+      "Step 2: GitHub account"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-email-privacy.html",
+    "href": "pre-work/04-email-privacy.html",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "About 2 minutes. Due by Wednesday, 18 November 2026.\nEvery commit carries an email address. That is part of Git and no problem in itself, but you should know which address it is. In Step 3 you chose the address for commits made on your laptop. Commits made in the browser on github.com do not follow that choice. They carry the address you sign in with, unless you change one account setting.\nThe workshop repository stays private to the course organisation. The setting matters for every repository of yours that is or becomes public.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 4: Email address in commits"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-email-privacy.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120656e76656c6f7065203e7d7d-step-4-decide-where-your-email-address-shows",
+    "href": "pre-work/04-email-privacy.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120656e76656c6f7065203e7d7d-step-4-decide-where-your-email-address-shows",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "",
+    "text": "About 2 minutes. Due by Wednesday, 18 November 2026.\nEvery commit carries an email address. That is part of Git and no problem in itself, but you should know which address it is. In Step 3 you chose the address for commits made on your laptop. Commits made in the browser on github.com do not follow that choice. They carry the address you sign in with, unless you change one account setting.\nThe workshop repository stays private to the course organisation. The setting matters for every repository of yours that is or becomes public.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 4: Email address in commits"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-email-privacy.html#steps",
+    "href": "pre-work/04-email-privacy.html#steps",
+    "title": "Git for Scientists (RDC 2026)",
+    "section": "Steps",
+    "text": "Steps\nIf you want your email address to stay out of your commits:\n\nOpen https://github.com/settings/emails.\nTick Keep my email addresses private.\nTick Block command line pushes that expose my email.\n\nThe setting applies to all new commits.\nNext: Step 5.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 4: Email address in commits"
     ]
   }
 ]

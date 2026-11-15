@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://gitforsci-rdc.github.io/website/pre-work/05-setup-check.html</loc>
+    <lastmod>2026-11-15T20:57:55.417Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-rdc.github.io/website/pre-work/03-github-desktop.html</loc>
+    <lastmod>2026-11-15T20:45:58.124Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-rdc.github.io/website/pre-work/01-survey.html</loc>
+    <lastmod>2026-11-15T20:46:14.276Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-rdc.github.io/website/index.html</loc>
+    <lastmod>2026-11-15T20:46:14.276Z</lastmod>
+  </url>
+  <url>
     <loc>https://gitforsci-rdc.github.io/website/pre-work/02-github-acc.html</loc>
     <lastmod>2026-11-09T12:53:32.060Z</lastmod>
   </url>
   <url>
-    <loc>https://gitforsci-rdc.github.io/website/index.html</loc>
-    <lastmod>2026-11-09T12:53:32.060Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gitforsci-rdc.github.io/website/pre-work/01-survey.html</loc>
-    <lastmod>2026-11-09T12:53:32.060Z</lastmod>
+    <loc>https://gitforsci-rdc.github.io/website/pre-work/04-email-privacy.html</loc>
+    <lastmod>2026-11-15T20:45:58.126Z</lastmod>
   </url>
 </urlset>
