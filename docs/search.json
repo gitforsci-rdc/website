@@ -4,7 +4,7 @@
     "href": "pre-work/05-setup-check.html",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 20 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. The link in step 6 opens it after you have accepted the invitation.",
+    "text": "About 20 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
     "crumbs": [
       "Pre-course work",
       "Step 5: Setup check"
@@ -15,7 +15,7 @@
     "href": "pre-work/05-setup-check.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d636865636b203e7d7d-step-5-setup-check",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 20 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. The link in step 6 opens it after you have accepted the invitation.",
+    "text": "About 20 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
     "crumbs": [
       "Pre-course work",
       "Step 5: Setup check"
@@ -37,7 +37,7 @@
     "href": "pre-work/05-setup-check.html#steps",
     "title": "Git for Scientists (RDC 2026)",
     "section": "Steps",
-    "text": "Steps\n\nAccept the invitation. After you have given your GitHub username in the survey, GitHub sends you an email with the button Join @b58fc729-690b-4000-b19f-365a4093b2ff;7B7B3C2076617220636F757273652E636F6465203E7D7D;. Or open https://github.com/orgs/gitforsci-rdc/invitation while signed in.\nOpen GitHub Desktop. Choose the menu File, Clone Repository…, then the tab URL.\nType gitforsci-rdc/workshop into the first field.\nLook at Local Path before you click anything else. Click Choose…, go to Documents, select gitrepos and confirm. The path must end in gitrepos/workshop.\nClick Clone. GitHub Desktop shows Current Repository: workshop at the top left.\nOpen your issue, tick the boxes and write the comment setup complete.\n\nYou are done when your comment stands in your issue.",
+    "text": "Steps\n\nAccept the invitation. After you have given your GitHub username in the survey, GitHub sends you an email with the button Join @b58fc729-690b-4000-b19f-365a4093b2ff;7B7B3C2076617220636F757273652E636F6465203E7D7D;. Or open https://github.com/orgs/gitforsci-rdc/invitation while signed in.\nOpen GitHub Desktop. Choose the menu File, Clone Repository…, then the tab URL.\nType gitforsci-rdc/workshop into the first field.\nLook at Local Path before you click anything else. Click Choose…, go to Documents, select gitrepos and confirm. The path must end in gitrepos/workshop.\nClick Clone. GitHub Desktop shows Current Repository: workshop at the top left.\nOpen the issues of the workshop repository and click the one with your username in its title. Tick the boxes and write the comment setup complete.\n\nYou are done when your comment stands in your issue.",
     "crumbs": [
       "Pre-course work",
       "Step 5: Setup check"
