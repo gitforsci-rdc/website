@@ -2,7 +2,7 @@
 
 About 10 minutes. Due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}.
 
-You accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. After you accept the invitation you find an issue with your name on it in the workshop repository. It lists these steps with a box to tick for each.
+You accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. The link in step 6 opens it after you have accepted the invitation.
 
 ## Before you start: one folder for all repositories
 
