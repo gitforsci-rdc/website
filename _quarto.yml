@@ -6,9 +6,9 @@ project:
     # SETUP-CHECKLIST.md, workshop/lesson-plan.md) out of the rendered site.
     - "*.qmd"
     - "**/*.qmd"
-    # Hidden until the software decision of Monday 16 November 2026: the
-    # install and setup pages and the workshop page. Remove the lines of the
-    # chosen route on that day and put the pages back into the sidebar.
+    # Software decision of 15 November 2026: GitHub Desktop. The pages of the
+    # RStudio route from the template stay out of the render, and the
+    # workshop page stays hidden until the deck is ready.
     - "!pre-work/01-install-r.qmd"
     - "!pre-work/04-github-pat.qmd"
     - "!pre-work/05-install-git.qmd"
@@ -63,8 +63,13 @@ website:
             text: "Step 1: Pre-course survey"
           - href: pre-work/02-github-acc.qmd
             text: "Step 2: GitHub account"
-          # Steps 3 onwards return on Monday 16 November 2026, after the
-          # software decision. Template entries for the RStudio route:
+          - href: pre-work/03-github-desktop.qmd
+            text: "Step 3: Install GitHub Desktop"
+          - href: pre-work/04-email-privacy.qmd
+            text: "Step 4: Email address in commits"
+          - href: pre-work/05-setup-check.qmd
+            text: "Step 5: Setup check"
+          # Template entries for the RStudio route, not used in this cohort:
           #   - href: pre-work/01-install-r.qmd      text: "Step 3: Install R & RStudio"
           #   - href: pre-work/04-github-pat.qmd     text: "Step 4: GitHub PAT"
           #   - href: pre-work/05-install-git.qmd    text: "Step 5: Install Git"

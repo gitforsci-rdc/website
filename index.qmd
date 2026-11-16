@@ -18,11 +18,11 @@ Git and GitHub are the connective tissue of reproducible, collaborative research
 
 ## {{< fa graduation-cap >}} Prior knowledge
 
-No experience with Git or GitHub is assumed. Some experience with R and RStudio helps for the hands-on part, but the software we use on the day is decided from the pre-course survey, so that it fits the laptops people bring.
+No experience with Git or GitHub is assumed, and no programming. The hands-on part runs in GitHub Desktop, which works for files of any kind. The choice follows from the pre-course survey: half of the people who answered do not programme in R. If you already use Git with another tool, bring that tool.
 
 ## {{< fa suitcase >}} What do I need to bring to the workshop?
 
--   a laptop on which you can install software yourself, with its charger, connected to the conference wifi
+-   a laptop with GitHub Desktop installed and its charger, connected to the conference wifi
 -   a web browser (preferably Chrome or Firefox)
 -   a pen and paper (we will be doing some drawings)
 -   the pre-work below completed
@@ -33,12 +33,11 @@ No experience with Git or GitHub is assumed. Some experience with R and RStudio 
 
 -   [Step 1](pre-work/01-survey.html): Complete the pre-course survey by [**{{< var session.survey-deadline >}}**]{.highlight-yellow}.
 -   [Step 2](pre-work/02-github-acc.html): Get an account for GitHub, if you have none.
+-   [Step 3](pre-work/03-github-desktop.html): Install GitHub Desktop and sign in.
+-   [Step 4](pre-work/04-email-privacy.html): Decide where your email address shows.
+-   [Step 5](pre-work/05-setup-check.html): Do the setup check.
 
-::: {.callout-note}
-## Steps 3 onwards appear here on {{< var session.steps-date >}}
-
-The survey answers decide which software we use for the hands-on part: RStudio with Git, GitHub Desktop or Positron. On {{< var session.steps-date >}} this page gets the install steps and a short setup check for that choice, due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}. I also send the steps to the email address you give in the survey. Anyone who arrives without the setup still follows the whole educator part of the workshop.
-:::
+Steps 3 to 5 take about 35 minutes and are due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}. Anyone who arrives without the setup follows the steps on the screen, can do them in the browser, and takes full part in the educator part of the workshop.
 
 ```{r}
 library(dplyr)

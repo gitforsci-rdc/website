@@ -1,0 +1,47 @@
+## {{< fa desktop >}} Step 3: Install GitHub Desktop and sign in
+
+About 10 minutes. Due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}.
+
+GitHub Desktop is a program with buttons for the things Git does in a terminal. Git is included, so this is the only program you install. The workshop demo runs in GitHub Desktop because it works for files of any kind and needs no access token.
+
+::: {.callout-note}
+## You already use Git with another tool
+
+Bring the tool you know (command line, VS Code, RStudio). The steps of the workshop are the same in every tool. GitHub Desktop has no official version for Linux, so on Linux this is the route.
+:::
+
+## Steps
+
+::: {.panel-tabset}
+
+## macOS
+
+1. Open <https://desktop.github.com/> and click **Download for macOS**.
+2. Open the downloaded ZIP file in your **Downloads** folder. Drag the program **GitHub Desktop** onto the **Applications** folder in the sidebar of the Finder.
+3. Start GitHub Desktop. If macOS asks whether you want to open a program from the internet, click **Open**.
+4. Click **Sign in to GitHub.com**. Your browser opens. Sign in with your GitHub account and click **Authorize desktop**. Allow the browser to open GitHub Desktop.
+5. Back in GitHub Desktop you see **Configure Git**. Your name and email address go into every commit you make on the laptop. Under **Email**, choose the address that ends in `@users.noreply.github.com` if you do not want to show one. GitHub still links your commits to your account. Click **Finish**.
+
+You are done when the menu **GitHub Desktop**, **Settings**, tab **Accounts** shows your GitHub username.
+
+## Windows
+
+GitHub Desktop installs into your user folder and as a rule needs no administrator rights. If your laptop is managed and blocks the installation, ask your IT for "GitHub Desktop" and write to me so that I know.
+
+1. Open <https://desktop.github.com/> and click **Download for Windows (64bit)**.
+2. Start the downloaded file **GitHubDesktopSetup-x64.exe**. The installation runs without questions and opens the program at the end.
+3. Click **Sign in to GitHub.com**. Your browser opens. Sign in with your GitHub account and click **Authorize desktop**. Allow the browser to open GitHub Desktop.
+4. Back in GitHub Desktop you see **Configure Git**. Your name and email address go into every commit you make on the laptop. Under **Email**, choose the address that ends in `@users.noreply.github.com` if you do not want to show one. GitHub still links your commits to your account. Click **Finish**.
+
+You are done when the menu **File**, **Options**, tab **Accounts** shows your GitHub username.
+
+:::
+
+## Stuck?
+
+- **The browser does not return to the program.** Close GitHub Desktop, start it again and repeat the sign-in.
+- **You chose the wrong address under Configure Git.** Open **Settings** (macOS) or **Options** (Windows), tab **Git**, and change it there.
+- **Windows warns about an unknown app.** Click **More info**, then **Run anyway**. The file comes from GitHub.
+- Anything else: write to [{{< var email >}}](mailto:{{< var email >}}) with a screenshot.
+
+Next: [Step 4](04-email-privacy.qmd).

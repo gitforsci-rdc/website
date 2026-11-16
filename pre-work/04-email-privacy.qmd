@@ -1,0 +1,19 @@
+## {{< fa envelope >}} Step 4: Decide where your email address shows
+
+About 2 minutes. Due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}.
+
+Every commit carries an email address. That is part of Git and no problem in itself, but you should know which address it is. In Step 3 you chose the address for commits made on your laptop. Commits made in the browser on github.com do not follow that choice. They carry the address you sign in with, unless you change one account setting.
+
+The workshop repository stays private to the course organisation. The setting matters for every repository of yours that is or becomes public.
+
+## Steps
+
+If you want your email address to stay out of your commits:
+
+1. Open <https://github.com/settings/emails>.
+2. Tick **Keep my email addresses private**.
+3. Tick **Block command line pushes that expose my email**.
+
+The setting applies to all new commits.
+
+Next: [Step 5](05-setup-check.qmd).

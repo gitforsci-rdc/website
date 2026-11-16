@@ -1,0 +1,29 @@
+## {{< fa circle-check >}} Step 5: Setup check
+
+About 20 minutes. Due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}.
+
+You accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. The link in step 6 opens it after you have accepted the invitation.
+
+## Before you start: one folder for all repositories
+
+Create a folder named `gitrepos` in your **Documents** folder. Do not put it into a folder that syncs with iCloud, OneDrive or Dropbox. Git and the sync get in each other's way, and changes are lost.
+
+## Steps
+
+1. Accept the invitation. After you have given your GitHub username in the [survey](01-survey.qmd), GitHub sends you an email with the button **Join @{{< var course.code >}}**. Or open <https://github.com/orgs/{{< var course.code >}}/invitation> while signed in.
+2. Open GitHub Desktop. Choose the menu **File**, **Clone Repository...**, then the tab **URL**.
+3. Type `{{< var course.code >}}/workshop` into the first field.
+4. Look at **Local Path** before you click anything else. Click **Choose...**, go to **Documents**, select `gitrepos` and confirm. The path must end in `gitrepos/workshop`.
+5. Click **Clone**. GitHub Desktop shows **Current Repository: workshop** at the top left.
+6. Open [your issue](https://github.com/gitforsci-rdc/workshop/issues?q=is%3Aissue+involves%3A%40me), tick the boxes and write the comment `setup complete`.
+
+You are done when your comment stands in your issue.
+
+## Stuck?
+
+- **No invitation.** I can only invite you once I have your username. Complete the [survey](01-survey.qmd) and look again an hour later.
+- **GitHub Desktop says the repository was not found.** The invitation is not accepted yet, or GitHub Desktop is signed in with a different account. Check **Settings** or **Options**, tab **Accounts**.
+- **The path ends in a folder named Untitled** (macOS). Click **Choose...** again and select `gitrepos` without typing a name.
+- Anything else: write what you see as a comment in your issue, with a screenshot.
+
+If the setup is not finished by Friday, come anyway. You follow every step on the screen, you can do the same steps in the browser, and the educator part of the workshop needs no setup.
