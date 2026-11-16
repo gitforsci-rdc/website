@@ -4,7 +4,7 @@
     "href": "pre-work/05-setup-check.html",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 10 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. The link in step 6 opens it after you have accepted the invitation.",
+    "text": "About 20 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. The link in step 6 opens it after you have accepted the invitation.",
     "crumbs": [
       "Pre-course work",
       "Step 5: Setup check"
@@ -15,7 +15,7 @@
     "href": "pre-work/05-setup-check.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d636865636b203e7d7d-step-5-setup-check",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 10 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. The link in step 6 opens it after you have accepted the invitation.",
+    "text": "About 20 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. The link in step 6 opens it after you have accepted the invitation.",
     "crumbs": [
       "Pre-course work",
       "Step 5: Setup check"
@@ -165,7 +165,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " What do I need to prepare before the workshop?",
-    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Monday, 16 November 2026, 18:00.\nStep 2: Get an account for GitHub, if you have none.\nStep 3: Install GitHub Desktop and sign in.\nStep 4: Decide where your email address shows.\nStep 5: Do the setup check.\n\nSteps 3 to 5 take about 25 minutes and are due by Wednesday, 18 November 2026. Anyone who arrives without the setup follows the steps on the screen, can do them in the browser, and takes full part in the educator part of the workshop.",
+    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Monday, 16 November 2026, 18:00.\nStep 2: Get an account for GitHub, if you have none.\nStep 3: Install GitHub Desktop and sign in.\nStep 4: Decide where your email address shows.\nStep 5: Do the setup check.\n\nSteps 3 to 5 take about 35 minutes and are due by Wednesday, 18 November 2026. Anyone who arrives without the setup follows the steps on the screen, can do them in the browser, and takes full part in the educator part of the workshop.",
     "crumbs": [
       "Pre-course work"
     ]

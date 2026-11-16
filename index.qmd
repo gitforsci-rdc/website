@@ -37,7 +37,7 @@ No experience with Git or GitHub is assumed, and no programming. The hands-on pa
 -   [Step 4](pre-work/04-email-privacy.html): Decide where your email address shows.
 -   [Step 5](pre-work/05-setup-check.html): Do the setup check.
 
-Steps 3 to 5 take about 25 minutes and are due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}. Anyone who arrives without the setup follows the steps on the screen, can do them in the browser, and takes full part in the educator part of the workshop.
+Steps 3 to 5 take about 35 minutes and are due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}. Anyone who arrives without the setup follows the steps on the screen, can do them in the browser, and takes full part in the educator part of the workshop.
 
 ```{r}
 library(dplyr)
