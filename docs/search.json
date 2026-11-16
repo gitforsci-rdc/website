@@ -145,7 +145,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " Prior knowledge",
-    "text": "Prior knowledge\nNo experience with Git or GitHub is assumed, and no programming. The hands-on part runs in GitHub Desktop, which works for files of any kind. The choice follows from the pre-course survey: half of the people who answered do not programme in R. If you already use Git with another tool, bring that tool.",
+    "text": "Prior knowledge\nNo experience with Git or GitHub is assumed, and no programming. The hands-on part runs in GitHub Desktop, which works for files of any kind. In the pre-course survey some of you said you work in R, some in Python and some do not programme. If you already use Git with another tool, bring that tool.",
     "crumbs": [
       "Pre-course work"
     ]
