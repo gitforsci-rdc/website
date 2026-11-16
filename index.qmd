@@ -18,7 +18,7 @@ Git and GitHub are the connective tissue of reproducible, collaborative research
 
 ## {{< fa graduation-cap >}} Prior knowledge
 
-No experience with Git or GitHub is assumed, and no programming. The hands-on part runs in GitHub Desktop, which works for files of any kind. The choice follows from the pre-course survey: half of the people who answered do not programme in R. If you already use Git with another tool, bring that tool.
+No experience with Git or GitHub is assumed, and no programming. The hands-on part runs in GitHub Desktop, which works for files of any kind. In the pre-course survey some of you said you work in R, some in Python and some do not programme. If you already use Git with another tool, bring that tool.
 
 ## {{< fa suitcase >}} What do I need to bring to the workshop?
 
