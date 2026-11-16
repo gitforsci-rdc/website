@@ -12,10 +12,10 @@ Create a folder named `gitrepos` in your **Documents** folder. Do not put it int
 
 1. Accept the invitation. After you have given your GitHub username in the [survey](01-survey.qmd), GitHub sends you an email with the button **Join @{{< var course.code >}}**. Or open <https://github.com/orgs/{{< var course.code >}}/invitation> while signed in.
 2. Open GitHub Desktop. Choose the menu **File**, **Clone Repository...**, then the tab **URL**.
-3. Type `{{< var course.code >}}/{{< var course.workshop-repo >}}` into the first field.
-4. Look at **Local Path** before you click anything else. Click **Choose...**, go to **Documents**, select `gitrepos` and confirm. The path must end in `gitrepos/{{< var course.workshop-repo >}}`.
-5. Click **Clone**. GitHub Desktop shows **Current Repository: {{< var course.workshop-repo >}}** at the top left.
-6. Open your issue at <https://github.com/{{< var course.code >}}/{{< var course.workshop-repo >}}/issues/assigned/@me>, tick the boxes and write the comment `setup complete`.
+3. Type `{{< var course.code >}}/workshop` into the first field.
+4. Look at **Local Path** before you click anything else. Click **Choose...**, go to **Documents**, select `gitrepos` and confirm. The path must end in `gitrepos/workshop`.
+5. Click **Clone**. GitHub Desktop shows **Current Repository: workshop** at the top left.
+6. Open [your issue](https://github.com/gitforsci-rdc/workshop/issues?q=is%3Aissue+involves%3A%40me), tick the boxes and write the comment `setup complete`.
 
 You are done when your comment stands in your issue.
 
