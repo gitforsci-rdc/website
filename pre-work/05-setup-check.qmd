@@ -2,7 +2,7 @@
 
 About 20 minutes. Due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}.
 
-You accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. The link in step 6 opens it after you have accepted the invitation.
+You accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.
 
 ## Before you start: one folder for all repositories
 
@@ -15,7 +15,7 @@ Create a folder named `gitrepos` in your **Documents** folder. Do not put it int
 3. Type `{{< var course.code >}}/workshop` into the first field.
 4. Look at **Local Path** before you click anything else. Click **Choose...**, go to **Documents**, select `gitrepos` and confirm. The path must end in `gitrepos/workshop`.
 5. Click **Clone**. GitHub Desktop shows **Current Repository: workshop** at the top left.
-6. Open [your issue](https://github.com/gitforsci-rdc/workshop/issues?q=is%3Aissue+involves%3A%40me), tick the boxes and write the comment `setup complete`.
+6. Open the [issues of the workshop repository](https://github.com/gitforsci-rdc/workshop/issues) and click the one with your username in its title. Tick the boxes and write the comment `setup complete`.
 
 You are done when your comment stands in your issue.
 
