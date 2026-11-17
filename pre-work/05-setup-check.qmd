@@ -26,4 +26,6 @@ You are done when your comment stands in your issue.
 - **The path ends in a folder named Untitled** (macOS). Click **Choose...** again and select `gitrepos` without typing a name.
 - Anything else: write what you see as a comment in your issue, with a screenshot.
 
-If the setup is not finished by Friday, come anyway. You follow every step on the screen, you can do the same steps in the browser, and the educator part of the workshop needs no setup.
+Next: [Step 6](06-your-repository.qmd).
+
+If the setup is not finished by Friday, come anyway. You sit with a neighbour who has it, follow on their laptop and take the reviewer's part. The educator part of the workshop needs no setup.

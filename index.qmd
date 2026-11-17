@@ -36,8 +36,9 @@ No experience with Git or GitHub is assumed, and no programming. The hands-on pa
 -   [Step 3](pre-work/03-github-desktop.html): Install GitHub Desktop and sign in.
 -   [Step 4](pre-work/04-email-privacy.html): Decide where your email address shows.
 -   [Step 5](pre-work/05-setup-check.html): Do the setup check.
+-   [Step 6](pre-work/06-your-repository.html): Create your own repository and make your first commit.
 
-Steps 3 to 5 take about 35 minutes and are due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}. Anyone who arrives without the setup follows the steps on the screen, can do them in the browser, and takes full part in the educator part of the workshop.
+Steps 3 to 5 take about 35 minutes and are due by [**{{< var session.setup-check-deadline >}}**]{.highlight-yellow}. Step 6 takes about 25 minutes and is due by [**{{< var session.repository-deadline >}}**]{.highlight-yellow}. The hands-on part builds on the pre-work. Anyone who arrives without it sits with a prepared neighbour, follows on their laptop and takes the reviewer's part, and takes full part in the educator part of the workshop.
 
 ```{r}
 library(dplyr)

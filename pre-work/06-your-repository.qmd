@@ -1,0 +1,75 @@
+## {{< fa folder-plus >}} Step 6: Your own repository and your first commit
+
+About 25 minutes. Due by [**{{< var session.repository-deadline >}}**]{.highlight-yellow}.
+
+You create a repository of your own, write three lines about your teaching into it, copy it to your laptop and make one commit there. On Friday you bring the file with your three lines into the shared workshop repository with a pull request. The hands-on part of the workshop builds on this step.
+
+You need Steps 3 to 5 first: GitHub Desktop is installed and signed in, and you have accepted the invitation to the organisation `{{< var course.code >}}`.
+
+## Part 1: Create the repository (in the browser)
+
+1. Open <https://github.com/new> while signed in.
+2. **Owner:** choose `{{< var course.code >}}`, not your own account.
+3. **Repository name:** `teaching-` followed by your GitHub username, for example `teaching-octocat`.
+4. Choose **Private**.
+5. Tick **Add a README file**.
+6. Click **Create repository**.
+
+## Part 2: Write your three lines (in the browser)
+
+1. In your new repository, click **Add file**, then **Create new file**.
+2. Name the file after your GitHub username with the ending `.md`, for example `octocat.md`.
+3. Copy these lines into the file and fill them in:
+
+   ```
+   # your-username
+
+   - Who I teach:
+   - With which tool:
+   - What blocks me:
+   ```
+
+4. Click **Commit changes...**. Write the commit message `Add my teaching context` and click **Commit changes**.
+
+A commit is one saved state of your repository, with who, when and what. You have now made your first one.
+
+## Part 3: Clone the repository (GitHub Desktop)
+
+Clone a repository once. A second click on Clone makes a second copy on your laptop, and the two get mixed up.
+
+1. Open GitHub Desktop. Choose the menu **File**, **Clone Repository...**, then the tab **URL**.
+2. Type `{{< var course.code >}}/teaching-` followed by your username into the first field.
+3. Look at **Local Path**. It must end in `gitrepos/teaching-` followed by your username, in the folder `gitrepos` you created in Step 5.
+4. Click **Clone**. GitHub Desktop shows your repository at the top left.
+
+## Part 4: An editor (recommended)
+
+GitHub Desktop shows changes, but it does not edit files. I recommend [Sublime Text](https://www.sublimetext.com/download), a free editor for plain text.
+
+1. Install Sublime Text.
+2. In GitHub Desktop, open **Settings** (Windows: **File**, **Options**), tab **Integrations**, and choose **Sublime Text** as **External Editor**.
+
+Without Sublime Text, use TextEdit on macOS or Notepad on Windows. Do not use Word.
+
+## Part 5: One commit from your laptop
+
+1. Open the file `README.md` of your repository. With Sublime Text: menu **Repository**, **Open in Sublime Text**, then click `README.md`. Without it: menu **Repository**, **Show in Finder** (Windows: **Show in Explorer**), then open `README.md` with TextEdit or Notepad.
+2. Add one sentence below the title, for example what this repository is for. Save the file.
+3. Go back to GitHub Desktop. The tab **Changes** lists `README.md` with a tick.
+4. Write a commit message in the field at the bottom left, for example `Describe this repository`.
+5. Click **Commit to main**.
+6. Click **Push origin** at the top. Your commit is now on GitHub as well.
+
+## Part 6: Check and report
+
+1. In GitHub Desktop, click the tab **History**. You see three commits: the first one made by GitHub, your three lines, and the sentence in the README.
+2. Open your issue in the [workshop repository](https://github.com/gitforsci-rdc/workshop/issues), the one with your username in its title, and tick the box for Step 6.
+
+## Stuck?
+
+- **The owner `{{< var course.code >}}` is not in the list.** The invitation is not accepted yet. Open <https://github.com/orgs/{{< var course.code >}}/invitation> while signed in.
+- **The push is rejected.** You ticked "Block command line pushes that expose my email" in Step 4, and GitHub Desktop still uses your real address. Open **Settings** (Windows: **File**, **Options**), tab **Git**, choose the address that ends in `@users.noreply.github.com` and save. Then click **Undo** at the bottom of the tab **Changes** and commit again.
+- **Something went very wrong with the clone.** Delete the folder on your laptop and clone again. The version on GitHub is the latest one, as far as you pushed.
+- Anything else: write what you see as a comment in your issue, with a screenshot.
+
+If this step is not finished by Friday, come anyway. You sit with a neighbour who has it, follow on their laptop and take the reviewer's part. The educator part of the workshop needs no setup.
