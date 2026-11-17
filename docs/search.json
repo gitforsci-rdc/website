@@ -4,7 +4,7 @@
     "href": "pre-work/06-your-repository.html",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 25 minutes. Due by Thursday, 19 November 2026, 20:00.\nYou create a repository of your own, write three lines about your teaching into it, copy it to your laptop and make one commit there. On Friday you bring the file with your three lines into the shared workshop repository with a pull request. The hands-on part of the workshop builds on this step.\nYou need Steps 3 to 5 first: GitHub Desktop is installed and signed in, and you have accepted the invitation to the organisation gitforsci-rdc.",
+    "text": "About 25 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nYou create a repository of your own, write three lines about your teaching into it, copy it to your laptop and make one commit there. On Friday you bring the file with your three lines into the shared workshop repository with a pull request. The hands-on part of the workshop builds on this step.\nYou need Steps 3 to 5 first: GitHub Desktop is installed and signed in, and you have accepted the invitation to the organisation gitforsci-rdc.",
     "crumbs": [
       "Pre-course work",
       "Step 6: Your own repository"
@@ -15,7 +15,7 @@
     "href": "pre-work/06-your-repository.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120666f6c6465722d706c7573203e7d7d-step-6-your-own-repository-and-your-first-commit",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 25 minutes. Due by Thursday, 19 November 2026, 20:00.\nYou create a repository of your own, write three lines about your teaching into it, copy it to your laptop and make one commit there. On Friday you bring the file with your three lines into the shared workshop repository with a pull request. The hands-on part of the workshop builds on this step.\nYou need Steps 3 to 5 first: GitHub Desktop is installed and signed in, and you have accepted the invitation to the organisation gitforsci-rdc.",
+    "text": "About 25 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nYou create a repository of your own, write three lines about your teaching into it, copy it to your laptop and make one commit there. On Friday you bring the file with your three lines into the shared workshop repository with a pull request. The hands-on part of the workshop builds on this step.\nYou need Steps 3 to 5 first: GitHub Desktop is installed and signed in, and you have accepted the invitation to the organisation gitforsci-rdc.",
     "crumbs": [
       "Pre-course work",
       "Step 6: Your own repository"
@@ -198,7 +198,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " What do I need to prepare before the workshop?",
-    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Monday, 16 November 2026, 18:00.\nStep 2: Get an account for GitHub, if you have none.\nStep 3: Install GitHub Desktop and sign in.\nStep 4: Decide where your email address shows.\nStep 5: Do the setup check.\nStep 6: Create your own repository and make your first commit.\n\nSteps 3 to 5 take about 35 minutes and are due by Wednesday, 18 November 2026. Step 6 takes about 25 minutes and is due by Thursday, 19 November 2026, 20:00. The hands-on part builds on the pre-work. Anyone who arrives without it sits with a prepared neighbour, follows on their laptop and takes the reviewer’s part, and takes full part in the educator part of the workshop.",
+    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Monday, 16 November 2026, 18:00.\nStep 2: Get an account for GitHub, if you have none.\nStep 3: Install GitHub Desktop and sign in.\nStep 4: Decide where your email address shows.\nStep 5: Do the setup check.\nStep 6: Create your own repository and make your first commit.\n\nSteps 3 to 5 take about 35 minutes and are due by Wednesday, 18 November 2026. Step 6 takes about 25 minutes and is due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00. The hands-on part builds on the pre-work. Anyone who arrives without it sits with a prepared neighbour, follows on their laptop and takes the reviewer’s part, and takes full part in the educator part of the workshop.",
     "crumbs": [
       "Pre-course work"
     ]
