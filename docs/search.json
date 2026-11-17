@@ -103,7 +103,7 @@
     "href": "pre-work/04-email-privacy.html",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 2 minutes. Due by Wednesday, 18 November 2026.\nEvery commit carries an email address. That is part of Git and no problem in itself, but you should know which address it is. In Step 3 you chose the address for commits made on your laptop. Commits made in the browser on github.com do not follow that choice. They carry the address you sign in with, unless you change one account setting.\nThe workshop repository stays private to the course organisation. The setting matters for every repository of yours that is or becomes public.",
+    "text": "About 2 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nEvery commit carries an email address. That is part of Git and no problem in itself, but you should know which address it is. In Step 3 you chose the address for commits made on your laptop. Commits made in the browser on github.com do not follow that choice. They carry the address you sign in with, unless you change one account setting.\nThe workshop repository stays private to the course organisation. The setting matters for every repository of yours that is or becomes public.",
     "crumbs": [
       "Pre-course work",
       "Step 4: Email address in commits"
@@ -114,7 +114,7 @@
     "href": "pre-work/04-email-privacy.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120656e76656c6f7065203e7d7d-step-4-decide-where-your-email-address-shows",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 2 minutes. Due by Wednesday, 18 November 2026.\nEvery commit carries an email address. That is part of Git and no problem in itself, but you should know which address it is. In Step 3 you chose the address for commits made on your laptop. Commits made in the browser on github.com do not follow that choice. They carry the address you sign in with, unless you change one account setting.\nThe workshop repository stays private to the course organisation. The setting matters for every repository of yours that is or becomes public.",
+    "text": "About 2 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nEvery commit carries an email address. That is part of Git and no problem in itself, but you should know which address it is. In Step 3 you chose the address for commits made on your laptop. Commits made in the browser on github.com do not follow that choice. They carry the address you sign in with, unless you change one account setting.\nThe workshop repository stays private to the course organisation. The setting matters for every repository of yours that is or becomes public.",
     "crumbs": [
       "Pre-course work",
       "Step 4: Email address in commits"
@@ -198,7 +198,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " What do I need to prepare before the workshop?",
-    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Monday, 16 November 2026, 18:00.\nStep 2: Get an account for GitHub, if you have none.\nStep 3: Install GitHub Desktop and sign in.\nStep 4: Decide where your email address shows.\nStep 5: Do the setup check.\nStep 6: Create your own repository and make your first commit.\n\nSteps 3 to 5 take about 35 minutes and are due by Wednesday, 18 November 2026. Step 6 takes about 25 minutes and is due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00. The hands-on part builds on the pre-work. Anyone who arrives without it sits with a prepared neighbour, follows on their laptop and takes the reviewer’s part, and takes full part in the educator part of the workshop.",
+    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Monday, 16 November 2026, 18:00.\nStep 2: Get an account for GitHub, if you have none.\nStep 3: Install GitHub Desktop and sign in.\nStep 4: Decide where your email address shows.\nStep 5: Do the setup check.\nStep 6: Create your own repository and make your first commit.\n\nSteps 3 to 6 take about 60 minutes and are due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00. The hands-on part builds on the pre-work. Anyone who arrives without it sits with a prepared neighbour, follows on their laptop and takes the reviewer’s part, and takes full part in the educator part of the workshop.",
     "crumbs": [
       "Pre-course work"
     ]
@@ -260,7 +260,7 @@
     "href": "pre-work/03-github-desktop.html",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 10 minutes. Due by Wednesday, 18 November 2026.\nGitHub Desktop is a program with buttons for the things Git does in a terminal. Git is included, so this is the only program you install. The workshop demo runs in GitHub Desktop because it works for files of any kind and needs no access token.\n\n\n\n\n\n\nNoteYou already use Git with another tool\n\n\n\nBring the tool you know (command line, VS Code, RStudio). The steps of the workshop are the same in every tool. GitHub Desktop has no official version for Linux, so on Linux this is the route.",
+    "text": "About 10 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nGitHub Desktop is a program with buttons for the things Git does in a terminal. Git is included, so this is the only program you install. The workshop demo runs in GitHub Desktop because it works for files of any kind and needs no access token.\n\n\n\n\n\n\nNoteYou already use Git with another tool\n\n\n\nBring the tool you know (command line, VS Code, RStudio). The steps of the workshop are the same in every tool. GitHub Desktop has no official version for Linux, so on Linux this is the route.",
     "crumbs": [
       "Pre-course work",
       "Step 3: Install GitHub Desktop"
@@ -271,7 +271,7 @@
     "href": "pre-work/03-github-desktop.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206465736b746f70203e7d7d-step-3-install-github-desktop-and-sign-in",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 10 minutes. Due by Wednesday, 18 November 2026.\nGitHub Desktop is a program with buttons for the things Git does in a terminal. Git is included, so this is the only program you install. The workshop demo runs in GitHub Desktop because it works for files of any kind and needs no access token.\n\n\n\n\n\n\nNoteYou already use Git with another tool\n\n\n\nBring the tool you know (command line, VS Code, RStudio). The steps of the workshop are the same in every tool. GitHub Desktop has no official version for Linux, so on Linux this is the route.",
+    "text": "About 10 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nGitHub Desktop is a program with buttons for the things Git does in a terminal. Git is included, so this is the only program you install. The workshop demo runs in GitHub Desktop because it works for files of any kind and needs no access token.\n\n\n\n\n\n\nNoteYou already use Git with another tool\n\n\n\nBring the tool you know (command line, VS Code, RStudio). The steps of the workshop are the same in every tool. GitHub Desktop has no official version for Linux, so on Linux this is the route.",
     "crumbs": [
       "Pre-course work",
       "Step 3: Install GitHub Desktop"
@@ -304,7 +304,7 @@
     "href": "pre-work/05-setup-check.html",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 20 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
+    "text": "About 20 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
     "crumbs": [
       "Pre-course work",
       "Step 5: Setup check"
@@ -315,7 +315,7 @@
     "href": "pre-work/05-setup-check.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d636865636b203e7d7d-step-5-setup-check",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 20 minutes. Due by Wednesday, 18 November 2026.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
+    "text": "About 20 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
     "crumbs": [
       "Pre-course work",
       "Step 5: Setup check"
