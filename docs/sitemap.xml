@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://gitforsci-rdc.github.io/website/workshop/slides.html</loc>
+    <lastmod>2026-11-17T14:16:01.157Z</lastmod>
+  </url>
+  <url>
     <loc>https://gitforsci-rdc.github.io/website/pre-work/06-your-repository.html</loc>
     <lastmod>2026-11-17T12:34:28.968Z</lastmod>
   </url>
@@ -27,5 +31,9 @@
   <url>
     <loc>https://gitforsci-rdc.github.io/website/pre-work/05-setup-check.html</loc>
     <lastmod>2026-11-17T12:34:29.458Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-rdc.github.io/website/workshop/add-your-file.html</loc>
+    <lastmod>2026-11-17T14:16:22.691Z</lastmod>
   </url>
 </urlset>
