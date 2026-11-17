@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>your-repository – Git for Scientists (RDC 2026)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../pre-work/05-setup-check.html" rel="prev">
+<link href="../images/ghe-square-logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-712a858a7335f8c7f74f41a4769ee845.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d33e41aec669e7e09c3129c761b8ccf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-712a858a7335f8c7f74f41a4769ee845.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7e16fcca5e7a8c713e3a7d41006b2b83.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-7e16fcca5e7a8c713e3a7d41006b2b83.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-7e16fcca5e7a8c713e3a7d41006b2b83.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" data-domain="gitforsci-rdc.github.io/website" src="https://plausible.io/js/script.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06-your-repository.html">Step 6: Your own repository</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/ghe-square-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../images/ghe-square-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/gitforsci-rdc/website" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pre-course work</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/01-survey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 1: Pre-course survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/02-github-acc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 2: GitHub account</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/03-github-desktop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 3: Install GitHub Desktop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/04-email-privacy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 4: Email address in commits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/05-setup-check.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 5: Setup check</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/06-your-repository.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Step 6: Your own repository</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120666f6c6465722d706c7573203e7d7d-step-6-your-own-repository-and-your-first-commit" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120666f6c6465722d706c7573203e7d7d-step-6-your-own-repository-and-your-first-commit" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120666f6c6465722d706c7573203e7d7d-step-6-your-own-repository-and-your-first-commit"><i class="fa-solid fa-folder-plus" aria-label="folder-plus"></i> Step 6: Your own repository and your first commit</a></li>
+  <li><a href="#part-1-create-the-repository-in-the-browser" id="toc-part-1-create-the-repository-in-the-browser" class="nav-link" data-scroll-target="#part-1-create-the-repository-in-the-browser">Part 1: Create the repository (in the browser)</a></li>
+  <li><a href="#part-2-write-your-three-lines-in-the-browser" id="toc-part-2-write-your-three-lines-in-the-browser" class="nav-link" data-scroll-target="#part-2-write-your-three-lines-in-the-browser">Part 2: Write your three lines (in the browser)</a></li>
+  <li><a href="#part-3-clone-the-repository-github-desktop" id="toc-part-3-clone-the-repository-github-desktop" class="nav-link" data-scroll-target="#part-3-clone-the-repository-github-desktop">Part 3: Clone the repository (GitHub Desktop)</a></li>
+  <li><a href="#part-4-an-editor-recommended" id="toc-part-4-an-editor-recommended" class="nav-link" data-scroll-target="#part-4-an-editor-recommended">Part 4: An editor (recommended)</a></li>
+  <li><a href="#part-5-one-commit-from-your-laptop" id="toc-part-5-one-commit-from-your-laptop" class="nav-link" data-scroll-target="#part-5-one-commit-from-your-laptop">Part 5: One commit from your laptop</a></li>
+  <li><a href="#part-6-check-and-report" id="toc-part-6-check-and-report" class="nav-link" data-scroll-target="#part-6-check-and-report">Part 6: Check and report</a></li>
+  <li><a href="#stuck" id="toc-stuck" class="nav-link" data-scroll-target="#stuck">Stuck?</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-rdc/website/edit/main/pre-work/06-your-repository.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-rdc/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06-your-repository.html">Step 6: Your own repository</a></li></ol></nav></header>
+
+
+
+
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120666f6c6465722d706c7573203e7d7d-step-6-your-own-repository-and-your-first-commit" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120666f6c6465722d706c7573203e7d7d-step-6-your-own-repository-and-your-first-commit"><i class="fa-solid fa-folder-plus" aria-label="folder-plus"></i> Step 6: Your own repository and your first commit</h2>
+<p>About 25 minutes. Due by <span class="highlight-yellow"><strong>Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00</strong></span>.</p>
+<p>You create a repository of your own, write three lines about your teaching into it, copy it to your laptop and make one commit there. On Friday you bring the file with your three lines into the shared workshop repository with a pull request. The hands-on part of the workshop builds on this step.</p>
+<p>You need Steps 3 to 5 first: GitHub Desktop is installed and signed in, and you have accepted the invitation to the organisation <code>gitforsci-rdc</code>.</p>
+</section>
+<section id="part-1-create-the-repository-in-the-browser" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-create-the-repository-in-the-browser">Part 1: Create the repository (in the browser)</h2>
+<ol type="1">
+<li>Open <a href="https://github.com/new" class="uri">https://github.com/new</a> while signed in.</li>
+<li><strong>Owner:</strong> choose <code>gitforsci-rdc</code>, not your own account.</li>
+<li><strong>Repository name:</strong> <code>teaching-</code> followed by your GitHub username, for example <code>teaching-octocat</code>.</li>
+<li>Choose <strong>Private</strong>.</li>
+<li>Tick <strong>Add a README file</strong>.</li>
+<li>Click <strong>Create repository</strong>.</li>
+</ol>
+</section>
+<section id="part-2-write-your-three-lines-in-the-browser" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-write-your-three-lines-in-the-browser">Part 2: Write your three lines (in the browser)</h2>
+<ol type="1">
+<li><p>In your new repository, click <strong>Add file</strong>, then <strong>Create new file</strong>.</p></li>
+<li><p>Name the file after your GitHub username with the ending <code>.md</code>, for example <code>octocat.md</code>.</p></li>
+<li><p>Copy these lines into the file and fill them in:</p>
+<pre><code># your-username
+
+- Who I teach:
+- With which tool:
+- What blocks me:</code></pre></li>
+<li><p>Click <strong>Commit changes…</strong>. Write the commit message <code>Add my teaching context</code> and click <strong>Commit changes</strong>.</p></li>
+</ol>
+<p>A commit is one saved state of your repository, with who, when and what. You have now made your first one.</p>
+</section>
+<section id="part-3-clone-the-repository-github-desktop" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-clone-the-repository-github-desktop">Part 3: Clone the repository (GitHub Desktop)</h2>
+<p>Clone a repository once. A second click on Clone makes a second copy on your laptop, and the two get mixed up.</p>
+<ol type="1">
+<li>Open GitHub Desktop. Choose the menu <strong>File</strong>, <strong>Clone Repository…</strong>, then the tab <strong>URL</strong>.</li>
+<li>Type <code>gitforsci-rdc/teaching-</code> followed by your username into the first field.</li>
+<li>Look at <strong>Local Path</strong>. It must end in <code>gitrepos/teaching-</code> followed by your username, in the folder <code>gitrepos</code> you created in Step 5.</li>
+<li>Click <strong>Clone</strong>. GitHub Desktop shows your repository at the top left.</li>
+</ol>
+</section>
+<section id="part-4-an-editor-recommended" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-an-editor-recommended">Part 4: An editor (recommended)</h2>
+<p>GitHub Desktop shows changes, but it does not edit files. I recommend <a href="https://www.sublimetext.com/download">Sublime Text</a>, a free editor for plain text.</p>
+<ol type="1">
+<li>Install Sublime Text.</li>
+<li>In GitHub Desktop, open <strong>Settings</strong> (Windows: <strong>File</strong>, <strong>Options</strong>), tab <strong>Integrations</strong>, and choose <strong>Sublime Text</strong> as <strong>External Editor</strong>.</li>
+</ol>
+<p>Without Sublime Text, use TextEdit on macOS or Notepad on Windows. Do not use Word.</p>
+</section>
+<section id="part-5-one-commit-from-your-laptop" class="level2">
+<h2 class="anchored" data-anchor-id="part-5-one-commit-from-your-laptop">Part 5: One commit from your laptop</h2>
+<ol type="1">
+<li>Open the file <code>README.md</code> of your repository. With Sublime Text: menu <strong>Repository</strong>, <strong>Open in Sublime Text</strong>, then click <code>README.md</code>. Without it: menu <strong>Repository</strong>, <strong>Show in Finder</strong> (Windows: <strong>Show in Explorer</strong>), then open <code>README.md</code> with TextEdit or Notepad.</li>
+<li>Add one sentence below the title, for example what this repository is for. Save the file.</li>
+<li>Go back to GitHub Desktop. The tab <strong>Changes</strong> lists <code>README.md</code> with a tick.</li>
+<li>Write a commit message in the field at the bottom left, for example <code>Describe this repository</code>.</li>
+<li>Click <strong>Commit to main</strong>.</li>
+<li>Click <strong>Push origin</strong> at the top. Your commit is now on GitHub as well.</li>
+</ol>
+</section>
+<section id="part-6-check-and-report" class="level2">
+<h2 class="anchored" data-anchor-id="part-6-check-and-report">Part 6: Check and report</h2>
+<ol type="1">
+<li>In GitHub Desktop, click the tab <strong>History</strong>. You see three commits: the first one made by GitHub, your three lines, and the sentence in the README.</li>
+<li>Open your issue in the <a href="https://github.com/gitforsci-rdc/workshop/issues">workshop repository</a>, the one with your username in its title, and tick the box for Step 6.</li>
+</ol>
+</section>
+<section id="stuck" class="level2">
+<h2 class="anchored" data-anchor-id="stuck">Stuck?</h2>
+<ul>
+<li><strong>The owner <code>gitforsci-rdc</code> is not in the list.</strong> The invitation is not accepted yet. Open <a href="https://github.com/orgs/gitforsci-rdc/invitation" class="uri">https://github.com/orgs/gitforsci-rdc/invitation</a> while signed in.</li>
+<li><strong>The push is rejected.</strong> You ticked “Block command line pushes that expose my email” in Step 4, and GitHub Desktop still uses your real address. Open <strong>Settings</strong> (Windows: <strong>File</strong>, <strong>Options</strong>), tab <strong>Git</strong>, choose the address that ends in <code>@users.noreply.github.com</code> and save. Then click <strong>Undo</strong> at the bottom of the tab <strong>Changes</strong> and commit again.</li>
+<li><strong>Something went very wrong with the clone.</strong> Delete the folder on your laptop and clone again. The version on GitHub is the latest one, as far as you pushed.</li>
+<li>Anything else: write what you see as a comment in your issue, with a screenshot.</li>
+</ul>
+<p>If this step is not finished by Friday, come anyway. You sit with a neighbour who has it, follow on their laptop and take the reviewer’s part. The educator part of the workshop needs no setup.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/gitforsci-rdc\.github\.io\/website\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../pre-work/05-setup-check.html" class="pagination-link" aria-label="Step 5: Setup check">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 5: Setup check</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Git for Scientists is an open educational resource of Global Health Engineering, ETH Zurich, licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-rdc/website/edit/main/pre-work/06-your-repository.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-rdc/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

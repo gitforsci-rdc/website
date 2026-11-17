@@ -69,6 +69,8 @@ website:
             text: "Step 4: Email address in commits"
           - href: pre-work/05-setup-check.qmd
             text: "Step 5: Setup check"
+          - href: pre-work/06-your-repository.qmd
+            text: "Step 6: Your own repository"
           # Template entries for the RStudio route, not used in this cohort:
           #   - href: pre-work/01-install-r.qmd      text: "Step 3: Install R & RStudio"
           #   - href: pre-work/04-github-pat.qmd     text: "Step 4: GitHub PAT"

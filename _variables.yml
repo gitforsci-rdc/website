@@ -42,6 +42,7 @@ session:
   timezone-label: "Europe/Zurich"
   survey-deadline: "Monday, 16 November 2026, 18:00"
   setup-check-deadline: "Wednesday, 18 November 2026"
+  repository-deadline: "Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00"
   steps-date: "Tuesday, 17 November 2026"
   registration-closed: true
   registration-interest-form: "https://www.conftool.pro/rdc2026"
