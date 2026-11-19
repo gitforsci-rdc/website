@@ -100,7 +100,7 @@
     "href": "workshop/slides.html#one-board-for-the-room",
     "title": "Git for Scientists",
     "section": "One board for the room",
-    "text": "One board for the room\nYour turn 2 minutes\n\n\nOpen the workshop website: https://gitforsci-rdc.github.io/website/\nClick Workshop board in the top bar. No account, no name.\nUnder Parked questions, add one note: where did you travel from this morning?\n\n\n\n \n\nAn AI session (Claude) on my laptop reads your notes and groups them. No names, nothing personal on a note.\n\n\nBlock 09:40 to 09:45. Wait until notes appear. Parked questions: any time, one question per note. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.",
+    "text": "One board for the room\nYour turn 2 minutes\n\n\nOpen the workshop website: https://gitforsci-rdc.github.io/website/\nClick Workshop board in the top bar. No account, no name.\nIn the frame First note, add one note: one thing from the conference so far that stays with you.\n\n\n\n \n\nAn AI session (Claude) on my laptop reads your notes and groups them. No names, nothing personal on a note.\n\n\nBlock 09:40 to 09:45. Wait until notes appear. Then point to the frame Parked questions: any time, one question per note. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -136,7 +136,7 @@
     "href": "workshop/slides.html#one-repository-several-places",
     "title": "Git for Scientists",
     "section": "One repository, several places",
-    "text": "One repository, several places\n\n\n\n\n\nPictures: Lars Schöbitz, CC BY 4.0\n\n\nBlock 09:45 to 09:55. Kim creates the repository on GitHub. Kim and Robin clone: three places, the same state. Laptops never talk to each other directly, always through GitHub. Words: local is the laptop, remote is GitHub. Clone once. A second clone is a second copy on the same laptop, and the two get mixed up.",
+    "text": "One repository, several places\n\n\n\n\n\nPictures: Lars Schöbitz, CC BY 4.0. K is Kim, R is Robin. Dashed: only on the laptop.\n\n\nBlock 09:45 to 09:55. Kim creates the repository on GitHub. Kim and Robin clone: three places, the same state. Laptops never talk to each other directly, always through GitHub. Words: local is the laptop, remote is GitHub. Clone once. A second clone is a second copy on the same laptop, and the two get mixed up.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -148,7 +148,7 @@
     "href": "workshop/slides.html#your-commits-in-github-desktop",
     "title": "Git for Scientists",
     "section": "Your commits in GitHub Desktop",
-    "text": "Your commits in GitHub Desktop\nOur turn\n\n\nOpen GitHub Desktop.\nChoose your repository teaching-your-username at the top left.\nClick the tab History.\n\n\nYour commits from the pre-work: who, when, what, why.\n\nThree commits? Put a sticky note on your laptop lid.\n\n\nBlock 09:55 to 10:00, with the next slide. Whoever has not finished the pre-work looks at the neighbour’s screen. Show the same view in the demo repository.",
+    "text": "Your commits in GitHub Desktop\nOur turn\n\n\nOpen GitHub Desktop.\nChoose your repository teaching-your-username at the top left.\nClick the tab History.\n\n\nYour commits from the pre-work: who, when, what, why.\n\nThree commits? Show your neighbour.\n\n\nBlock 09:55 to 10:00, with the next slide. Whoever has not finished the pre-work looks at the neighbour’s screen. Show the same view in the demo repository.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -168,11 +168,23 @@
     ]
   },
   {
+    "objectID": "workshop/slides.html#a-commit-step-by-step",
+    "href": "workshop/slides.html#a-commit-step-by-step",
+    "title": "Git for Scientists",
+    "section": "A commit, step by step",
+    "text": "A commit, step by step\nMy turn Watch, type nothing.\n\nMenu Repository, Open in Sublime Text\nOne line more in rainbow-train.md, save\nTab Changes: the line shows in green\nA message, then Commit to main\nPush origin\n\n\nBlock 10:00 to 10:10, with the next slide. All five steps as rainbow-train, without stopping, about 2 minutes. Then the next slide: the same for the room.",
+    "crumbs": [
+      "Start",
+      "Workshop",
+      "Slides"
+    ]
+  },
+  {
     "objectID": "workshop/slides.html#a-commit-of-your-own",
     "href": "workshop/slides.html#a-commit-of-your-own",
     "title": "Git for Scientists",
     "section": "A commit of your own",
-    "text": "A commit of your own\nMy turn I show it once. Your turn Then you, 5 minutes.\n\n\nIn GitHub Desktop: menu Repository, Open in Sublime Text.\nIn your-username.md, add one line at the end and save:\n- What I want to take away today:\nTab Changes: your line shows in green.\nWrite a message, click Commit to main.\nClick Push origin.\n\n\n\n \n\nOn GitHub: one commit more. Then a sticky note on the lid.\n\n\nBlock 10:00 to 10:10. First I do all five steps as rainbow-train without stopping, then the room. No Sublime Text: menu Repository, Show in Finder (Windows: Show in Explorer), open the file with TextEdit or Notepad. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Check for everyone: View on GitHub, the number beside the clock is one higher. This step returns at 11:25.",
+    "text": "A commit of your own\nYour turn 5 minutes\n\n\nIn GitHub Desktop: menu Repository, Open in Sublime Text.\nIn your-username.md, add one line at the end and save:\n- What I want to take away today:\nTab Changes: your line shows in green.\nWrite a message, click Commit to main.\nClick Push origin.\n\n\n\n \n\nOn GitHub: one commit more. Then a sticky note on the lid.\n\n\nBlock 10:00 to 10:10. I walk the room. No Sublime Text: menu Repository, Show in Finder (Windows: Show in Explorer), open the file with TextEdit or Notepad. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Check for everyone: View on GitHub, the number beside the clock is one higher. This step returns at 11:25.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -184,7 +196,7 @@
     "href": "workshop/slides.html#questions-so-far",
     "title": "Git for Scientists",
     "section": "Questions so far",
-    "text": "Questions so far\nTwo or three now, out loud.\n\nEverything else: a note under Parked questions.\n\n\nBlock 10:10 to 10:15, with the terminal slides. The first of two spots for live questions; the second is at 11:00.",
+    "text": "Questions so far\nOne or two now, out loud.\n\n \n\nEverything else: a note under Parked questions.\n\n\nBlock 10:10 to 10:15, with the terminal slides. The first of two spots for live questions; the second is at 11:00.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -220,7 +232,7 @@
     "href": "workshop/slides.html#a-branch-then-a-pull-request",
     "title": "Git for Scientists",
     "section": "A branch, then a pull request",
-    "text": "A branch, then a pull request\n\n\n\n\n\n\n\n\nK is Kim, R is Robin. Dashed: only on the laptop. Dark border: the newest commit of a branch.\n\n\nBlock 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.",
+    "text": "A branch, then a pull request\n\n\n\n\n\n\n\n\nBlock 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -240,11 +252,11 @@
     ]
   },
   {
-    "objectID": "workshop/slides.html#from-your-repository-into-the-shared-one",
-    "href": "workshop/slides.html#from-your-repository-into-the-shared-one",
+    "objectID": "workshop/slides.html#from-yours-into-the-shared-one",
+    "href": "workshop/slides.html#from-yours-into-the-shared-one",
     "title": "Git for Scientists",
-    "section": "From your repository into the shared one",
-    "text": "From your repository into the shared one\n\n\nBefore\nYour three lines are in your own repository, in your-username.md.\n\nAfter\nThe same file is in the repository workshop, on a branch of your own. A pull request asks to take it into main.\n\n\nYou copy the file, not the folder.\n\n\nBlock 10:20 to 10:30, with the demo and the last two slides.",
+    "section": "From yours into the shared one",
+    "text": "From yours into the shared one\n\n\nBefore\nYour three lines are in your own repository, in your-username.md.\n\nAfter\nThe same file is in the repository workshop, on a branch of your own. A pull request asks to take it into main.\n\n\nYou copy the file, not the folder.\n\n\nBlock 10:20 to 10:30, with the demo and the last two slides.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -268,7 +280,7 @@
     "href": "workshop/slides.html#a-second-person-reads",
     "title": "Git for Scientists",
     "section": "A second person reads",
-    "text": "A second person reads\nMy turn\n\n\n\n\n\n\n\nBlock 10:20 to 10:30. Comment, commit, push, merge, one after the other, pictures only. No live review today.",
+    "text": "A second person reads\n\n\n\n\n\n\n\nBlock 10:20 to 10:30. Comment, commit, push, merge, one after the other, pictures only. No live review today.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -280,7 +292,7 @@
     "href": "workshop/slides.html#your-turn-is-at-home",
     "title": "Git for Scientists",
     "section": "Your turn is at home",
-    "text": "Your turn is at home\nWhat I showed is yours to do after the workshop, in about 30 minutes.\n\n\nOpen the page Add your file on the workshop website.\nBring your file into the repository workshop with a pull request.\nRequest larnsce as the reviewer.\n\n\n\nI read every pull request that is open by Friday 4 December and write one question on it.\n\n\nBlock 10:20 to 10:30, last slide before the break. The course is built in two sessions with time between them to practise. Today is the first session only. In the second session pairs review and merge each other’s work, 30 minutes of it; it is the part I would never cut from a full course.",
+    "text": "Your turn is at home\n\n\nOpen the page Add your file on the workshop website.\nBring your file into the repository workshop with a pull request.\nRequest larnsce as the reviewer.\n\n\n\nI read every pull request that is open by Friday 4 December and write one question on it.\n\n\nIn the full course you do this in the room, right after the break. I walk the room and check in with each person. Online, I visit each break-out room.\n\n\nBlock 10:20 to 10:30, last slide before the break. About 30 minutes at home. In the room it is the first activity after the break with real learners: it gives me the time to walk the room and take questions one to one. The course is built in two sessions with time between them to practise. Today is the first session only. In the second session pairs review and merge each other’s work, 30 minutes of it; it is the part I would never cut from a full course.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -316,7 +328,7 @@
     "href": "workshop/slides.html#activity-1-feedback-on-this-workshop",
     "title": "Git for Scientists",
     "section": "Activity 1: feedback on this workshop",
-    "text": "Activity 1: feedback on this workshop\nYour turn The first hour, and the pre-work before it.\n\n\nThink, alone, 2 minutes: what went well, what can be improved?\nPair, 3 minutes: tell your neighbour.\nShare, 5 minutes: on the board, frame Activity 1. One point per note, in the cell where it fits.\n\n\n\n \n\nAt least one note under What can be improved.\n\n\nBlock 10:45 to 10:55. Call the three steps out loud at 2 and at 5 minutes. When the countdown ends, type in the second window: /board-synthesis rubric. Then go on with the next two slides while it runs.",
+    "text": "Activity 1: feedback on this workshop\nYour turn The first hour, and the pre-work before it.\n\n\nThink, alone, 2 minutes: what went well, what can be improved?\nPair, 3 minutes: tell your neighbour.\nShare, 5 minutes: on the board, frame Activity 1. One point per note, in the cell where it fits.\n\n\n\n \n\nAt least two notes under What can be improved.\n\n\nBlock 10:45 to 10:55. Call the three steps out loud at 2 and at 5 minutes. When the countdown ends, type in the second window: /board-synthesis rubric. Then go on with the next two slides while it runs.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -376,7 +388,7 @@
     "href": "workshop/slides.html#what-motivates-adults-to-learn",
     "title": "Git for Scientists",
     "section": "What motivates adults to learn",
-    "text": "What motivates adults to learn\n\n\n\n\n\nSelf-efficacy: I am in control of my own life.\nUtility: This will help me meet my goals.\nCommunity: People I know are learning this with me.\n\n\nThis morning: a repository of your own, your own three lines, a neighbour.\n\n\n\nFigure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.\n\n\nBlock 11:15 to 11:20, this slide and the next. Motivation is the strongest predictor of whether an adult learns something.",
+    "text": "What motivates adults to learn\n\n\n\n\n\nSelf-efficacy: I am in control of my own life.\nUtility: This will help me meet my goals.\nCommunity: People I know are learning this with me.\n\n\n\nThis morning: a repository of your own, your own three lines, a neighbour.\n\n\n\n\nFigure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.\n\n\nBlock 11:15 to 11:20, this slide and the next. Motivation is the strongest predictor of whether an adult learns something.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -388,7 +400,7 @@
     "href": "workshop/slides.html#what-takes-motivation-away",
     "title": "Git for Scientists",
     "section": "What takes motivation away",
-    "text": "What takes motivation away\n\n\n\nUnpredictability: what I do does not seem to affect the outcome.\nUnfairness: the teacher plays favourites.\nIndifference: nobody cares. A question in an issue stays without an answer. The material was last touched two years ago.\n\n\n\n\n\nWhich of the three do your learners meet most often?\n\n\nFigure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.\n\n\nBlock 11:15 to 11:20. A push that is rejected without a reason I can read is unpredictability. An instructor who answers only the fast people is unfairness. Indifference is also: nobody notices that you fell behind in the pre-work. Ask for one hand per heading. One moment of my own if there is room: a course where the setup failed and the instructor went on.",
+    "text": "What takes motivation away\n\n\n\nUnpredictability: what I do does not seem to affect the outcome.\nUnfairness: the teacher plays favourites.\nIndifference: nobody cares. A question in an issue stays without an answer. The material was last touched two years ago.\n\n\n\n\n\n\nWhich of the three do your learners meet most often?\n\n\n\nFigure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.\n\n\nBlock 11:15 to 11:20. A push that is rejected without a reason I can read is unpredictability. An instructor who answers only the fast people is unfairness. Indifference is also: nobody notices that you fell behind in the pre-work. Ask for one hand per heading. One moment of my own if there is room: a course where the setup failed and the instructor went on.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -400,7 +412,7 @@
     "href": "workshop/slides.html#the-full-course",
     "title": "Git for Scientists",
     "section": "The full course",
-    "text": "The full course\n\n\n\n\n\n\n\nSession 1, 2 hours\nWhat you saw today, and your own pull request in the room\n\n\nTwo weeks between\nA repository of your own, with me as reviewer. Practice in a game with quizzes. A glossary.\n\n\nSession 2, 2 hours\nPairs review and merge each other’s work\n\n\n\n\nToday you saw half of session 1.\n\n\nBlock 11:20 to 11:25, with the next two slides. The two weeks are where people learn it: they bring a project of their own and I review it. The game and the glossary exist in German so far, from the course of Tuesday: gitklar.ch/spiel. An English glossary for this website is in work.",
+    "text": "The full course\n\n\n\n\n\n\n\nSession 1, 2 hours\nWhat you saw today, and your own pull request in the room\n\n\nTwo weeks between\nA repository of your own, with me as reviewer. Practice in a game with quizzes. A glossary.\n\n\nSession 2, 2 hours\nPairs review and merge. A merge conflict. Working together: tasks and projects, organisation and profile.\n\n\n\n\nToday you saw half of session 1.\n\n\nBlock 11:20 to 11:25, with the next two slides. The two weeks are where people learn it: they bring a project of their own and I review it. The game and the glossary exist in German so far, from the course of Tuesday: gitklar.ch/spiel. An English glossary for this website is in work.",
     "crumbs": [
       "Start",
       "Workshop",
