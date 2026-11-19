@@ -216,7 +216,7 @@ Block 09:40 to 09:45. Say it: from 09:45 to 10:30 you get the first session of t
 ::: task
 1.  Open the workshop website: <https://gitforsci-rdc.github.io/website/>
 2.  Click **Workshop board** in the top bar. No account, no name.
-3.  Under **Parked questions**, add one note: where did you travel from this morning?
+3.  In the frame **First note**, add one note: one thing from the conference so far that stays with you.
 :::
 
 {{< countdown "2:00" >}}
@@ -226,7 +226,7 @@ An AI session (Claude) on my laptop reads your notes and groups them. No names, 
 :::
 
 ::: {.notes}
-Block 09:40 to 09:45. Wait until notes appear. Parked questions: any time, one question per note. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.
+Block 09:40 to 09:45. Wait until notes appear. Then point to the frame Parked questions: any time, one question per note. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.
 :::
 
 # Git for Scientists, session 1 {background-color="#1A1714"}
