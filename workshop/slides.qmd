@@ -35,13 +35,13 @@ Friday morning from the tracker.
 Render: quarto render workshop/slides.qmd
 -->
 
-# Welcome {background-color="{{< var brand.section-bg >}}"}
+# Welcome {background-color="#1A1714"}
 
 ## Lars Schöbitz
 
 ::::: columns
 ::: {.column width="30%"}
-![](images/lars_schoebitz_profile_photo.jpg){width="85%" fig-alt="Portrait of Lars Schöbitz."}
+![](images/lars-paper.png){width="85%" fig-alt="Portrait of Lars Schöbitz."}
 :::
 
 ::: {.column width="69%"}
@@ -226,14 +226,14 @@ Block 09:40 to 09:45. Say it: from 09:45 to 10:30 you get the first session of t
 {{< countdown "2:00" >}}
 
 ::: key
-After the break, an AI session (Claude) on my laptop reads your notes and groups them. No names, nothing personal on a note.
+An AI session (Claude) on my laptop reads your notes and groups them. No names, nothing personal on a note.
 :::
 
 ::: {.notes}
 Block 09:40 to 09:45. Wait until notes appear. Parked questions: any time, one question per note. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.
 :::
 
-# Git for Scientists, session 1 {background-color="{{< var brand.section-bg >}}"}
+# Git for Scientists, session 1 {background-color="#1A1714"}
 
 ## What is a commit?
 
@@ -404,7 +404,7 @@ What you learn today carries over to the tool you teach with.
 Block 10:10 to 10:15. The same names in RStudio, Positron and VS Code. You type nothing.
 :::
 
-# Branch and pull request {background-color="{{< var brand.section-bg >}}"}
+# Branch and pull request {background-color="#1A1714"}
 
 ## A branch, then a pull request
 
@@ -446,7 +446,7 @@ Block 10:15 to 10:20, this slide and the next. One sentence per picture. Branch:
 The same steps for Robin, one after the other. Last picture: each person has a branch of their own, which is why yours is named people-username. GitHub holds everything, each laptop only its own work.
 :::
 
-# The shared repository {background-color="{{< var brand.section-bg >}}"}
+# The shared repository {background-color="#1A1714"}
 
 ## From your repository into the shared one
 
@@ -494,7 +494,7 @@ Block 10:20 to 10:30. One pass, about 5 minutes, and say these out loud:
 The room does not type here. Say it: this is your part at home, and the page has every step.
 :::
 
-# Review and merge {background-color="{{< var brand.section-bg >}}"}
+# Review and merge {background-color="#1A1714"}
 
 ## A second person reads
 
@@ -542,7 +542,7 @@ Until 10:40.
 After the break: your feedback. One thing that went well, one that can be improved.
 :::
 
-# The educator seat {background-color="{{< var brand.section-bg >}}"}
+# The educator seat {background-color="#1A1714"}
 
 ## Feedback on my talk yesterday
 
@@ -647,7 +647,7 @@ Then the floor is open, for what you wrote and for your questions.
 Block 11:00 to 11:10. Switch to the browser tab with live.html: it shows the result after the skill ran. Give the room a minute to read. Read one theme per row from each column out loud, then open it: who wants to say more on a point under What can be improved? Questions from the frame Parked questions fit here too. If the synthesis failed: open the board itself and read three notes per cell. Do not defend, say thank you and name one thing I will change.
 :::
 
-# How I teach {background-color="{{< var brand.section-bg >}}"}
+# How I teach {background-color="#1A1714"}
 
 ## Six things I do
 
@@ -668,7 +668,7 @@ Each one has a slide of its own at the end of this deck.
 Block 11:10 to 11:15. One sentence per point, each with its example from this morning. Clicks are usually written down with screenshots, which are missing this time. The content of today was written yesterday. Found one of the three words on my slides or in the pre-work? Park it on the board, I fix it in a commit after the workshop.
 :::
 
-# Motivation {background-color="{{< var brand.section-bg >}}"}
+# Motivation {background-color="#1A1714"}
 
 ## What motivates adults to learn
 
@@ -726,7 +726,7 @@ Figure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, C
 Block 11:15 to 11:20. A push that is rejected without a reason I can read is unpredictability. An instructor who answers only the fast people is unfairness. Indifference is also: nobody notices that you fell behind in the pre-work. Ask for one hand per heading. One moment of my own if there is room: a course where the setup failed and the instructor went on.
 :::
 
-# What stays {background-color="{{< var brand.section-bg >}}"}
+# What stays {background-color="#1A1714"}
 
 ## The full course
 
@@ -790,7 +790,7 @@ Your answer commits you to nothing.
 Block 11:25 to 11:30, with the last slide. The step of 10:00, this time alone. The second line is a choice: unlike a note on the board, a commit carries your name. No laptop setup: a note under Parked questions. The form of the offer is open; the answers shape it. They arrive as commits, which I can read with the tracker.
 :::
 
-# Thank you {background-color="{{< var brand.section-bg >}}"}
+# Thank you {background-color="#1A1714"}
 
 ## Thank you
 
@@ -807,7 +807,7 @@ Lars Schöbitz
 11:30. Your pull request at home: the page Add your file on the website. Parked questions without an answer get one by email. The board stays open until the evening, then I close it. Slides made with revealjs and Quarto.
 :::
 
-# More on how I teach {background-color="{{< var brand.section-bg >}}"}
+# More on how I teach {background-color="#1A1714"}
 
 ## Words I leave out
 

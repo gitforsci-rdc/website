@@ -3,21 +3,30 @@
 // Large type for a room with a projector. Slides carry no .smaller class.
 $presentation-font-size-root: 40px !default;
 
+// The look of the talk of 19 November: paper, ink and one purple from the GHE Colour Palette.
+$body-bg: #F6F1E7;
+$body-color: #1A1714;
+$presentation-heading-color: #1A1714;
+$link-color: #901C6C;
+$code-color: #901C6C;
+$code-bg: #ECE5D6;
+
 /*-- scss:rules --*/
 
 // Additions to style/slides.scss for the deck of 20 November 2026.
 
-// Slides stand on white, so the story pictures have no visible edge.
-.reveal-viewport { background-color: #ffffff; }
+// Slides stand on paper. The story pictures and the two figures carry the paper colour as their ground.
+.reveal-viewport { background-color: #F6F1E7; }
+.reveal .footer a { color: #4A453E; }
 
 .reveal strong { font-weight: 700; }
 .reveal h3 { font-size: 1.05em; }
 
 // A spoken aside.
-.reveal .aside-line { color: #0F4C81; font-weight: 700; margin-top: 0.6em; }
+.reveal .aside-line { color: #901C6C; font-weight: 700; margin-top: 0.6em; }
 
 // The one sentence of a slide that the back row must read.
-.reveal .key { font-size: 1.1em; font-weight: 700; line-height: 1.25; color: #0F4C81; background-color: #EAF1F8; border-left: solid 10px #ED6D37; padding: 0.3em 0.7em; margin-top: 0.6em; }
+.reveal .key { font-size: 0.95em; font-weight: 700; line-height: 1.25; color: #1A1714; background-color: #ECE5D6; border-left: solid 10px #901C6C; padding: 0.3em 0.7em; margin-top: 0.6em; }
 .reveal .key p { margin: 0; }
 
 // One highlighted word in a sentence.
@@ -27,20 +36,20 @@ $presentation-font-size-root: 40px !default;
 .reveal .numbers { display: flex; gap: 1em; justify-content: center; margin: 0.6em 0; text-align: center; }
 .reveal .number { flex: 1; font-size: 0.85em; line-height: 1.2; }
 .reveal .number p { margin: 0; }
-.reveal .big { display: block; font-size: 3.6em; font-weight: 800; color: #0F4C81; line-height: 1.05; }
+.reveal .big { display: block; font-size: 3.6em; font-weight: 800; color: #901C6C; line-height: 1.05; }
 
 .reveal table { font-size: 0.72em; }
 .reveal .r-stack img { margin: 0 auto; }
 
 // A task for the room.
-.reveal .slide .task { font-size: 0.8em; padding: 0.25em 0.7em; }
+.reveal .slide .task { font-size: 0.8em; padding: 0.25em 0.7em; border-left: solid 6px #1A1714; background-color: #ECE5D6; }
 .reveal .slide .task li { margin-bottom: 0.2em; }
 
 // Who works right now: I show, we do it together, you work. White on a dark fill, contrast above 7 to 1.
 .reveal .turn { display: inline-block; padding: 0.08em 0.7em; border-radius: 0.9em; font-size: 0.7em; font-weight: 700; margin-right: 0.3em; color: #ffffff; }
-.reveal .turn.my { background-color: #0F4C81; }
-.reveal .turn.our { background-color: #4A453E; }
-.reveal .turn.your { background-color: #9A3A0C; }
+.reveal .turn.my { background-color: #1A1714; }
+.reveal .turn.our { background-color: #3C2874; }
+.reveal .turn.your { background-color: #901C6C; }
 
 // The key to the story pictures, and credit lines.
 .reveal .legend { font-size: 0.5em; margin-top: 0.3em; }
