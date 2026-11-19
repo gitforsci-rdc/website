@@ -1,6 +1,7 @@
 /*-- scss:defaults --*/
 
-$presentation-font-size-root: 34px !default;
+// Large type for a room with a projector. Slides carry no .smaller class.
+$presentation-font-size-root: 40px !default;
 
 /*-- scss:rules --*/
 
@@ -9,28 +10,43 @@ $presentation-font-size-root: 34px !default;
 // Slides stand on white, so the story pictures have no visible edge.
 .reveal-viewport { background-color: #ffffff; }
 
-// A spoken aside or the signal the room gives back.
+.reveal strong { font-weight: 700; }
+.reveal h3 { font-size: 1.05em; }
+
+// A spoken aside.
 .reveal .aside-line { color: #0F4C81; font-weight: 700; margin-top: 0.6em; }
+
+// The one sentence of a slide that the back row must read.
+.reveal .key { font-size: 1.1em; font-weight: 700; line-height: 1.25; color: #0F4C81; background-color: #EAF1F8; border-left: solid 10px #ED6D37; padding: 0.3em 0.7em; margin-top: 0.6em; }
+.reveal .key p { margin: 0; }
 
 // One highlighted word in a sentence.
 .reveal .mark-word { background-color: #FAE3B4; padding: 0 0.15em; }
 
-// Three numbers side by side.
-.reveal .numbers { display: flex; gap: 1.2em; justify-content: center; margin: 0.6em 0; text-align: center; }
-.reveal .number { flex: 1; }
-.reveal .big { font-size: 2.6em; font-weight: 700; color: #0F4C81; line-height: 1.1; }
+// Numbers side by side.
+.reveal .numbers { display: flex; gap: 1em; justify-content: center; margin: 0.6em 0; text-align: center; }
+.reveal .number { flex: 1; font-size: 0.85em; line-height: 1.2; }
+.reveal .number p { margin: 0; }
+.reveal .big { display: block; font-size: 3.6em; font-weight: 800; color: #0F4C81; line-height: 1.05; }
 
-.reveal table { font-size: 0.8em; }
+.reveal table { font-size: 0.72em; }
 .reveal .r-stack img { margin: 0 auto; }
 
-// Who works right now: I show, we do it together, you work. First thing on the slide.
-.reveal .turn { display: inline-block; padding: 0.05em 0.6em; border-radius: 0.9em; font-size: 0.75em; font-weight: 700; margin-right: 0.3em; }
-.reveal .turn.my { background-color: #0F4C81; color: #ffffff; }
-.reveal .turn.our { background-color: #FEBC94; color: #1e1e1e; }
-.reveal .turn.your { background-color: #ED6D37; color: #1e1e1e; }
+// A task for the room.
+.reveal .slide .task { font-size: 0.8em; padding: 0.25em 0.7em; }
+.reveal .slide .task li { margin-bottom: 0.2em; }
 
-// The key to the story pictures.
-.reveal .legend { font-size: 0.6em; margin-top: 0.3em; }
+// Who works right now: I show, we do it together, you work. White on a dark fill, contrast above 7 to 1.
+.reveal .turn { display: inline-block; padding: 0.08em 0.7em; border-radius: 0.9em; font-size: 0.7em; font-weight: 700; margin-right: 0.3em; color: #ffffff; }
+.reveal .turn.my { background-color: #0F4C81; }
+.reveal .turn.our { background-color: #4A453E; }
+.reveal .turn.your { background-color: #9A3A0C; }
+
+// The key to the story pictures, and credit lines.
+.reveal .legend { font-size: 0.5em; margin-top: 0.3em; }
 
 // Terminal output as text, dark like a terminal window.
-.reveal pre.terminal { background-color: #1e1e1e; color: #f4f4f4; padding: 0.6em 0.8em; border-radius: 6px; font-size: 0.75em; line-height: 1.35; width: 100%; box-shadow: none; }
+.reveal pre.terminal { background-color: #1e1e1e; color: #f4f4f4; padding: 0.5em 0.8em; border-radius: 6px; font-size: 0.6em; line-height: 1.3; width: 100%; box-shadow: none; }
+
+// A key sentence beside a countdown leaves the corner free.
+.reveal .key.beside { width: 72%; }

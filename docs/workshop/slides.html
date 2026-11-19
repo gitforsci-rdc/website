@@ -39,7 +39,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-776f39e4578b2b01a65f189db6435acd.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-6ce05a6e4aae876a7ca529f9d2d05c46.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -161,7 +161,7 @@ Slides for Git for Scientists at the Research Data Conference 2026, Friday
 20 November 2026, 09:30 to 11:30, Bern. Layout of 19 November: part 1
 (09:30 to 10:30) ends after my pull request demo, the learners' own pull
 request is work for home. Part 2 (10:40 to 11:30) is the educator seat,
-with two activities on a Miro board and a synthesis slide for each
+with one activity on a Miro board and a synthesis slide
 (workshop/live.qmd, written by the skill board-synthesis, local only).
 The story pictures are stills of the two-person story (Kim and Robin).
 The numbers on the slide "Your preparation, in counts" are updated on
@@ -174,7 +174,7 @@ Render: quarto render workshop/slides.qmd
 <h1>Welcome</h1>
 
 </section>
-<section id="lars-schöbitz" class="slide level2 smaller">
+<section id="lars-schöbitz" class="slide level2">
 <h2>Lars Schöbitz</h2>
 <div class="columns">
 <div class="column" style="width:30%;">
@@ -185,10 +185,10 @@ Render: quarto render workshop/slides.qmd
 <li>RStudio certified instructor since 2020</li>
 <li>I teach people who have never written code or used Git</li>
 </ul>
-<div class="aside-line">
-<p>I finished these slides yesterday. That is on purpose, and at 11:10 I say why.</p>
-</div>
 </div></div>
+<div class="key">
+<p>I finished these slides yesterday. On purpose, and at 11:10 I say why.</p>
+</div>
 <aside class="notes">
 <p>Block 09:30 to 09:40. Three facts, one sentence on the day before. No more here.</p>
 <style type="text/css">
@@ -203,24 +203,21 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="two-seats-today" class="slide level2 smaller">
+<section id="two-seats-today" class="slide level2">
 <h2>Two seats today</h2>
-<p>You sit on two seats at the same time.</p>
 <div class="columns">
 <div class="column" style="width:49.5%;">
-<h3 id="learner">Learner</h3>
-<p>09:40 to 10:30</p>
-<p>Commit, branch and pull request: you make a commit of your own and watch a file travel into a shared repository.</p>
+<h3 id="learner-until-1030">Learner, until 10:30</h3>
+<p>You make a commit of your own and watch a file travel into a shared repository.</p>
 </div><div class="column" style="width:49.5%;">
-<h3 id="educator">Educator</h3>
-<p>10:40 to 11:30</p>
-<p>You look at how this workshop is built and taught, and you give feedback on the first hour.</p>
+<h3 id="educator-from-1040">Educator, from 10:40</h3>
+<p>You look at how this workshop is built and taught, and you give feedback on it.</p>
 </div></div>
-<div class="task">
-<p>From now on, watch <strong>how</strong> I teach: what I say, how I say it, how I run the room. After the break you write it down.</p>
+<div class="key">
+<p>From now on, watch <strong>how</strong> I teach. After the break you write it down.</p>
 </div>
 <aside class="notes">
-<p>Block 09:30 to 09:40. Say both seats out loud. The feedback after the break follows three words: content, presentation, interaction.</p>
+<p>Block 09:30 to 09:40. Say both seats out loud. The feedback after the break follows four words: content, presentation, interaction, preparation.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -233,94 +230,28 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="one-board-for-the-room" class="slide level2 smaller">
-<h2>One board for the room</h2>
-<div class="columns">
-<div class="column" style="width:38%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-1-1.png" alt="QR code that opens the Miro board of the workshop." width="384"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:61%;">
-<p><a href="https://miro.com/app/board/uXjVEMVk3OQ=/" class="uri">https://miro.com/app/board/uXjVEMVk3OQ=/</a></p>
-<ul>
-<li>No account, no name. Your notes are anonymous.</li>
-<li><strong>Parked questions</strong>: any time, one question per note.</li>
-<li>One activity after the break.</li>
-</ul>
-<div class="aside-line">
-<p>An AI session (Claude) on my laptop reads the activity and groups your notes into one slide. Do not write names or anything personal on a note.</p>
-</div>
-</div></div>
-<aside class="notes">
-<p>Block 09:30 to 09:40. Wait until the board is open on a few screens. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="find-your-neighbour" class="slide level2 smaller">
-<h2>Find your neighbour</h2>
-<div class="task">
-<p>Raise your hand if you <strong>use Git every week</strong>.</p>
-<p>Now look around. If you have never used Git, sit beside a raised hand. Move now, with your laptop.</p>
-</div>
-<ul>
-<li class="fragment">You work in pairs today, each person on their own laptop.</li>
-<li class="fragment">Pre-work not finished? Sit with a neighbour who has it and follow on their laptop.</li>
-</ul>
-<countdown-timer id="timer_9a5b93147067be278617715cd328af49aeee7b2a" minutes="02" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
- </countdown-timer>
-<aside class="notes">
-<p>Block 09:30 to 09:40. People who use Git weekly sit beside first-time users.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="who-is-in-the-room-git" class="slide level2 smaller">
+<section id="who-is-in-the-room-git" class="slide level2">
 <h2>Who is in the room: Git</h2>
-<p>From your 27 answers in the survey. How much have you used Git?</p>
+<p>How much have you used Git? Your answers in the survey.</p>
 <div class="numbers">
 <div class="number">
-<p><span class="big">6</span></p>
-<p>never</p>
+<p><span class="big">6</span> never</p>
 </div>
 <div class="number">
-<p><span class="big">7</span></p>
-<p>now and then</p>
+<p><span class="big">7</span> now and then</p>
 </div>
 <div class="number">
-<p><span class="big">4</span></p>
-<p>regularly</p>
+<p><span class="big">4</span> regularly</p>
 </div>
 <div class="number">
-<p><span class="big">9</span></p>
-<p>extensively</p>
+<p><span class="big">9</span> extensively</p>
 </div>
 </div>
-<p>A mixed room. That is why you sit in pairs.</p>
+<div class="key">
+<p>Half of you are new to Git or use it now and then.</p>
+</div>
 <aside class="notes">
-<p>Block 09:30 to 09:40, the three survey slides in about 2 minutes. One answer is empty. 14 macOS, 11 Windows, 1 Linux.</p>
+<p>Block 09:30 to 09:40, the survey slides in about 3 minutes. 27 answers, one of them empty here. 14 macOS, 11 Windows, 1 Linux. The cards on the tables mark a laptop with a finished setup. They say nothing about experience.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -333,27 +264,25 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="who-is-in-the-room-roles" class="slide level2 smaller">
+<section id="who-is-in-the-room-roles" class="slide level2">
 <h2>Who is in the room: roles</h2>
 <div class="numbers">
 <div class="number">
-<p><span class="big">10</span></p>
-<p>data stewards</p>
+<p><span class="big">10</span> data stewards</p>
 </div>
 <div class="number">
-<p><span class="big">5</span></p>
-<p>researchers</p>
+<p><span class="big">5</span> researchers</p>
 </div>
 <div class="number">
-<p><span class="big">2</span></p>
-<p>librarians</p>
+<p><span class="big">2</span> librarians</p>
 </div>
 <div class="number">
-<p><span class="big">9</span></p>
-<p>other roles</p>
+<p><span class="big">9</span> other roles</p>
 </div>
 </div>
+<div class="key">
 <p><strong>16</strong> of you teach Git or plan to. That is why the second half is about teaching.</p>
+</div>
 <aside class="notes">
 <p>Block 09:30 to 09:40. Other roles: IT, research software engineer, trainer, and people who chose other.</p>
 <style type="text/css">
@@ -368,33 +297,24 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-you-want-to-take-away" class="slide level2 smaller">
+<section id="what-you-want-to-take-away" class="slide level2">
 <h2>What you want to take away</h2>
-<p>Your answers to the open question, grouped:</p>
 <div class="numbers">
 <div class="number">
-<p><span class="big">9</span></p>
-<p>teach Git better, to mixed groups</p>
+<p><span class="big">9</span> teach Git better, to mixed groups</p>
 </div>
 <div class="number">
-<p><span class="big">8</span></p>
-<p>a solid foundation of my own</p>
+<p><span class="big">8</span> a solid foundation of my own</p>
 </div>
 <div class="number">
-<p><span class="big">3</span></p>
-<p>support researchers who use Git</p>
+<p><span class="big">3</span> support researchers who use Git</p>
 </div>
 <div class="number">
-<p><span class="big">3</span></p>
-<p>Git and AI tools</p>
+<p><span class="big">3</span> Git and AI tools</p>
 </div>
 </div>
-<ul>
-<li>This is <span class="mark-word">not</span> a course about AI. What agents such as Claude Code do in a repository rests on the steps of today.</li>
-<li>Things may <span class="mark-word">go wrong</span> here. Everything we do today can be undone.</li>
-</ul>
 <aside class="notes">
-<p>Block 09:30 to 09:40, last slide of it. Groups only, no single answers: the survey promised that. Four answers fall outside these groups (collaboration in a team, repairing mistakes). Two anchor sentences out loud: not an AI course, everything can be undone.</p>
+<p>Block 09:30 to 09:40. Groups only, no single answers: the survey promised that. Four answers fall outside these groups (collaboration in a team, repairing mistakes).</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -407,18 +327,58 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="how-we-work" class="slide level2 smaller">
-<h2>How we work</h2>
-<p>Three ways of working. The one that applies is at the top of the slide.</p>
-<p><span class="turn my">My turn</span> I show something on my screen. You watch and type nothing.</p>
-<p><span class="turn our">Our turn</span> We do the same step at the same time: I on my screen, you on yours.</p>
-<p><span class="turn your">Your turn</span> You work on a task, with your neighbour. I help where it sticks.</p>
+<section id="git-and-ai-tools" class="slide level2">
+<h2>Git and AI tools</h2>
+<p>Three of you asked for it:</p>
+<ul>
+<li>When to use an AI assistant, and when not</li>
+<li>Testing and collaboration on GitHub when an agent writes the code</li>
+<li>How to declare the use of AI tools in research</li>
+</ul>
+<div class="key">
+<p>This is <span class="mark-word">not</span> a course about AI. What an agent such as Claude Code does in a repository rests on the steps of today.</p>
+</div>
+<aside class="notes">
+<p>Block 09:30 to 09:40, last slide of it. 26 of the 28 answers name at least one AI tool in use. The three asks are grouped from the open answers, no quotes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="today" class="slide level2 smaller">
+<section id="how-we-work" class="slide level2">
+<h2>How we work</h2>
+<p><span class="turn my">My turn</span> I show something on my screen. You watch and type nothing.</p>
+<p><span class="turn our">Our turn</span> We do the same step at the same time, I on my screen, you on yours.</p>
+<p><span class="turn your">Your turn</span> You work on a task, with your neighbour. I help where it sticks.</p>
+<div class="key">
+<p>Things may <span class="mark-word">go wrong</span> here. Everything we do today can be undone.</p>
+</div>
+<aside class="notes">
+<p>Block 09:40 to 09:45, with the next two slides. This is the method of the course. From here on, the label at the top of a slide says who works.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="today" class="slide level2">
 <h2>Today</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 10%">
+<col style="width: 9%">
 <col style="width: 90%">
 </colgroup>
 <thead>
@@ -429,36 +389,28 @@ Render: quarto render workshop/slides.qmd
 </thead>
 <tbody>
 <tr class="odd">
-<td>09:30</td>
-<td>Two seats, the board, your neighbour</td>
+<td>09:45</td>
+<td><strong>Git for Scientists, session 1, as I teach it</strong></td>
 </tr>
 <tr class="even">
-<td>09:40</td>
-<td>What is a commit? One repository, several places</td>
+<td></td>
+<td>What is a commit? Your commits, then a commit of your own</td>
 </tr>
 <tr class="odd">
-<td>09:50</td>
-<td>Your commits in GitHub Desktop and on GitHub</td>
-</tr>
-<tr class="even">
-<td>10:00</td>
-<td>A commit of your own</td>
-</tr>
-<tr class="odd">
-<td>10:05</td>
-<td>Branch and pull request</td>
-</tr>
-<tr class="even">
 <td>10:15</td>
-<td>I show it: a file goes into the shared repository</td>
+<td>Branch and pull request. I show it in the shared repository</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>10:30</td>
 <td>Break</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>10:40</td>
-<td>Educator seat: your feedback, how I teach, what motivates</td>
+<td><strong>How it is built and taught</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Your feedback, how I teach, what motivates learners</td>
 </tr>
 <tr class="odd">
 <td>11:25</td>
@@ -466,13 +418,52 @@ Render: quarto render workshop/slides.qmd
 </tr>
 </tbody>
 </table>
-<div class="aside-line">
-<p>The schedule is tight. Questions that have no room go on the board.</p>
+<aside class="notes">
+<p>Block 09:40 to 09:45. Say it: from 09:45 to 10:30 you get the first session of the course, the way people new to Git get it. From 10:40 we take it apart. Questions that have no room go on the board; two spots for live questions, at 10:10 and at 11:00.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="one-board-for-the-room" class="slide level2">
+<h2>One board for the room</h2>
+<p><span class="turn your">Your turn</span> 2 minutes</p>
+<div class="task">
+<ol type="1">
+<li>Open the workshop website: <a href="https://gitforsci-rdc.github.io/website/" class="uri">https://gitforsci-rdc.github.io/website/</a></li>
+<li>Click <strong>Workshop board</strong> in the top bar. No account, no name.</li>
+<li>Under <strong>Parked questions</strong>, add one note: where did you travel from this morning?</li>
+</ol>
 </div>
+<countdown-timer id="timer_b005583895f6fe2f14639318ccccc8a66a346dca" minutes="02" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<div class="key">
+<p>After the break, an AI session (Claude) on my laptop reads your notes and groups them. No names, nothing personal on a note.</p>
+</div>
+<aside class="notes">
+<p>Block 09:40 to 09:45. Wait until notes appear. Parked questions: any time, one question per note. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
-<section id="the-commit" class="title-slide slide level1 center" data-background-color="#5c5751">
-<h1>The commit</h1>
+<section id="git-for-scientists-session-1" class="title-slide slide level1 center" data-background-color="#5c5751">
+<h1>Git for Scientists, session 1</h1>
 
 </section>
 <section id="what-is-a-commit" class="slide level2">
@@ -485,7 +476,7 @@ Render: quarto render workshop/slides.qmd
 <li class="fragment"><strong>Why</strong>: the message you write with it</li>
 </ul>
 <aside class="notes">
-<p>Block 09:40 to 09:50. Key words only, then the traces in a real repository on the next slide.</p>
+<p>Block 09:45 to 09:55. Key words only, then the traces in a real repository on the next slide.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -498,25 +489,24 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="traces-in-a-real-repository" class="slide level2 smaller">
+<section id="traces-in-a-real-repository" class="slide level2">
 <h2>Traces in a real repository</h2>
-<p><span class="turn my">My turn</span></p>
-<p>The website of this workshop, public on GitHub: <code>gitforsci-rdc/website</code></p>
+<p><span class="turn my">My turn</span> The commits of the workshop website:</p>
 <ul>
-<li><strong>14 commits</strong> from 9 to 17 November</li>
-<li>9 November: “pre-work site for the RDC 2026 iteration, steps 1 and 2 visible”</li>
-<li>15 November, a Sunday, 22:00: “pre-work steps 3 to 5 for the GitHub Desktop route”</li>
-<li>17 November: “pre-work step 6, your own repository and first commit”</li>
+<li>9 November: pre-work steps 1 and 2</li>
+<li>15 November, a Sunday, 22:00: steps 3 to 5</li>
+<li>17 November: step 6</li>
 </ul>
 <div class="task">
-<p>A question for you: <strong>When were your instructions written?</strong></p>
+<p>At what times of day did Lars prepare this material?</p>
 </div>
 <div class="fragment">
-<p>9 of the 14 commits are from the last three days, 4 of them after 22:00.</p>
+<div class="key">
+<p>Git forgets nothing. 9 of 14 commits in the last three days, 4 after 22:00.</p>
 </div>
-<p>Git forgets nothing. That is the use of it, and it is the reason to choose what goes into a commit.</p>
+</div>
 <aside class="notes">
-<p>Block 09:40 to 09:50. No browser needed, the slide carries it. The history shows that my instructions came late. This returns at 10:55.</p>
+<p>Block 09:45 to 09:55. The repository is public: gitforsci-rdc/website. No browser needed, the slide carries it. Git forgets nothing: that is the use of it, and it is the reason to choose what goes into a commit. The history shows that my instructions came late. This returns at 10:55.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -532,14 +522,14 @@ Render: quarto render workshop/slides.qmd
 <section id="one-repository-several-places" class="slide level2">
 <h2>One repository, several places</h2>
 <div class="r-stack">
-<p><img data-src="images/story-01.png" class="fragment fade-in" style="width:88.0%" alt="Three boxes: Robin's laptop and Kim's laptop are empty and dashed, with the words no copy yet. The box GitHub holds one commit. Below the laptops stands local, below GitHub stands remote. Underneath, the commit graph with the first commit on main."></p>
+<p><img data-src="images/story-01.png" class="fragment fade-in" style="width:88.0%" alt="Three boxes: Robin's laptop and Kim's laptop are empty and dashed, with the words no copy yet. The box GitHub holds one commit. Below the laptops stands local, below GitHub stands remote. Underneath, the commit graph with the first commit, Repository created, on main."></p>
 <p><img data-src="images/story-02.png" class="fragment fade-in" style="width:88.0%" alt="From GitHub, one arrow with the word clone points to Robin's laptop and one to Kim's laptop. All three boxes now hold the same commit."></p>
 </div>
 <div class="legend">
 <p>Pictures: Lars Schöbitz, CC BY 4.0</p>
 </div>
 <aside class="notes">
-<p>Block 09:40 to 09:50. Kim creates the repository on GitHub. Kim and Robin clone: three places, the same state. Laptops never talk to each other directly, always through GitHub. Words: local is the laptop, remote is GitHub. Clone once. A second clone is a second copy on the same laptop, and the two get mixed up.</p>
+<p>Block 09:45 to 09:55. Kim creates the repository on GitHub. Kim and Robin clone: three places, the same state. Laptops never talk to each other directly, always through GitHub. Words: local is the laptop, remote is GitHub. Clone once. A second clone is a second copy on the same laptop, and the two get mixed up.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -552,7 +542,7 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-commits-in-github-desktop" class="slide level2 smaller">
+<section id="your-commits-in-github-desktop" class="slide level2">
 <h2>Your commits in GitHub Desktop</h2>
 <p><span class="turn our">Our turn</span></p>
 <div class="task">
@@ -562,12 +552,12 @@ Render: quarto render workshop/slides.qmd
 <li>Click the tab <strong>History</strong>.</li>
 </ol>
 </div>
-<p>You see your own commits from the pre-work: who, when, what, why.</p>
-<div class="aside-line">
-<p>Do you see three commits? Thumbs up.</p>
+<p>Your commits from the pre-work: who, when, what, why.</p>
+<div class="key">
+<p>Three commits? Put a sticky note on your laptop lid.</p>
 </div>
 <aside class="notes">
-<p>Block 09:50 to 10:00. Whoever has not finished the pre-work looks at the neighbour’s screen. Show the same view in the demo repository.</p>
+<p>Block 09:55 to 10:00, with the next slide. Whoever has not finished the pre-work looks at the neighbour’s screen. Show the same view in the demo repository.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -580,45 +570,23 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="commits-on-github" class="slide level2 smaller">
-<h2>Commits on GitHub</h2>
-<p><span class="turn my">My turn</span></p>
-<p>I show the repository <code>teaching-rainbow-train</code> in the browser.</p>
-<ul>
-<li>From GitHub Desktop to GitHub: menu <strong>Repository</strong>, <strong>View on GitHub</strong></li>
-<li>The list of commits: the clock with the number</li>
-<li>One commit up close: who, when, what, why</li>
-<li><strong>Verified</strong> beside a commit: it was made in the browser, and GitHub signed it. A commit from your laptop has no such mark. Both are fine.</li>
-</ul>
-<aside class="notes">
-<p>Block 09:50 to 10:00. I show GitHub and explain, the room watches. Then the next slide: your turn, 3 minutes.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="your-commits-on-github" class="slide level2 smaller">
+<section id="your-commits-on-github" class="slide level2">
 <h2>Your commits on GitHub</h2>
-<p><span class="turn your">Your turn</span></p>
+<p><span class="turn your">Your turn</span> 3 minutes</p>
 <div class="task">
 <ol type="1">
-<li>In GitHub Desktop: menu <strong>Repository</strong>, <strong>View on GitHub</strong>. Your repository opens in the browser.</li>
-<li>Click the clock with the number above the list of files on the right, for example <strong>3 Commits</strong>.</li>
+<li>In GitHub Desktop: menu <strong>Repository</strong>, <strong>View on GitHub</strong>.</li>
+<li>Click the clock with the number, for example <strong>3 Commits</strong>.</li>
 <li>Show your neighbour one commit: who, when, what, why.</li>
 </ol>
 </div>
-<p>The same commits as in GitHub Desktop. Your laptop and GitHub hold the same state.</p>
-<countdown-timer id="timer_9a5b93147067be278617715cd328af49aeee7b2a" minutes="03" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_b005583895f6fe2f14639318ccccc8a66a346dca" minutes="03" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
+<div class="key">
+<p>Your laptop and GitHub hold the same commits.</p>
+</div>
 <aside class="notes">
-<p>Block 09:50 to 10:00. 3 minutes, each person on their own laptop. Without pre-work: look at the neighbour’s screen.</p>
+<p>Block 09:55 to 10:00. I show the two clicks once as rainbow-train, then the room. Without pre-work: look at the neighbour’s screen.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -631,25 +599,26 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="a-commit-of-your-own" class="slide level2 smaller">
+<section id="a-commit-of-your-own" class="slide level2">
 <h2>A commit of your own</h2>
-<p><span class="turn our">Our turn</span></p>
+<p><span class="turn my">My turn</span> I show it once. <span class="turn your">Your turn</span> Then you, 5 minutes.</p>
 <div class="task">
 <ol type="1">
-<li><p>In GitHub Desktop, choose your repository <code>teaching-your-username</code>. Menu <strong>Repository</strong>, <strong>Show in Finder</strong> (Windows: <strong>Show in Explorer</strong>).</p></li>
-<li><p>Open the file <code>your-username.md</code> in a text editor and add one line at the end:</p>
-<p><code>- What I want to take away today:</code></p>
-<p>Write your answer behind it and save the file.</p></li>
-<li><p>Back in GitHub Desktop: the tab <strong>Changes</strong> shows your line in green.</p></li>
-<li><p>Write a message at the bottom left, for example <code>Add what I want to take away</code>, and click <strong>Commit to main</strong>.</p></li>
+<li><p>In GitHub Desktop: menu <strong>Repository</strong>, <strong>Open in Sublime Text</strong>.</p></li>
+<li><p>In <code>your-username.md</code>, add one line at the end and save:</p>
+<p><code>- What I want to take away today:</code></p></li>
+<li><p>Tab <strong>Changes</strong>: your line shows in green.</p></li>
+<li><p>Write a message, click <strong>Commit to main</strong>.</p></li>
 <li><p>Click <strong>Push origin</strong>.</p></li>
 </ol>
 </div>
-<div class="aside-line">
-<p>Pushed? Thumbs up. Your repository on GitHub now shows one commit more.</p>
+<countdown-timer id="timer_b005583895f6fe2f14639318ccccc8a66a346dca" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<div class="key beside">
+<p>On GitHub: one commit more. Then a sticky note on the lid.</p>
 </div>
 <aside class="notes">
-<p>Block 10:00 to 10:05. I do every step as rainbow-train at the same time, one step, then wait for the room. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Whoever is not ready follows on the neighbour’s laptop. This step returns at 11:25, done alone.</p>
+<p>Block 10:00 to 10:10. First I do all five steps as rainbow-train without stopping, then the room. No Sublime Text: menu Repository, Show in Finder (Windows: Show in Explorer), open the file with TextEdit or Notepad. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Check for everyone: View on GitHub, the number beside the clock is one higher. This step returns at 11:25.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -662,10 +631,57 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="a-button-is-a-command" class="slide level2 smaller">
-<h2>A button is a command</h2>
+<section id="questions-so-far" class="slide level2">
+<h2>Questions so far</h2>
+<p>Two or three now, out loud.</p>
+<div class="key">
+<p>Everything else: a note under <strong>Parked questions</strong>.</p>
+</div>
+<aside class="notes">
+<p>Block 10:10 to 10:15, with the terminal slides. The first of two spots for live questions; the second is at 11:00.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-same-in-the-terminal" class="slide level2">
+<h2>The same in the terminal</h2>
 <p><span class="turn my">My turn</span></p>
-<p>GitHub Desktop runs commands for you. In a terminal, in RStudio, in Positron and in VS Code they carry these names:</p>
+<pre class="terminal">$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+$ git log --oneline
+5d0c1e2 Add what I want to take away
+3220950 Describe this repository
+aacde95 Add my teaching context
+76cb14e Initial commit</pre>
+<p>The terminal shows the same repository as GitHub Desktop, as text.</p>
+<aside class="notes">
+<p>Block 10:10 to 10:15. Live: in GitHub Desktop, menu Repository, Open in Terminal. Type git status and git log –oneline. No push from the terminal (larnsce is signed in there). One sentence: an agent such as Claude Code works this way.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-button-is-a-command" class="slide level2">
+<h2>A button is a command</h2>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -696,11 +712,11 @@ Render: quarto render workshop/slides.qmd
 </tr>
 </tbody>
 </table>
-<div class="aside-line">
+<div class="key">
 <p>What you learn today carries over to the tool you teach with.</p>
 </div>
 <aside class="notes">
-<p>Block 10:05 to 10:15, first slide of it. No live terminal. One sentence: an agent such as Claude Code works with the same commands.</p>
+<p>Block 10:10 to 10:15. The same names in RStudio, Positron and VS Code. You type nothing.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -718,20 +734,20 @@ Render: quarto render workshop/slides.qmd
 <h1>Branch and pull request</h1>
 
 </section>
-<section id="create-a-branch-then-open-a-pull-request" class="slide level2">
-<h2>Create a branch, then open a pull request</h2>
+<section id="a-branch-then-a-pull-request" class="slide level2">
+<h2>A branch, then a pull request</h2>
 <div class="r-stack">
-<p><img data-src="images/story-03.png" class="fragment fade-in" style="width:58.0%" alt="Kim has created the branch pancakes. Beside main, the graph has a column pancakes, without a commit of its own yet."></p>
-<p><img data-src="images/story-04.png" class="fragment fade-in" style="width:58.0%" alt="A first commit on the branch pancakes, drawn dashed. It exists only in the box Kim's laptop."></p>
-<p><img data-src="images/story-05.png" class="fragment fade-in" style="width:58.0%" alt="A second commit on the branch pancakes, amounts for four people, also dashed and only on Kim's laptop."></p>
-<p><img data-src="images/story-06.png" class="fragment fade-in" style="width:58.0%" alt="An arrow with the word push points from Kim's laptop to GitHub. The two commits of the branch are now solid and also on GitHub."></p>
-<p><img data-src="images/story-07.png" class="fragment fade-in" style="width:58.0%" alt="Kim has opened a pull request. Below the newest commit of the branch pancakes stands Pull request: open. The graph is otherwise unchanged."></p>
+<p><img data-src="images/story-03.png" class="fragment fade-in" style="width:52.0%" alt="Kim has created the branch data-dictionary. Beside main, the graph has a column data-dictionary, without a commit of its own yet."></p>
+<p><img data-src="images/story-04.png" class="fragment fade-in" style="width:52.0%" alt="A first commit, Add data dictionary, on the branch data-dictionary, drawn dashed. It exists only in the box Kim's laptop."></p>
+<p><img data-src="images/story-05.png" class="fragment fade-in" style="width:52.0%" alt="A second commit, Describe the units, also dashed and only on Kim's laptop."></p>
+<p><img data-src="images/story-06.png" class="fragment fade-in" style="width:52.0%" alt="An arrow with the word push points from Kim's laptop to GitHub. The two commits of the branch are now solid and also on GitHub."></p>
+<p><img data-src="images/story-07.png" class="fragment fade-in" style="width:52.0%" alt="Kim has opened a pull request. Below the newest commit of the branch data-dictionary stands Pull request: open. The graph is otherwise unchanged."></p>
 </div>
 <div class="legend">
 <p><strong>K</strong> is Kim, <strong>R</strong> is Robin. Dashed: only on the laptop. Dark border: the newest commit of a branch.</p>
 </div>
 <aside class="notes">
-<p>Block 10:05 to 10:15, this slide and the next. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.</p>
+<p>Block 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -747,11 +763,11 @@ Render: quarto render workshop/slides.qmd
 <section id="robin-works-at-the-same-time" class="slide level2">
 <h2>Robin works at the same time</h2>
 <div class="r-stack">
-<p><img data-src="images/story-08.png" class="fragment fade-in" style="width:58.0%" alt="Robin has created the branch salad on the left, without a commit of its own yet."></p>
-<p><img data-src="images/story-09.png" class="fragment fade-in" style="width:58.0%" alt="Robin's first commit, salad recipe, dashed and only on Robin's laptop."></p>
-<p><img data-src="images/story-10.png" class="fragment fade-in" style="width:58.0%" alt="Robin's second commit, dressing added, also only on Robin's laptop."></p>
-<p><img data-src="images/story-11.png" class="fragment fade-in" style="width:58.0%" alt="An arrow with the word push points from Robin's laptop to GitHub. Robin's two commits are now also on GitHub."></p>
-<p><img data-src="images/story-12.png" class="fragment fade-in" style="width:58.0%" alt="Robin has opened a pull request too. Below the newest commits of both branches stands Pull request: open. Robin's laptop lacks Kim's commits, Kim's laptop lacks Robin's commits. GitHub holds all of them."></p>
+<p><img data-src="images/story-08.png" class="fragment fade-in" style="width:56.0%" alt="Robin has created the branch readme on the left, without a commit of its own yet."></p>
+<p><img data-src="images/story-09.png" class="fragment fade-in" style="width:56.0%" alt="Robin's first commit, Write the README, dashed and only on Robin's laptop."></p>
+<p><img data-src="images/story-10.png" class="fragment fade-in" style="width:56.0%" alt="Robin's second commit, Add the licence, also only on Robin's laptop."></p>
+<p><img data-src="images/story-11.png" class="fragment fade-in" style="width:56.0%" alt="An arrow with the word push points from Robin's laptop to GitHub. Robin's two commits are now also on GitHub."></p>
+<p><img data-src="images/story-12.png" class="fragment fade-in" style="width:56.0%" alt="Robin has opened a pull request too. Below the newest commits of both branches stands Pull request: open. Robin's laptop lacks Kim's commits, Kim's laptop lacks Robin's commits. GitHub holds all of them."></p>
 </div>
 <aside class="notes">
 <p>The same steps for Robin, one after the other. Last picture: each person has a branch of their own, which is why yours is named people-username. GitHub holds everything, each laptop only its own work.</p>
@@ -772,35 +788,38 @@ Render: quarto render workshop/slides.qmd
 <h1>The shared repository</h1>
 
 </section>
-<section id="from-your-repository-into-the-shared-one" class="slide level2 smaller">
+<section id="from-your-repository-into-the-shared-one" class="slide level2">
 <h2>From your repository into the shared one</h2>
 <div class="columns">
 <div class="column" style="width:49.5%;">
 <h3 id="before">Before</h3>
-<ul>
-<li>Your three lines are in your own repository <code>teaching-your-username</code>, in the file <code>your-username.md</code></li>
-<li>Only you write there</li>
-</ul>
+<p>Your three lines are in your own repository, in <code>your-username.md</code>.</p>
 </div><div class="column" style="width:49.5%;">
 <h3 id="after">After</h3>
-<ul>
-<li>The same file is also in the shared repository <code>workshop</code>, in the folder <code>people</code>, on a branch of your own</li>
-<li>A pull request asks to take it into <code>main</code></li>
-<li>A second person reads it, and merges it</li>
-</ul>
+<p>The same file is in the repository <code>workshop</code>, on a branch of your own. A pull request asks to take it into <code>main</code>.</p>
 </div></div>
-<div class="aside-line">
-<p>You copy the file. Never the repository folder: it carries a hidden folder <code>.git</code>, and Git then sees a repository inside a repository.</p>
+<div class="key">
+<p>You copy the file, not the folder.</p>
 </div>
+<aside class="notes">
+<p>Block 10:20 to 10:30, with the demo and the last two slides.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="a-file-goes-into-the-shared-repository" class="slide level2 smaller">
+<section id="a-file-goes-into-the-shared-repository" class="slide level2">
 <h2>A file goes into the shared repository</h2>
-<p><span class="turn my">My turn</span></p>
-<div class="aside-line">
-<p>Lean back and watch. I work with the account rainbow-train, as a participant like you.</p>
-</div>
+<p><span class="turn my">My turn</span> Lean back and watch. I work as rainbow-train, a participant like you.</p>
 <ol type="1">
-<li>Open the repository <code>workshop</code> and click <strong>Fetch origin</strong></li>
+<li>Open the repository <code>workshop</code>, click <strong>Fetch origin</strong></li>
 <li>Create the branch <code>people-rainbow-train</code></li>
 <li>Copy the file <code>rainbow-train.md</code> into the folder <code>people</code></li>
 <li>Commit</li>
@@ -808,7 +827,7 @@ Render: quarto render workshop/slides.qmd
 <li>Open the pull request and request a reviewer</li>
 </ol>
 <aside class="notes">
-<p>Block 10:15 to 10:30. Two passes. First pass without stopping, about 4 minutes. Second pass slowly, and say these out loud before they meet them: 1. You cloned workshop in Step 5. Do not clone it again. Current Repository, workshop. 2. Current Branch, New Branch. The button at the bottom left must end in “to people-your-username”. If it ends in “to main”, you are on the wrong branch. 3. In Finder or Explorer: gitrepos/teaching-username, copy the one file, paste into gitrepos/workshop/people. The file, never the folder. 4. Changes shows one file with a tick. 5. Publish branch. 6. Preview Pull Request, then Create Pull Request at the bottom right. The browser opens. Fill in the two lines. On the right, Reviewers: the username of your neighbour. The room does not type here. Say it: this is your part at home, and the page has every step.</p>
+<p>Block 10:20 to 10:30. One pass, about 5 minutes, and say these out loud: 1. You cloned workshop in Step 5. Do not clone it again. Current Repository, workshop. 2. Current Branch, New Branch. The button at the bottom left must end in “to people-your-username”. If it ends in “to main”, you are on the wrong branch. 3. In Finder or Explorer: gitrepos/teaching-username, copy the one file, paste into gitrepos/workshop/people. 4. Changes shows one file with a tick. 5. Publish branch. 6. Preview Pull Request, then Create Pull Request at the bottom right. The browser opens. Fill in the two lines. On the right, Reviewers: larnsce. The room does not type here. Say it: this is your part at home, and the page has every step.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -830,13 +849,13 @@ Render: quarto render workshop/slides.qmd
 <h2>A second person reads</h2>
 <p><span class="turn my">My turn</span></p>
 <div class="r-stack">
-<p><img data-src="images/story-13.png" class="fragment fade-in" style="width:46.0%" alt="Robin has read Kim's pull request and written a comment. Below Kim's newest commit stands Pull request: comment."></p>
-<p><img data-src="images/story-14.png" class="fragment fade-in" style="width:46.0%" alt="Kim has answered with one more commit, baking time added. It is dashed and only on Kim's laptop."></p>
-<p><img data-src="images/story-15.png" class="fragment fade-in" style="width:46.0%" alt="Kim has pushed. The commit baking time added is now also on GitHub and belongs to the open pull request."></p>
-<p><img data-src="images/story-16.png" class="fragment fade-in" style="width:46.0%" alt="The pull request is merged. On main there is a merge commit that takes in Kim's three commits. Below Kim's newest commit stands Pull request: merged. The merge commit exists only on GitHub."></p>
+<p><img data-src="images/story-13.png" class="fragment fade-in" style="width:40.0%" alt="Robin has read Kim's pull request and written a comment. Below Kim's newest commit stands Pull request: comment."></p>
+<p><img data-src="images/story-14.png" class="fragment fade-in" style="width:40.0%" alt="Kim has answered with one more commit, Add the date format. It is dashed and only on Kim's laptop."></p>
+<p><img data-src="images/story-15.png" class="fragment fade-in" style="width:40.0%" alt="Kim has pushed. The commit Add the date format is now also on GitHub and belongs to the open pull request."></p>
+<p><img data-src="images/story-16.png" class="fragment fade-in" style="width:40.0%" alt="The pull request is merged. On main there is a merge commit that takes in Kim's three commits. Below Kim's newest commit stands Pull request: merged. The merge commit exists only on GitHub."></p>
 </div>
 <aside class="notes">
-<p>Block 10:15 to 10:30, at about 10:25. Comment, commit, push, merge, one after the other, pictures only. No live review today.</p>
+<p>Block 10:20 to 10:30. Comment, commit, push, merge, one after the other, pictures only. No live review today.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -849,21 +868,21 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-turn-is-at-home" class="slide level2 smaller">
+<section id="your-turn-is-at-home" class="slide level2">
 <h2>Your turn is at home</h2>
-<p>What I showed is yours to do after the workshop, in about 30 minutes:</p>
+<p>What I showed is yours to do after the workshop, in about 30 minutes.</p>
 <div class="task">
 <ol type="1">
-<li>Open the page: <a href="https://gitforsci-rdc.github.io/website/workshop/add-your-file.html">gitforsci-rdc.github.io/website/workshop/add-your-file.html</a></li>
-<li>Bring your file into the shared repository <code>workshop</code> with a pull request.</li>
-<li>Request <strong>larnsce</strong> as the reviewer. I read every pull request that is open by <strong>Friday 4 December</strong> and write one question on it.</li>
+<li>Open the page <strong>Add your file</strong> on the workshop website.</li>
+<li>Bring your file into the repository <code>workshop</code> with a pull request.</li>
+<li>Request <strong>larnsce</strong> as the reviewer.</li>
 </ol>
 </div>
-<div class="aside-line">
-<p>The second session of this course is where pairs review and merge each other’s work, 30 minutes of it. Today it is left out, and I say so because it is the part I would never cut from a full course.</p>
+<div class="key">
+<p>I read every pull request that is open by <strong>Friday 4 December</strong> and write one question on it.</p>
 </div>
 <aside class="notes">
-<p>Block 10:15 to 10:30, last slide before the break. The course is built in two sessions with time between them to practise. Today is the first session only.</p>
+<p>Block 10:20 to 10:30, last slide before the break. The course is built in two sessions with time between them to practise. Today is the first session only. In the second session pairs review and merge each other’s work, 30 minutes of it; it is the part I would never cut from a full course.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -879,10 +898,10 @@ Render: quarto render workshop/slides.qmd
 <section id="break" class="slide level2">
 <h2>Break</h2>
 <p>Until 10:40.</p>
-<countdown-timer id="timer_9a5b93147067be278617715cd328af49aeee7b2a" minutes="10" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_b005583895f6fe2f14639318ccccc8a66a346dca" minutes="10" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
-<div class="aside-line">
-<p>After the break we start on our feet. Then the board: think of one thing from the first hour that worked for you and one that did not.</p>
+<div class="key">
+<p>After the break: your feedback. One thing that went well, one that can be improved.</p>
 </div>
 </section></section>
 <section>
@@ -890,128 +909,49 @@ Render: quarto render workshop/slides.qmd
 <h1>The educator seat</h1>
 
 </section>
-<section id="on-your-feet-danish-clapping" class="slide level2 smaller">
-<h2>On your feet: Danish clapping</h2>
-<p><span class="turn our">Our turn</span> With your neighbour, standing, face to face.</p>
-<div class="task">
-<ol type="1">
-<li>Slap your thighs with both hands.</li>
-<li>Both hands to the <strong>left</strong>, to the <strong>right</strong> or <strong>up</strong>. You choose, your neighbour chooses.</li>
-<li>Slap your thighs again.</li>
-<li>Did you both choose the same? Clap each other’s hands. If not, choose again.</li>
-</ol>
-</div>
-<div class="aside-line">
-<p>Three rounds, each one faster than the one before.</p>
-</div>
-<aside class="notes">
-<p>Block 10:40 to 10:45. Show it with one volunteer first, slowly, and count out loud. Three rounds of under a minute. Whoever prefers to sit does it seated or watches. Then: sit down, open the board.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="feedback-you-ask-for-yourself" class="slide level2 smaller">
-<h2>Feedback you ask for yourself</h2>
-<p>You choose the questions, the room answers in writing, and nobody has to speak. Examples from a cooking class:</p>
+<section id="feedback-on-my-talk-yesterday" class="slide level2">
+<h2>Feedback on my talk yesterday</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 14%">
-<col style="width: 42%">
-<col style="width: 42%">
+<col style="width: 16%">
+<col style="width: 36%">
+<col style="width: 46%">
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
-<th>Positive</th>
-<th>Negative</th>
+<th>What went well</th>
+<th>What can be improved</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>Content</strong></td>
-<td>The reason for resting the dough was new to me</td>
-<td>Three terms came without an explanation</td>
+<td>Every number came from public data</td>
+<td>It stayed unclear what “embedded” means in practice</td>
 </tr>
 <tr class="even">
 <td><strong>Presentation</strong></td>
-<td>I could see the hands from the back row</td>
-<td>The recipe on the screen was too small to read</td>
+<td>One number per slide</td>
+<td>No clear thread from the keynote to my talk</td>
 </tr>
 <tr class="odd">
 <td><strong>Interaction</strong></td>
-<td>We tasted each other’s results</td>
-<td>Questions were only taken at the end</td>
-</tr>
-</tbody>
-</table>
-<div class="aside-line">
-<p>One point per note. A point I can act on names what happened, as these do.</p>
-</div>
-<div class="legend">
-<p>Rubric: Greg Wilson, Teaching Tech Together, slides on feedback, CC BY 4.0</p>
-</div>
-<aside class="notes">
-<p>Block 10:45 to 10:55, together with the next slide. Asking for feedback yourself, with your own questions, is the first advice in the book. Read two cells out loud, one positive and one negative. The examples are from a cooking class so that I put no words about this morning into your heads.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="activity-1-feedback-on-the-first-hour" class="slide level2 smaller">
-<h2>Activity 1: feedback on the first hour</h2>
-<p><span class="turn your">Your turn</span></p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th></th>
-<th>Positive</th>
-<th>Negative</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Content</strong>: what was said</td>
-<td></td>
-<td></td>
+<td>One question to the room at the end</td>
+<td>No time left for your questions</td>
 </tr>
 <tr class="even">
-<td><strong>Presentation</strong>: how it was said</td>
+<td><strong>Preparation</strong></td>
 <td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Interaction</strong>: how the room was run</td>
-<td></td>
-<td></td>
+<td>Too many emails before this workshop</td>
 </tr>
 </tbody>
 </table>
-<div class="task">
-<p>On the board, frame <strong>Activity 1</strong>. 5 minutes, on your own.</p>
-<p>One point per note, in the cell where it fits. At least one note in <strong>Negative</strong>.</p>
-</div>
-<countdown-timer id="timer_9a5b93147067be278617715cd328af49aeee7b2a" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
- </countdown-timer>
 <div class="legend">
-<p>Rubric: Greg Wilson, Teaching Tech Together, slides on feedback, CC BY 4.0</p>
+<p>Rubric: Greg Wilson, Teaching Tech Together, slides on feedback, CC BY 4.0. The row Preparation is my addition.</p>
 </div>
 <aside class="notes">
-<p>Block 10:45 to 10:55. The slide says 5 minutes; while people still write when the countdown ends, let them finish. Then type in the second window: /board-synthesis rubric. Go on with the next two slides while it runs.</p>
+<p>Block 10:40 to 10:45. Asking for feedback yourself, with your own questions, is the first advice in the book. These are my own notes on my talk of Thursday; the last cell is about this workshop and is already on the board. Read the right column out loud. Danish clapping fits here if the room needs it.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1024,13 +964,41 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="how-this-workshop-is-built" class="slide level2 smaller">
+<section id="activity-1-feedback-on-this-workshop" class="slide level2">
+<h2>Activity 1: feedback on this workshop</h2>
+<p><span class="turn your">Your turn</span> The first hour, and the pre-work before it.</p>
+<div class="task">
+<ol type="1">
+<li><strong>Think</strong>, alone, 2 minutes: what went well, what can be improved?</li>
+<li><strong>Pair</strong>, 3 minutes: tell your neighbour.</li>
+<li><strong>Share</strong>, 5 minutes: on the board, frame <strong>Activity 1</strong>. One point per note, in the cell where it fits.</li>
+</ol>
+</div>
+<countdown-timer id="timer_b005583895f6fe2f14639318ccccc8a66a346dca" minutes="10" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+<div class="key">
+<p>At least one note under <strong>What can be improved</strong>.</p>
+</div>
+<aside class="notes">
+<p>Block 10:45 to 10:55. Call the three steps out loud at 2 and at 5 minutes. When the countdown ends, type in the second window: /board-synthesis rubric. Then go on with the next two slides while it runs.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-this-workshop-is-built" class="slide level2">
 <h2>How this workshop is built</h2>
-<p>Everything you used this week is a repository.</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 37%">
-<col style="width: 62%">
+<col style="width: 40%">
+<col style="width: 59%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1044,32 +1012,28 @@ Render: quarto render workshop/slides.qmd
 <td>A repository, built into a site on every merge</td>
 </tr>
 <tr class="even">
-<td>The survey</td>
-<td>A small app, its answers in a database</td>
-</tr>
-<tr class="odd">
 <td>The invitation to the organisation</td>
 <td>A script that reads the usernames from the survey</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Your issue with five boxes</td>
 <td>A script, one issue per person from one template</td>
 </tr>
-<tr class="odd">
-<td>The comment after you ticked a box</td>
-<td>A watcher that looks every 10 minutes and tells me what changed</td>
-</tr>
 <tr class="even">
+<td>The comment after you ticked a box</td>
+<td>A watcher that looks every 10 minutes</td>
+</tr>
+<tr class="odd">
 <td>These slides</td>
-<td>A text file in the same repository as the website</td>
+<td>A text file in the repository of the website</td>
 </tr>
 </tbody>
 </table>
-<div class="aside-line">
-<p>One course organisation on GitHub for you, one for the material, one for the administration. The next cohort gets a new copy of the first one.</p>
+<div class="key">
+<p>The next cohort gets a new copy. The content changes each time, for the people who come.</p>
 </div>
 <aside class="notes">
-<p>Block 10:55 to 11:00, this slide and the next, while the synthesis of activity 1 runs. One sentence per row. The point: the workshop teaches the tool it is built with, and every step you took left a trace I could see without asking.</p>
+<p>Block 10:55 to 11:00, this slide and the next, while the synthesis of activity 1 runs. Everything you used this week is a repository. One sentence per row. The survey is a small app with its answers in a database. One course organisation on GitHub for you, one for the material, one for the administration. The point: the workshop teaches the tool it is built with, and every step you took left a trace I could see without asking.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1082,33 +1046,29 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-preparation-in-counts" class="slide level2 smaller">
+<section id="your-preparation-in-counts" class="slide level2">
 <h2>Your preparation, in counts</h2>
 <!-- COUNTS: update on Friday 20 November, 08:30, from the tracker -->
-<p>Tuesday 17 November, 15:00. Four emails, the last three on 15, 16 and 17 November.</p>
+<p>Thursday 19 November, 21:00. Four emails from me.</p>
 <div class="numbers">
 <div class="number">
-<p><span class="big">27</span></p>
-<p>answered the survey</p>
+<p><span class="big">27</span> answered the survey</p>
 </div>
 <div class="number">
-<p><span class="big">15</span></p>
-<p>joined the organisation</p>
+<p><span class="big">26</span> joined the organisation</p>
 </div>
 <div class="number">
-<p><span class="big">7</span></p>
-<p>finished steps 3 to 5</p>
+<p><span class="big">15</span> ticked all five boxes</p>
 </div>
 <div class="number">
-<p><span class="big">2</span></p>
-<p>made the first commit from the laptop</p>
+<p><span class="big">15</span> made a commit from the laptop</p>
 </div>
 </div>
 <div class="fragment">
-<p>This is what preparation looks like in most courses: several reminders, and most of the work in the last hours. This time also because my instructions came late.</p>
+<p>On Tuesday at 15:00 the last two numbers were 7 and 2. Most of the work happens in the last hours, this time also because my instructions came late.</p>
 </div>
 <aside class="notes">
-<p>Block 10:55 to 11:00. Counts only, no names, no chart of who worked when. Read the Friday numbers out loud and compare them with Tuesday. Say that the pre-work decided who could type today.</p>
+<p>Block 10:55 to 11:00. Counts only, no names, no chart of who worked when. Say that the pre-work decided who could type today.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1121,14 +1081,17 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-you-wrote" class="slide level2 smaller">
+<section id="what-you-wrote" class="slide level2">
 <h2>What you wrote</h2>
 <p>Your notes from activity 1, grouped. I switch to the second tab.</p>
 <div class="task">
-<p>Read it with your neighbour: which point surprises you? Then the floor is open, for what you wrote and for your questions.</p>
+<p>Read it with your neighbour: which point surprises you?</p>
+</div>
+<div class="key">
+<p>Then the floor is open, for what you wrote and for your questions.</p>
 </div>
 <aside class="notes">
-<p>Block 11:00 to 11:10. Switch to the browser tab with live.html. Give the room a minute to read. Read one positive and one negative theme per row out loud, then open it: who wants to say more on a negative one? Questions from the frame Parked questions fit here too. If the synthesis failed: open the board itself and read three notes per cell. Do not defend, say thank you and name one thing I will change.</p>
+<p>Block 11:00 to 11:10. Switch to the browser tab with live.html: it shows the result after the skill ran. Give the room a minute to read. Read one theme per row from each column out loud, then open it: who wants to say more on a point under What can be improved? Questions from the frame Parked questions fit here too. If the synthesis failed: open the board itself and read three notes per cell. Do not defend, say thank you and name one thing I will change.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1146,20 +1109,21 @@ Render: quarto render workshop/slides.qmd
 <h1>How I teach</h1>
 
 </section>
-<section id="five-things-i-do" class="slide level2 smaller">
-<h2>Five things I do</h2>
+<section id="six-things-i-do" class="slide level2">
+<h2>Six things I do</h2>
 <ul>
-<li class="fragment"><strong>Words I leave out:</strong> <span class="mark-word">just</span> <span class="mark-word">easily</span> <span class="mark-word">quickly</span>. A learner who is stuck on the step hears: it is me.</li>
-<li class="fragment"><strong>Design for the novice:</strong> every click is written down, and extra material is marked as extra.</li>
-<li class="fragment"><strong>Know the learners, then design:</strong> 27 survey answers decided the software and the pairs. The content of today was written yesterday.</li>
-<li class="fragment"><strong>A learner account:</strong> every demo ran as <strong>rainbow-train</strong>, with the rights you have, on the screens you see.</li>
-<li class="fragment"><strong>Type with the room, mistakes included:</strong> I type, you type, nothing is pasted.</li>
+<li class="fragment"><strong>Words I leave out:</strong> <span class="mark-word">just</span> <span class="mark-word">easily</span> <span class="mark-word">quickly</span></li>
+<li class="fragment"><strong>Design for the novice:</strong> every click is written down</li>
+<li class="fragment"><strong>Know the learners, then design:</strong> survey first, content last</li>
+<li class="fragment"><strong>A learner account:</strong> every demo ran as rainbow-train</li>
+<li class="fragment"><strong>Type with the room,</strong> mistakes included</li>
+<li class="fragment"><strong>Try out new things:</strong> today the board and its synthesis</li>
 </ul>
 <div class="aside-line">
-<p>Each point has a slide of its own at the end of this deck.</p>
+<p>Each one has a slide of its own at the end of this deck.</p>
 </div>
 <aside class="notes">
-<p>Block 11:10 to 11:15. One sentence per point, each with its example from this morning. Found one of the three words on my slides or in the pre-work? Park it on the board, I fix it in a commit after the workshop.</p>
+<p>Block 11:10 to 11:15. One sentence per point, each with its example from this morning. Clicks are usually written down with screenshots, which are missing this time. The content of today was written yesterday. Found one of the three words on my slides or in the pre-work? Park it on the board, I fix it in a commit after the workshop.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1177,7 +1141,7 @@ Render: quarto render workshop/slides.qmd
 <h1>Motivation</h1>
 
 </section>
-<section id="what-motivates-adults-to-learn" class="slide level2 smaller">
+<section id="what-motivates-adults-to-learn" class="slide level2">
 <h2>What motivates adults to learn</h2>
 <div class="columns">
 <div class="column" style="width:28%;">
@@ -1209,29 +1173,26 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-takes-motivation-away" class="slide level2 smaller">
+<section id="what-takes-motivation-away" class="slide level2">
 <h2>What takes motivation away</h2>
 <div class="columns">
-<div class="column" style="width:71%;">
+<div class="column" style="width:74%;">
 <ul>
-<li class="fragment"><strong>Unpredictability:</strong> What I do does not seem to affect the outcome.</li>
-<li class="fragment"><strong>Unfairness:</strong> The teacher plays favourites.</li>
-<li class="fragment"><strong>Indifference:</strong> Nobody cares.</li>
+<li class="fragment"><strong>Unpredictability:</strong> what I do does not seem to affect the outcome.</li>
+<li class="fragment"><strong>Unfairness:</strong> the teacher plays favourites.</li>
+<li class="fragment"><strong>Indifference:</strong> nobody cares. A question in an issue stays without an answer. The material was last touched two years ago.</li>
 </ul>
-<div class="aside-line">
-<p>A push that is rejected without a reason I can read is unpredictability. An instructor who answers only the fast people is unfairness.</p>
-</div>
-</div><div class="column" style="width:28%;">
-<p><img data-src="images/motivation-negative.png" style="width:80.0%" alt="The same drawn figure, frowning."></p>
+</div><div class="column" style="width:25%;">
+<p><img data-src="images/motivation-negative.png" style="width:90.0%" alt="The same drawn figure, frowning."></p>
 </div></div>
-<div class="task">
-<p>For your own teaching: which of the three do your learners meet most often?</p>
+<div class="key">
+<p>Which of the three do your learners meet most often?</p>
 </div>
 <div class="legend">
 <p>Figure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.</p>
 </div>
 <aside class="notes">
-<p>Block 11:15 to 11:20. Ask for one hand per heading. One moment of my own if there is room: a course where the setup failed and the instructor went on.</p>
+<p>Block 11:15 to 11:20. A push that is rejected without a reason I can read is unpredictability. An instructor who answers only the fast people is unfairness. Indifference is also: nobody notices that you fell behind in the pre-work. Ask for one hand per heading. One moment of my own if there is room: a course where the setup failed and the instructor went on.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1249,26 +1210,26 @@ Render: quarto render workshop/slides.qmd
 <h1>What stays</h1>
 
 </section>
-<section id="also-on-my-list" class="slide level2 smaller">
+<section id="also-on-my-list" class="slide level2">
 <h2>Also on my list</h2>
 <ul>
-<li class="fragment"><strong>Peer instruction.</strong> People explain to each other and review each other’s work. It is the 30 minutes of pull requests in pairs that you did not do today.</li>
-<li class="fragment"><strong>A place for questions</strong>, and the plain statement that a short workshop does not answer all of them.</li>
-<li class="fragment"><strong>Online:</strong> a short visit to each break-out room, while the group is small enough.</li>
+<li class="fragment"><strong>Peer instruction:</strong> people explain to each other and review each other’s work. It is the pull request in pairs that you did not do today.</li>
+<li class="fragment"><strong>A place for questions,</strong> and the plain statement that a short workshop does not answer all of them.</li>
+<li class="fragment"><strong>Online:</strong> a short visit to each break-out room.</li>
 </ul>
 </section>
-<section id="where-this-comes-from" class="slide level2 smaller">
+<section id="where-this-comes-from" class="slide level2">
 <h2>Where this comes from</h2>
 <ul>
-<li>Brown and Wilson (2018), Ten quick tips for teaching programming: <a href="https://doi.org/10.1371/journal.pcbi.1006023" class="uri">https://doi.org/10.1371/journal.pcbi.1006023</a></li>
-<li>Greg Wilson, Teaching Tech Together, free to read: <a href="https://teachtogether.tech/" class="uri">https://teachtogether.tech/</a></li>
-<li>The Carpentries Instructor Training, open material and a certification: <a href="https://carpentries.github.io/instructor-training/" class="uri">https://carpentries.github.io/instructor-training/</a></li>
+<li><a href="https://doi.org/10.1371/journal.pcbi.1006023">Ten quick tips for teaching programming</a>, Brown and Wilson, 2018</li>
+<li><a href="https://teachtogether.tech/">Teaching Tech Together</a>, Greg Wilson, free to read</li>
+<li><a href="https://carpentries.github.io/instructor-training/">The Carpentries Instructor Training</a>, open material and a certification</li>
 </ul>
-<div class="aside-line">
-<p>If you teach a technical tool, take an instructor training. It is the best use of your time, out of respect for the time your learners give you.</p>
+<div class="key">
+<p>If you teach a technical tool, take an instructor training.</p>
 </div>
 <aside class="notes">
-<p>Block 11:20 to 11:25, this slide and the one before. My own route was the RStudio instructor certification in 2020, built by Greg Wilson on the same material; it changed how I teach novices. The Carpentries training is the open route today.</p>
+<p>Block 11:20 to 11:25, this slide and the one before. It is the best use of your time, out of respect for the time your learners give you. My own route was the RStudio instructor certification in 2020, built by Greg Wilson on the same material; it changed how I teach novices. The Carpentries training is the open route today.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1281,26 +1242,22 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="would-you-teach-this" class="slide level2 smaller">
+<section id="would-you-teach-this" class="slide level2">
 <h2>Would you teach this?</h2>
-<p><span class="turn your">Your turn</span></p>
-<p>I would like to offer a workshop for people who teach Git and GitHub: this course design, its scripts and the material, for you to run with your own groups.</p>
+<p><span class="turn your">Your turn</span> I would like to offer a workshop for people who teach Git: this design, its scripts and its material, for your own groups.</p>
 <div class="task">
-<p>Answer with a commit, the step of 10:00, this time on your own. In your repository <code>teaching-your-username</code>:</p>
-<ol type="1">
-<li><p>Open the file <code>your-username.md</code> and add one line:</p>
-<p><code>- Teach the teachers: yes / maybe / no. What I would need:</code></p></li>
-<li><p>If you like, a second line: <code>- A moment in a course that took my motivation away:</code></p></li>
-<li><p>Commit to main, then <strong>Push origin</strong>.</p></li>
-</ol>
+<p>In <code>your-username.md</code>, add one line, then commit and push:</p>
+<p><code>- Teach the teachers: yes / maybe / no. What I would need:</code></p>
+<p>If you like, a second line:</p>
+<p><code>- A moment in a course that took my motivation away:</code></p>
 </div>
-<countdown-timer id="timer_9a5b93147067be278617715cd328af49aeee7b2a" minutes="04" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_b005583895f6fe2f14639318ccccc8a66a346dca" minutes="04" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="aside-line">
-<p>Your answer commits you to nothing. No laptop setup? Write it on a note under Parked questions.</p>
+<p>Your answer commits you to nothing.</p>
 </div>
 <aside class="notes">
-<p>Block 11:25 to 11:30, with the last slide. The second line is a choice: unlike a note on the board, a commit carries your name. The form of the offer is open; the answers shape it. They arrive as commits, which I can read with the tracker.</p>
+<p>Block 11:25 to 11:30, with the last slide. The step of 10:00, this time alone. The second line is a choice: unlike a note on the board, a commit carries your name. No laptop setup: a note under Parked questions. The form of the offer is open; the answers shape it. They arrive as commits, which I can read with the tracker.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1320,15 +1277,18 @@ Render: quarto render workshop/slides.qmd
 </section>
 <section id="thank-you-1" class="slide level2">
 <h2>Thank you</h2>
-<p>Everything stays open after today:</p>
 <ul>
-<li>The website and these slides: <a href="https://gitforsci-rdc.github.io/website/" class="uri">https://gitforsci-rdc.github.io/website/</a></li>
-<li>Your pull request, at home: <a href="https://gitforsci-rdc.github.io/website/workshop/add-your-file.html" class="uri">https://gitforsci-rdc.github.io/website/workshop/add-your-file.html</a></li>
-<li>The material is licensed CC BY 4.0. Take it, change it, teach with it.</li>
+<li>Website and slides: <a href="https://gitforsci-rdc.github.io/website/" class="uri">https://gitforsci-rdc.github.io/website/</a></li>
+<li>Licence CC BY 4.0. Take it, change it, teach with it.</li>
 </ul>
-<p>Slides made with revealjs and Quarto: <a href="https://quarto.org/docs/presentations/revealjs/" class="uri">https://quarto.org/docs/presentations/revealjs/</a></p>
+<p>Lars Schöbitz</p>
+<ul>
+<li><a href="https://github.com/larnsce" class="uri">https://github.com/larnsce</a></li>
+<li><a href="https://www.linkedin.com/in/larsschoebitz" class="uri">https://www.linkedin.com/in/larsschoebitz</a></li>
+<li>Newsletter, in German and English: <a href="https://buttondown.com/bitz" class="uri">https://buttondown.com/bitz</a></li>
+</ul>
 <aside class="notes">
-<p>11:30. Parked questions without an answer get one by email. The board stays open until the evening, then I close it.</p>
+<p>11:30. Your pull request at home: the page Add your file on the website. Parked questions without an answer get one by email. The board stays open until the evening, then I close it. Slides made with revealjs and Quarto.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1371,7 +1331,7 @@ Render: quarto render workshop/slides.qmd
 <h2>Design for the novice</h2>
 <ul>
 <li class="fragment">Assume that people know nothing about the tool.</li>
-<li class="fragment">No gap between two steps: every click is written down.</li>
+<li class="fragment">No gap between two steps: every click is written down, usually with screenshots. They are missing this time.</li>
 <li class="fragment">Extra material for people with experience, marked as extra.</li>
 </ul>
 <div class="aside-line">
@@ -1391,18 +1351,15 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="know-the-learners-then-design" class="slide level2 smaller">
+<section id="know-the-learners-then-design" class="slide level2">
 <h2>Know the learners, then design</h2>
 <ul>
 <li class="fragment">A survey before anything is written: 27 answers decided the software and the pairs.</li>
 <li class="fragment">A tracker shows who is where in the pre-work, without asking anyone.</li>
-<li class="fragment">The content of today was written yesterday. Most learners do the pre-work on the last day, and I teach better from what I read then than from a plan made weeks ago.</li>
+<li class="fragment">The content of today was written yesterday, from what I read in the pre-work.</li>
 </ul>
-<div class="aside-line">
-<p>It takes practice, and trust in the method, to walk into a room with slides that are one day old.</p>
-</div>
 <aside class="notes">
-<p>Not shown on 20 November, for reading. This is the answer promised at 09:30. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.</p>
+<p>Not shown on 20 November, for reading. Most learners do the pre-work on the last day, and I teach better from what I read then than from a plan made weeks ago. It takes practice, and trust in the method, to walk into a room with slides that are one day old. This is the answer promised at 09:30. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1415,9 +1372,8 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="why-github-desktop" class="slide level2 smaller">
+<section id="why-github-desktop" class="slide level2">
 <h2>Why GitHub Desktop?</h2>
-<p>Your preference in the survey:</p>
 <div class="numbers">
 <div class="number">
 <p><span class="big">11</span></p>
@@ -1436,9 +1392,11 @@ Render: quarto render workshop/slides.qmd
 <p>no preference</p>
 </div>
 </div>
-<p>I chose against the largest group. Half of the room does not write code in R, and 10 of you do not use Git today. GitHub Desktop needs no programming language, and its buttons carry the names of the commands.</p>
+<div class="key">
+<p>I chose against the largest group. For novices, RStudio is too much on top of Git unless I teach R and Quarto alongside.</p>
+</div>
 <aside class="notes">
-<p>Not shown on 20 November, for reading. The honest version: the choice has a cost for the 11.</p>
+<p>Not shown on 20 November, for reading. Half of the room does not write code in R, and 10 of you do not use Git today. GitHub Desktop needs no programming language, and its buttons carry the names of the commands. I learned it in earlier workshops. The honest version: the choice has a cost for the 11.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1493,14 +1451,37 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-same-design-three-days-ago" class="slide level2 smaller">
-<h2>The same design, three days ago</h2>
-<p>On Tuesday I ran this design in German, online, for 16 people who do not write code.</p>
+<section id="try-out-new-things" class="slide level2">
+<h2>Try out new things</h2>
 <ul>
-<li class="fragment"><strong>13 pull requests</strong> in two hours, from people who had never used Git</li>
-<li class="fragment"><strong>Three clones</strong> of one repository on one laptop: “clone once” is now a sentence in your Step 6</li>
-<li class="fragment"><strong>A copied repository folder</strong>, with its hidden <code>.git</code>: today you copied one file</li>
-<li class="fragment"><strong>The real email address</strong> in most first commits, although the account said private: the setting in GitHub Desktop comes first</li>
+<li class="fragment">I used a Miro board for the first time, because Claude can now set it up for me.</li>
+<li class="fragment">The synthesis of your notes was a trial.</li>
+</ul>
+<div class="key">
+<p>Inspire yourself and your learners with novelty, and learn new things along the way.</p>
+</div>
+<aside class="notes">
+<p>Not shown on 20 November, for reading. Say it at point six of the slide “Six things I do”.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-same-design-three-days-ago" class="slide level2">
+<h2>The same design, three days ago</h2>
+<p>Tuesday: the same design in German, online, for 16 people who do not write code.</p>
+<ul>
+<li class="fragment"><strong>13 pull requests</strong> in two hours</li>
+<li class="fragment"><strong>Three clones</strong> on one laptop: “clone once” is now in Step 6</li>
+<li class="fragment"><strong>A copied repository folder:</strong> today you copy one file</li>
+<li class="fragment"><strong>The real email address</strong> in first commits: Step 4 now comes first</li>
 <li class="fragment"><strong>Too many emails</strong> before the workshop</li>
 </ul>
 <aside class="notes">
@@ -1735,44 +1716,6 @@ Render: quarto render workshop/slides.qmd
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
