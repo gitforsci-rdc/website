@@ -212,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/slides.html">Workshop</a></li><li class="breadcrumb-item"><a href="../workshop/add-your-file.html">Add your file with a pull request</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Add your file with a pull request</h1>
-<p class="subtitle lead">The steps of the workshop on 20 November 2026. About 30 minutes</p>
+<p class="subtitle lead">Your part after the workshop of 20 November 2026. About 30 minutes</p>
 </div>
 
 
@@ -230,8 +230,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <!-- Text only: the steps are a port of the German course's page of 17 November 2026 and still need a dry run with the second account on macOS and on Windows. -->
-<p>This page is the instruction for the hands-on part of the workshop. You bring the file with your three lines into the shared repository <code>workshop</code>, on a branch of your own and through a pull request. Your neighbour reads it and merges it.</p>
-<p>In the workshop you work in pairs, both at the same time, each on your own laptop. Steps 1 to 5 come first. Step 6 follows after I have shown it.</p>
+<p>In the workshop you watched a file go into the shared repository. This page has the same steps for you, to do at home. You bring the file with your three lines into the shared repository <code>workshop</code>, on a branch of your own and through a pull request. Lars reads it, asks one question and merges it.</p>
+<p>Steps 1 to 5 open the pull request. Step 6 is the review: a question from Lars, your answer as a commit, and the merge.</p>
 <section id="before-you-start" class="level2">
 <h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
 <p>You need the finished pre-work:</p>
@@ -239,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 <li>the repository <code>workshop</code>, cloned in <a href="../pre-work/05-setup-check.html">Step 5</a> to <code>Documents/gitrepos/workshop</code></li>
 <li>your own repository <code>teaching-your-username</code> with the file <code>your-username.md</code>, cloned in <a href="../pre-work/06-your-repository.html">Step 6</a> to <code>Documents/gitrepos/teaching-your-username</code></li>
 </ul>
-<p>Is something missing? Sit with a neighbour who has it. You follow on their laptop and you are the reviewer in step 6.</p>
+<p>Is something missing? Go through <a href="../pre-work/05-setup-check.html">Step 5</a> and <a href="../pre-work/06-your-repository.html">Step 6</a> of the pre-work first.</p>
 </section>
 <section id="step-1-open-the-shared-repository" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-open-the-shared-repository">Step 1: open the shared repository</h2>
@@ -300,19 +300,19 @@ ul.task-list li input[type="checkbox"] {
 <li>Click the blue button <strong>Preview Pull Request</strong>. A window shows your file.</li>
 <li>At the top it reads <strong>base: main</strong> and <strong>compare: people-your-username</strong>. That is how it should be. Click <strong>Create Pull Request</strong> at the bottom right. Your browser opens on github.com.</li>
 <li>The text field holds a template with two lines. Fill in <strong>File</strong> with <code>people/your-username.md</code>.</li>
-<li>On the right, click <strong>Reviewers</strong> and type the username of your neighbour. Choose them from the list.</li>
+<li>On the right, click <strong>Reviewers</strong> and type <code>larnsce</code>. Choose the name from the list.</li>
 <li>Click the green button <strong>Create pull request</strong>.</li>
 </ol>
 <p>Your pull request is open. Do not merge it yourself, also when GitHub shows you the button. Reading by a second person is the point of the exercise.</p>
 </section>
 <section id="step-6-review-answer-merge" class="level2">
 <h2 class="anchored" data-anchor-id="step-6-review-answer-merge">Step 6: review, answer, merge</h2>
-<p>Each of you is the author of one pull request and the reviewer of the other.</p>
+<p>You are the author of the pull request, Lars is the reviewer. Did you work through this page with a colleague from the workshop? Then review each other: the reviewer steps below are the same.</p>
 <ol type="1">
-<li><strong>Reviewer:</strong> open the <a href="https://github.com/gitforsci-rdc/workshop/pulls">pull requests of the workshop repository</a> and click your neighbour’s. Click the tab <strong>Files changed</strong>. Move the mouse over the line <code>What blocks me</code>, click the blue plus sign, write one question and click <strong>Add single comment</strong>.</li>
+<li><strong>Reviewer:</strong> open the <a href="https://github.com/gitforsci-rdc/workshop/pulls">pull requests of the workshop repository</a> and click the one to review. Click the tab <strong>Files changed</strong>. Move the mouse over the line <code>What blocks me</code>, click the blue plus sign, write one question and click <strong>Add single comment</strong>.</li>
 <li><strong>Author:</strong> you see the comment in your pull request. Answer it in the file: open <code>Documents/gitrepos/workshop/people/your-username.md</code> in your editor, change the line and save. In GitHub Desktop, write a commit message, click <strong>Commit 1 file to people-your-username</strong>, then <strong>Push origin</strong>. The open pull request shows the new commit. You need no second pull request.</li>
 <li><strong>Reviewer:</strong> go back to the tab <strong>Conversation</strong>, click <strong>Merge pull request</strong>, then <strong>Confirm merge</strong>.</li>
-<li><strong>Both:</strong> in GitHub Desktop, click <strong>Current Branch</strong> and choose <code>main</code>. Click <strong>Fetch origin</strong>, then <strong>Pull origin</strong>. The folder <code>people</code> on your laptop now holds the files of everyone who is merged.</li>
+<li><strong>Author:</strong> in GitHub Desktop, click <strong>Current Branch</strong> and choose <code>main</code>. Click <strong>Fetch origin</strong>, then <strong>Pull origin</strong>. The folder <code>people</code> on your laptop now holds the files of everyone who is merged.</li>
 </ol>
 </section>
 <section id="done-when" class="level2">
@@ -327,8 +327,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Changes shows a folder instead of one file.</strong> You copied the repository folder. Delete the copied folder from <code>workshop/people</code> and copy only the file <code>your-username.md</code>.</li>
 <li><strong>The push is rejected.</strong> Your commit carries your real email address, and your account blocks such pushes. In GitHub Desktop, open <strong>Settings</strong> (Windows: <strong>File</strong>, <strong>Options</strong>), <strong>Git</strong>, tab <strong>Author</strong>, choose the address that ends in <code>@users.noreply.github.com</code> and click <strong>Save</strong>. Then click <strong>Undo</strong> at the bottom of the tab <strong>Changes</strong> and commit again.</li>
 <li><strong>Publish branch is missing, the top reads Push origin.</strong> The branch is published already. Click <strong>Push origin</strong> if commits are missing and go on with step 5.</li>
-<li><strong>Your neighbour is not in the list of reviewers.</strong> They have not accepted the invitation to the organisation. Go on without a reviewer and tell them the number of your pull request.</li>
-<li>Anything else: raise your hand in the workshop, or write a comment in your issue in the <a href="https://github.com/gitforsci-rdc/workshop/issues">workshop repository</a>.</li>
+<li><strong>The name is not in the list of reviewers.</strong> Go on without a reviewer. Lars sees every new pull request in the repository.</li>
+<li>Anything else: write a comment in your issue in the <a href="https://github.com/gitforsci-rdc/workshop/issues">workshop repository</a>.</li>
 </ul>
 
 

@@ -18,6 +18,8 @@ project:
     - "!pre-work/06c-install-verify.qmd"
     - "!pre-work/07-big-picture.qmd"
     - "!workshop/index.qmd"
+    # Written during the workshop by the skill board-synthesis, local only.
+    - "!workshop/live.qmd"
 
 # NOTE: title, site-url, repo-url, the sidebar GitHub href, and the Plausible
 # analytics domain below are iteration-specific. They are written in by

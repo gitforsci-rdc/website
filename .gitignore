@@ -16,3 +16,9 @@
 
 # Per-cohort private survey data; the template renders from data/participants-sample.csv
 /data/private/
+
+# Synthesis slides of the workshop, written and rendered locally
+/workshop/live.qmd
+/workshop/live.html
+/workshop/live_files/
+/index.knit.md
