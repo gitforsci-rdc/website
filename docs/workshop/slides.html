@@ -39,7 +39,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-cc4506ed85afe467b7e88378eafc9310.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-5f809bc6fa2ae5e716e6cc4e70b37b83.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -435,7 +435,7 @@ Render: quarto render workshop/slides.qmd
 <li>In the frame <strong>First note</strong>, add one note: one thing from the conference so far that stays with you.</li>
 </ol>
 </div>
-<countdown-timer id="timer_672dab9ce6a0573227e14836aaf4735215202068" minutes="02" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_46f3005d2d82d7108a7fc57ac62af769cfacdf8e" minutes="02" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="key">
 <p>An AI session (Claude) on my laptop reads your notes and groups them. No names, nothing personal on a note.</p>
@@ -512,14 +512,14 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
-<section id="one-repository-several-places" class="slide level2">
+<section id="one-repository-several-places" class="slide level2 story">
 <h2>One repository, several places</h2>
 <div class="r-stack">
 <p><img data-src="images/story-01.png" class="fragment fade-in" style="width:88.0%" alt="Three boxes: Robin's laptop and Kim's laptop are empty and dashed, with the words no copy yet. The box GitHub holds one commit. Below the laptops stands local, below GitHub stands remote. Underneath, the commit graph with the first commit, Repository created, on main."></p>
 <p><img data-src="images/story-02.png" class="fragment fade-in" style="width:88.0%" alt="From GitHub, one arrow with the word clone points to Robin's laptop and one to Kim's laptop. All three boxes now hold the same commit."></p>
 </div>
 <div class="legend">
-<p>Pictures: Lars Schöbitz, CC BY 4.0</p>
+<p>Pictures: Lars Schöbitz, CC BY 4.0. <strong>K</strong> is Kim, <strong>R</strong> is Robin. Dashed: only on the laptop.</p>
 </div>
 <aside class="notes">
 <p>Block 09:45 to 09:55. Kim creates the repository on GitHub. Kim and Robin clone: three places, the same state. Laptops never talk to each other directly, always through GitHub. Words: local is the laptop, remote is GitHub. Clone once. A second clone is a second copy on the same laptop, and the two get mixed up.</p>
@@ -547,7 +547,7 @@ Render: quarto render workshop/slides.qmd
 </div>
 <p>Your commits from the pre-work: who, when, what, why.</p>
 <div class="key">
-<p>Three commits? Put a sticky note on your laptop lid.</p>
+<p>Three commits? Show your neighbour.</p>
 </div>
 <aside class="notes">
 <p>Block 09:55 to 10:00, with the next slide. Whoever has not finished the pre-work looks at the neighbour’s screen. Show the same view in the demo repository.</p>
@@ -573,7 +573,7 @@ Render: quarto render workshop/slides.qmd
 <li>Show your neighbour one commit: who, when, what, why.</li>
 </ol>
 </div>
-<countdown-timer id="timer_672dab9ce6a0573227e14836aaf4735215202068" minutes="03" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_46f3005d2d82d7108a7fc57ac62af769cfacdf8e" minutes="03" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="key">
 <p>Your laptop and GitHub hold the same commits.</p>
@@ -592,9 +592,33 @@ Render: quarto render workshop/slides.qmd
           display:block!important;
       }</style></aside>
 </section>
+<section id="a-commit-step-by-step" class="slide level2">
+<h2>A commit, step by step</h2>
+<p><span class="turn my">My turn</span> Watch, type nothing.</p>
+<ol type="1">
+<li>Menu <strong>Repository</strong>, <strong>Open in Sublime Text</strong></li>
+<li>One line more in <code>rainbow-train.md</code>, save</li>
+<li>Tab <strong>Changes</strong>: the line shows in green</li>
+<li>A message, then <strong>Commit to main</strong></li>
+<li><strong>Push origin</strong></li>
+</ol>
+<aside class="notes">
+<p>Block 10:00 to 10:10, with the next slide. All five steps as rainbow-train, without stopping, about 2 minutes. Then the next slide: the same for the room.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="a-commit-of-your-own" class="slide level2">
 <h2>A commit of your own</h2>
-<p><span class="turn my">My turn</span> I show it once. <span class="turn your">Your turn</span> Then you, 5 minutes.</p>
+<p><span class="turn your">Your turn</span> 5 minutes</p>
 <div class="task">
 <ol type="1">
 <li><p>In GitHub Desktop: menu <strong>Repository</strong>, <strong>Open in Sublime Text</strong>.</p></li>
@@ -605,13 +629,13 @@ Render: quarto render workshop/slides.qmd
 <li><p>Click <strong>Push origin</strong>.</p></li>
 </ol>
 </div>
-<countdown-timer id="timer_672dab9ce6a0573227e14836aaf4735215202068" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_46f3005d2d82d7108a7fc57ac62af769cfacdf8e" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="key beside">
 <p>On GitHub: one commit more. Then a sticky note on the lid.</p>
 </div>
 <aside class="notes">
-<p>Block 10:00 to 10:10. First I do all five steps as rainbow-train without stopping, then the room. No Sublime Text: menu Repository, Show in Finder (Windows: Show in Explorer), open the file with TextEdit or Notepad. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Check for everyone: View on GitHub, the number beside the clock is one higher. This step returns at 11:25.</p>
+<p>Block 10:00 to 10:10. I walk the room. No Sublime Text: menu Repository, Show in Finder (Windows: Show in Explorer), open the file with TextEdit or Notepad. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Check for everyone: View on GitHub, the number beside the clock is one higher. This step returns at 11:25.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -626,7 +650,9 @@ Render: quarto render workshop/slides.qmd
 </section>
 <section id="questions-so-far" class="slide level2">
 <h2>Questions so far</h2>
-<p>Two or three now, out loud.</p>
+<p>One or two now, out loud.</p>
+<countdown-timer id="timer_46f3005d2d82d7108a7fc57ac62af769cfacdf8e" minutes="02" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 <div class="key">
 <p>Everything else: a note under <strong>Parked questions</strong>.</p>
 </div>
@@ -727,17 +753,14 @@ aacde95 Add my teaching context
 <h1>Branch and pull request</h1>
 
 </section>
-<section id="a-branch-then-a-pull-request" class="slide level2">
+<section id="a-branch-then-a-pull-request" class="slide level2 story">
 <h2>A branch, then a pull request</h2>
 <div class="r-stack">
-<p><img data-src="images/story-03.png" class="fragment fade-in" style="width:52.0%" alt="Kim has created the branch data-dictionary. Beside main, the graph has a column data-dictionary, without a commit of its own yet."></p>
-<p><img data-src="images/story-04.png" class="fragment fade-in" style="width:52.0%" alt="A first commit, Add data dictionary, on the branch data-dictionary, drawn dashed. It exists only in the box Kim's laptop."></p>
-<p><img data-src="images/story-05.png" class="fragment fade-in" style="width:52.0%" alt="A second commit, Describe the units, also dashed and only on Kim's laptop."></p>
-<p><img data-src="images/story-06.png" class="fragment fade-in" style="width:52.0%" alt="An arrow with the word push points from Kim's laptop to GitHub. The two commits of the branch are now solid and also on GitHub."></p>
-<p><img data-src="images/story-07.png" class="fragment fade-in" style="width:52.0%" alt="Kim has opened a pull request. Below the newest commit of the branch data-dictionary stands Pull request: open. The graph is otherwise unchanged."></p>
-</div>
-<div class="legend">
-<p><strong>K</strong> is Kim, <strong>R</strong> is Robin. Dashed: only on the laptop. Dark border: the newest commit of a branch.</p>
+<p><img data-src="images/story-03.png" class="fragment fade-in" alt="Kim has created the branch data-dictionary. Beside main, the graph has a column data-dictionary, without a commit of its own yet."></p>
+<p><img data-src="images/story-04.png" class="fragment fade-in" alt="A first commit, Add data dictionary, on the branch data-dictionary, drawn dashed. It exists only in the box Kim's laptop."></p>
+<p><img data-src="images/story-05.png" class="fragment fade-in" alt="A second commit, Describe the units, also dashed and only on Kim's laptop."></p>
+<p><img data-src="images/story-06.png" class="fragment fade-in" alt="An arrow with the word push points from Kim's laptop to GitHub. The two commits of the branch are now solid and also on GitHub."></p>
+<p><img data-src="images/story-07.png" class="fragment fade-in" alt="Kim has opened a pull request. Below the newest commit of the branch data-dictionary stands Pull request: open. The graph is otherwise unchanged."></p>
 </div>
 <aside class="notes">
 <p>Block 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.</p>
@@ -753,14 +776,14 @@ aacde95 Add my teaching context
           display:block!important;
       }</style></aside>
 </section>
-<section id="robin-works-at-the-same-time" class="slide level2">
+<section id="robin-works-at-the-same-time" class="slide level2 story">
 <h2>Robin works at the same time</h2>
 <div class="r-stack">
-<p><img data-src="images/story-08.png" class="fragment fade-in" style="width:56.0%" alt="Robin has created the branch readme on the left, without a commit of its own yet."></p>
-<p><img data-src="images/story-09.png" class="fragment fade-in" style="width:56.0%" alt="Robin's first commit, Write the README, dashed and only on Robin's laptop."></p>
-<p><img data-src="images/story-10.png" class="fragment fade-in" style="width:56.0%" alt="Robin's second commit, Add the licence, also only on Robin's laptop."></p>
-<p><img data-src="images/story-11.png" class="fragment fade-in" style="width:56.0%" alt="An arrow with the word push points from Robin's laptop to GitHub. Robin's two commits are now also on GitHub."></p>
-<p><img data-src="images/story-12.png" class="fragment fade-in" style="width:56.0%" alt="Robin has opened a pull request too. Below the newest commits of both branches stands Pull request: open. Robin's laptop lacks Kim's commits, Kim's laptop lacks Robin's commits. GitHub holds all of them."></p>
+<p><img data-src="images/story-08.png" class="fragment fade-in" alt="Robin has created the branch readme on the left, without a commit of its own yet."></p>
+<p><img data-src="images/story-09.png" class="fragment fade-in" alt="Robin's first commit, Write the README, dashed and only on Robin's laptop."></p>
+<p><img data-src="images/story-10.png" class="fragment fade-in" alt="Robin's second commit, Add the licence, also only on Robin's laptop."></p>
+<p><img data-src="images/story-11.png" class="fragment fade-in" alt="An arrow with the word push points from Robin's laptop to GitHub. Robin's two commits are now also on GitHub."></p>
+<p><img data-src="images/story-12.png" class="fragment fade-in" alt="Robin has opened a pull request too. Below the newest commits of both branches stands Pull request: open. Robin's laptop lacks Kim's commits, Kim's laptop lacks Robin's commits. GitHub holds all of them."></p>
 </div>
 <aside class="notes">
 <p>The same steps for Robin, one after the other. Last picture: each person has a branch of their own, which is why yours is named people-username. GitHub holds everything, each laptop only its own work.</p>
@@ -781,8 +804,8 @@ aacde95 Add my teaching context
 <h1>The shared repository</h1>
 
 </section>
-<section id="from-your-repository-into-the-shared-one" class="slide level2">
-<h2>From your repository into the shared one</h2>
+<section id="from-yours-into-the-shared-one" class="slide level2">
+<h2>From yours into the shared one</h2>
 <div class="columns">
 <div class="column" style="width:49.5%;">
 <h3 id="before">Before</h3>
@@ -838,14 +861,13 @@ aacde95 Add my teaching context
 <h1>Review and merge</h1>
 
 </section>
-<section id="a-second-person-reads" class="slide level2">
+<section id="a-second-person-reads" class="slide level2 story">
 <h2>A second person reads</h2>
-<p><span class="turn my">My turn</span></p>
 <div class="r-stack">
-<p><img data-src="images/story-13.png" class="fragment fade-in" style="width:40.0%" alt="Robin has read Kim's pull request and written a comment. Below Kim's newest commit stands Pull request: comment."></p>
-<p><img data-src="images/story-14.png" class="fragment fade-in" style="width:40.0%" alt="Kim has answered with one more commit, Add the date format. It is dashed and only on Kim's laptop."></p>
-<p><img data-src="images/story-15.png" class="fragment fade-in" style="width:40.0%" alt="Kim has pushed. The commit Add the date format is now also on GitHub and belongs to the open pull request."></p>
-<p><img data-src="images/story-16.png" class="fragment fade-in" style="width:40.0%" alt="The pull request is merged. On main there is a merge commit that takes in Kim's three commits. Below Kim's newest commit stands Pull request: merged. The merge commit exists only on GitHub."></p>
+<p><img data-src="images/story-13.png" class="fragment fade-in" alt="Robin has read Kim's pull request and written a comment. Below Kim's newest commit stands Pull request: comment."></p>
+<p><img data-src="images/story-14.png" class="fragment fade-in" alt="Kim has answered with one more commit, Add the date format. It is dashed and only on Kim's laptop."></p>
+<p><img data-src="images/story-15.png" class="fragment fade-in" alt="Kim has pushed. The commit Add the date format is now also on GitHub and belongs to the open pull request."></p>
+<p><img data-src="images/story-16.png" class="fragment fade-in" alt="The pull request is merged. On main there is a merge commit that takes in Kim's three commits. Below Kim's newest commit stands Pull request: merged. The merge commit exists only on GitHub."></p>
 </div>
 <aside class="notes">
 <p>Block 10:20 to 10:30. Comment, commit, push, merge, one after the other, pictures only. No live review today.</p>
@@ -863,7 +885,6 @@ aacde95 Add my teaching context
 </section>
 <section id="your-turn-is-at-home" class="slide level2">
 <h2>Your turn is at home</h2>
-<p>What I showed is yours to do after the workshop, in about 30 minutes.</p>
 <div class="task">
 <ol type="1">
 <li>Open the page <strong>Add your file</strong> on the workshop website.</li>
@@ -874,8 +895,11 @@ aacde95 Add my teaching context
 <div class="key">
 <p>I read every pull request that is open by <strong>Friday 4 December</strong> and write one question on it.</p>
 </div>
+<div class="aside-line">
+<p>In the full course you do this in the room, right after the break. I walk the room and check in with each person. Online, I visit each break-out room.</p>
+</div>
 <aside class="notes">
-<p>Block 10:20 to 10:30, last slide before the break. The course is built in two sessions with time between them to practise. Today is the first session only. In the second session pairs review and merge each other’s work, 30 minutes of it; it is the part I would never cut from a full course.</p>
+<p>Block 10:20 to 10:30, last slide before the break. About 30 minutes at home. In the room it is the first activity after the break with real learners: it gives me the time to walk the room and take questions one to one. The course is built in two sessions with time between them to practise. Today is the first session only. In the second session pairs review and merge each other’s work, 30 minutes of it; it is the part I would never cut from a full course.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -891,7 +915,7 @@ aacde95 Add my teaching context
 <section id="break" class="slide level2">
 <h2>Break</h2>
 <p>Until 10:40.</p>
-<countdown-timer id="timer_672dab9ce6a0573227e14836aaf4735215202068" minutes="10" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_46f3005d2d82d7108a7fc57ac62af769cfacdf8e" minutes="10" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="key">
 <p>After the break: your feedback. One thing that went well, one that can be improved.</p>
@@ -967,10 +991,10 @@ aacde95 Add my teaching context
 <li><strong>Share</strong>, 5 minutes: on the board, frame <strong>Activity 1</strong>. One point per note, in the cell where it fits.</li>
 </ol>
 </div>
-<countdown-timer id="timer_672dab9ce6a0573227e14836aaf4735215202068" minutes="10" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_46f3005d2d82d7108a7fc57ac62af769cfacdf8e" minutes="10" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="key">
-<p>At least one note under <strong>What can be improved</strong>.</p>
+<p>At least two notes under <strong>What can be improved</strong>.</p>
 </div>
 <aside class="notes">
 <p>Block 10:45 to 10:55. Call the three steps out loud at 2 and at 5 minutes. When the countdown ends, type in the second window: /board-synthesis rubric. Then go on with the next two slides while it runs.</p>
@@ -1145,8 +1169,10 @@ aacde95 Add my teaching context
 <li class="fragment"><strong>Utility:</strong> This will help me meet my goals.</li>
 <li class="fragment"><strong>Community:</strong> People I know are learning this with me.</li>
 </ul>
+<div class="fragment">
 <div class="aside-line">
 <p>This morning: a repository of your own, your own three lines, a neighbour.</p>
+</div>
 </div>
 </div></div>
 <div class="legend">
@@ -1178,8 +1204,10 @@ aacde95 Add my teaching context
 </div><div class="column" style="width:25%;">
 <p><img data-src="images/motivation-negative.png" style="width:90.0%" alt="The same drawn figure, frowning."></p>
 </div></div>
+<div class="fragment">
 <div class="key">
 <p>Which of the three do your learners meet most often?</p>
+</div>
 </div>
 <div class="legend">
 <p>Figure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.</p>
@@ -1221,7 +1249,7 @@ aacde95 Add my teaching context
 </tr>
 <tr class="odd">
 <td><strong>Session 2</strong>, 2 hours</td>
-<td>Pairs review and merge each other’s work</td>
+<td>Pairs review and merge. A merge conflict. Working together: tasks and projects, organisation and profile.</td>
 </tr>
 </tbody>
 </table>
@@ -1283,7 +1311,7 @@ aacde95 Add my teaching context
 <p>If you like, a second line:</p>
 <p><code>- A moment in a course that took my motivation away:</code></p>
 </div>
-<countdown-timer id="timer_672dab9ce6a0573227e14836aaf4735215202068" minutes="04" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<countdown-timer id="timer_46f3005d2d82d7108a7fc57ac62af769cfacdf8e" minutes="04" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
  </countdown-timer>
 <div class="aside-line">
 <p>Your answer commits you to nothing.</p>

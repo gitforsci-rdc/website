@@ -59,3 +59,9 @@ $code-bg: #ECE5D6;
 
 // A key sentence beside a countdown leaves the corner free.
 .reveal .key.beside { width: 72%; }
+
+// Story slides: a small title, the picture takes the height of the slide.
+.reveal .story h2 { font-size: 1.05em; margin-bottom: 0.1em; }
+.reveal .story .r-stack img { height: 600px; width: auto; max-width: none; max-height: none; }
+.reveal .story .r-stack img[src*="story-01"], .reveal .story .r-stack img[src*="story-02"] { height: auto; width: 92%; }
+.reveal .story .r-stack img { max-width: 100%; }

@@ -268,7 +268,7 @@ Git forgets nothing. 9 of 14 commits in the last three days, 4 after 22:00.
 Block 09:45 to 09:55. The repository is public: gitforsci-rdc/website. No browser needed, the slide carries it. Git forgets nothing: that is the use of it, and it is the reason to choose what goes into a commit. The history shows that my instructions came late. This returns at 10:55.
 :::
 
-## One repository, several places
+## One repository, several places {.story}
 
 ::: {.r-stack}
 ![](images/story-01.png){.fragment .fade-in width="88%" fig-alt="Three boxes: Robin's laptop and Kim's laptop are empty and dashed, with the words no copy yet. The box GitHub holds one commit. Below the laptops stands local, below GitHub stands remote. Underneath, the commit graph with the first commit, Repository created, on main."}
@@ -277,7 +277,7 @@ Block 09:45 to 09:55. The repository is public: gitforsci-rdc/website. No browse
 :::
 
 ::: legend
-Pictures: Lars Schöbitz, CC BY 4.0
+Pictures: Lars Schöbitz, CC BY 4.0. **K** is Kim, **R** is Robin. Dashed: only on the laptop.
 :::
 
 ::: {.notes}
@@ -297,7 +297,7 @@ Block 09:45 to 09:55. Kim creates the repository on GitHub. Kim and Robin clone:
 Your commits from the pre-work: who, when, what, why.
 
 ::: key
-Three commits? Put a sticky note on your laptop lid.
+Three commits? Show your neighbour.
 :::
 
 ::: {.notes}
@@ -324,9 +324,23 @@ Your laptop and GitHub hold the same commits.
 Block 09:55 to 10:00. I show the two clicks once as rainbow-train, then the room. Without pre-work: look at the neighbour's screen.
 :::
 
+## A commit, step by step
+
+[My turn]{.turn .my} Watch, type nothing.
+
+1.  Menu **Repository**, **Open in Sublime Text**
+2.  One line more in `rainbow-train.md`, save
+3.  Tab **Changes**: the line shows in green
+4.  A message, then **Commit to main**
+5.  **Push origin**
+
+::: {.notes}
+Block 10:00 to 10:10, with the next slide. All five steps as rainbow-train, without stopping, about 2 minutes. Then the next slide: the same for the room.
+:::
+
 ## A commit of your own
 
-[My turn]{.turn .my} I show it once. [Your turn]{.turn .your} Then you, 5 minutes.
+[Your turn]{.turn .your} 5 minutes
 
 ::: task
 1.  In GitHub Desktop: menu **Repository**, **Open in Sublime Text**.
@@ -345,12 +359,14 @@ On GitHub: one commit more. Then a sticky note on the lid.
 :::
 
 ::: {.notes}
-Block 10:00 to 10:10. First I do all five steps as rainbow-train without stopping, then the room. No Sublime Text: menu Repository, Show in Finder (Windows: Show in Explorer), open the file with TextEdit or Notepad. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Check for everyone: View on GitHub, the number beside the clock is one higher. This step returns at 11:25.
+Block 10:00 to 10:10. I walk the room. No Sublime Text: menu Repository, Show in Finder (Windows: Show in Explorer), open the file with TextEdit or Notepad. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Check for everyone: View on GitHub, the number beside the clock is one higher. This step returns at 11:25.
 :::
 
 ## Questions so far
 
-Two or three now, out loud.
+One or two now, out loud.
+
+{{< countdown "2:00" >}}
 
 ::: key
 Everything else: a note under **Parked questions**.
@@ -402,40 +418,36 @@ Block 10:10 to 10:15. The same names in RStudio, Positron and VS Code. You type 
 
 # Branch and pull request {background-color="#1A1714"}
 
-## A branch, then a pull request
+## A branch, then a pull request {.story}
 
 ::: {.r-stack}
-![](images/story-03.png){.fragment .fade-in width="52%" fig-alt="Kim has created the branch data-dictionary. Beside main, the graph has a column data-dictionary, without a commit of its own yet."}
+![](images/story-03.png){.fragment .fade-in fig-alt="Kim has created the branch data-dictionary. Beside main, the graph has a column data-dictionary, without a commit of its own yet."}
 
-![](images/story-04.png){.fragment .fade-in width="52%" fig-alt="A first commit, Add data dictionary, on the branch data-dictionary, drawn dashed. It exists only in the box Kim's laptop."}
+![](images/story-04.png){.fragment .fade-in fig-alt="A first commit, Add data dictionary, on the branch data-dictionary, drawn dashed. It exists only in the box Kim's laptop."}
 
-![](images/story-05.png){.fragment .fade-in width="52%" fig-alt="A second commit, Describe the units, also dashed and only on Kim's laptop."}
+![](images/story-05.png){.fragment .fade-in fig-alt="A second commit, Describe the units, also dashed and only on Kim's laptop."}
 
-![](images/story-06.png){.fragment .fade-in width="52%" fig-alt="An arrow with the word push points from Kim's laptop to GitHub. The two commits of the branch are now solid and also on GitHub."}
+![](images/story-06.png){.fragment .fade-in fig-alt="An arrow with the word push points from Kim's laptop to GitHub. The two commits of the branch are now solid and also on GitHub."}
 
-![](images/story-07.png){.fragment .fade-in width="52%" fig-alt="Kim has opened a pull request. Below the newest commit of the branch data-dictionary stands Pull request: open. The graph is otherwise unchanged."}
-:::
-
-::: legend
-**K** is Kim, **R** is Robin. Dashed: only on the laptop. Dark border: the newest commit of a branch.
+![](images/story-07.png){.fragment .fade-in fig-alt="Kim has opened a pull request. Below the newest commit of the branch data-dictionary stands Pull request: open. The graph is otherwise unchanged."}
 :::
 
 ::: {.notes}
 Block 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.
 :::
 
-## Robin works at the same time
+## Robin works at the same time {.story}
 
 ::: {.r-stack}
-![](images/story-08.png){.fragment .fade-in width="56%" fig-alt="Robin has created the branch readme on the left, without a commit of its own yet."}
+![](images/story-08.png){.fragment .fade-in fig-alt="Robin has created the branch readme on the left, without a commit of its own yet."}
 
-![](images/story-09.png){.fragment .fade-in width="56%" fig-alt="Robin's first commit, Write the README, dashed and only on Robin's laptop."}
+![](images/story-09.png){.fragment .fade-in fig-alt="Robin's first commit, Write the README, dashed and only on Robin's laptop."}
 
-![](images/story-10.png){.fragment .fade-in width="56%" fig-alt="Robin's second commit, Add the licence, also only on Robin's laptop."}
+![](images/story-10.png){.fragment .fade-in fig-alt="Robin's second commit, Add the licence, also only on Robin's laptop."}
 
-![](images/story-11.png){.fragment .fade-in width="56%" fig-alt="An arrow with the word push points from Robin's laptop to GitHub. Robin's two commits are now also on GitHub."}
+![](images/story-11.png){.fragment .fade-in fig-alt="An arrow with the word push points from Robin's laptop to GitHub. Robin's two commits are now also on GitHub."}
 
-![](images/story-12.png){.fragment .fade-in width="56%" fig-alt="Robin has opened a pull request too. Below the newest commits of both branches stands Pull request: open. Robin's laptop lacks Kim's commits, Kim's laptop lacks Robin's commits. GitHub holds all of them."}
+![](images/story-12.png){.fragment .fade-in fig-alt="Robin has opened a pull request too. Below the newest commits of both branches stands Pull request: open. Robin's laptop lacks Kim's commits, Kim's laptop lacks Robin's commits. GitHub holds all of them."}
 :::
 
 ::: {.notes}
@@ -444,7 +456,7 @@ The same steps for Robin, one after the other. Last picture: each person has a b
 
 # The shared repository {background-color="#1A1714"}
 
-## From your repository into the shared one
+## From yours into the shared one
 
 ::::: columns
 ::: {.column width="49.5%"}
@@ -492,18 +504,16 @@ The room does not type here. Say it: this is your part at home, and the page has
 
 # Review and merge {background-color="#1A1714"}
 
-## A second person reads
-
-[My turn]{.turn .my}
+## A second person reads {.story}
 
 ::: {.r-stack}
-![](images/story-13.png){.fragment .fade-in width="40%" fig-alt="Robin has read Kim's pull request and written a comment. Below Kim's newest commit stands Pull request: comment."}
+![](images/story-13.png){.fragment .fade-in fig-alt="Robin has read Kim's pull request and written a comment. Below Kim's newest commit stands Pull request: comment."}
 
-![](images/story-14.png){.fragment .fade-in width="40%" fig-alt="Kim has answered with one more commit, Add the date format. It is dashed and only on Kim's laptop."}
+![](images/story-14.png){.fragment .fade-in fig-alt="Kim has answered with one more commit, Add the date format. It is dashed and only on Kim's laptop."}
 
-![](images/story-15.png){.fragment .fade-in width="40%" fig-alt="Kim has pushed. The commit Add the date format is now also on GitHub and belongs to the open pull request."}
+![](images/story-15.png){.fragment .fade-in fig-alt="Kim has pushed. The commit Add the date format is now also on GitHub and belongs to the open pull request."}
 
-![](images/story-16.png){.fragment .fade-in width="40%" fig-alt="The pull request is merged. On main there is a merge commit that takes in Kim's three commits. Below Kim's newest commit stands Pull request: merged. The merge commit exists only on GitHub."}
+![](images/story-16.png){.fragment .fade-in fig-alt="The pull request is merged. On main there is a merge commit that takes in Kim's three commits. Below Kim's newest commit stands Pull request: merged. The merge commit exists only on GitHub."}
 :::
 
 ::: {.notes}
@@ -511,8 +521,6 @@ Block 10:20 to 10:30. Comment, commit, push, merge, one after the other, picture
 :::
 
 ## Your turn is at home
-
-What I showed is yours to do after the workshop, in about 30 minutes.
 
 ::: task
 1.  Open the page **Add your file** on the workshop website.
@@ -524,8 +532,12 @@ What I showed is yours to do after the workshop, in about 30 minutes.
 I read every pull request that is open by **Friday 4 December** and write one question on it.
 :::
 
+::: aside-line
+In the full course you do this in the room, right after the break. I walk the room and check in with each person. Online, I visit each break-out room.
+:::
+
 ::: {.notes}
-Block 10:20 to 10:30, last slide before the break. The course is built in two sessions with time between them to practise. Today is the first session only. In the second session pairs review and merge each other's work, 30 minutes of it; it is the part I would never cut from a full course.
+Block 10:20 to 10:30, last slide before the break. About 30 minutes at home. In the room it is the first activity after the break with real learners: it gives me the time to walk the room and take questions one to one. The course is built in two sessions with time between them to practise. Today is the first session only. In the second session pairs review and merge each other's work, 30 minutes of it; it is the part I would never cut from a full course.
 :::
 
 ## Break
@@ -570,7 +582,7 @@ Block 10:40 to 10:45. Asking for feedback yourself, with your own questions, is 
 {{< countdown "10:00" >}}
 
 ::: key
-At least one note under **What can be improved**.
+At least two notes under **What can be improved**.
 :::
 
 ::: {.notes}
@@ -680,8 +692,10 @@ Block 11:10 to 11:15. One sentence per point, each with its example from this mo
 -   **Community:** People I know are learning this with me.
 :::
 
+::: {.fragment}
 ::: aside-line
 This morning: a repository of your own, your own three lines, a neighbour.
+:::
 :::
 :::
 :::::
@@ -710,8 +724,10 @@ Block 11:15 to 11:20, this slide and the next. Motivation is the strongest predi
 :::
 :::::
 
+::: {.fragment}
 ::: key
 Which of the three do your learners meet most often?
+:::
 :::
 
 ::: legend
@@ -730,7 +746,7 @@ Block 11:15 to 11:20. A push that is rejected without a reason I can read is unp
 |---|---|
 | **Session 1**, 2 hours | What you saw today, and your own pull request in the room |
 | **Two weeks between** | A repository of your own, with me as reviewer. Practice in a game with quizzes. A glossary. |
-| **Session 2**, 2 hours | Pairs review and merge each other's work |
+| **Session 2**, 2 hours | Pairs review and merge. A merge conflict. Working together: tasks and projects, organisation and profile. |
 
 ::: key
 Today you saw half of session 1.
