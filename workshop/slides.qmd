@@ -1,7 +1,7 @@
 ---
 title: "Git for Scientists"
 subtitle: "Commit, branch, pull request, and how this workshop is taught"
-author: "Lars Schöbitz"
+author: "[Lars Schöbitz](https://lse.de/)"
 institute: "Global Health Engineering, ETH Zurich"
 date: 2026-11-20
 date-format: "D MMMM YYYY"
@@ -809,7 +809,7 @@ Block 11:25 to 11:30, with the last slide. The step of 10:00, this time alone. T
 -   Website and slides: <https://gitforsci-rdc.github.io/website/>
 -   Licence CC BY 4.0. Take it, change it, teach with it.
 
-Lars Schöbitz
+[Lars Schöbitz](https://lse.de/)
 
 -   <https://github.com/larnsce>
 -   <https://www.linkedin.com/in/larsschoebitz>
@@ -853,7 +853,7 @@ Not shown on 20 November, for reading. The pre-work is where the novice design l
 ## Know the learners, then design
 
 ::: incremental
--   A survey before anything is written: 27 answers decided the software and the pairs.
+-   A survey before anything is written: 27 answers decided the software.
 -   A tracker shows who is where in the pre-work, without asking anyone.
 -   The content of today was written yesterday, from what I read in the pre-work.
 :::
@@ -914,7 +914,7 @@ Not shown on 20 November, for reading. Costs one free account and one more brows
 
 ::: incremental
 -   Participatory live coding: I type, you type, nothing is pasted.
--   A demo in two passes: once without stopping, once slowly.
+-   A demo in two passes where time allows: once without stopping, once slowly.
 -   A mistake on my screen is a moment to take apart together.
 :::
 

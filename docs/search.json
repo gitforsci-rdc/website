@@ -496,7 +496,7 @@
     "href": "workshop/slides.html#know-the-learners-then-design",
     "title": "Git for Scientists",
     "section": "Know the learners, then design",
-    "text": "Know the learners, then design\n\nA survey before anything is written: 27 answers decided the software and the pairs.\nA tracker shows who is where in the pre-work, without asking anyone.\nThe content of today was written yesterday, from what I read in the pre-work.\n\n\nNot shown on 20 November, for reading. Most learners do the pre-work on the last day, and I teach better from what I read then than from a plan made weeks ago. It takes practice, and trust in the method, to walk into a room with slides that are one day old. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.",
+    "text": "Know the learners, then design\n\nA survey before anything is written: 27 answers decided the software.\nA tracker shows who is where in the pre-work, without asking anyone.\nThe content of today was written yesterday, from what I read in the pre-work.\n\n\nNot shown on 20 November, for reading. Most learners do the pre-work on the last day, and I teach better from what I read then than from a plan made weeks ago. It takes practice, and trust in the method, to walk into a room with slides that are one day old. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -532,7 +532,7 @@
     "href": "workshop/slides.html#type-with-the-room-mistakes-included",
     "title": "Git for Scientists",
     "section": "Type with the room, mistakes included",
-    "text": "Type with the room, mistakes included\n\nParticipatory live coding: I type, you type, nothing is pasted.\nA demo in two passes: once without stopping, once slowly.\nA mistake on my screen is a moment to take apart together.\n\n\nNot shown on 20 November, for reading. Then the next slide: the mistakes of Tuesday, and what they changed for today.",
+    "text": "Type with the room, mistakes included\n\nParticipatory live coding: I type, you type, nothing is pasted.\nA demo in two passes where time allows: once without stopping, once slowly.\nA mistake on my screen is a moment to take apart together.\n\n\nNot shown on 20 November, for reading. Then the next slide: the mistakes of Tuesday, and what they changed for today.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -664,7 +664,7 @@
     "href": "pre-work/06-your-repository.html#stuck",
     "title": "Git for Scientists (RDC 2026)",
     "section": "Stuck?",
-    "text": "Stuck?\n\nThe owner gitforsci-rdc is not in the list. The invitation is not accepted yet. Open https://github.com/orgs/gitforsci-rdc/invitation while signed in.\nThe push is rejected. You ticked “Block command line pushes that expose my email” in Step 4, and GitHub Desktop still uses your real address. Open Settings (Windows: File, Options), tab Git, choose the address that ends in @users.noreply.github.com and save. Then click Undo at the bottom of the tab Changes and commit again.\nSomething went very wrong with the clone. Delete the folder on your laptop and clone again. The version on GitHub is the latest one, as far as you pushed.\nAnything else: write what you see as a comment in your issue, with a screenshot.\n\nIf this step is not finished by Friday, come anyway. You sit with a neighbour who has it, follow on their laptop and take the reviewer’s part. The educator part of the workshop needs no setup.",
+    "text": "Stuck?\n\nThe owner gitforsci-rdc is not in the list. The invitation is not accepted yet. Open https://github.com/orgs/gitforsci-rdc/invitation while signed in.\nThe push is rejected. You ticked “Block command line pushes that expose my email” in Step 4, and GitHub Desktop still uses your real address. Open Settings (Windows: File, Options), tab Git, choose the address that ends in @users.noreply.github.com and save. Then click Undo at the bottom of the tab Changes and commit again.\nSomething went very wrong with the clone. Delete the folder on your laptop and clone again. The version on GitHub is the latest one, as far as you pushed.\nAnything else: write what you see as a comment in your issue, with a screenshot.\n\nIf this step is not finished by Friday, come anyway. You sit with a neighbour who has it and follow on their laptop. The educator part of the workshop needs no setup.",
     "crumbs": [
       "Start",
       "Pre-course work",
@@ -780,7 +780,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " What do I need to prepare before the workshop?",
-    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Monday, 16 November 2026, 18:00.\nStep 2: Get an account for GitHub, if you have none.\nStep 3: Install GitHub Desktop and sign in.\nStep 4: Decide where your email address shows.\nStep 5: Do the setup check.\nStep 6: Create your own repository and make your first commit.\n\nSteps 3 to 6 take about 60 minutes and are due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00. The hands-on part builds on the pre-work. Anyone who arrives without it sits with a prepared neighbour, follows on their laptop and takes the reviewer’s part, and takes full part in the educator part of the workshop.",
+    "text": "What do I need to prepare before the workshop?\n\nStep 1: Complete the pre-course survey by Monday, 16 November 2026, 18:00.\nStep 2: Get an account for GitHub, if you have none.\nStep 3: Install GitHub Desktop and sign in.\nStep 4: Decide where your email address shows.\nStep 5: Do the setup check.\nStep 6: Create your own repository and make your first commit.\n\nSteps 3 to 6 take about 60 minutes and are due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00. The hands-on part builds on the pre-work. Anyone who arrives without it sits with a prepared neighbour and follows on their laptop, and takes full part in the educator part of the workshop.",
     "crumbs": [
       "Start",
       "Pre-course work"
@@ -1010,7 +1010,7 @@
     "href": "pre-work/05-setup-check.html#stuck",
     "title": "Git for Scientists (RDC 2026)",
     "section": "Stuck?",
-    "text": "Stuck?\n\nNo invitation. I can only invite you once I have your username. Complete the survey and look again an hour later.\nGitHub Desktop says the repository was not found. The invitation is not accepted yet, or GitHub Desktop is signed in with a different account. Check Settings or Options, tab Accounts.\nThe path ends in a folder named Untitled (macOS). Click Choose… again and select gitrepos without typing a name.\nAnything else: write what you see as a comment in your issue, with a screenshot.\n\nNext: Step 6.\nIf the setup is not finished by Friday, come anyway. You sit with a neighbour who has it, follow on their laptop and take the reviewer’s part. The educator part of the workshop needs no setup.",
+    "text": "Stuck?\n\nNo invitation. I can only invite you once I have your username. Complete the survey and look again an hour later.\nGitHub Desktop says the repository was not found. The invitation is not accepted yet, or GitHub Desktop is signed in with a different account. Check Settings or Options, tab Accounts.\nThe path ends in a folder named Untitled (macOS). Click Choose… again and select gitrepos without typing a name.\nAnything else: write what you see as a comment in your issue, with a screenshot.\n\nNext: Step 6.\nIf the setup is not finished by Friday, come anyway. You sit with a neighbour who has it and follow on their laptop. The educator part of the workshop needs no setup.",
     "crumbs": [
       "Start",
       "Pre-course work",
