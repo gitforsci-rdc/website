@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://gitforsci-rdc.github.io/website/workshop/slides.html</loc>
+    <lastmod>2026-11-19T20:58:59.305Z</lastmod>
+  </url>
+  <url>
     <loc>https://gitforsci-rdc.github.io/website/pre-work/06-your-repository.html</loc>
-    <lastmod>2026-11-17T12:34:28.968Z</lastmod>
+    <lastmod>2026-11-19T20:58:59.304Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-rdc.github.io/website/pre-work/04-email-privacy.html</loc>
@@ -14,7 +18,11 @@
   </url>
   <url>
     <loc>https://gitforsci-rdc.github.io/website/index.html</loc>
-    <lastmod>2026-11-17T12:43:24.307Z</lastmod>
+    <lastmod>2026-11-19T20:58:59.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-rdc.github.io/website/glossary.html</loc>
+    <lastmod>2026-11-19T20:30:03.365Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-rdc.github.io/website/pre-work/01-survey.html</loc>
@@ -26,6 +34,10 @@
   </url>
   <url>
     <loc>https://gitforsci-rdc.github.io/website/pre-work/05-setup-check.html</loc>
-    <lastmod>2026-11-17T12:34:29.458Z</lastmod>
+    <lastmod>2026-11-19T20:58:59.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-rdc.github.io/website/workshop/add-your-file.html</loc>
+    <lastmod>2026-11-19T14:11:58.011Z</lastmod>
   </url>
 </urlset>

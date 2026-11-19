@@ -7,8 +7,9 @@ project:
     - "*.qmd"
     - "**/*.qmd"
     # Software decision of 15 November 2026: GitHub Desktop. The pages of the
-    # RStudio route from the template stay out of the render, and the
-    # workshop page stays hidden until the deck is ready.
+    # RStudio route from the template stay out of the render. Of the
+    # workshop folder, the deck and the hand-in page are rendered; the
+    # template's module page stays out.
     - "!pre-work/01-install-r.qmd"
     - "!pre-work/04-github-pat.qmd"
     - "!pre-work/05-install-git.qmd"
@@ -16,7 +17,9 @@ project:
     - "!pre-work/06b-configure-git.qmd"
     - "!pre-work/06c-install-verify.qmd"
     - "!pre-work/07-big-picture.qmd"
-    - "!workshop/*.qmd"
+    - "!workshop/index.qmd"
+    # Written during the workshop by the skill board-synthesis, local only.
+    - "!workshop/live.qmd"
 
 # NOTE: title, site-url, repo-url, the sidebar GitHub href, and the Plausible
 # analytics domain below are iteration-specific. They are written in by
@@ -42,6 +45,41 @@ website:
     right: "This page is built with [Quarto](https://quarto.org/)."
     background: "#F5F5F5"
 
+  navbar:
+    title: "Git for Scientists"
+    search: false
+    left:
+      - href: index.qmd
+        text: "Start"
+      - text: "Pre-course work"
+        menu:
+          - href: pre-work/01-survey.qmd
+            text: "Step 1: Pre-course survey"
+          - href: pre-work/02-github-acc.qmd
+            text: "Step 2: GitHub account"
+          - href: pre-work/03-github-desktop.qmd
+            text: "Step 3: Install GitHub Desktop"
+          - href: pre-work/04-email-privacy.qmd
+            text: "Step 4: Email address in commits"
+          - href: pre-work/05-setup-check.qmd
+            text: "Step 5: Setup check"
+          - href: pre-work/06-your-repository.qmd
+            text: "Step 6: Your own repository"
+      - text: "Workshop"
+        menu:
+          - href: workshop/slides.qmd
+            text: "Slides"
+            target: "_blank"
+          - href: workshop/add-your-file.qmd
+            text: "Add your file with a pull request"
+      # The full link with share_link_id: the short form sends about half of
+      # the first-time visitors to Miro's sign-in page.
+      - href: "https://miro.com/app/board/uXjVEMVk3OQ=/?share_link_id=73900085728"
+        text: "Workshop board"
+        target: "_blank"
+      - href: glossary.qmd
+        text: "Glossary"
+
   sidebar:
     background: "#F5F5F5"
     logo: "images/ghe-square-logo.png"
@@ -53,7 +91,7 @@ website:
         text: "GitHub organization"
     style: "docked"
     search: false
-    collapse-level: 1
+    collapse-level: 2
     contents:
       - text: "---"
       - section: "Pre-course work"
@@ -79,10 +117,15 @@ website:
           #   - href: pre-work/06b-configure-git.qmd text: "Step 6b: Test setup - configure Git"
           #   - href: pre-work/06c-install-verify.qmd text: "Step 6c: Test setup - install & report"
           #   - href: pre-work/07-big-picture.qmd    text: "Step 7: Why Git? Why GitHub?"
-      # - section: "Workshop"
-      #   contents:
-      #     - href: workshop/index.qmd
-      #       text: "Git for Scientists"
+      - section: "Workshop"
+        contents:
+          - href: workshop/slides.qmd
+            text: "Slides"
+            target: "_blank"
+          - href: workshop/add-your-file.qmd
+            text: "Add your file with a pull request"
+      - href: glossary.qmd
+        text: "Glossary"
 
 format:
   html:

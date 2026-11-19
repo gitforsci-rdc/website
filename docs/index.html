@@ -54,11 +54,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -85,10 +85,90 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/ghe-square-logo.png" alt="" class="navbar-logo light-content">
+    <img src="./images/ghe-square-logo.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Git for Scientists</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Start</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pre-course-work" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Pre-course work</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pre-course-work">    
+        <li>
+    <a class="dropdown-item" href="./pre-work/01-survey.html">
+ <span class="dropdown-text">Step 1: Pre-course survey</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pre-work/02-github-acc.html">
+ <span class="dropdown-text">Step 2: GitHub account</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pre-work/03-github-desktop.html">
+ <span class="dropdown-text">Step 3: Install GitHub Desktop</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pre-work/04-email-privacy.html">
+ <span class="dropdown-text">Step 4: Email address in commits</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pre-work/05-setup-check.html">
+ <span class="dropdown-text">Step 5: Setup check</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pre-work/06-your-repository.html">
+ <span class="dropdown-text">Step 6: Your own repository</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-workshop" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Workshop</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-workshop">    
+        <li>
+    <a class="dropdown-item" href="./workshop/slides.html" target="_blank">
+ <span class="dropdown-text">Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./workshop/add-your-file.html">
+ <span class="dropdown-text">Add your file with a pull request</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://miro.com/app/board/uXjVEMVk3OQ=/?share_link_id=73900085728" target="_blank"> 
+<span class="menu-text">Workshop board</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -101,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
@@ -163,6 +243,35 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Workshop</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop/slides.html" class="sidebar-item-text sidebar-link" target="_blank">
+ <span class="menu-text">Slides</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop/add-your-file.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Add your file with a pull request</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -205,7 +314,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Thank you for joining this workshop at the Research Data Conference 2026. Your instructor <a href="https://ghe.ethz.ch/">Lars Schöbitz</a>, Global Health Engineering, ETH Zurich, is looking forward to meeting you.</p>
+<p>Thank you for joining this workshop at the Research Data Conference 2026. Your instructor <a href="https://lse.de/">Lars Schöbitz</a>, Global Health Engineering, ETH Zurich, is looking forward to meeting you.</p>
 <p>We meet on Friday, 20 November 2026, 09:30 to 11:30 (Europe/Zurich) in Room Wytsicht, Gurten, Bern, at the Research Data Conference 2026. Conference programme and venue: <a href="https://researchdatasupport.ch/srdsn-conference">https://researchdatasupport.ch/srdsn-conference</a>. Registration runs through the conference.</p>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background"><i class="fa-solid fa-circle-info" aria-label="circle-info"></i> Background</h2>
@@ -235,7 +344,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="pre-work/05-setup-check.html">Step 5</a>: Do the setup check.</li>
 <li><a href="pre-work/06-your-repository.html">Step 6</a>: Create your own repository and make your first commit.</li>
 </ul>
-<p>Steps 3 to 6 take about 60 minutes and are due by <span class="highlight-yellow"><strong>Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00</strong></span>. The hands-on part builds on the pre-work. Anyone who arrives without it sits with a prepared neighbour, follows on their laptop and takes the reviewer’s part, and takes full part in the educator part of the workshop.</p>
+<p>Steps 3 to 6 take about 60 minutes and are due by <span class="highlight-yellow"><strong>Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00</strong></span>. The hands-on part builds on the pre-work. Anyone who arrives without it sits with a prepared neighbour and follows on their laptop, and takes full part in the educator part of the workshop.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</h2>
@@ -258,16 +367,16 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">Welcome and the two seats: learner and educator</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">09:40 - 10:55</td>
-<td style="text-align: left;">Condensed course from the learner’s seat: create and clone, commit cycle, branch, pull request and review, merge</td>
+<td style="text-align: left;">09:40 - 10:30</td>
+<td style="text-align: left;">From the learner’s seat: what a commit is, a commit of your own, then branch, pull request and review as a demonstration</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">10:55 - 11:00</td>
+<td style="text-align: left;">10:30 - 10:40</td>
 <td style="text-align: left;">Break</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">11:00 - 11:30</td>
-<td style="text-align: left;">Educator lens: how the course is built and run (open educational resource) and the feedback round</td>
+<td style="text-align: left;">10:40 - 11:30</td>
+<td style="text-align: left;">From the educator’s seat: your feedback on the first hour, how the workshop is taught, and what motivates learners</td>
 </tr>
 </tbody>
 </table>
@@ -278,7 +387,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning objectives</h2>
 <p>By the end of this workshop, participants will be able to:</p>
 <ol type="1">
-<li><p><strong>Collaboration patterns</strong>: apply the core Git and GitHub patterns, branching, pull requests, review and merging, to a small project.</p></li>
+<li><p><strong>Collaboration patterns</strong>: make a commit in a repository of their own and follow the path of a change through branch, pull request, review and merge.</p></li>
 <li><p><strong>Instructional design</strong>: evaluate the workshop’s design (sequencing, scaffolding, exercises) from an educator’s perspective.</p></li>
 <li><p><strong>Reuse</strong>: assess whether they could reuse and adapt the material to teach Git and GitHub in their own setting.</p></li>
 </ol>

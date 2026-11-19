@@ -72,4 +72,4 @@ Without Sublime Text, use TextEdit on macOS or Notepad on Windows. Do not use Wo
 - **Something went very wrong with the clone.** Delete the folder on your laptop and clone again. The version on GitHub is the latest one, as far as you pushed.
 - Anything else: write what you see as a comment in your issue, with a screenshot.
 
-If this step is not finished by Friday, come anyway. You sit with a neighbour who has it, follow on their laptop and take the reviewer's part. The educator part of the workshop needs no setup.
+If this step is not finished by Friday, come anyway. You sit with a neighbour who has it and follow on their laptop. The educator part of the workshop needs no setup.
