@@ -50,13 +50,13 @@ Render: quarto render workshop/slides.qmd
 -   I teach people who have never written code or used Git
 
 ::: aside-line
-I finished these slides yesterday. That is on purpose, and at 10:46 I say why.
+I finished these slides yesterday. That is on purpose, and at 11:10 I say why.
 :::
 :::
 :::::
 
 ::: {.notes}
-09:30, 2 minutes. Three facts, one sentence on the day before. No more here.
+Block 09:30 to 09:40. Three facts, one sentence on the day before. No more here.
 :::
 
 ## Two seats today {.smaller}
@@ -86,7 +86,7 @@ From now on, watch **how** I teach: what I say, how I say it, how I run the room
 :::
 
 ::: {.notes}
-09:32, 2 minutes. Say both seats out loud. The feedback after the break follows three words: content, presentation, interaction.
+Block 09:30 to 09:40. Say both seats out loud. The feedback after the break follows three words: content, presentation, interaction.
 :::
 
 ## One board for the room {.smaller}
@@ -108,16 +108,16 @@ plot(qrcode::qr_code("https://miro.com/app/board/uXjVEMVk3OQ=/"))
 
 -   No account, no name. Your notes are anonymous.
 -   **Parked questions**: any time, one question per note.
--   Two activities after the break.
+-   One activity after the break.
 
 ::: aside-line
-An AI session (Claude) on my laptop reads the two activities and groups your notes into one slide each. Do not write names or anything personal on a note.
+An AI session (Claude) on my laptop reads the activity and groups your notes into one slide. Do not write names or anything personal on a note.
 :::
 :::
 :::::
 
 ::: {.notes}
-09:34, 2 minutes. Wait until the board is open on a few screens. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.
+Block 09:30 to 09:40. Wait until the board is open on a few screens. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.
 :::
 
 ## Find your neighbour {.smaller}
@@ -136,7 +136,7 @@ Now look around. If you have never used Git, sit beside a raised hand. Move now,
 {{< countdown "2:00" >}}
 
 ::: {.notes}
-09:36, 2 minutes. People who use Git weekly sit beside first-time users.
+Block 09:30 to 09:40. People who use Git weekly sit beside first-time users.
 :::
 
 ## Who is in the room: Git {.smaller}
@@ -172,7 +172,7 @@ extensively
 A mixed room. That is why you sit in pairs.
 
 ::: {.notes}
-09:38, 1 minute. One answer is empty. 14 macOS, 11 Windows, 1 Linux.
+Block 09:30 to 09:40, the three survey slides in about 2 minutes. One answer is empty. 14 macOS, 11 Windows, 1 Linux.
 :::
 
 ## Who is in the room: roles {.smaller}
@@ -206,7 +206,7 @@ other roles
 **16** of you teach Git or plan to. That is why the second half is about teaching.
 
 ::: {.notes}
-09:39, 1 minute. Other roles: IT, research software engineer, trainer, and people who chose other.
+Block 09:30 to 09:40. Other roles: IT, research software engineer, trainer, and people who chose other.
 :::
 
 ## What you want to take away {.smaller}
@@ -243,7 +243,7 @@ Git and AI tools
 -   Things may [go wrong]{.mark-word} here. Everything we do today can be undone.
 
 ::: {.notes}
-09:40, 1 minute. Groups only, no single answers: the survey promised that. Four answers fall outside these groups (collaboration in a team, repairing mistakes). Two anchor sentences out loud: not an AI course, everything can be undone.
+Block 09:30 to 09:40, last slide of it. Groups only, no single answers: the survey promised that. Four answers fall outside these groups (collaboration in a team, repairing mistakes). Two anchor sentences out loud: not an AI course, everything can be undone.
 :::
 
 ## How we work {.smaller}
@@ -288,7 +288,7 @@ A commit is a saved state of your files, with four pieces of information:
 :::
 
 ::: {.notes}
-09:41, 3 minutes. Key words only, then the traces in a real repository on the next slide.
+Block 09:40 to 09:50. Key words only, then the traces in a real repository on the next slide.
 :::
 
 ## Traces in a real repository {.smaller}
@@ -313,7 +313,7 @@ A question for you: **When were your instructions written?**
 Git forgets nothing. That is the use of it, and it is the reason to choose what goes into a commit.
 
 ::: {.notes}
-09:44, 3 minutes. No browser needed, the slide carries it. The history shows that my instructions came late. This returns at 10:46.
+Block 09:40 to 09:50. No browser needed, the slide carries it. The history shows that my instructions came late. This returns at 10:55.
 :::
 
 ## One repository, several places
@@ -329,7 +329,7 @@ Pictures: Lars Schöbitz, CC BY 4.0
 :::
 
 ::: {.notes}
-09:47, 3 minutes. Kim creates the repository on GitHub. Kim and Robin clone: three places, the same state. Laptops never talk to each other directly, always through GitHub. Words: local is the laptop, remote is GitHub. Clone once. A second clone is a second copy on the same laptop, and the two get mixed up.
+Block 09:40 to 09:50. Kim creates the repository on GitHub. Kim and Robin clone: three places, the same state. Laptops never talk to each other directly, always through GitHub. Words: local is the laptop, remote is GitHub. Clone once. A second clone is a second copy on the same laptop, and the two get mixed up.
 :::
 
 ## Your commits in GitHub Desktop {.smaller}
@@ -349,7 +349,7 @@ Do you see three commits? Thumbs up.
 :::
 
 ::: {.notes}
-09:50, 3 minutes. Whoever has not finished the pre-work looks at the neighbour's screen. Show the same view in the demo repository.
+Block 09:50 to 10:00. Whoever has not finished the pre-work looks at the neighbour's screen. Show the same view in the demo repository.
 :::
 
 ## Commits on GitHub {.smaller}
@@ -364,7 +364,7 @@ I show the repository `teaching-rainbow-train` in the browser.
 -   **Verified** beside a commit: it was made in the browser, and GitHub signed it. A commit from your laptop has no such mark. Both are fine.
 
 ::: {.notes}
-09:53, 4 minutes. I show GitHub and explain, the room watches. Then the next slide: your turn, 3 minutes.
+Block 09:50 to 10:00. I show GitHub and explain, the room watches. Then the next slide: your turn, 3 minutes.
 :::
 
 ## Your commits on GitHub {.smaller}
@@ -382,7 +382,7 @@ The same commits as in GitHub Desktop. Your laptop and GitHub hold the same stat
 {{< countdown "3:00" >}}
 
 ::: {.notes}
-09:57, 3 minutes, each person on their own laptop. Without pre-work: look at the neighbour's screen.
+Block 09:50 to 10:00. 3 minutes, each person on their own laptop. Without pre-work: look at the neighbour's screen.
 :::
 
 ## A commit of your own {.smaller}
@@ -406,7 +406,7 @@ Pushed? Thumbs up. Your repository on GitHub now shows one commit more.
 :::
 
 ::: {.notes}
-10:00, 6 minutes. I do every step as rainbow-train at the same time, one step, then wait for the room. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Whoever is not ready follows on the neighbour's laptop. This step returns at 11:23, done alone.
+Block 10:00 to 10:05. I do every step as rainbow-train at the same time, one step, then wait for the room. Push rejected: the commit carries the real email address, and the account blocks such pushes. In GitHub Desktop: Settings (Windows: File, Options), Git, tab Author, choose the address ending in users.noreply.github.com, Save. Then Undo at the bottom of Changes and commit again. Whoever is not ready follows on the neighbour's laptop. This step returns at 11:25, done alone.
 :::
 
 ## A button is a command {.smaller}
@@ -428,7 +428,7 @@ What you learn today carries over to the tool you teach with.
 :::
 
 ::: {.notes}
-10:06, 2 minutes. No live terminal. One sentence: an agent such as Claude Code works with the same commands.
+Block 10:05 to 10:15, first slide of it. No live terminal. One sentence: an agent such as Claude Code works with the same commands.
 :::
 
 # Branch and pull request {background-color="{{< var brand.section-bg >}}"}
@@ -452,7 +452,7 @@ What you learn today carries over to the tool you teach with.
 :::
 
 ::: {.notes}
-10:08, 6 minutes for this slide and the next. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.
+Block 10:05 to 10:15, this slide and the next. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.
 :::
 
 ## Robin works at the same time
@@ -514,7 +514,7 @@ Lean back and watch. I work with the account rainbow-train, as a participant lik
 6.  Open the pull request and request a reviewer
 
 ::: {.notes}
-10:14, 12 minutes, in two passes. First pass without stopping, about 4 minutes. Second pass slowly, and say these out loud before they meet them:
+Block 10:15 to 10:30. Two passes. First pass without stopping, about 4 minutes. Second pass slowly, and say these out loud before they meet them:
 1. You cloned workshop in Step 5. Do not clone it again. Current Repository, workshop.
 2. Current Branch, New Branch. The button at the bottom left must end in "to people-your-username". If it ends in "to main", you are on the wrong branch.
 3. In Finder or Explorer: gitrepos/teaching-username, copy the one file, paste into gitrepos/workshop/people. The file, never the folder.
@@ -541,7 +541,7 @@ The room does not type here. Say it: this is your part at home, and the page has
 :::
 
 ::: {.notes}
-10:26, 2 minutes. Comment, commit, push, merge, one after the other, pictures only. No live review today.
+Block 10:15 to 10:30, at about 10:25. Comment, commit, push, merge, one after the other, pictures only. No live review today.
 :::
 
 ## Your turn is at home {.smaller}
@@ -559,7 +559,7 @@ The second session of this course is where pairs review and merge each other's w
 :::
 
 ::: {.notes}
-10:28, 2 minutes. The course is built in two sessions with time between them to practise. Today is the first session only.
+Block 10:15 to 10:30, last slide before the break. The course is built in two sessions with time between them to practise. Today is the first session only.
 :::
 
 ## Break
@@ -569,10 +569,51 @@ Until 10:40.
 {{< countdown "10:00" >}}
 
 ::: aside-line
-After the break: the board, activity 1. Think of one thing from the first hour that worked for you and one that did not.
+After the break we start on our feet. Then the board: think of one thing from the first hour that worked for you and one that did not.
 :::
 
 # The educator seat {background-color="{{< var brand.section-bg >}}"}
+
+## On your feet: Danish clapping {.smaller}
+
+[Our turn]{.turn .our} With your neighbour, standing, face to face.
+
+::: task
+1.  Slap your thighs with both hands.
+2.  Both hands to the **left**, to the **right** or **up**. You choose, your neighbour chooses.
+3.  Slap your thighs again.
+4.  Did you both choose the same? Clap each other's hands. If not, choose again.
+:::
+
+::: aside-line
+Three rounds, each one faster than the one before.
+:::
+
+::: {.notes}
+Block 10:40 to 10:45. Show it with one volunteer first, slowly, and count out loud. Three rounds of under a minute. Whoever prefers to sit does it seated or watches. Then: sit down, open the board.
+:::
+
+## Feedback you ask for yourself {.smaller}
+
+You choose the questions, the room answers in writing, and nobody has to speak. Examples from a cooking class:
+
+|                  | Positive                                           | Negative                                          |
+|------------------|----------------------------------------------------|---------------------------------------------------|
+| **Content**      | The reason for resting the dough was new to me     | Three terms came without an explanation           |
+| **Presentation** | I could see the hands from the back row            | The recipe on the screen was too small to read    |
+| **Interaction**  | We tasted each other's results                     | Questions were only taken at the end              |
+
+::: aside-line
+One point per note. A point I can act on names what happened, as these do.
+:::
+
+::: legend
+Rubric: Greg Wilson, Teaching Tech Together, slides on feedback, CC BY 4.0
+:::
+
+::: {.notes}
+Block 10:45 to 10:55, together with the next slide. Asking for feedback yourself, with your own questions, is the first advice in the book. Read two cells out loud, one positive and one negative. The examples are from a cooking class so that I put no words about this morning into your heads.
+:::
 
 ## Activity 1: feedback on the first hour {.smaller}
 
@@ -597,7 +638,7 @@ Rubric: Greg Wilson, Teaching Tech Together, slides on feedback, CC BY 4.0
 :::
 
 ::: {.notes}
-10:40, 6 minutes. Say: asking for feedback yourself, with your own questions, is the first advice in the book. When the countdown ends, type in the second window: /board-synthesis rubric. Then go on with the next two slides while it runs.
+Block 10:45 to 10:55. The slide says 5 minutes; while people still write when the countdown ends, let them finish. Then type in the second window: /board-synthesis rubric. Go on with the next two slides while it runs.
 :::
 
 ## How this workshop is built {.smaller}
@@ -618,7 +659,7 @@ One course organisation on GitHub for you, one for the material, one for the adm
 :::
 
 ::: {.notes}
-10:46, 3 minutes, while the synthesis of activity 1 runs. One sentence per row. The point: the workshop teaches the tool it is built with, and every step you took left a trace I could see without asking.
+Block 10:55 to 11:00, this slide and the next, while the synthesis of activity 1 runs. One sentence per row. The point: the workshop teaches the tool it is built with, and every step you took left a trace I could see without asking.
 :::
 
 ## Your preparation, in counts {.smaller}
@@ -658,7 +699,7 @@ This is what preparation looks like in most courses: several reminders, and most
 :::
 
 ::: {.notes}
-10:49, 3 minutes. Counts only, no names, no chart of who worked when. Read the Friday numbers out loud and compare them with Tuesday. Say that the pre-work decided who could type today.
+Block 10:55 to 11:00. Counts only, no names, no chart of who worked when. Read the Friday numbers out loud and compare them with Tuesday. Say that the pre-work decided who could type today.
 :::
 
 ## What you wrote {.smaller}
@@ -666,14 +707,165 @@ This is what preparation looks like in most courses: several reminders, and most
 Your notes from activity 1, grouped. I switch to the second tab.
 
 ::: task
-While you read: which point surprises you? Tell your neighbour.
+Read it with your neighbour: which point surprises you? Then the floor is open, for what you wrote and for your questions.
 :::
 
 ::: {.notes}
-10:52, 5 minutes. Switch to the browser tab with live.html. Read one positive and one negative theme per row out loud, ask one person to say more on a negative one. If the synthesis failed: open the board itself and read three notes per cell. Do not defend, say thank you and name one thing I will change.
+Block 11:00 to 11:10. Switch to the browser tab with live.html. Give the room a minute to read. Read one positive and one negative theme per row out loud, then open it: who wants to say more on a negative one? Questions from the frame Parked questions fit here too. If the synthesis failed: open the board itself and read three notes per cell. Do not defend, say thank you and name one thing I will change.
 :::
 
 # How I teach {background-color="{{< var brand.section-bg >}}"}
+
+## Five things I do {.smaller}
+
+::: incremental
+-   **Words I leave out:** [just]{.mark-word} [easily]{.mark-word} [quickly]{.mark-word}. A learner who is stuck on the step hears: it is me.
+-   **Design for the novice:** every click is written down, and extra material is marked as extra.
+-   **Know the learners, then design:** 27 survey answers decided the software and the pairs. The content of today was written yesterday.
+-   **A learner account:** every demo ran as **rainbow-train**, with the rights you have, on the screens you see.
+-   **Type with the room, mistakes included:** I type, you type, nothing is pasted.
+:::
+
+::: aside-line
+Each point has a slide of its own at the end of this deck.
+:::
+
+::: {.notes}
+Block 11:10 to 11:15. One sentence per point, each with its example from this morning. Found one of the three words on my slides or in the pre-work? Park it on the board, I fix it in a commit after the workshop.
+:::
+
+# Motivation {background-color="{{< var brand.section-bg >}}"}
+
+## What motivates adults to learn {.smaller}
+
+::::: columns
+::: {.column width="28%"}
+![](images/motivation-positive.png){width="80%" fig-alt="A drawn figure of a child with two hair buns, smiling."}
+:::
+
+::: {.column width="71%"}
+::: incremental
+-   **Self-efficacy:** I am in control of my own life.
+-   **Utility:** This will help me meet my goals.
+-   **Community:** People I know are learning this with me.
+:::
+
+::: aside-line
+This morning: a repository of your own, your own three lines, a neighbour.
+:::
+:::
+:::::
+
+::: legend
+Figure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.
+:::
+
+::: {.notes}
+Block 11:15 to 11:20, this slide and the next. Motivation is the strongest predictor of whether an adult learns something.
+:::
+
+## What takes motivation away {.smaller}
+
+::::: columns
+::: {.column width="71%"}
+::: incremental
+-   **Unpredictability:** What I do does not seem to affect the outcome.
+-   **Unfairness:** The teacher plays favourites.
+-   **Indifference:** Nobody cares.
+:::
+
+::: aside-line
+A push that is rejected without a reason I can read is unpredictability. An instructor who answers only the fast people is unfairness.
+:::
+:::
+
+::: {.column width="28%"}
+![](images/motivation-negative.png){width="80%" fig-alt="The same drawn figure, frowning."}
+:::
+:::::
+
+::: task
+For your own teaching: which of the three do your learners meet most often?
+:::
+
+::: legend
+Figure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.
+:::
+
+::: {.notes}
+Block 11:15 to 11:20. Ask for one hand per heading. One moment of my own if there is room: a course where the setup failed and the instructor went on.
+:::
+
+
+# What stays {background-color="{{< var brand.section-bg >}}"}
+
+## Also on my list {.smaller}
+
+::: incremental
+-   **Peer instruction.** People explain to each other and review each other's work. It is the 30 minutes of pull requests in pairs that you did not do today.
+-   **A place for questions**, and the plain statement that a short workshop does not answer all of them.
+-   **Online:** a short visit to each break-out room, while the group is small enough.
+:::
+
+## Where this comes from {.smaller}
+
+-   Brown and Wilson (2018), Ten quick tips for teaching programming: <https://doi.org/10.1371/journal.pcbi.1006023>
+-   Greg Wilson, Teaching Tech Together, free to read: <https://teachtogether.tech/>
+-   The Carpentries Instructor Training, open material and a certification: <https://carpentries.github.io/instructor-training/>
+
+::: aside-line
+If you teach a technical tool, take an instructor training. It is the best use of your time, out of respect for the time your learners give you.
+:::
+
+::: {.notes}
+Block 11:20 to 11:25, this slide and the one before. My own route was the RStudio instructor certification in 2020, built by Greg Wilson on the same material; it changed how I teach novices. The Carpentries training is the open route today.
+:::
+
+## Would you teach this? {.smaller}
+
+[Your turn]{.turn .your}
+
+I would like to offer a workshop for people who teach Git and GitHub: this course design, its scripts and the material, for you to run with your own groups.
+
+::: task
+Answer with a commit, the step of 10:00, this time on your own. In your repository `teaching-your-username`:
+
+1.  Open the file `your-username.md` and add one line:
+
+    `- Teach the teachers: yes / maybe / no. What I would need:`
+
+2.  If you like, a second line: `- A moment in a course that took my motivation away:`
+
+3.  Commit to main, then **Push origin**.
+:::
+
+{{< countdown "4:00" >}}
+
+::: aside-line
+Your answer commits you to nothing. No laptop setup? Write it on a note under Parked questions.
+:::
+
+::: {.notes}
+Block 11:25 to 11:30, with the last slide. The second line is a choice: unlike a note on the board, a commit carries your name. The form of the offer is open; the answers shape it. They arrive as commits, which I can read with the tracker.
+:::
+
+# Thank you {background-color="{{< var brand.section-bg >}}"}
+
+## Thank you
+
+Everything stays open after today:
+
+-   The website and these slides: <https://gitforsci-rdc.github.io/website/>
+-   Your pull request, at home: <https://gitforsci-rdc.github.io/website/workshop/add-your-file.html>
+-   The material is licensed CC BY 4.0. Take it, change it, teach with it.
+
+Slides made with revealjs and Quarto: <https://quarto.org/docs/presentations/revealjs/>
+
+::: {.notes}
+11:30. Parked questions without an answer get one by email. The board stays open until the evening, then I close it.
+:::
+
+# More on how I teach {background-color="{{< var brand.section-bg >}}"}
 
 ## Words I leave out
 
@@ -685,7 +877,7 @@ While you read: which point surprises you? Tell your neighbour.
 :::
 
 ::: {.notes}
-10:57, 2 minutes. If someone finds one, thank them and fix it in a commit after the workshop.
+Not shown on 20 November, for reading. If someone finds one, thank them and fix it in a commit after the workshop.
 :::
 
 ## Design for the novice
@@ -701,7 +893,7 @@ This morning: six pre-work steps with every click. "A button is a command" was t
 :::
 
 ::: {.notes}
-10:59, 2 minutes. The pre-work is where the novice design lives: a first-time user went from no account to a pushed commit in about an hour.
+Not shown on 20 November, for reading. The pre-work is where the novice design lives: a first-time user went from no account to a pushed commit in about an hour.
 :::
 
 ## Know the learners, then design {.smaller}
@@ -717,7 +909,7 @@ It takes practice, and trust in the method, to walk into a room with slides that
 :::
 
 ::: {.notes}
-11:01, 2 minutes. This is the answer promised at 09:30. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.
+Not shown on 20 November, for reading. This is the answer promised at 09:30. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.
 :::
 
 ## Why GitHub Desktop? {.smaller}
@@ -753,7 +945,7 @@ no preference
 I chose against the largest group. Half of the room does not write code in R, and 10 of you do not use Git today. GitHub Desktop needs no programming language, and its buttons carry the names of the commands.
 
 ::: {.notes}
-11:01, 1 minute. The honest version: the choice has a cost for the 11.
+Not shown on 20 November, for reading. The honest version: the choice has a cost for the 11.
 :::
 
 ## A learner account
@@ -765,7 +957,7 @@ I chose against the largest group. Half of the room does not write code in R, an
 :::
 
 ::: {.notes}
-11:03, 1 minute. Costs one free account and one more browser profile.
+Not shown on 20 November, for reading. Costs one free account and one more browser profile.
 :::
 
 ## Type with the room, mistakes included
@@ -777,7 +969,7 @@ I chose against the largest group. Half of the room does not write code in R, an
 :::
 
 ::: {.notes}
-11:04, 1 minute. Then the next slide: the mistakes of Tuesday, and what they changed for today.
+Not shown on 20 November, for reading. Then the next slide: the mistakes of Tuesday, and what they changed for today.
 :::
 
 ## The same design, three days ago {.smaller}
@@ -793,157 +985,5 @@ On Tuesday I ran this design in German, online, for 16 people who do not write c
 :::
 
 ::: {.notes}
-11:05, 2 minutes. The second cohort stays unnamed. Each line is a change you met this week: the instructions you followed are three days old.
-:::
-
-# Motivation {background-color="{{< var brand.section-bg >}}"}
-
-## What motivates adults to learn {.smaller}
-
-::::: columns
-::: {.column width="28%"}
-![](images/motivation-positive.png){width="80%" fig-alt="A drawn figure of a child with two hair buns, smiling."}
-:::
-
-::: {.column width="71%"}
-::: incremental
--   **Self-efficacy:** I am in control of my own life.
--   **Utility:** This will help me meet my goals.
--   **Community:** People I know are learning this with me.
-:::
-
-::: aside-line
-This morning: a repository of your own, your own three lines, a neighbour.
-:::
-:::
-:::::
-
-::: legend
-Figure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.
-:::
-
-::: {.notes}
-11:07, 2 minutes. Motivation is the strongest predictor of whether an adult learns something.
-:::
-
-## What takes motivation away {.smaller}
-
-::::: columns
-::: {.column width="71%"}
-::: incremental
--   **Unpredictability:** What I do does not seem to affect the outcome.
--   **Unfairness:** The teacher plays favourites.
--   **Indifference:** Nobody cares.
-:::
-
-::: aside-line
-A push that is rejected without a reason I can read is unpredictability. An instructor who answers only the fast people is unfairness.
-:::
-:::
-
-::: {.column width="28%"}
-![](images/motivation-negative.png){width="80%" fig-alt="The same drawn figure, frowning."}
-:::
-:::::
-
-::: legend
-Figure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.
-:::
-
-::: {.notes}
-11:09, 2 minutes. Then the activity.
-:::
-
-## Activity 2: what demotivated you {.smaller}
-
-[Your turn]{.turn .your}
-
-::: task
-On the board, frame **Activity 2**. 5 minutes, on your own.
-
-Think of a course or a tutorial on a technical tool. Write one moment that took your motivation away, one per note.
-:::
-
-{{< countdown "5:00" >}}
-
-::: {.notes}
-11:11, 5 minutes. When the countdown ends, type in the second window: /board-synthesis motivation. It takes about a minute; fill it with one moment of my own (a course where the setup failed and the instructor went on).
-:::
-
-## What you wrote, sorted {.smaller}
-
-Your moments, sorted under unpredictability, unfairness and indifference. I switch to the second tab.
-
-::: task
-For your own teaching: which of the three do your learners meet most often?
-:::
-
-::: {.notes}
-11:16, 4 minutes. Switch to live.html, second slide. Read two notes per heading. Ask for one hand per heading. If the synthesis failed: read six notes from the board and ask the room to name the heading.
-:::
-
-# What stays {background-color="{{< var brand.section-bg >}}"}
-
-## Also on my list {.smaller}
-
-::: incremental
--   **Peer instruction.** People explain to each other and review each other's work. It is the 30 minutes of pull requests in pairs that you did not do today.
--   **A place for questions**, and the plain statement that a short workshop does not answer all of them.
--   **Online:** a short visit to each break-out room, while the group is small enough.
-:::
-
-## Where this comes from {.smaller}
-
--   Brown and Wilson (2018), Ten quick tips for teaching programming: <https://doi.org/10.1371/journal.pcbi.1006023>
--   Greg Wilson, Teaching Tech Together, free to read: <https://teachtogether.tech/>
--   The Carpentries Instructor Training, open material and a certification: <https://carpentries.github.io/instructor-training/>
-
-::: aside-line
-If you teach a technical tool, take an instructor training. It is the best use of your time, out of respect for the time your learners give you.
-:::
-
-::: {.notes}
-11:20, 3 minutes for this slide and the one before. My own route was the RStudio instructor certification in 2020, built by Greg Wilson on the same material; it changed how I teach novices. The Carpentries training is the open route today.
-:::
-
-## Would you teach this? {.smaller}
-
-[Your turn]{.turn .your}
-
-I would like to offer a workshop for people who teach Git and GitHub: this course design, its scripts and the material, for you to run with your own groups.
-
-::: task
-Answer with a commit, the step of 10:00, this time on your own. In your repository `teaching-your-username`:
-
-1.  Open the file `your-username.md` and add one line:
-
-    `- Teach the teachers: yes / maybe / no. What I would need:`
-
-2.  Commit to main, then **Push origin**.
-:::
-
-{{< countdown "4:00" >}}
-
-::: aside-line
-Your answer commits you to nothing. No laptop setup? Write it on a note under Parked questions.
-:::
-
-::: {.notes}
-11:23, 5 minutes. The form of the offer is open; the answers shape it. They arrive as commits, which I can read with the tracker.
-:::
-
-# Thank you {background-color="{{< var brand.section-bg >}}"}
-
-## Thank you
-
-Everything stays open after today:
-
--   The website and these slides: <https://gitforsci-rdc.github.io/website/>
--   Your pull request, at home: <https://gitforsci-rdc.github.io/website/workshop/add-your-file.html>
--   The material is licensed CC BY 4.0. Take it, change it, teach with it.
-
-Slides made with revealjs and Quarto: <https://quarto.org/docs/presentations/revealjs/>
-
-::: {.notes}
-11:28. Parked questions without an answer get one by email. The board stays open until the evening, then I close it.
+Not shown on 20 November, for reading. The second cohort stays unnamed. Each line is a change you met this week: the instructions you followed are three days old.
 :::
