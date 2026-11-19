@@ -551,7 +551,7 @@ What I showed is yours to do after the workshop, in about 30 minutes:
 ::: task
 1.  Open the page: [gitforsci-rdc.github.io/website/workshop/add-your-file.html](https://gitforsci-rdc.github.io/website/workshop/add-your-file.html)
 2.  Bring your file into the shared repository `workshop` with a pull request.
-3.  Request **larnsce** as the reviewer. I read every pull request and write one question on it.
+3.  Request **larnsce** as the reviewer. I read every pull request that is open by **Friday 4 December** and write one question on it.
 :::
 
 ::: aside-line

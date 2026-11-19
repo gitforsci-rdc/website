@@ -246,7 +246,7 @@
     "href": "workshop/slides.html#your-turn-is-at-home",
     "title": "Git for Scientists",
     "section": "Your turn is at home",
-    "text": "Your turn is at home\nWhat I showed is yours to do after the workshop, in about 30 minutes:\n\n\nOpen the page: gitforsci-rdc.github.io/website/workshop/add-your-file.html\nBring your file into the shared repository workshop with a pull request.\nRequest larnsce as the reviewer. I read every pull request and write one question on it.\n\n\n\nThe second session of this course is where pairs review and merge each other’s work, 30 minutes of it. Today it is left out, and I say so because it is the part I would never cut from a full course.\n\n\n10:28, 2 minutes. The course is built in two sessions with time between them to practise. Today is the first session only.",
+    "text": "Your turn is at home\nWhat I showed is yours to do after the workshop, in about 30 minutes:\n\n\nOpen the page: gitforsci-rdc.github.io/website/workshop/add-your-file.html\nBring your file into the shared repository workshop with a pull request.\nRequest larnsce as the reviewer. I read every pull request that is open by Friday 4 December and write one question on it.\n\n\n\nThe second session of this course is where pairs review and merge each other’s work, 30 minutes of it. Today it is left out, and I say so because it is the part I would never cut from a full course.\n\n\n10:28, 2 minutes. The course is built in two sessions with time between them to practise. Today is the first session only.",
     "crumbs": [
       "Workshop",
       "Slides"
@@ -832,7 +832,7 @@
     "href": "workshop/add-your-file.html",
     "title": "Add your file with a pull request",
     "section": "",
-    "text": "In the workshop you watched a file go into the shared repository. This page has the same steps for you, to do at home. You bring the file with your three lines into the shared repository workshop, on a branch of your own and through a pull request. Lars reads it, asks one question and merges it.\nSteps 1 to 5 open the pull request. Step 6 is the review: a question from Lars, your answer as a commit, and the merge.",
+    "text": "In the workshop you watched a file go into the shared repository. This page has the same steps for you, to do at home. You bring the file with your three lines into the shared repository workshop, on a branch of your own and through a pull request. Lars reads it, asks one question and merges it.\nOpen your pull request by Friday 4 December 2026. Lars reviews the pull requests that are open by that date.\nSteps 1 to 5 open the pull request. Step 6 is the review: a question from Lars, your answer as a commit, and the merge.",
     "crumbs": [
       "Workshop",
       "Add your file with a pull request"
@@ -909,7 +909,7 @@
     "href": "workshop/add-your-file.html#step-6-review-answer-merge",
     "title": "Add your file with a pull request",
     "section": "Step 6: review, answer, merge",
-    "text": "Step 6: review, answer, merge\nYou are the author of the pull request, Lars is the reviewer. Did you work through this page with a colleague from the workshop? Then review each other: the reviewer steps below are the same.\n\nReviewer: open the pull requests of the workshop repository and click the one to review. Click the tab Files changed. Move the mouse over the line What blocks me, click the blue plus sign, write one question and click Add single comment.\nAuthor: you see the comment in your pull request. Answer it in the file: open Documents/gitrepos/workshop/people/your-username.md in your editor, change the line and save. In GitHub Desktop, write a commit message, click Commit 1 file to people-your-username, then Push origin. The open pull request shows the new commit. You need no second pull request.\nReviewer: go back to the tab Conversation, click Merge pull request, then Confirm merge.\nAuthor: in GitHub Desktop, click Current Branch and choose main. Click Fetch origin, then Pull origin. The folder people on your laptop now holds the files of everyone who is merged.",
+    "text": "Step 6: review, answer, merge\nYou are the author of the pull request, Lars is the reviewer.\n\nLars: writes one question on a line of your file. GitHub sends you a notification by email.\nYou: open your pull request in the list of pull requests. You see the comment there. Answer it in the file: open Documents/gitrepos/workshop/people/your-username.md in your editor, change the line and save. In GitHub Desktop, write a commit message, click Commit 1 file to people-your-username, then Push origin. The open pull request shows the new commit. You need no second pull request.\nLars: reads your commit and merges the pull request.\nYou: in GitHub Desktop, click Current Branch and choose main. Click Fetch origin, then Pull origin. The folder people on your laptop now holds the files of everyone who is merged.",
     "crumbs": [
       "Workshop",
       "Add your file with a pull request"
