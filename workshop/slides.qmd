@@ -22,6 +22,8 @@ format:
 editor: source
 ---
 
+# Welcome {background-color="#1A1714"}
+
 <!--
 Slides for Git for Scientists at the Research Data Conference 2026, Friday
 20 November 2026, 09:30 to 11:30, Bern. Layout of 19 November: part 1
@@ -34,8 +36,6 @@ The numbers on the slide "Your preparation, in counts" are updated on
 Friday morning from the tracker.
 Render: quarto render workshop/slides.qmd
 -->
-
-# Welcome {background-color="#1A1714"}
 
 ## Lars Schöbitz
 
@@ -51,12 +51,8 @@ Render: quarto render workshop/slides.qmd
 :::
 :::::
 
-::: key
-I finished these slides yesterday. On purpose, and at 11:10 I say why.
-:::
-
 ::: {.notes}
-Block 09:30 to 09:40. Three facts, one sentence on the day before. No more here.
+Block 09:30 to 09:40. Three facts. No more here.
 :::
 
 ## Two seats today
@@ -847,7 +843,7 @@ Not shown on 20 November, for reading. The pre-work is where the novice design l
 :::
 
 ::: {.notes}
-Not shown on 20 November, for reading. Most learners do the pre-work on the last day, and I teach better from what I read then than from a plan made weeks ago. It takes practice, and trust in the method, to walk into a room with slides that are one day old. This is the answer promised at 09:30. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.
+Not shown on 20 November, for reading. Most learners do the pre-work on the last day, and I teach better from what I read then than from a plan made weeks ago. It takes practice, and trust in the method, to walk into a room with slides that are one day old. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.
 :::
 
 ## Why GitHub Desktop?
