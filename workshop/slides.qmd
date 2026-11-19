@@ -728,6 +728,22 @@ Block 11:15 to 11:20. A push that is rejected without a reason I can read is unp
 
 # What stays {background-color="{{< var brand.section-bg >}}"}
 
+## The full course
+
+| | |
+|---|---|
+| **Session 1**, 2 hours | What you saw today, and your own pull request in the room |
+| **Two weeks between** | A repository of your own, with me as reviewer. Practice in a game with quizzes. A glossary. |
+| **Session 2**, 2 hours | Pairs review and merge each other's work |
+
+::: key
+Today you saw half of session 1.
+:::
+
+::: {.notes}
+Block 11:20 to 11:25, with the next two slides. The two weeks are where people learn it: they bring a project of their own and I review it. The game and the glossary exist in German so far, from the course of Tuesday: gitklar.ch/spiel. An English glossary for this website is in work.
+:::
+
 ## Also on my list
 
 ::: incremental
@@ -747,7 +763,7 @@ If you teach a technical tool, take an instructor training.
 :::
 
 ::: {.notes}
-Block 11:20 to 11:25, this slide and the one before. It is the best use of your time, out of respect for the time your learners give you. My own route was the RStudio instructor certification in 2020, built by Greg Wilson on the same material; it changed how I teach novices. The Carpentries training is the open route today.
+Block 11:20 to 11:25, last slide of it. It is the best use of your time, out of respect for the time your learners give you. My own route was the RStudio instructor certification in 2020, built by Greg Wilson on the same material; it changed how I teach novices. The Carpentries training is the open route today.
 :::
 
 ## Would you teach this?

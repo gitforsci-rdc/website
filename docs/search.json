@@ -412,7 +412,7 @@
     "href": "workshop/slides.html#where-this-comes-from",
     "title": "Git for Scientists",
     "section": "Where this comes from",
-    "text": "Where this comes from\n\nTen quick tips for teaching programming, Brown and Wilson, 2018\nTeaching Tech Together, Greg Wilson, free to read\nThe Carpentries Instructor Training, open material and a certification\n\n\nIf you teach a technical tool, take an instructor training.\n\n\nBlock 11:20 to 11:25, this slide and the one before. It is the best use of your time, out of respect for the time your learners give you. My own route was the RStudio instructor certification in 2020, built by Greg Wilson on the same material; it changed how I teach novices. The Carpentries training is the open route today.",
+    "text": "Where this comes from\n\nTen quick tips for teaching programming, Brown and Wilson, 2018\nTeaching Tech Together, Greg Wilson, free to read\nThe Carpentries Instructor Training, open material and a certification\n\n\nIf you teach a technical tool, take an instructor training.\n\n\nBlock 11:20 to 11:25, last slide of it. It is the best use of your time, out of respect for the time your learners give you. My own route was the RStudio instructor certification in 2020, built by Greg Wilson on the same material; it changed how I teach novices. The Carpentries training is the open route today.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -1125,6 +1125,18 @@
     "title": "Git for Scientists",
     "section": "A branch, then a pull request",
     "text": "A branch, then a pull request\n\n\n\n\n\n\n\n\nK is Kim, R is Robin. Dashed: only on the laptop. Dark border: the newest commit of a branch.\n\n\nBlock 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.",
+    "crumbs": [
+      "Start",
+      "Workshop",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "workshop/slides.html#the-full-course",
+    "href": "workshop/slides.html#the-full-course",
+    "title": "Git for Scientists",
+    "section": "The full course",
+    "text": "The full course\n\n\n\n\n\n\n\nSession 1, 2 hours\nWhat you saw today, and your own pull request in the room\n\n\nTwo weeks between\nA repository of your own, with me as reviewer. Practice in a game with quizzes. A glossary.\n\n\nSession 2, 2 hours\nPairs review and merge each other’s work\n\n\n\n\nToday you saw half of session 1.\n\n\nBlock 11:20 to 11:25, with the next two slides. The two weeks are where people learn it: they bring a project of their own and I review it. The game and the glossary exist in German so far, from the course of Tuesday: gitklar.ch/spiel. An English glossary for this website is in work.",
     "crumbs": [
       "Start",
       "Workshop",
