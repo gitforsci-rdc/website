@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gitforsci-rdc.github.io/website/workshop/slides.html</loc>
-    <lastmod>2026-11-19T19:02:31.392Z</lastmod>
+    <lastmod>2026-11-19T20:30:31.094Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-rdc.github.io/website/pre-work/06-your-repository.html</loc>
@@ -19,6 +19,10 @@
   <url>
     <loc>https://gitforsci-rdc.github.io/website/index.html</loc>
     <lastmod>2026-11-19T14:45:28.962Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-rdc.github.io/website/glossary.html</loc>
+    <lastmod>2026-11-19T20:30:03.365Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-rdc.github.io/website/pre-work/01-survey.html</loc>

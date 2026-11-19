@@ -4,7 +4,7 @@
     "href": "workshop/slides.html#lars-schöbitz",
     "title": "Git for Scientists",
     "section": "Lars Schöbitz",
-    "text": "Lars Schöbitz\n\n\n\n\n\nData steward at Global Health Engineering, ETH Zurich\nRStudio certified instructor since 2020\nI teach people who have never written code or used Git\n\n\n\nI finished these slides yesterday. On purpose, and at 11:10 I say why.\n\n\nBlock 09:30 to 09:40. Three facts, one sentence on the day before. No more here.",
+    "text": "Lars Schöbitz\n\n\n\n\n\nData steward at Global Health Engineering, ETH Zurich\nRStudio certified instructor since 2020\nI teach people who have never written code or used Git\n\n\n\nBlock 09:30 to 09:40. Three facts. No more here.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -17,30 +17,6 @@
     "title": "Git for Scientists",
     "section": "Two seats today",
     "text": "Two seats today\n\n\nLearner, until 10:30\nYou make a commit of your own and watch a file travel into a shared repository.\n\nEducator, from 10:40\nYou look at how this workshop is built and taught, and you give feedback on it.\n\n\nFrom now on, watch how I teach. After the break you write it down.\n\n\nBlock 09:30 to 09:40. Say both seats out loud. The feedback after the break follows four words: content, presentation, interaction, preparation.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#one-board-for-the-room",
-    "href": "workshop/slides.html#one-board-for-the-room",
-    "title": "Git for Scientists",
-    "section": "One board for the room",
-    "text": "One board for the room\nYour turn 2 minutes\n\n\nOpen the workshop website: https://gitforsci-rdc.github.io/website/\nClick Workshop board in the top bar. No account, no name.\nUnder Parked questions, add one note: where did you travel from this morning?\n\n\n\n \n\nAfter the break, an AI session (Claude) on my laptop reads your notes and groups them. No names, nothing personal on a note.\n\n\nBlock 09:40 to 09:45. Wait until notes appear. Parked questions: any time, one question per note. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#find-your-neighbour",
-    "href": "workshop/slides.html#find-your-neighbour",
-    "title": "Git for Scientists",
-    "section": "Find your neighbour",
-    "text": "Find your neighbour\n\nRaise your hand if you use Git every week.\nNow look around. If you have never used Git, sit beside a raised hand. Move now, with your laptop.\n\n\nYou work in pairs today, each person on their own laptop.\nPre-work not finished? Sit with a neighbour who has it and follow on their laptop.\n\n\n \n\nBlock 09:30 to 09:40. People who use Git weekly sit beside first-time users.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -84,6 +60,18 @@
     ]
   },
   {
+    "objectID": "workshop/slides.html#git-and-ai-tools",
+    "href": "workshop/slides.html#git-and-ai-tools",
+    "title": "Git for Scientists",
+    "section": "Git and AI tools",
+    "text": "Git and AI tools\nThree of you asked for it:\n\nWhen to use an AI assistant, and when not\nTesting and collaboration on GitHub when an agent writes the code\nHow to declare the use of AI tools in research\n\n\nThis is not a course about AI. What an agent such as Claude Code does in a repository rests on the steps of today.\n\n\nBlock 09:30 to 09:40, last slide of it. 26 of the 28 answers name at least one AI tool in use. The three asks are grouped from the open answers, no quotes.",
+    "crumbs": [
+      "Start",
+      "Workshop",
+      "Slides"
+    ]
+  },
+  {
     "objectID": "workshop/slides.html#how-we-work",
     "href": "workshop/slides.html#how-we-work",
     "title": "Git for Scientists",
@@ -101,6 +89,18 @@
     "title": "Git for Scientists",
     "section": "Today",
     "text": "Today\n\n\n\n\n\n\n\nTime\nWhat\n\n\n\n\n09:45\nGit for Scientists, session 1, as I teach it\n\n\n\nWhat is a commit? Your commits, then a commit of your own\n\n\n10:15\nBranch and pull request. I show it in the shared repository\n\n\n10:30\nBreak\n\n\n10:40\nHow it is built and taught\n\n\n\nYour feedback, how I teach, what motivates learners\n\n\n11:25\nAn offer, and your answer as a commit\n\n\n\n\nBlock 09:40 to 09:45. Say it: from 09:45 to 10:30 you get the first session of the course, the way people new to Git get it. From 10:40 we take it apart. Questions that have no room go on the board; two spots for live questions, at 10:10 and at 11:00.",
+    "crumbs": [
+      "Start",
+      "Workshop",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "workshop/slides.html#one-board-for-the-room",
+    "href": "workshop/slides.html#one-board-for-the-room",
+    "title": "Git for Scientists",
+    "section": "One board for the room",
+    "text": "One board for the room\nYour turn 2 minutes\n\n\nOpen the workshop website: https://gitforsci-rdc.github.io/website/\nClick Workshop board in the top bar. No account, no name.\nUnder Parked questions, add one note: where did you travel from this morning?\n\n\n\n \n\nAn AI session (Claude) on my laptop reads your notes and groups them. No names, nothing personal on a note.\n\n\nBlock 09:40 to 09:45. Wait until notes appear. Parked questions: any time, one question per note. Paper sticky notes are on the tables for whoever prefers them or if the board fails. Not every parked question gets an answer in two hours; the open ones get one by email.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -156,18 +156,6 @@
     ]
   },
   {
-    "objectID": "workshop/slides.html#commits-on-github",
-    "href": "workshop/slides.html#commits-on-github",
-    "title": "Git for Scientists",
-    "section": "Commits on GitHub",
-    "text": "Commits on GitHub\nMy turn\nI show the repository teaching-rainbow-train in the browser.\n\nFrom GitHub Desktop to GitHub: menu Repository, View on GitHub\nThe list of commits: the clock with the number\nOne commit up close: who, when, what, why\nVerified beside a commit: it was made in the browser, and GitHub signed it. A commit from your laptop has no such mark. Both are fine.\n\n\nBlock 09:50 to 10:00. I show GitHub and explain, the room watches. Then the next slide: your turn, 3 minutes.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
     "objectID": "workshop/slides.html#your-commits-on-github",
     "href": "workshop/slides.html#your-commits-on-github",
     "title": "Git for Scientists",
@@ -192,6 +180,30 @@
     ]
   },
   {
+    "objectID": "workshop/slides.html#questions-so-far",
+    "href": "workshop/slides.html#questions-so-far",
+    "title": "Git for Scientists",
+    "section": "Questions so far",
+    "text": "Questions so far\nTwo or three now, out loud.\n\nEverything else: a note under Parked questions.\n\n\nBlock 10:10 to 10:15, with the terminal slides. The first of two spots for live questions; the second is at 11:00.",
+    "crumbs": [
+      "Start",
+      "Workshop",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "workshop/slides.html#the-same-in-the-terminal",
+    "href": "workshop/slides.html#the-same-in-the-terminal",
+    "title": "Git for Scientists",
+    "section": "The same in the terminal",
+    "text": "The same in the terminal\nMy turn\n$ git status\nOn branch main\nYour branch is up to date with 'origin/main'.\n\nnothing to commit, working tree clean\n\n$ git log --oneline\n5d0c1e2 Add what I want to take away\n3220950 Describe this repository\naacde95 Add my teaching context\n76cb14e Initial commit\nThe terminal shows the same repository as GitHub Desktop, as text.\n\nBlock 10:10 to 10:15. Live: in GitHub Desktop, menu Repository, Open in Terminal. Type git status and git log –oneline. No push from the terminal (larnsce is signed in there). One sentence: an agent such as Claude Code works this way.",
+    "crumbs": [
+      "Start",
+      "Workshop",
+      "Slides"
+    ]
+  },
+  {
     "objectID": "workshop/slides.html#a-button-is-a-command",
     "href": "workshop/slides.html#a-button-is-a-command",
     "title": "Git for Scientists",
@@ -204,11 +216,11 @@
     ]
   },
   {
-    "objectID": "workshop/slides.html#create-a-branch-then-open-a-pull-request",
-    "href": "workshop/slides.html#create-a-branch-then-open-a-pull-request",
+    "objectID": "workshop/slides.html#a-branch-then-a-pull-request",
+    "href": "workshop/slides.html#a-branch-then-a-pull-request",
     "title": "Git for Scientists",
-    "section": "Create a branch, then open a pull request",
-    "text": "Create a branch, then open a pull request\n\n\n\n\n\n\n\n\nK is Kim, R is Robin. Dashed: only on the laptop. Dark border: the newest commit of a branch.\n\n\nBlock 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.",
+    "section": "A branch, then a pull request",
+    "text": "A branch, then a pull request\n\n\n\n\n\n\n\n\nK is Kim, R is Robin. Dashed: only on the laptop. Dark border: the newest commit of a branch.\n\n\nBlock 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -288,11 +300,11 @@
     ]
   },
   {
-    "objectID": "workshop/slides.html#on-your-feet-danish-clapping",
-    "href": "workshop/slides.html#on-your-feet-danish-clapping",
+    "objectID": "workshop/slides.html#feedback-on-my-talk-yesterday",
+    "href": "workshop/slides.html#feedback-on-my-talk-yesterday",
     "title": "Git for Scientists",
-    "section": "On your feet: Danish clapping",
-    "text": "On your feet: Danish clapping\nOur turn With your neighbour, standing, face to face.\n\n\nSlap your thighs with both hands.\nBoth hands to the left, to the right or up. You choose, your neighbour chooses.\nSlap your thighs again.\nDid you both choose the same? Clap each other’s hands. If not, choose again.\n\n\n\nThree rounds, each one faster than the one before.\n\n\nBlock 10:40 to 10:45. Show it with one volunteer first, slowly, and count out loud. Three rounds of under a minute. Whoever prefers to sit does it seated or watches. Then: sit down, open the board.",
+    "section": "Feedback on my talk yesterday",
+    "text": "Feedback on my talk yesterday\n\n\n\n\n\n\n\n\n\nWhat went well\nWhat can be improved\n\n\n\n\nContent\nEvery number came from public data\nIt stayed unclear what “embedded” means in practice\n\n\nPresentation\nOne number per slide\nNo clear thread from the keynote to my talk\n\n\nInteraction\nOne question to the room at the end\nNo time left for your questions\n\n\nPreparation\n\nToo many emails before this workshop\n\n\n\n\nRubric: Greg Wilson, Teaching Tech Together, slides on feedback, CC BY 4.0. The row Preparation is my addition.\n\n\nBlock 10:40 to 10:45. Asking for feedback yourself, with your own questions, is the first advice in the book. These are my own notes on my talk of Thursday; the last cell is about this workshop and is already on the board. Read the right column out loud. Danish clapping fits here if the room needs it.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -300,23 +312,11 @@
     ]
   },
   {
-    "objectID": "workshop/slides.html#feedback-you-ask-for-yourself",
-    "href": "workshop/slides.html#feedback-you-ask-for-yourself",
+    "objectID": "workshop/slides.html#activity-1-feedback-on-this-workshop",
+    "href": "workshop/slides.html#activity-1-feedback-on-this-workshop",
     "title": "Git for Scientists",
-    "section": "Feedback you ask for yourself",
-    "text": "Feedback you ask for yourself\nYou choose the questions, the room answers in writing, and nobody has to speak. Examples from yesterday, about the keynote and my own talk:\n\n\n\n\n\n\n\n\n\nWhat went well\nWhat can be improved\n\n\n\n\nContent\nThe keynote told what became of each of the nine people in the first team\nThe keynote did not mention AI\n\n\nPresentation\nMy line on qualifications landed once it came with an explanation\nIn the practice run I said 45 repositories, it is 345\n\n\nInteraction\nThe keynote had the whole room raise their hands\nIn my show of hands, people were unsure when to lower them\n\n\n\n\nOne point per note. A point I can act on names what happened, as these do.\n\n\nRubric: Greg Wilson, Teaching Tech Together, slides on feedback, CC BY 4.0\n\n\nBlock 10:45 to 10:55, together with the next slide. Asking for feedback yourself, with your own questions, is the first advice in the book. Read two cells out loud, one from each column. The examples are from yesterday, half of them about my own talk or its practice run, so that I put no words about this morning into your heads.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#activity-1-feedback-on-the-first-hour",
-    "href": "workshop/slides.html#activity-1-feedback-on-the-first-hour",
-    "title": "Git for Scientists",
-    "section": "Activity 1: feedback on the first hour",
-    "text": "Activity 1: feedback on the first hour\nYour turn\n\n\n\n\n\n\n\n\n\nWhat went well\nWhat can be improved\n\n\n\n\nContent: what was said\n\n\n\n\nPresentation: how it was said\n\n\n\n\nInteraction: how the room was run\n\n\n\n\n\n\nOn the board, frame Activity 1. 5 minutes, on your own.\nOne point per note, in the cell where it fits. At least one note in What can be improved.\n\n\n \n\nRubric: Greg Wilson, Teaching Tech Together, slides on feedback, CC BY 4.0\n\n\nBlock 10:45 to 10:55. The slide says 5 minutes; while people still write when the countdown ends, let them finish. Then type in the second window: /board-synthesis rubric. Go on with the next two slides while it runs.",
+    "section": "Activity 1: feedback on this workshop",
+    "text": "Activity 1: feedback on this workshop\nYour turn The first hour, and the pre-work before it.\n\n\nThink, alone, 2 minutes: what went well, what can be improved?\nPair, 3 minutes: tell your neighbour.\nShare, 5 minutes: on the board, frame Activity 1. One point per note, in the cell where it fits.\n\n\n\n \n\nAt least one note under What can be improved.\n\n\nBlock 10:45 to 10:55. Call the three steps out loud at 2 and at 5 minutes. When the countdown ends, type in the second window: /board-synthesis rubric. Then go on with the next two slides while it runs.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -360,11 +360,11 @@
     ]
   },
   {
-    "objectID": "workshop/slides.html#five-things-i-do",
-    "href": "workshop/slides.html#five-things-i-do",
+    "objectID": "workshop/slides.html#six-things-i-do",
+    "href": "workshop/slides.html#six-things-i-do",
     "title": "Git for Scientists",
-    "section": "Five things I do",
-    "text": "Five things I do\n\nWords I leave out: just easily quickly. A learner who is stuck on the step hears: it is me.\nDesign for the novice: every click is written down, and extra material is marked as extra.\nKnow the learners, then design: 27 survey answers decided the software and the pairs. The content of today was written yesterday.\nA learner account: every demo ran as rainbow-train, with the rights you have, on the screens you see.\nType with the room, mistakes included: I type, you type, nothing is pasted.\n\n\nEach point has a slide of its own at the end of this deck.\n\n\nBlock 11:10 to 11:15. One sentence per point, each with its example from this morning. Found one of the three words on my slides or in the pre-work? Park it on the board, I fix it in a commit after the workshop.",
+    "section": "Six things I do",
+    "text": "Six things I do\n\nWords I leave out: just easily quickly\nDesign for the novice: every click is written down\nKnow the learners, then design: survey first, content last\nA learner account: every demo ran as rainbow-train\nType with the room, mistakes included\nTry out new things: today the board and its synthesis\n\n\nEach one has a slide of its own at the end of this deck.\n\n\nBlock 11:10 to 11:15. One sentence per point, each with its example from this morning. Clicks are usually written down with screenshots, which are missing this time. The content of today was written yesterday. Found one of the three words on my slides or in the pre-work? Park it on the board, I fix it in a commit after the workshop.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -389,6 +389,18 @@
     "title": "Git for Scientists",
     "section": "What takes motivation away",
     "text": "What takes motivation away\n\n\n\nUnpredictability: what I do does not seem to affect the outcome.\nUnfairness: the teacher plays favourites.\nIndifference: nobody cares. A question in an issue stays without an answer. The material was last touched two years ago.\n\n\n\n\n\nWhich of the three do your learners meet most often?\n\n\nFigure and wording: Greg Wilson, Teaching Tech Together, slides on motivation, CC BY 4.0. Art from openclipart.org.\n\n\nBlock 11:15 to 11:20. A push that is rejected without a reason I can read is unpredictability. An instructor who answers only the fast people is unfairness. Indifference is also: nobody notices that you fell behind in the pre-work. Ask for one hand per heading. One moment of my own if there is room: a course where the setup failed and the instructor went on.",
+    "crumbs": [
+      "Start",
+      "Workshop",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "workshop/slides.html#the-full-course",
+    "href": "workshop/slides.html#the-full-course",
+    "title": "Git for Scientists",
+    "section": "The full course",
+    "text": "The full course\n\n\n\n\n\n\n\nSession 1, 2 hours\nWhat you saw today, and your own pull request in the room\n\n\nTwo weeks between\nA repository of your own, with me as reviewer. Practice in a game with quizzes. A glossary.\n\n\nSession 2, 2 hours\nPairs review and merge each other’s work\n\n\n\n\nToday you saw half of session 1.\n\n\nBlock 11:20 to 11:25, with the next two slides. The two weeks are where people learn it: they bring a project of their own and I review it. The game and the glossary exist in German so far, from the course of Tuesday: gitklar.ch/spiel. An English glossary for this website is in work.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -472,7 +484,7 @@
     "href": "workshop/slides.html#know-the-learners-then-design",
     "title": "Git for Scientists",
     "section": "Know the learners, then design",
-    "text": "Know the learners, then design\n\nA survey before anything is written: 27 answers decided the software and the pairs.\nA tracker shows who is where in the pre-work, without asking anyone.\nThe content of today was written yesterday, from what I read in the pre-work.\n\n\nNot shown on 20 November, for reading. Most learners do the pre-work on the last day, and I teach better from what I read then than from a plan made weeks ago. It takes practice, and trust in the method, to walk into a room with slides that are one day old. This is the answer promised at 09:30. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.",
+    "text": "Know the learners, then design\n\nA survey before anything is written: 27 answers decided the software and the pairs.\nA tracker shows who is where in the pre-work, without asking anyone.\nThe content of today was written yesterday, from what I read in the pre-work.\n\n\nNot shown on 20 November, for reading. Most learners do the pre-work on the last day, and I teach better from what I read then than from a plan made weeks ago. It takes practice, and trust in the method, to walk into a room with slides that are one day old. The method is fixed (My turn, Our turn, Your turn, pairs, a learner account), the content moves with the group. Next slide: one choice the survey led to.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -509,6 +521,18 @@
     "title": "Git for Scientists",
     "section": "Type with the room, mistakes included",
     "text": "Type with the room, mistakes included\n\nParticipatory live coding: I type, you type, nothing is pasted.\nA demo in two passes: once without stopping, once slowly.\nA mistake on my screen is a moment to take apart together.\n\n\nNot shown on 20 November, for reading. Then the next slide: the mistakes of Tuesday, and what they changed for today.",
+    "crumbs": [
+      "Start",
+      "Workshop",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "workshop/slides.html#try-out-new-things",
+    "href": "workshop/slides.html#try-out-new-things",
+    "title": "Git for Scientists",
+    "section": "Try out new things",
+    "text": "Try out new things\n\nI used a Miro board for the first time, because Claude can now set it up for me.\nThe synthesis of your notes was a trial.\n\n\nInspire yourself and your learners with novelty, and learn new things along the way.\n\n\nNot shown on 20 November, for reading. Say it at point six of the slide “Six things I do”.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -784,6 +808,72 @@
     ]
   },
   {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "These are the words you meet in the pre-course work and in the workshop. Each term comes with a short explanation, the place where you see it on your screen, and the Git command behind it.\nThe workshop runs in GitHub Desktop. Every button there makes Git run a command. The column Command names that command, for the day you work in a terminal or in another tool. Where it says “none”, there is no Git command: the step exists only on the website github.com.",
+    "crumbs": [
+      "Start",
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#git-and-github",
+    "href": "glossary.html#git-and-github",
+    "title": "Glossary",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\n\n\n\n\n\n\n\n\n\nTerm\nWhat it means\nWhere you see it\nCommand\n\n\n\n\nBranch\nA branch is a line of work of your own inside a repository. You change files on it without touching main. When someone has read the changes, they go into main.\nGitHub Desktop: Current Branch at the top, then New Branch.\ngit branch, git switch\n\n\nClone\nTo clone is to copy a whole repository from GitHub to your laptop, with its history and the connection back to GitHub. You clone a repository once and then work in that folder.\nGitHub Desktop: menu File, Clone Repository…\ngit clone\n\n\nCommit\nA commit is one saved state of your repository. Git records the content of your files at that moment, with who saved it, when, and a message that says what changed. You can go back to any earlier commit.\nGitHub Desktop: Commit to main at the bottom left. On github.com: Commit changes.\ngit commit -m \"message\"\n\n\nCommit message\nThe commit message is the short note that goes with a commit. It tells you and others later what changed and why.\nGitHub Desktop: the field Summary at the bottom left.\nthe text after -m\n\n\nDiff\nA diff shows what changed between two versions of a file, one line at a time. Removed lines are red with a minus, new lines are green with a plus.\nGitHub Desktop: the right half of the tab Changes. On github.com: the tab Files changed of a pull request.\ngit diff\n\n\nFetch\nFetch asks GitHub whether there are new commits. It does not change your files. When there is something new, the button changes to Pull origin.\nGitHub Desktop: Fetch origin at the top.\ngit fetch\n\n\nFork\nA fork is your own copy of another person’s repository, stored in your GitHub account. You do not need one in this workshop: you create your branch in the shared repository.\nOn github.com: Fork at the top right of a repository.\nnone\n\n\nHistory\nThe history is the list of all commits of a repository, from the first to the latest. It shows who changed what, and when. Every copy of the repository holds the whole history.\nGitHub Desktop: the tab History. On github.com: the link commits above the file list.\ngit log\n\n\nIssue\nAn issue is an entry on the GitHub page of a repository for a task, a question or an error. It has a number and stays open until someone closes it. Your pre-work checklist is an issue.\nOn github.com: the tab Issues.\nnone\n\n\nLocal\nLocal means on your laptop. Your local repository is the folder you cloned. You can work and commit in it without an internet connection.\nGitHub Desktop: Local Path in the window Clone a Repository.\n\n\n\nmain\nmain is the default branch of a repository, the version that counts as the current one. In the workshop, changes reach main through a pull request.\nGitHub Desktop: Current Branch shows main.\n\n\n\nMerge\nTo merge is to bring the changes of one branch into another branch. In the workshop, the merge happens when the reviewer accepts a pull request on GitHub.\nOn github.com: Merge pull request.\ngit merge\n\n\nMerge conflict\nA merge conflict happens when two branches changed the same lines of the same file in different ways. Git stops, marks both versions in the file and waits for your decision. This is not an error.\nGitHub Desktop: a notice during the merge. On github.com: Resolve conflicts.\n\n\n\nOrganisation\nAn organisation is a shared space on GitHub where repositories belong to a group and not to one person. The workshop has one, and your invitation brings you in. GitHub spells it “organization”.\nOn github.com: the invitation email with the button Join.\nnone\n\n\norigin\norigin is the name your local repository uses for its copy on GitHub. Git gives this name when you clone. That is why the buttons read Push origin and Fetch origin.\nGitHub Desktop: in Push origin, Pull origin and Fetch origin.\ngit remote -v\n\n\nPull\nPull brings new commits from GitHub into the copy on your laptop.\nGitHub Desktop: Pull origin at the top, after Fetch origin.\ngit pull\n\n\nPull request\nA pull request is a request on GitHub to read the changes of a branch and to bring them into another branch, most often main. It is a conversation about changes. It exists on GitHub only, not in Git.\nGitHub Desktop: Preview Pull Request, after you published your branch. On github.com: the tab Pull requests.\nnone\n\n\nPush\nPush copies your commits from your laptop to GitHub. Until you push, nobody else sees your commits, and GitHub holds no copy of them.\nGitHub Desktop: Push origin at the top.\ngit push\n\n\nREADME\nThe README is a text file, README.md, that explains what a repository holds and how to use it. GitHub shows it below the file list, so it is the first thing a visitor reads.\nOn github.com: below the file list. In your folder: the file README.md.\n\n\n\nRemote\nRemote means on a server and not on your laptop. The remote repository is the copy on GitHub. Your local repository calls it origin.\nOn github.com: the page of your repository.\ngit remote -v\n\n\nRepository\nA repository is a folder whose history Git records: all files and every commit ever made. Most often, one project is one repository. After you clone, your repository exists twice, on your laptop and on GitHub.\nGitHub Desktop: Current Repository at the top left. On github.com: the page of a repository.\n\n\n\nReview\nA review is the reading of a pull request by a second person. The reviewer looks at each changed line, writes comments on single lines and ends with a verdict: a comment, a request for changes or an approval.\nOn github.com: pull request, tab Files changed, button Review changes.\nnone\n\n\nStage\nBefore a commit you choose which changed files go into it. This is called staging. In GitHub Desktop it is the tick in front of each file.\nGitHub Desktop: the ticks in the tab Changes.\ngit add\n\n\nVersion control\nVersion control means to record the versions of your files, so that you find every earlier version again and see what changed between two versions. Git is a programme for this.",
+    "crumbs": [
+      "Start",
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#buttons-and-tabs-in-github-desktop",
+    "href": "glossary.html#buttons-and-tabs-in-github-desktop",
+    "title": "Glossary",
+    "section": "Buttons and tabs in GitHub Desktop",
+    "text": "Buttons and tabs in GitHub Desktop\n\n\n\n\n\n\n\n\n\nLabel\nWhat it means\nWhere you see it\nCommand\n\n\n\n\nChanges\nThe tab Changes lists every file that changed since the last commit. On the right it shows the diff of the file you clicked. When the list is empty, there is nothing to commit.\nTab at the top left.\ngit status\n\n\nCurrent Branch\nThe button shows the branch you are on. A click opens the list of branches and the button New Branch. Look here before you commit.\nButton at the top, in the middle.\ngit branch\n\n\nCurrent Repository\nGitHub Desktop shows one repository at a time. This button names it. A click opens the list of all repositories on your laptop that GitHub Desktop knows.\nButton at the top left.\n\n\n\nLocal Path\nLocal Path is the folder on your laptop into which GitHub Desktop puts the repository when you clone it. In the workshop it ends in gitrepos, followed by the name of the repository.\nWindow Clone a Repository.\n\n\n\nPublish branch\nA new branch exists on your laptop only. Publish branch pushes it to GitHub for the first time, with all its commits. After that the button reads Push origin again.\nButton at the top right, in the place of Push origin.\ngit push -u origin name\n\n\nPrivate and Public\nWhen you create a repository, you choose who can see it. Public means everyone on the internet can read it. Private means you and the people who were given access.\nOn github.com: the page Create a new repository.\nnone",
+    "crumbs": [
+      "Start",
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#the-tools",
+    "href": "glossary.html#the-tools",
+    "title": "Glossary",
+    "section": "The tools",
+    "text": "The tools\n\n\n\n\n\n\n\nTool\nWhat it is\n\n\n\n\nGit\nGit is a programme on your laptop that records the versions of your files. It saves the versions you tell it to save, shows what changed between two of them and takes you back to any earlier one. Git needs no internet. GitHub Desktop brings Git along, so you do not install it yourself.\n\n\nGitHub\nGitHub is a website, github.com, that holds a copy of your repository on the internet, so that others can see your project and work on it with you. GitHub adds what Git does not have: pull requests, reviews, issues and organisations.\n\n\nGitHub Desktop\nGitHub Desktop is a programme by GitHub for macOS and Windows. It offers the daily Git steps as buttons: clone, see changes, commit, push, change branches. Every button is a Git command.\n\n\nTerminal\nThe terminal is a window in which you type commands as text and do not click buttons. Every button in GitHub Desktop has a command there, for example git push. You do not need the terminal in this workshop.\n\n\nEditor\nAn editor is a programme in which you write plain text and code, for example Sublime Text, VS Code or Positron. GitHub Desktop shows changes, and it does not edit files. You edit in the editor and commit in GitHub Desktop.\n\n\nMarkdown\nMarkdown is plain text with a few characters that GitHub shows as formatting: # at the start of a line for a heading, - for a list. Files that end in .md are Markdown, the README among them.",
+    "crumbs": [
+      "Start",
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#words-that-get-mixed-up",
+    "href": "glossary.html#words-that-get-mixed-up",
+    "title": "Glossary",
+    "section": "Words that get mixed up",
+    "text": "Words that get mixed up\n\nGit and GitHub. Git is the programme on your laptop that records the versions of your files. GitHub is the website that holds a copy and adds the collaboration.\nPull and pull request. Pull brings commits from GitHub to your laptop. A pull request asks a second person to read a branch and merge it. They share a word and nothing else.\nCommit and push. A commit saves a version on your laptop. A push copies your commits to GitHub. Until you push, nobody else sees them.\nFetch and pull. Fetch looks whether GitHub has something new. Pull brings it into your files.\nGitHub Desktop and Git. GitHub Desktop is a window with buttons that runs Git for you. The same commands exist in the terminal and in editors such as VS Code, Positron and RStudio. What you learn in GitHub Desktop holds everywhere.",
+    "crumbs": [
+      "Start",
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "glossary.html#sources",
+    "href": "glossary.html#sources",
+    "title": "Glossary",
+    "section": "Sources",
+    "text": "Sources\nThe explanations of the Git and GitHub terms follow Glosario, the glossary of The Carpentries (CC BY 4.0), in my own words. They are ported from the German course gitklar.",
+    "crumbs": [
+      "Start",
+      "Glossary"
+    ]
+  },
+  {
     "objectID": "pre-work/01-survey.html",
     "href": "pre-work/01-survey.html",
     "title": "Git for Scientists (RDC 2026)",
@@ -1033,114 +1123,6 @@
       "Start",
       "Workshop",
       "Add your file with a pull request"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#git-and-ai-tools",
-    "href": "workshop/slides.html#git-and-ai-tools",
-    "title": "Git for Scientists",
-    "section": "Git and AI tools",
-    "text": "Git and AI tools\nThree of you asked for it:\n\nWhen to use an AI assistant, and when not\nTesting and collaboration on GitHub when an agent writes the code\nHow to declare the use of AI tools in research\n\n\nThis is not a course about AI. What an agent such as Claude Code does in a repository rests on the steps of today.\n\n\nBlock 09:30 to 09:40, last slide of it. 26 of the 28 answers name at least one AI tool in use. The three asks are grouped from the open answers, no quotes.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#questions-so-far",
-    "href": "workshop/slides.html#questions-so-far",
-    "title": "Git for Scientists",
-    "section": "Questions so far",
-    "text": "Questions so far\nTwo or three now, out loud.\n\nEverything else: a note under Parked questions.\n\n\nBlock 10:10 to 10:15, with the terminal slides. The first of two spots for live questions; the second is at 11:00.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#the-same-in-the-terminal",
-    "href": "workshop/slides.html#the-same-in-the-terminal",
-    "title": "Git for Scientists",
-    "section": "The same in the terminal",
-    "text": "The same in the terminal\nMy turn\n$ git status\nOn branch main\nYour branch is up to date with 'origin/main'.\n\nnothing to commit, working tree clean\n\n$ git log --oneline\n5d0c1e2 Add what I want to take away\n3220950 Describe this repository\naacde95 Add my teaching context\n76cb14e Initial commit\nThe terminal shows the same repository as GitHub Desktop, as text.\n\nBlock 10:10 to 10:15. Live: in GitHub Desktop, menu Repository, Open in Terminal. Type git status and git log –oneline. No push from the terminal (larnsce is signed in there). One sentence: an agent such as Claude Code works this way.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#feedback-on-my-talk-yesterday",
-    "href": "workshop/slides.html#feedback-on-my-talk-yesterday",
-    "title": "Git for Scientists",
-    "section": "Feedback on my talk yesterday",
-    "text": "Feedback on my talk yesterday\n\n\n\n\n\n\n\n\n\nWhat went well\nWhat can be improved\n\n\n\n\nContent\nEvery number came from public data\nIt stayed unclear what “embedded” means in practice\n\n\nPresentation\nOne number per slide\nNo clear thread from the keynote to my talk\n\n\nInteraction\nOne question to the room at the end\nNo time left for your questions\n\n\nPreparation\n\nToo many emails before this workshop\n\n\n\n\nRubric: Greg Wilson, Teaching Tech Together, slides on feedback, CC BY 4.0. The row Preparation is my addition.\n\n\nBlock 10:40 to 10:45. Asking for feedback yourself, with your own questions, is the first advice in the book. These are my own notes on my talk of Thursday; the last cell is about this workshop and is already on the board. Read the right column out loud. Danish clapping fits here if the room needs it.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#activity-1-feedback-on-this-workshop",
-    "href": "workshop/slides.html#activity-1-feedback-on-this-workshop",
-    "title": "Git for Scientists",
-    "section": "Activity 1: feedback on this workshop",
-    "text": "Activity 1: feedback on this workshop\nYour turn The first hour, and the pre-work before it.\n\n\nThink, alone, 2 minutes: what went well, what can be improved?\nPair, 3 minutes: tell your neighbour.\nShare, 5 minutes: on the board, frame Activity 1. One point per note, in the cell where it fits.\n\n\n\n \n\nAt least one note under What can be improved.\n\n\nBlock 10:45 to 10:55. Call the three steps out loud at 2 and at 5 minutes. When the countdown ends, type in the second window: /board-synthesis rubric. Then go on with the next two slides while it runs.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#six-things-i-do",
-    "href": "workshop/slides.html#six-things-i-do",
-    "title": "Git for Scientists",
-    "section": "Six things I do",
-    "text": "Six things I do\n\nWords I leave out: just easily quickly\nDesign for the novice: every click is written down\nKnow the learners, then design: survey first, content last\nA learner account: every demo ran as rainbow-train\nType with the room, mistakes included\nTry out new things: today the board and its synthesis\n\n\nEach one has a slide of its own at the end of this deck.\n\n\nBlock 11:10 to 11:15. One sentence per point, each with its example from this morning. Clicks are usually written down with screenshots, which are missing this time. The content of today was written yesterday. Found one of the three words on my slides or in the pre-work? Park it on the board, I fix it in a commit after the workshop.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#try-out-new-things",
-    "href": "workshop/slides.html#try-out-new-things",
-    "title": "Git for Scientists",
-    "section": "Try out new things",
-    "text": "Try out new things\n\nI used a Miro board for the first time, because Claude can now set it up for me.\nThe synthesis of your notes was a trial.\n\n\nInspire yourself and your learners with novelty, and learn new things along the way.\n\n\nNot shown on 20 November, for reading. Say it at point six of the slide “Six things I do”.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#a-branch-then-a-pull-request",
-    "href": "workshop/slides.html#a-branch-then-a-pull-request",
-    "title": "Git for Scientists",
-    "section": "A branch, then a pull request",
-    "text": "A branch, then a pull request\n\n\n\n\n\n\n\n\nK is Kim, R is Robin. Dashed: only on the laptop. Dark border: the newest commit of a branch.\n\n\nBlock 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "workshop/slides.html#the-full-course",
-    "href": "workshop/slides.html#the-full-course",
-    "title": "Git for Scientists",
-    "section": "The full course",
-    "text": "The full course\n\n\n\n\n\n\n\nSession 1, 2 hours\nWhat you saw today, and your own pull request in the room\n\n\nTwo weeks between\nA repository of your own, with me as reviewer. Practice in a game with quizzes. A glossary.\n\n\nSession 2, 2 hours\nPairs review and merge each other’s work\n\n\n\n\nToday you saw half of session 1.\n\n\nBlock 11:20 to 11:25, with the next two slides. The two weeks are where people learn it: they bring a project of their own and I review it. The game and the glossary exist in German so far, from the course of Tuesday: gitklar.ch/spiel. An English glossary for this website is in work.",
-    "crumbs": [
-      "Start",
-      "Workshop",
-      "Slides"
     ]
   }
 ]

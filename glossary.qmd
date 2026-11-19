@@ -1,0 +1,79 @@
+---
+title: "Glossary"
+subtitle: "The terms of the workshop in everyday words"
+---
+
+<!-- Ported from the German course gitklar (begriffe.yml and werkzeuge.qmd) on 19 November 2026. Plain tables, edited by hand: the German site builds its glossary from a yml file with shortcodes, this page does not. -->
+
+These are the words you meet in the pre-course work and in the workshop. Each term comes with a short explanation, the place where you see it on your screen, and the Git command behind it.
+
+The workshop runs in GitHub Desktop. Every button there makes Git run a command. The column **Command** names that command, for the day you work in a terminal or in another tool. Where it says "none", there is no Git command: the step exists only on the website github.com.
+
+## Git and GitHub
+
+| Term | What it means | Where you see it | Command |
+|---|---|---|---|
+| Branch | A branch is a line of work of your own inside a repository. You change files on it without touching `main`. When someone has read the changes, they go into `main`. | GitHub Desktop: **Current Branch** at the top, then **New Branch**. | `git branch`, `git switch` |
+| Clone | To clone is to copy a whole repository from GitHub to your laptop, with its history and the connection back to GitHub. You clone a repository once and then work in that folder. | GitHub Desktop: menu **File**, **Clone Repository...** | `git clone` |
+| Commit | A commit is one saved state of your repository. Git records the content of your files at that moment, with who saved it, when, and a message that says what changed. You can go back to any earlier commit. | GitHub Desktop: **Commit to main** at the bottom left. On github.com: **Commit changes**. | `git commit -m "message"` |
+| Commit message | The commit message is the short note that goes with a commit. It tells you and others later what changed and why. | GitHub Desktop: the field **Summary** at the bottom left. | the text after `-m` |
+| Diff | A diff shows what changed between two versions of a file, one line at a time. Removed lines are red with a minus, new lines are green with a plus. | GitHub Desktop: the right half of the tab **Changes**. On github.com: the tab **Files changed** of a pull request. | `git diff` |
+| Fetch | Fetch asks GitHub whether there are new commits. It does not change your files. When there is something new, the button changes to **Pull origin**. | GitHub Desktop: **Fetch origin** at the top. | `git fetch` |
+| Fork | A fork is your own copy of another person's repository, stored in your GitHub account. You do not need one in this workshop: you create your branch in the shared repository. | On github.com: **Fork** at the top right of a repository. | none |
+| History | The history is the list of all commits of a repository, from the first to the latest. It shows who changed what, and when. Every copy of the repository holds the whole history. | GitHub Desktop: the tab **History**. On github.com: the link **commits** above the file list. | `git log` |
+| Issue | An issue is an entry on the GitHub page of a repository for a task, a question or an error. It has a number and stays open until someone closes it. Your pre-work checklist is an issue. | On github.com: the tab **Issues**. | none |
+| Local | Local means on your laptop. Your local repository is the folder you cloned. You can work and commit in it without an internet connection. | GitHub Desktop: **Local Path** in the window **Clone a Repository**. | |
+| main | `main` is the default branch of a repository, the version that counts as the current one. In the workshop, changes reach `main` through a pull request. | GitHub Desktop: **Current Branch** shows **main**. | |
+| Merge | To merge is to bring the changes of one branch into another branch. In the workshop, the merge happens when the reviewer accepts a pull request on GitHub. | On github.com: **Merge pull request**. | `git merge` |
+| Merge conflict | A merge conflict happens when two branches changed the same lines of the same file in different ways. Git stops, marks both versions in the file and waits for your decision. This is not an error. | GitHub Desktop: a notice during the merge. On github.com: **Resolve conflicts**. | |
+| Organisation | An organisation is a shared space on GitHub where repositories belong to a group and not to one person. The workshop has one, and your invitation brings you in. GitHub spells it "organization". | On github.com: the invitation email with the button **Join**. | none |
+| origin | `origin` is the name your local repository uses for its copy on GitHub. Git gives this name when you clone. That is why the buttons read **Push origin** and **Fetch origin**. | GitHub Desktop: in **Push origin**, **Pull origin** and **Fetch origin**. | `git remote -v` |
+| Pull | Pull brings new commits from GitHub into the copy on your laptop. | GitHub Desktop: **Pull origin** at the top, after **Fetch origin**. | `git pull` |
+| Pull request | A pull request is a request on GitHub to read the changes of a branch and to bring them into another branch, most often `main`. It is a conversation about changes. It exists on GitHub only, not in Git. | GitHub Desktop: **Preview Pull Request**, after you published your branch. On github.com: the tab **Pull requests**. | none |
+| Push | Push copies your commits from your laptop to GitHub. Until you push, nobody else sees your commits, and GitHub holds no copy of them. | GitHub Desktop: **Push origin** at the top. | `git push` |
+| README | The README is a text file, `README.md`, that explains what a repository holds and how to use it. GitHub shows it below the file list, so it is the first thing a visitor reads. | On github.com: below the file list. In your folder: the file `README.md`. | |
+| Remote | Remote means on a server and not on your laptop. The remote repository is the copy on GitHub. Your local repository calls it `origin`. | On github.com: the page of your repository. | `git remote -v` |
+| Repository | A repository is a folder whose history Git records: all files and every commit ever made. Most often, one project is one repository. After you clone, your repository exists twice, on your laptop and on GitHub. | GitHub Desktop: **Current Repository** at the top left. On github.com: the page of a repository. | |
+| Review | A review is the reading of a pull request by a second person. The reviewer looks at each changed line, writes comments on single lines and ends with a verdict: a comment, a request for changes or an approval. | On github.com: pull request, tab **Files changed**, button **Review changes**. | none |
+| Stage | Before a commit you choose which changed files go into it. This is called staging. In GitHub Desktop it is the tick in front of each file. | GitHub Desktop: the ticks in the tab **Changes**. | `git add` |
+| Version control | Version control means to record the versions of your files, so that you find every earlier version again and see what changed between two versions. Git is a programme for this. | | |
+
+: {tbl-colwidths="[15,45,25,15]"}
+
+## Buttons and tabs in GitHub Desktop
+
+| Label | What it means | Where you see it | Command |
+|---|---|---|---|
+| Changes | The tab **Changes** lists every file that changed since the last commit. On the right it shows the diff of the file you clicked. When the list is empty, there is nothing to commit. | Tab at the top left. | `git status` |
+| Current Branch | The button shows the branch you are on. A click opens the list of branches and the button **New Branch**. Look here before you commit. | Button at the top, in the middle. | `git branch` |
+| Current Repository | GitHub Desktop shows one repository at a time. This button names it. A click opens the list of all repositories on your laptop that GitHub Desktop knows. | Button at the top left. | |
+| Local Path | **Local Path** is the folder on your laptop into which GitHub Desktop puts the repository when you clone it. In the workshop it ends in `gitrepos`, followed by the name of the repository. | Window **Clone a Repository**. | |
+| Publish branch | A new branch exists on your laptop only. **Publish branch** pushes it to GitHub for the first time, with all its commits. After that the button reads **Push origin** again. | Button at the top right, in the place of **Push origin**. | `git push -u origin name` |
+| Private and Public | When you create a repository, you choose who can see it. **Public** means everyone on the internet can read it. **Private** means you and the people who were given access. | On github.com: the page **Create a new repository**. | none |
+
+: {tbl-colwidths="[15,45,25,15]"}
+
+## The tools
+
+| Tool | What it is |
+|---|---|
+| Git | Git is a programme on your laptop that records the versions of your files. It saves the versions you tell it to save, shows what changed between two of them and takes you back to any earlier one. Git needs no internet. GitHub Desktop brings Git along, so you do not install it yourself. |
+| GitHub | GitHub is a website, github.com, that holds a copy of your repository on the internet, so that others can see your project and work on it with you. GitHub adds what Git does not have: pull requests, reviews, issues and organisations. |
+| GitHub Desktop | GitHub Desktop is a programme by GitHub for macOS and Windows. It offers the daily Git steps as buttons: clone, see changes, commit, push, change branches. Every button is a Git command. |
+| Terminal | The terminal is a window in which you type commands as text and do not click buttons. Every button in GitHub Desktop has a command there, for example `git push`. You do not need the terminal in this workshop. |
+| Editor | An editor is a programme in which you write plain text and code, for example Sublime Text, VS Code or Positron. GitHub Desktop shows changes, and it does not edit files. You edit in the editor and commit in GitHub Desktop. |
+| Markdown | Markdown is plain text with a few characters that GitHub shows as formatting: `#` at the start of a line for a heading, `-` for a list. Files that end in `.md` are Markdown, the README among them. |
+
+: {tbl-colwidths="[20,80]"}
+
+## Words that get mixed up
+
+- **Git and GitHub.** Git is the programme on your laptop that records the versions of your files. GitHub is the website that holds a copy and adds the collaboration.
+- **Pull and pull request.** Pull brings commits from GitHub to your laptop. A pull request asks a second person to read a branch and merge it. They share a word and nothing else.
+- **Commit and push.** A commit saves a version on your laptop. A push copies your commits to GitHub. Until you push, nobody else sees them.
+- **Fetch and pull.** Fetch looks whether GitHub has something new. Pull brings it into your files.
+- **GitHub Desktop and Git.** GitHub Desktop is a window with buttons that runs Git for you. The same commands exist in the terminal and in editors such as VS Code, Positron and RStudio. What you learn in GitHub Desktop holds everywhere.
+
+## Sources
+
+The explanations of the Git and GitHub terms follow [Glosario](https://glosario.carpentries.org/), the glossary of The Carpentries (CC BY 4.0), in my own words. They are ported from the German course gitklar.

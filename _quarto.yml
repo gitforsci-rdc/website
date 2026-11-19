@@ -71,6 +71,12 @@ website:
             text: "Slides"
           - href: workshop/add-your-file.qmd
             text: "Add your file with a pull request"
+      # The full link with share_link_id: the short form sends about half of
+      # the first-time visitors to Miro's sign-in page.
+      - href: "https://miro.com/app/board/uXjVEMVk3OQ=/?share_link_id=73900085728"
+        text: "Workshop board"
+      - href: glossary.qmd
+        text: "Glossary"
 
   sidebar:
     background: "#F5F5F5"
@@ -115,6 +121,8 @@ website:
             text: "Slides"
           - href: workshop/add-your-file.qmd
             text: "Add your file with a pull request"
+      - href: glossary.qmd
+        text: "Glossary"
 
 format:
   html:
