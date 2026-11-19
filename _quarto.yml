@@ -45,6 +45,33 @@ website:
     right: "This page is built with [Quarto](https://quarto.org/)."
     background: "#F5F5F5"
 
+  navbar:
+    title: "Git for Scientists"
+    search: false
+    left:
+      - href: index.qmd
+        text: "Start"
+      - text: "Pre-course work"
+        menu:
+          - href: pre-work/01-survey.qmd
+            text: "Step 1: Pre-course survey"
+          - href: pre-work/02-github-acc.qmd
+            text: "Step 2: GitHub account"
+          - href: pre-work/03-github-desktop.qmd
+            text: "Step 3: Install GitHub Desktop"
+          - href: pre-work/04-email-privacy.qmd
+            text: "Step 4: Email address in commits"
+          - href: pre-work/05-setup-check.qmd
+            text: "Step 5: Setup check"
+          - href: pre-work/06-your-repository.qmd
+            text: "Step 6: Your own repository"
+      - text: "Workshop"
+        menu:
+          - href: workshop/slides.qmd
+            text: "Slides"
+          - href: workshop/add-your-file.qmd
+            text: "Add your file with a pull request"
+
   sidebar:
     background: "#F5F5F5"
     logo: "images/ghe-square-logo.png"
@@ -56,7 +83,7 @@ website:
         text: "GitHub organization"
     style: "docked"
     search: false
-    collapse-level: 1
+    collapse-level: 2
     contents:
       - text: "---"
       - section: "Pre-course work"

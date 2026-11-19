@@ -261,14 +261,14 @@ Three ways of working. The one that applies is at the top of the slide.
 | Time  | What                                                          |
 |-------|---------------------------------------------------------------|
 | 09:30 | Two seats, the board, your neighbour                          |
-| 09:41 | What is a commit? One repository, several places              |
+| 09:40 | What is a commit? One repository, several places              |
 | 09:50 | Your commits in GitHub Desktop and on GitHub                  |
 | 10:00 | A commit of your own                                          |
-| 10:08 | Branch and pull request                                       |
-| 10:14 | I show it: a file goes into the shared repository             |
+| 10:05 | Branch and pull request                                       |
+| 10:15 | I show it: a file goes into the shared repository             |
 | 10:30 | Break                                                         |
 | 10:40 | Educator seat: your feedback, how I teach, what motivates     |
-| 11:23 | An offer, and your answer as a commit                         |
+| 11:25 | An offer, and your answer as a commit                         |
 
 ::: aside-line
 The schedule is tight. Questions that have no room go on the board.

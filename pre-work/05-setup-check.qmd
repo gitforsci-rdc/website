@@ -10,7 +10,7 @@ Create a folder named `gitrepos` in your **Documents** folder. Do not put it int
 
 ## Steps
 
-1. Accept the invitation. After you have given your GitHub username in the [survey](01-survey.qmd), GitHub sends you an email with the button **Join @{{< var course.code >}}**. Or open <https://github.com/orgs/{{< var course.code >}}/invitation> while signed in.
+1. Accept the invitation. After you have given your GitHub username in the [survey](01-survey.qmd), GitHub sends you an email with the button **Join \@{{< var course.code >}}**. Or open <https://github.com/orgs/{{< var course.code >}}/invitation> while signed in.
 2. Open GitHub Desktop. Choose the menu **File**, **Clone Repository...**, then the tab **URL**.
 3. Type `{{< var course.code >}}/workshop` into the first field.
 4. Look at **Local Path** before you click anything else. Click **Choose...**, go to **Documents**, select `gitrepos` and confirm. The path must end in `gitrepos/workshop`.
