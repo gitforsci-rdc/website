@@ -62,7 +62,7 @@ read_csv(here::here("data/course-schedule.csv"), show_col_types = FALSE) |>
 
 By the end of this workshop, participants will be able to:
 
-1. **Collaboration patterns**: apply the core Git and GitHub patterns, branching, pull requests, review and merging, to a small project.
+1. **Collaboration patterns**: make a commit in a repository of their own and follow the path of a change through branch, pull request, review and merge.
 
 2. **Instructional design**: evaluate the workshop's design (sequencing, scaffolding, exercises) from an educator's perspective.
 

@@ -691,7 +691,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " Learning objectives",
-    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCollaboration patterns: apply the core Git and GitHub patterns, branching, pull requests, review and merging, to a small project.\nInstructional design: evaluate the workshop’s design (sequencing, scaffolding, exercises) from an educator’s perspective.\nReuse: assess whether they could reuse and adapt the material to teach Git and GitHub in their own setting.",
+    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCollaboration patterns: make a commit in a repository of their own and follow the path of a change through branch, pull request, review and merge.\nInstructional design: evaluate the workshop’s design (sequencing, scaffolding, exercises) from an educator’s perspective.\nReuse: assess whether they could reuse and adapt the material to teach Git and GitHub in their own setting.",
     "crumbs": [
       "Pre-course work"
     ]
