@@ -681,7 +681,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
     "title": "Pre-course work: Git for Scientists at RDC 2026",
     "section": " Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 09:40\nWelcome and the two seats: learner and educator\n\n\n09:40 - 10:55\nCondensed course from the learner’s seat: create and clone, commit cycle, branch, pull request and review, merge\n\n\n10:55 - 11:00\nBreak\n\n\n11:00 - 11:30\nEducator lens: how the course is built and run (open educational resource) and the feedback round",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 09:40\nWelcome and the two seats: learner and educator\n\n\n09:40 - 10:30\nFrom the learner’s seat: what a commit is, a commit of your own, then branch, pull request and review as a demonstration\n\n\n10:30 - 10:40\nBreak\n\n\n10:40 - 11:30\nFrom the educator’s seat: your feedback on the first hour, how the workshop is taught, and what motivates learners",
     "crumbs": [
       "Pre-course work"
     ]

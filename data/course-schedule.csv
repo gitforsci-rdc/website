@@ -1,5 +1,5 @@
 day,time,title
 1,09:30 - 09:40,Welcome and the two seats: learner and educator
-1,09:40 - 10:55,"Condensed course from the learner's seat: create and clone, commit cycle, branch, pull request and review, merge"
-1,10:55 - 11:00,Break
-1,11:00 - 11:30,Educator lens: how the course is built and run (open educational resource) and the feedback round
+1,09:40 - 10:30,"From the learner's seat: what a commit is, a commit of your own, then branch, pull request and review as a demonstration"
+1,10:30 - 10:40,Break
+1,10:40 - 11:30,"From the educator's seat: your feedback on the first hour, how the workshop is taught, and what motivates learners"
