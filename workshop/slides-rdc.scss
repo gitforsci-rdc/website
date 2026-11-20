@@ -74,3 +74,7 @@ $code-bg: #ECE5D6;
 .reveal .seatcard { flex: 1; border: 2px dashed #6b645c; padding: 0.5em 0.6em; font-size: 0.72em; line-height: 1.25; background-color: #ffffff; }
 .reveal .seatcard p { margin: 0 0 0.4em; }
 .reveal .seatcard .who { display: block; font-size: 1.2em; font-weight: 800; color: #3C2874; line-height: 1.15; min-height: 2.4em; }
+
+// Story slides with the laptop boxes beside the graph: wider than the text column, centred.
+.reveal .story.wide .r-stack { width: 1180px; margin-left: calc(50% - 590px); }
+.reveal .story.wide .r-stack img { height: 570px; width: 1180px; max-width: none; max-height: none; }

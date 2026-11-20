@@ -461,36 +461,36 @@ Block 10:10 to 10:15. The same names in RStudio, Positron and VS Code. You type 
 
 # Branch and pull request {background-color="#1A1714"}
 
-## A branch, then a pull request {.story}
+## A branch, then a pull request {.story .wide}
 
 ::: {.r-stack}
-![](images/story-03.png){.fragment .fade-in fig-alt="Kim has created the branch data-dictionary. Beside main, the graph has a column data-dictionary, without a commit of its own yet."}
+![](images/story-wide-03.png){.fragment .fade-in fig-alt="Kim has created the branch data-dictionary. Beside main, the graph has a column data-dictionary, without a commit of its own yet."}
 
-![](images/story-04.png){.fragment .fade-in fig-alt="A first commit, Add data dictionary, on the branch data-dictionary, drawn dashed. It exists only in the box Kim's laptop."}
+![](images/story-wide-04.png){.fragment .fade-in fig-alt="A first commit, Add data dictionary, on the branch data-dictionary, drawn dashed. It exists only in the box Kim's laptop."}
 
-![](images/story-05.png){.fragment .fade-in fig-alt="A second commit, Describe the units, also dashed and only on Kim's laptop."}
+![](images/story-wide-05.png){.fragment .fade-in fig-alt="A second commit, Describe the units, also dashed and only on Kim's laptop."}
 
-![](images/story-06.png){.fragment .fade-in fig-alt="An arrow with the word push points from Kim's laptop to GitHub. The two commits of the branch are now solid and also on GitHub."}
+![](images/story-wide-06.png){.fragment .fade-in fig-alt="An arrow with the word push points from Kim's laptop to GitHub. The two commits of the branch are now solid and also on GitHub."}
 
-![](images/story-07.png){.fragment .fade-in fig-alt="Kim has opened a pull request. Below the newest commit of the branch data-dictionary stands Pull request: open. The graph is otherwise unchanged."}
+![](images/story-wide-07.png){.fragment .fade-in fig-alt="Kim has opened a pull request. Below the newest commit of the branch data-dictionary stands Pull request: open. The graph is otherwise unchanged."}
 :::
 
 ::: {.notes}
 Block 10:15 to 10:20, this slide and the next. One sentence per picture. Branch: a line of work of your own, main stays untouched. A commit, another commit, only then the push: solid, now also on GitHub. Pull request: the request to take the branch into main. In the picture it stands below the newest commit.
 :::
 
-## Robin works at the same time {.story}
+## Robin works at the same time {.story .wide}
 
 ::: {.r-stack}
-![](images/story-08.png){.fragment .fade-in fig-alt="Robin has created the branch readme on the left, without a commit of its own yet."}
+![](images/story-wide-08.png){.fragment .fade-in fig-alt="Robin has created the branch readme on the left, without a commit of its own yet."}
 
-![](images/story-09.png){.fragment .fade-in fig-alt="Robin's first commit, Write the README, dashed and only on Robin's laptop."}
+![](images/story-wide-09.png){.fragment .fade-in fig-alt="Robin's first commit, Write the README, dashed and only on Robin's laptop."}
 
-![](images/story-10.png){.fragment .fade-in fig-alt="Robin's second commit, Add the licence, also only on Robin's laptop."}
+![](images/story-wide-10.png){.fragment .fade-in fig-alt="Robin's second commit, Add the licence, also only on Robin's laptop."}
 
-![](images/story-11.png){.fragment .fade-in fig-alt="An arrow with the word push points from Robin's laptop to GitHub. Robin's two commits are now also on GitHub."}
+![](images/story-wide-11.png){.fragment .fade-in fig-alt="An arrow with the word push points from Robin's laptop to GitHub. Robin's two commits are now also on GitHub."}
 
-![](images/story-12.png){.fragment .fade-in fig-alt="Robin has opened a pull request too. Below the newest commits of both branches stands Pull request: open. Robin's laptop lacks Kim's commits, Kim's laptop lacks Robin's commits. GitHub holds all of them."}
+![](images/story-wide-12.png){.fragment .fade-in fig-alt="Robin has opened a pull request too. Below the newest commits of both branches stands Pull request: open. Robin's laptop lacks Kim's commits, Kim's laptop lacks Robin's commits. GitHub holds all of them."}
 :::
 
 ::: {.notes}
@@ -547,16 +547,16 @@ The room does not type here. Say it: this is your part at home, and the page has
 
 # Review and merge {background-color="#1A1714"}
 
-## A second person reads {.story}
+## A second person reads {.story .wide}
 
 ::: {.r-stack}
-![](images/story-13.png){.fragment .fade-in fig-alt="Robin has read Kim's pull request and written a comment. Below Kim's newest commit stands Pull request: comment."}
+![](images/story-wide-13.png){.fragment .fade-in fig-alt="Robin has read Kim's pull request and written a comment. Below Kim's newest commit stands Pull request: comment."}
 
-![](images/story-14.png){.fragment .fade-in fig-alt="Kim has answered with one more commit, Add the date format. It is dashed and only on Kim's laptop."}
+![](images/story-wide-14.png){.fragment .fade-in fig-alt="Kim has answered with one more commit, Add the date format. It is dashed and only on Kim's laptop."}
 
-![](images/story-15.png){.fragment .fade-in fig-alt="Kim has pushed. The commit Add the date format is now also on GitHub and belongs to the open pull request."}
+![](images/story-wide-15.png){.fragment .fade-in fig-alt="Kim has pushed. The commit Add the date format is now also on GitHub and belongs to the open pull request."}
 
-![](images/story-16.png){.fragment .fade-in fig-alt="The pull request is merged. On main there is a merge commit that takes in Kim's three commits. Below Kim's newest commit stands Pull request: merged. The merge commit exists only on GitHub."}
+![](images/story-wide-16.png){.fragment .fade-in fig-alt="The pull request is merged. On main there is a merge commit that takes in Kim's three commits. Below Kim's newest commit stands Pull request: merged. The merge commit exists only on GitHub."}
 :::
 
 ::: {.notes}
