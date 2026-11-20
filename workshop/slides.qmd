@@ -22,6 +22,40 @@ format:
 editor: source
 ---
 
+## Find your seat
+
+:::: {.seatcards}
+::: {.seatcard}
+[Your username is on a table]{.who}
+
+Your setup is finished. Sit there, and keep the seat beside you free.
+:::
+
+::: {.seatcard}
+[Your username is at the door]{.who}
+
+Take your card and sit beside someone whose card is on a table.
+:::
+
+::: {.seatcard}
+[No card with your username]{.who}
+
+Take a blank card, write your name on it and sit beside someone whose card is on a table.
+:::
+::::
+
+::: key
+You work together at one laptop with a finished setup, in pairs or in groups of three.
+:::
+
+::: {.aside-line style="font-size: 0.75em; margin-top: 0.4em;"}
+If you like, add your name to your card and introduce yourself to your neighbour.
+:::
+
+::: {.notes}
+On screen while people come in, from about 09:15. Cards with a finished setup lie on the tables, placed apart. The other username cards and the blank cards lie at the door.
+:::
+
 # Welcome {background-color="#1A1714"}
 
 <!--
@@ -79,13 +113,15 @@ From now on, watch **how** I teach. After the break you write it down.
 Block 09:30 to 09:40. Say both seats out loud. The feedback after the break follows four words: content, presentation, interaction, preparation.
 :::
 
+# Who is in the room {background-color="#1A1714"}
+
 ## Who is in the room: Git
 
-How much have you used Git? Your answers in the survey.
+How much have you used Git? Your answers in the survey (n&nbsp;=&nbsp;27).
 
 ::: {.numbers}
 ::: {.number}
-[6]{.big} never
+[7]{.big} never
 :::
 
 ::: {.number}
@@ -106,10 +142,12 @@ Half of you are new to Git or use it now and then.
 :::
 
 ::: {.notes}
-Block 09:30 to 09:40, the survey slides in about 3 minutes. 27 answers, one of them empty here. 14 macOS, 11 Windows, 1 Linux. The cards on the tables mark a laptop with a finished setup. They say nothing about experience.
+Block 09:30 to 09:40, the survey slides in about 3 minutes. 27 answers, everyone who completed the survey. 15 macOS, 11 Windows, 1 Linux. The cards on the tables mark a laptop with a finished setup. They say nothing about experience.
 :::
 
 ## Who is in the room: roles
+
+Your role, from the survey (n&nbsp;=&nbsp;27).
 
 ::: {.numbers}
 ::: {.number}
@@ -125,7 +163,7 @@ Block 09:30 to 09:40, the survey slides in about 3 minutes. 27 answers, one of t
 :::
 
 ::: {.number}
-[9]{.big} other roles
+[10]{.big} other roles
 :::
 :::
 
@@ -138,6 +176,8 @@ Block 09:30 to 09:40. Other roles: IT, research software engineer, trainer, and 
 :::
 
 ## What you want to take away
+
+Your open answers, in groups (n&nbsp;=&nbsp;27). Four answers fall outside these groups.
 
 ::: {.numbers}
 ::: {.number}
@@ -170,12 +210,14 @@ Three of you asked for it:
 -   How to declare the use of AI tools in research
 
 ::: key
-This is [not]{.mark-word} a course about AI. What an agent such as Claude Code does in a repository rests on the steps of today.
+The foundation we learn in the full course (two sessions of 2 hours) prepares you for our Agents for Scientists workshop, where we invite an agent, such as Claude Code, to work with us.
 :::
 
 ::: {.notes}
-Block 09:30 to 09:40, last slide of it. 26 of the 28 answers name at least one AI tool in use. The three asks are grouped from the open answers, no quotes.
+Block 09:30 to 09:40, last slide of it. 25 of the 27 answers name at least one AI tool in use. The three asks are grouped from the open answers, no quotes.
 :::
+
+# How we work today {background-color="#1A1714"}
 
 ## How we work
 
@@ -253,6 +295,7 @@ Block 09:45 to 09:55. Key words only, then the traces in a real repository on th
 -   9 November: pre-work steps 1 and 2
 -   15 November, a Sunday, 22:00: steps 3 to 5
 -   17 November: step 6
+-   19 November, the day before: these slides, 19 commits
 
 ::: task
 At what times of day did Lars prepare this material?
@@ -260,7 +303,7 @@ At what times of day did Lars prepare this material?
 
 ::: {.fragment}
 ::: key
-Git forgets nothing. 9 of 14 commits in the last three days, 4 after 22:00.
+Git forgets nothing. 34 commits until last night: 19 of them yesterday, 7 at 22:00 or later.
 :::
 :::
 
@@ -388,9 +431,9 @@ nothing to commit, working tree clean
 
 $ git log --oneline
 5d0c1e2 Add what I want to take away
-3220950 Describe this repository
-aacde95 Add my teaching context
-76cb14e Initial commit</pre>
+3d0719b Describe this repository
+0485b82 Add my teaching context
+c93273e Initial commit</pre>
 
 The terminal shows the same repository as GitHub Desktop, as text.
 
@@ -611,7 +654,7 @@ Block 10:55 to 11:00, this slide and the next, while the synthesis of activity 1
 
 <!-- COUNTS: update on Friday 20 November, 08:30, from the tracker -->
 
-Thursday 19 November, 21:00. Four emails from me.
+Friday 20 November, 07:00. Four emails from me.
 
 ::: {.numbers}
 ::: {.number}
@@ -623,11 +666,11 @@ Thursday 19 November, 21:00. Four emails from me.
 :::
 
 ::: {.number}
-[15]{.big} ticked all five boxes
+[17]{.big} ticked all five boxes
 :::
 
 ::: {.number}
-[15]{.big} made a commit from the laptop
+[17]{.big} made a commit from the laptop
 :::
 :::
 
@@ -806,14 +849,20 @@ Block 11:25 to 11:30, with the last slide. The step of 10:00, this time alone. T
 
 ## Thank you
 
--   Website and slides: <https://gitforsci-rdc.github.io/website/>
+-   Website and slides: [gitforsci-rdc.github.io/website](https://gitforsci-rdc.github.io/website/)
 -   Licence CC BY 4.0. Take it, change it, teach with it.
 
 [Lars Schöbitz](https://lse.de/)
 
--   <https://github.com/larnsce>
--   <https://www.linkedin.com/in/larsschoebitz>
--   Newsletter, in German and English: <https://buttondown.com/bitz>
+-   [github.com/larnsce](https://github.com/larnsce)
+-   [linkedin.com/in/larsschoebitz](https://www.linkedin.com/in/larsschoebitz)
+-   Newsletter, in German and English: [buttondown.com/bitz](https://buttondown.com/bitz)
+
+::: ack
+**Cite as:** Schöbitz, L. (2026). Git for Scientists (v1.0.0). Zenodo. <https://doi.org/10.5281/zenodo.21703566>
+
+**Funding and support:** [Swiss Reproducibility Network (SwissRN)](https://www.swissrn.org/contents/community/nodes/) local node at ETH Zurich & [Data Stewardship Network at ETH Zurich](https://library.ethz.ch/en/researching-and-publishing/data-management-and-policies/research-data-management/data-stewardship.html), funded by the [swissuniversities Open Science Programme](https://www.swissuniversities.ch/en/topics/open-science/open-science-programme) & [Global Health Engineering group at ETH Zurich](https://ghe.ethz.ch/)
+:::
 
 ::: {.notes}
 11:30. Your pull request at home: the page Add your file on the website. Parked questions without an answer get one by email. The board stays open until the evening, then I close it. Slides made with revealjs and Quarto.
