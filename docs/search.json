@@ -1,5 +1,17 @@
 [
   {
+    "objectID": "workshop/slides.html#find-your-seat",
+    "href": "workshop/slides.html#find-your-seat",
+    "title": "Git for Scientists",
+    "section": "Find your seat",
+    "text": "Find your seat\n\n\nYour username is on a table\nYour setup is finished. Sit there, and keep the seat beside you free.\n\n\nYour username is at the door\nTake your card and sit beside someone whose card is on a table.\n\n\nNo card with your username\nTake a blank card, write your name on it and sit beside someone whose card is on a table.\n\n\n\nYou work together at one laptop with a finished setup, in pairs or in groups of three.\n\n\nIf you like, add your name to your card and introduce yourself to your neighbour.\n\n\nOn screen while people come in, from about 09:15. Cards with a finished setup lie on the tables, placed apart. The other username cards and the blank cards lie at the door.",
+    "crumbs": [
+      "Start",
+      "Workshop",
+      "Slides"
+    ]
+  },
+  {
     "objectID": "workshop/slides.html#lars-schöbitz",
     "href": "workshop/slides.html#lars-schöbitz",
     "title": "Git for Scientists",
@@ -28,7 +40,7 @@
     "href": "workshop/slides.html#who-is-in-the-room-git",
     "title": "Git for Scientists",
     "section": "Who is in the room: Git",
-    "text": "Who is in the room: Git\nHow much have you used Git? Your answers in the survey.\n\n\n6 never\n\n\n7 now and then\n\n\n4 regularly\n\n\n9 extensively\n\n\n\nHalf of you are new to Git or use it now and then.\n\n\nBlock 09:30 to 09:40, the survey slides in about 3 minutes. 27 answers, one of them empty here. 14 macOS, 11 Windows, 1 Linux. The cards on the tables mark a laptop with a finished setup. They say nothing about experience.",
+    "text": "Who is in the room: Git\nHow much have you used Git? Your answers in the survey (n = 27).\n\n\n7 never\n\n\n7 now and then\n\n\n4 regularly\n\n\n9 extensively\n\n\n\nHalf of you are new to Git or use it now and then.\n\n\nBlock 09:30 to 09:40, the survey slides in about 3 minutes. 27 answers, everyone who completed the survey. 15 macOS, 11 Windows, 1 Linux. The cards on the tables mark a laptop with a finished setup. They say nothing about experience.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -40,7 +52,7 @@
     "href": "workshop/slides.html#who-is-in-the-room-roles",
     "title": "Git for Scientists",
     "section": "Who is in the room: roles",
-    "text": "Who is in the room: roles\n\n\n10 data stewards\n\n\n5 researchers\n\n\n2 librarians\n\n\n9 other roles\n\n\n\n16 of you teach Git or plan to. That is why the second half is about teaching.\n\n\nBlock 09:30 to 09:40. Other roles: IT, research software engineer, trainer, and people who chose other.",
+    "text": "Who is in the room: roles\nYour role, from the survey (n = 27).\n\n\n10 data stewards\n\n\n5 researchers\n\n\n2 librarians\n\n\n10 other roles\n\n\n\n16 of you teach Git or plan to. That is why the second half is about teaching.\n\n\nBlock 09:30 to 09:40. Other roles: IT, research software engineer, trainer, and people who chose other.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -52,7 +64,7 @@
     "href": "workshop/slides.html#what-you-want-to-take-away",
     "title": "Git for Scientists",
     "section": "What you want to take away",
-    "text": "What you want to take away\n\n\n9 teach Git better, to mixed groups\n\n\n8 a solid foundation of my own\n\n\n3 support researchers who use Git\n\n\n3 Git and AI tools\n\n\n\nBlock 09:30 to 09:40. Groups only, no single answers: the survey promised that. Four answers fall outside these groups (collaboration in a team, repairing mistakes).",
+    "text": "What you want to take away\nYour open answers, in groups (n = 27). Four answers fall outside these groups.\n\n\n9 teach Git better, to mixed groups\n\n\n8 a solid foundation of my own\n\n\n3 support researchers who use Git\n\n\n3 Git and AI tools\n\n\n\nBlock 09:30 to 09:40. Groups only, no single answers: the survey promised that. Four answers fall outside these groups (collaboration in a team, repairing mistakes).",
     "crumbs": [
       "Start",
       "Workshop",
@@ -64,7 +76,7 @@
     "href": "workshop/slides.html#git-and-ai-tools",
     "title": "Git for Scientists",
     "section": "Git and AI tools",
-    "text": "Git and AI tools\nThree of you asked for it:\n\nWhen to use an AI assistant, and when not\nTesting and collaboration on GitHub when an agent writes the code\nHow to declare the use of AI tools in research\n\n\nThis is not a course about AI. What an agent such as Claude Code does in a repository rests on the steps of today.\n\n\nBlock 09:30 to 09:40, last slide of it. 26 of the 28 answers name at least one AI tool in use. The three asks are grouped from the open answers, no quotes.",
+    "text": "Git and AI tools\nThree of you asked for it:\n\nWhen to use an AI assistant, and when not\nTesting and collaboration on GitHub when an agent writes the code\nHow to declare the use of AI tools in research\n\n\nThe foundation we learn in the full course (two sessions of 2 hours) prepares you for our Agents for Scientists workshop, where we invite an agent, such as Claude Code, to work with us.\n\n\nBlock 09:30 to 09:40, last slide of it. 25 of the 27 answers name at least one AI tool in use. The three asks are grouped from the open answers, no quotes.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -124,7 +136,7 @@
     "href": "workshop/slides.html#traces-in-a-real-repository",
     "title": "Git for Scientists",
     "section": "Traces in a real repository",
-    "text": "Traces in a real repository\nMy turn The commits of the workshop website:\n\n9 November: pre-work steps 1 and 2\n15 November, a Sunday, 22:00: steps 3 to 5\n17 November: step 6\n\n\nAt what times of day did Lars prepare this material?\n\n\n\nGit forgets nothing. 9 of 14 commits in the last three days, 4 after 22:00.\n\n\n\nBlock 09:45 to 09:55. The repository is public: gitforsci-rdc/website. No browser needed, the slide carries it. Git forgets nothing: that is the use of it, and it is the reason to choose what goes into a commit. The history shows that my instructions came late. This returns at 10:55.",
+    "text": "Traces in a real repository\nMy turn The commits of the workshop website:\n\n9 November: pre-work steps 1 and 2\n15 November, a Sunday, 22:00: steps 3 to 5\n17 November: step 6\n19 November, the day before: these slides, 19 commits\n\n\nAt what times of day did Lars prepare this material?\n\n\n\nGit forgets nothing. 34 commits until last night: 19 of them yesterday, 7 at 22:00 or later.\n\n\n\nBlock 09:45 to 09:55. The repository is public: gitforsci-rdc/website. No browser needed, the slide carries it. Git forgets nothing: that is the use of it, and it is the reason to choose what goes into a commit. The history shows that my instructions came late. This returns at 10:55.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -208,7 +220,7 @@
     "href": "workshop/slides.html#the-same-in-the-terminal",
     "title": "Git for Scientists",
     "section": "The same in the terminal",
-    "text": "The same in the terminal\nMy turn\n$ git status\nOn branch main\nYour branch is up to date with 'origin/main'.\n\nnothing to commit, working tree clean\n\n$ git log --oneline\n5d0c1e2 Add what I want to take away\n3220950 Describe this repository\naacde95 Add my teaching context\n76cb14e Initial commit\nThe terminal shows the same repository as GitHub Desktop, as text.\n\nBlock 10:10 to 10:15. Live: in GitHub Desktop, menu Repository, Open in Terminal. Type git status and git log –oneline. No push from the terminal (larnsce is signed in there). One sentence: an agent such as Claude Code works this way.",
+    "text": "The same in the terminal\nMy turn\n$ git status\nOn branch main\nYour branch is up to date with 'origin/main'.\n\nnothing to commit, working tree clean\n\n$ git log --oneline\n5d0c1e2 Add what I want to take away\n3d0719b Describe this repository\n0485b82 Add my teaching context\nc93273e Initial commit\nThe terminal shows the same repository as GitHub Desktop, as text.\n\nBlock 10:10 to 10:15. Live: in GitHub Desktop, menu Repository, Open in Terminal. Type git status and git log –oneline. No push from the terminal (larnsce is signed in there). One sentence: an agent such as Claude Code works this way.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -352,7 +364,7 @@
     "href": "workshop/slides.html#your-preparation-in-counts",
     "title": "Git for Scientists",
     "section": "Your preparation, in counts",
-    "text": "Your preparation, in counts\n\nThursday 19 November, 21:00. Four emails from me.\n\n\n27 answered the survey\n\n\n26 joined the organisation\n\n\n15 ticked all five boxes\n\n\n15 made a commit from the laptop\n\n\n\nOn Tuesday at 15:00 the last two numbers were 7 and 2. Most of the work happens in the last hours, this time also because my instructions came late.\n\n\nBlock 10:55 to 11:00. Counts only, no names, no chart of who worked when. Say that the pre-work decided who could type today.",
+    "text": "Your preparation, in counts\n\nFriday 20 November, 07:00. Four emails from me.\n\n\n27 answered the survey\n\n\n26 joined the organisation\n\n\n17 ticked all five boxes\n\n\n17 made a commit from the laptop\n\n\n\nOn Tuesday at 15:00 the last two numbers were 7 and 2. Most of the work happens in the last hours, this time also because my instructions came late.\n\n\nBlock 10:55 to 11:00. Counts only, no names, no chart of who worked when. Say that the pre-work decided who could type today.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -460,7 +472,7 @@
     "href": "workshop/slides.html#thank-you-1",
     "title": "Git for Scientists",
     "section": "Thank you",
-    "text": "Thank you\n\nWebsite and slides: https://gitforsci-rdc.github.io/website/\nLicence CC BY 4.0. Take it, change it, teach with it.\n\nLars Schöbitz\n\nhttps://github.com/larnsce\nhttps://www.linkedin.com/in/larsschoebitz\nNewsletter, in German and English: https://buttondown.com/bitz\n\n\n11:30. Your pull request at home: the page Add your file on the website. Parked questions without an answer get one by email. The board stays open until the evening, then I close it. Slides made with revealjs and Quarto.",
+    "text": "Thank you\n\nWebsite and slides: gitforsci-rdc.github.io/website\nLicence CC BY 4.0. Take it, change it, teach with it.\n\nLars Schöbitz\n\ngithub.com/larnsce\nlinkedin.com/in/larsschoebitz\nNewsletter, in German and English: buttondown.com/bitz\n\n\nCite as: Schöbitz, L. (2026). Git for Scientists (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21703566\nFunding and support: Swiss Reproducibility Network (SwissRN) local node at ETH Zurich & Data Stewardship Network at ETH Zurich, funded by the swissuniversities Open Science Programme & Global Health Engineering group at ETH Zurich\n\n\n11:30. Your pull request at home: the page Add your file on the website. Parked questions without an answer get one by email. The board stays open until the evening, then I close it. Slides made with revealjs and Quarto.",
     "crumbs": [
       "Start",
       "Workshop",
@@ -652,7 +664,7 @@
     "href": "pre-work/06-your-repository.html#part-6-check-and-report",
     "title": "Git for Scientists (RDC 2026)",
     "section": "Part 6: Check and report",
-    "text": "Part 6: Check and report\n\nIn GitHub Desktop, click the tab History. You see three commits: the first one made by GitHub, your three lines, and the sentence in the README.\nOpen your issue in the workshop repository, the one with your username in its title, and tick the box for Step 6.",
+    "text": "Part 6: Check and report\n\nIn GitHub Desktop, click the tab History. You see three commits: the first one made by GitHub, your three lines, and the sentence in the README.\nOpen your issue in the workshop repository, the one with your username in its title, and tick the box for Step 6.\nWrite the comment setup complete in the issue.\n\nYou are done when your comment stands in your issue.",
     "crumbs": [
       "Start",
       "Pre-course work",
@@ -962,7 +974,7 @@
     "href": "pre-work/05-setup-check.html",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 20 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
+    "text": "About 20 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tick off what you have done. Your steps are in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
     "crumbs": [
       "Start",
       "Pre-course work",
@@ -974,7 +986,7 @@
     "href": "pre-work/05-setup-check.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d636865636b203e7d7d-step-5-setup-check",
     "title": "Git for Scientists (RDC 2026)",
     "section": "",
-    "text": "About 20 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tell me that it worked. Your steps are also in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
+    "text": "About 20 minutes. Due by Thursday, 19 November 2026, and at the latest Friday, 20 November, 09:00.\nYou accept the invitation to the course organisation, copy the workshop repository to your laptop (Git calls this a clone) and tick off what you have done. Your steps are in an issue in the workshop repository, with a box to tick for each. Step 6 shows where to find it after you have accepted the invitation.",
     "crumbs": [
       "Start",
       "Pre-course work",
@@ -998,7 +1010,7 @@
     "href": "pre-work/05-setup-check.html#steps",
     "title": "Git for Scientists (RDC 2026)",
     "section": "Steps",
-    "text": "Steps\n\nAccept the invitation. After you have given your GitHub username in the survey, GitHub sends you an email with the button Join @gitforsci-rdc. Or open https://github.com/orgs/gitforsci-rdc/invitation while signed in.\nOpen GitHub Desktop. Choose the menu File, Clone Repository…, then the tab URL.\nType gitforsci-rdc/workshop into the first field.\nLook at Local Path before you click anything else. Click Choose…, go to Documents, select gitrepos and confirm. The path must end in gitrepos/workshop.\nClick Clone. GitHub Desktop shows Current Repository: workshop at the top left.\nOpen the issues of the workshop repository and click the one with your username in its title. Tick the boxes and write the comment setup complete.\n\nYou are done when your comment stands in your issue.",
+    "text": "Steps\n\nAccept the invitation. After you have given your GitHub username in the survey, GitHub sends you an email with the button Join @gitforsci-rdc. Or open https://github.com/orgs/gitforsci-rdc/invitation while signed in.\nOpen GitHub Desktop. Choose the menu File, Clone Repository…, then the tab URL.\nType gitforsci-rdc/workshop into the first field.\nLook at Local Path before you click anything else. Click Choose…, go to Documents, select gitrepos and confirm. The path must end in gitrepos/workshop.\nClick Clone. GitHub Desktop shows Current Repository: workshop at the top left.\nOpen the issues of the workshop repository and click the one with your username in its title. Tick the boxes for Steps 3 to 5.\n\nYou are done with this step when the three boxes are ticked.",
     "crumbs": [
       "Start",
       "Pre-course work",
