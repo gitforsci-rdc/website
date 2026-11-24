@@ -280,7 +280,7 @@ A commit is a saved state of your files, with four pieces of information:
 ::: incremental
 -   **Who** made it: a name and an email address
 -   **When**: date and time
--   **What** changed: line by line
+-   **What**: the state (content) of each file in the repo at commit time
 -   **Why**: the message you write with it
 :::
 
